@@ -6111,3 +6111,508 @@ A - B + C = -1
     at UtilityScript.evaluate (<anonymous>:226:30)
     at UtilityScript.<anonymous> (<anonymous>:1:44)
 ================================
+
+================================
+【开始新一轮任务】：2026-05-01 01:17:40
+================================
+
+--- 第 1 张图：基础30讲-例16-22 ---
+【豆包 AI】:
+学科：数学
+书本：基础30讲
+标题：基础30讲-例16-22
+题干：设$a_{n}=\sum_{k = 1}^{n}\frac{1}{k}$，则级数$\sum_{n = 1}^{\infty}a_{n}x^{n}$的收敛半径为\underline{\quad\quad\quad}.
+是否有图片：n
+图片路径：基础30讲-例16-22
+掌握程度：***
+标签：方法不同
+答案：\[
+\begin{align*}
+\lim_{n \to \infty}\sqrt[n]{a_{n}}&=\lim_{n \to \infty}\sqrt[n]{1+\frac{1}{2}+\cdots+\frac{1}{n}}\\
+\end{align*}
+\]
+由习题2.6知
+\[
+\lim_{n \to \infty}\sqrt[n]{a_{n}} = 1
+\]
+即级数$\sum_{n = 1}^{\infty}a_{n}x^{n}$的收敛半径为1.
+历次反馈：
+预留空间：7cm
+----------------------------------------
+
+--- 第 2 张图：基础30讲-例16-24 ---
+【豆包 AI】:
+学科：数学
+书本：基础30讲
+标题：基础30讲-例16-24
+题干：设$f(x)=\sum_{n = 0}^{\infty}x^{n}$，$g(x)=\int_{0}^{x}f(t)dt$，则$f(x)$与$g(x)$的收敛域分别为（  ）.
+(A) $(-1,1),(-1,1)$
+(B) $(-1,1),[-1,1)$
+(C) $[-1,1),(-1,1)$
+(D) $[-1,1),[-1,1)$
+是否有图片：n
+图片路径：基础30讲-例16-24
+掌握程度：*
+标签：错题、粗心
+答案：对于$f(x)=\sum_{n = 0}^{\infty}x^{n}$，有
+\[
+\lim_{n \to \infty}\left|\frac{a_{n + 1}}{a_{n}}\right| = 1 = \rho
+\]
+所以收敛半径$R = 1$，故收敛区间为$(-1,1)$. 又当$x = \pm 1$时，级数$\sum_{n = 0}^{\infty}(\pm 1)^{n}$发散，故收敛域为$(-1,1)$.
+对于$g(x)=\int_{0}^{x}f(t)dt$，因为
+\[
+g(x)=\int_{0}^{x}\sum_{n = 0}^{\infty}t^{n}dt = \sum_{n = 0}^{\infty}\int_{0}^{x}t^{n}dt = \sum_{n = 0}^{\infty}\frac{1}{n + 1}x^{n + 1}
+\]
+\[
+\lim_{n \to \infty}\left|\frac{b_{n + 1}}{b_{n}}\right| = \lim_{n \to \infty}\frac{n + 1}{n + 2} = 1
+\]
+所以收敛半径$\tilde{R} = 1$. 当$x = 1$时，级数$\sum_{n = 0}^{\infty}\frac{1}{n + 1}$发散；当$x = - 1$时，级数$\sum_{n = 0}^{\infty}\frac{1}{n + 1}(-1)^{n + 1}$收敛，故收敛域为$[-1,1)$.
+综上，选(B).
+历次反馈：
+预留空间：10cm
+----------------------------------------
+
+--- 第 3 张图：基础30讲-例16-28 ---
+【豆包 AI】:
+学科：数学
+书本：基础30讲
+标题：基础30讲-例16-28
+题干：求$\sum_{n = 1}^{\infty}(1+\frac{1}{2}+\cdots+\frac{1}{n})x^{n}$的和函数。
+是否有图片：n
+图片路径：基础30讲-例16-28
+掌握程度：*
+标签：错题
+答案：\[
+\begin{align*}
+&\sum_{n = 1}^{\infty}(1+\frac{1}{2}+\cdots+\frac{1}{n})x^{n}\\
+=&\sum_{n = 0}^{\infty}(1+\frac{1}{2}+\cdots+\frac{1}{n + 1})x^{n+1}\\
+=&x\cdot\sum_{n = 0}^{\infty}(1+\frac{1}{2}+\cdots+\frac{1}{n + 1})x^{n}\\
+=&x\cdot\sum_{n = 0}^{\infty}(1\cdot1+\frac{1}{2}\cdot1+\cdots+\frac{1}{n + 1}\cdot1)x^{n}\\
+=&x\cdot\sum_{n = 0}^{\infty}(\sum_{i = 0}^{n}\frac{1}{i + 1}\cdot1)x^{n}\\
+=&x\cdot\sum_{n = 0}^{\infty}\frac{1}{n + 1}x^{n}\cdot\sum_{n = 0}^{\infty}x^{n}\\
+=&\sum_{n = 0}^{\infty}\frac{x^{n+1}}{n + 1}\cdot\sum_{n = 0}^{\infty}x^{n}\\
+=&\sum_{n = 1}^{\infty}\frac{x^{n}}{n}\cdot\sum_{n = 0}^{\infty}x^{n}\\
+=&[-\ln(1 - x)]\cdot\frac{1}{1 - x}(-1<x<1)
+\end{align*}
+\]
+历次反馈：
+预留空间：16cm
+----------------------------------------
+
+--- 第 4 张图：基础30讲-例16-29 ---
+【豆包 AI】:
+学科：数学
+书本：基础30讲
+标题：基础30讲-例16-29
+题干：设函数$y = f(x)$满足$y'' + 2y' + 5y = 0$，且$f(0) = 1, f'(0) = -1$。(1) 求$f(x)$的表达式；(2) 设$a_n = \int_{n\pi}^{+\infty} f(x) \mathrm{d}x$，求$\sum_{n = 1}^{\infty} a_n$。
+是否有图片：n
+图片路径：基础30讲-例16-29
+掌握程度：*
+标签：错题、等比级数
+答案：(1) 由例 15.16 可知，$f(x) = \mathrm{e}^{-x} \cos 2x$。
+(2) 由于$\int f(x) \mathrm{d}x = \int \mathrm{e}^{-x} \cos 2x \mathrm{d}x = \frac{\begin{vmatrix}(\mathrm{e}^{-x})' & (\cos 2x)' \\\mathrm{e}^{-x} & \cos 2x\end{vmatrix}}{(-1)^2 + 2^2} + C = \frac{-\mathrm{e}^{-x} \cos 2x + 2\mathrm{e}^{-x} \sin 2x}{5} + C$，因此$a_n = \frac{\mathrm{e}^{-n\pi}}{5}$，故$\sum_{n = 1}^{\infty} a_n = \frac{\mathrm{e}^{-\pi}}{5(1 - \mathrm{e}^{-\pi})} = \frac{1}{5(\mathrm{e}^{\pi} - 1)}$。
+历次反馈：
+预留空间：16cm
+----------------------------------------
+
+--- 第 5 张图：基础30讲-例16-33 ---
+【豆包 AI】:
+学科：数学
+书本：基础30讲
+标题：基础30讲-例16-33
+题干：设数列$\{a_n\}$满足$a_1 = 1, (n + 1)a_{n + 1} = (n + \frac{1}{2})a_n$，证明：当$|x| < 1$时，幂级数$\sum_{n = 1}^{\infty}a_nx^n$收敛，并求其和函数.
+是否有图片：n
+图片路径：基础30讲-例16-33
+掌握程度：*
+标签：错题
+答案：由条件可知，$a_n \neq 0$，且
+\[
+\lim_{n \to \infty}\frac{|a_{n + 1}|}{|a_n|} = \lim_{n \to \infty}\frac{n + \frac{1}{2}}{n + 1} = 1
+\]
+所以幂级数$\sum_{n = 1}^{\infty}a_nx^n$的收敛半径为$1$，从而当$|x| < 1$时，幂级数$\sum_{n = 1}^{\infty}a_nx^n$收敛.
+当$|x| < 1$时，设$S(x) = \sum_{n = 1}^{\infty}a_nx^n$，逐项求导得
+\begin{align*}
+S'(x) &= \sum_{n = 1}^{\infty}na_nx^{n - 1}\\
+&= 1 + \sum_{n = 1}^{\infty}(n + 1)a_{n + 1}x^n\\
+&= 1 + \sum_{n = 1}^{\infty}na_nx^n + \frac{1}{2}\sum_{n = 1}^{\infty}a_nx^n\\
+&= 1 + xS'(x) + \frac{1}{2}S(x)
+\end{align*}
+所以
+\[
+S'(x) - \frac{1}{2(1 - x)}S(x) = \frac{1}{1 - x}
+\]
+根据一阶线性微分方程的通解公式得
+\[
+S(x) = e^{\int\frac{dx}{2(1 - x)}}\left[\int e^{-\int\frac{dx}{2(1 - x)}} \cdot \frac{1}{1 - x}dx + C\right] = \frac{C}{\sqrt{1 - x}} - 2
+\]
+由题设知$S(0) = 0$，得$C = 2$，所以$S(x) = 2\left(\frac{1}{\sqrt{1 - x}} - 1\right), |x| < 1$.
+历次反馈：
+预留空间：16cm
+----------------------------------------
+
+--- 第 6 张图：基础30讲-例16-34 ---
+【豆包 AI】:
+学科：数学
+书本：基础30讲
+标题：基础30讲-例16-34
+题干：设$a_n = \int_0^1 x^n\sqrt{1 - x^2}dx$，$b_n = \int_0^{\frac{\pi}{2}} \sin^n tdt$，$n = 1, 2, \cdots$，计算$\sum_{n = 1}^{\infty} (-1)^n \frac{a_n}{b_n}$。
+是否有图片：n
+图片路径：基础30讲-例16-34
+掌握程度：***
+标签：其他方法
+答案：首先，令$x = \sin t$，则$a_n = \int_0^{\frac{\pi}{2}} \sin^n t \cos^2 tdt = \int_0^{\frac{\pi}{2}} \sin^n t(1 - \sin^2 t)dt = b_n - b_{n + 2}$。
+由华里士公式，知$b_{n + 2} = \frac{n + 1}{n + 2}b_n$，故$a_n = b_n - \frac{n + 1}{n + 2}b_n = \frac{1}{n + 2}b_n$。于是
+\[
+\sum_{n = 1}^{\infty} (-1)^n \frac{a_n}{b_n} = \sum_{n = 1}^{\infty} (-1)^n \cdot \frac{1}{n + 2}
+\]
+当$|x| < 1$时，令$S(x) = \sum_{n = 1}^{\infty} (-1)^n \frac{x^{n + 2}}{n + 2}$，则
+\[
+\begin{align*}
+S'(x) &= \sum_{n = 1}^{\infty} (-1)^n \cdot x^{n + 1}\\
+&= x\sum_{n = 1}^{\infty} (-x)^n\\
+&= x \cdot \frac{-x}{1 + x}\\
+&= -\frac{x^2}{1 + x}
+\end{align*}
+\]
+于是
+\[
+\begin{align*}
+S(x) &= S(0) + \int_0^x \left(-\frac{t^2}{1 + t}\right)dt\\
+&= \int_0^x \frac{1 - t^2 - 1}{1 + t}dt\\
+&= \int_0^x (1 - t)dt - \int_0^x \frac{1}{1 + t}dt\\
+&= x - \frac{x^2}{2} - \ln(1 + x)
+\end{align*}
+\]
+当$x = 1$时，根据莱布尼茨判别法，知$\sum_{n = 1}^{\infty} (-1)^n \cdot \frac{1}{n + 2}$收敛，故
+\[
+\sum_{n = 1}^{\infty} (-1)^n \frac{a_n}{b_n} = \lim_{x \to 1^-} S(x) = \frac{1}{2} - \ln 2
+\]
+历次反馈：
+预留空间：20cm
+----------------------------------------
+
+--- 第 7 张图：基础30讲-例16-35 ---
+【豆包 AI】:
+学科：数学
+书本：基础30讲
+标题：基础30讲-例16-35
+题干：设$f(x)=\int_{0}^{\sin x}\sin(t^{2})dt$，$g(x)=\sum_{n = 1}^{\infty}\frac{x^{2n + 1}}{n^{2}+2}$，当$x\to 0$时，$f(x)$是$g(x)$的（  ）.
+(A) 高阶无穷小
+(B) 低阶无穷小
+(C) 等价无穷小
+(D) 同阶非等价无穷小
+是否有图片：n
+图片路径：基础30讲-例16-35
+掌握程度：***
+标签：其他方法
+答案：应选 (C).
+\[
+\begin{align*}
+g(x)&=\sum_{n = 1}^{\infty}\frac{x^{2n + 1}}{n^{2}+2}=\frac{x^{3}}{3}+\frac{x^{5}}{6}+\cdots\sim\frac{x^{3}}{3}(x\to 0)\\
+\lim_{x\to 0}\frac{f(x)}{g(x)}&=\lim_{x\to 0}\frac{\int_{0}^{\sin x}\sin(t^{2})dt}{\frac{x^{3}}{3}+o(x^{3})}=\lim_{x\to 0}\frac{\sin(\sin^{2}x)\cdot\cos x}{x^{2}}=\lim_{x\to 0}\frac{\sin^{2}x}{x^{2}} = 1
+\end{align*}
+\]
+历次反馈：
+预留空间：7cm
+----------------------------------------
+
+--- 第 8 张图：基础30讲-例16-36 ---
+【豆包 AI】:
+学科：数学
+书本：基础30讲
+标题：基础30讲-例16-36
+题干：函数$f(x)=\ln(1 - x + x^2)$关于$x$的幂级数展开式为\underline{\quad\quad\quad}。
+是否有图片：n
+图片路径：基础30讲-例16-36
+掌握程度：*
+标签：错题、概念
+答案：\[
+\begin{align*}
+&\text{应填}\sum_{n = 1}^{\infty}(-1)^{n - 1}\frac{x^{3n}-x^{n}}{n}(-1 < x\leqslant1)\\
+&\text{由于当}x\neq - 1\text{时，}\ln(1 - x + x^2)=\ln\frac{1 + x^3}{1 + x}=\ln|1 + x^3|-\ln|1 + x|，\text{且}\\
+&\text{利用对数公式：}\ln\frac{b}{a}=\ln b-\ln a；\ln ab=\ln a+\ln b\\
+&\ln|1 + x^3|=\sum_{n = 1}^{\infty}(-1)^{n - 1}\frac{(x^3)^n}{n}(-1 < x^3\leqslant1，\text{即}-1 < x\leqslant1)，\\
+&\ln|1 + x|=\sum_{n = 1}^{\infty}(-1)^{n - 1}\frac{x^n}{n}(-1 < x\leqslant1)，\\
+&\text{于是}\\
+&\ln(1 - x + x^2)=\sum_{n = 1}^{\infty}(-1)^{n - 1}\frac{(x^3)^n}{n}-\sum_{n = 1}^{\infty}(-1)^{n - 1}\frac{x^n}{n}=\sum_{n = 1}^{\infty}(-1)^{n - 1}\frac{x^{3n}-x^{n}}{n}(-1 < x\leqslant1)
+\end{align*}
+\]
+历次反馈：
+预留空间：10cm
+----------------------------------------
+================================
+【开始新一轮任务】：2026-05-01 19:32:37
+================================
+
+--- 第 1 张图：基础30讲-例16-37 ---
+【豆包 AI】:
+学科：数学
+书本：基础30讲
+标题：基础30讲-例16-37
+题干：将函数$f(x)=\arctan\frac{1 + x}{1 - x}$展开为$x$的幂级数.
+是否有图片：n
+图片路径：基础30讲-例16-37
+掌握程度：*
+标签：错题、端点
+答案：首先求导：
+\[
+\begin{align*}
+f'(x)&=\left(\arctan\frac{1 + x}{1 - x}\right)'\\
+&=\frac{1}{1 + \left(\frac{1 + x}{1 - x}\right)^2}\cdot\frac{(1 - x)+(1 + x)}{(1 - x)^2}\\
+&=\frac{(1 - x)^2}{2(1 + x^2)}\cdot\frac{2}{(1 - x)^2}\\
+&=\frac{1}{1 + x^2}\\
+&=\frac{1}{1 - (-x^2)}\\
+&=\sum_{n = 0}^{\infty}(-1)^n x^{2n}, -1 < x < 1
+\end{align*}
+\]
+然后对\(f'(x)\)逐项积分：
+\[
+\begin{align*}
+\int_{0}^{x}f'(t)dt&=\int_{0}^{x}\left[\sum_{n = 0}^{\infty}(-1)^n t^{2n}\right]dt\\
+&=\sum_{n = 0}^{\infty}(-1)^n\int_{0}^{x}t^{2n}dt\\
+&=\sum_{n = 0}^{\infty}\frac{(-1)^n}{2n + 1}x^{2n + 1}, -1 < x < 1
+\end{align*}
+\]
+则\(f(x)=f(0)+\sum_{n = 0}^{\infty}\frac{(-1)^n}{2n + 1}x^{2n + 1}=\frac{\pi}{4}+\sum_{n = 0}^{\infty}\frac{(-1)^n}{2n + 1}x^{2n + 1}, -1 < x < 1\)。
+在\(x = 1\)处，\(\sum_{n = 0}^{\infty}\frac{(-1)^n}{2n + 1}x^{2n + 1}\)虽然收敛，但函数\(f(x)=\arctan\frac{1 + x}{1 - x}\)无定义，所以成立范围不能扩大到\(x = 1\)。
+在\(x = -1\)处，\(\sum_{n = 0}^{\infty}\frac{(-1)^n}{2n + 1}x^{2n + 1}\)收敛，而\(f(x)=\arctan\frac{1 + x}{1 - x}\)在\(x = -1\)处右连续，于是
+\[
+f(-1)=\lim_{x\to -1^{+}}f(x)=\lim_{x\to -1^{+}}\left[\frac{\pi}{4}+\sum_{n = 0}^{\infty}\frac{(-1)^n}{2n + 1}x^{2n + 1}\right]=\frac{\pi}{4}+\sum_{n = 0}^{\infty}\frac{(-1)^{n + 1}}{2n + 1}
+\]
+所以有
+\[
+\arctan\frac{1 + x}{1 - x}=\frac{\pi}{4}+\sum_{n = 0}^{\infty}\frac{(-1)^n}{2n + 1}x^{2n + 1}, -1\leqslant x < 1
+\]
+历次反馈：
+预留空间：11cm
+----------------------------------------
+
+================================
+【开始新一轮任务】：2026-05-04 01:28:28
+================================
+
+--- 第 1 张图：基础30讲-例16-39 ---
+【豆包 AI】:
+学科：数学
+书本：基础30讲
+标题：基础30讲-例16-39
+题干：将函数$f(x)=1 - x^2(0\leq x\leq \pi)$展开成余弦级数，并求级数$\sum_{n = 1}^{\infty}\frac{(-1)^{n + 1}}{n^2}$.
+是否有图片：n
+图片路径：基础30讲-例16-39
+掌握程度：*
+标签：错题、粗心
+答案：因为是余弦级数，将$f(x)$延拓成$[-\pi,\pi]$上的偶函数，则$b_n = 0, n = 1,2,\cdots$，
+\[
+\begin{align*}
+a_0&=\frac{2}{\pi}\int_{0}^{\pi}(1 - x^2)dx = 2\left(1 - \frac{\pi^2}{3}\right)\\
+a_n&=\frac{2}{\pi}\int_{0}^{\pi}f(x)\cos nxdx=\frac{2}{\pi}\left(\int_{0}^{\pi}\cos nxdx - \int_{0}^{\pi}x^2\cos nxdx\right)\\
+&=\frac{2}{\pi}\left(0 - \int_{0}^{\pi}x^2\cos nxdx\right)=\frac{-2}{\pi}\left(\left.\frac{x^2\sin nx}{n}\right|_{0}^{\pi}-\int_{0}^{\pi}\frac{2x\sin nx}{n}dx\right)\\
+&=\frac{2}{\pi}\cdot\frac{2\pi\cdot(-1)^{n + 1}}{n^2}=\frac{4\cdot(-1)^{n + 1}}{n^2}, n = 1,2,\cdots
+\end{align*}
+\]
+故
+\[
+f(x)=1 - x^2\sim S(x)=\frac{a_0}{2}+\sum_{n = 1}^{\infty}a_n\cos nx = 1 - \frac{\pi^2}{3}+\sum_{n = 1}^{\infty}\frac{4\cdot(-1)^{n + 1}}{n^2}\cos nx(0\leq x\leq \pi)
+\]
+取$x = 0$，得$1 = 1 - \frac{\pi^2}{3}+\sum_{n = 1}^{\infty}\frac{4\cdot(-1)^{n + 1}}{n^2}$，于是$\sum_{n = 1}^{\infty}\frac{(-1)^{n + 1}}{n^2}=\frac{\pi^2}{12}$.
+历次反馈：
+预留空间：15cm
+----------------------------------------
+
+--- 第 2 张图：基础30讲-习16-4 ---
+【豆包 AI】:
+学科：数学
+书本：基础30讲
+标题：基础30讲-习16-4
+题干：若级数$\sum_{n = 2}^{\infty}\left[\sin\frac{1}{n}-k\ln\left(1 - \frac{1}{n}\right)\right]$收敛，则$k = $（  ）.
+(A) $1$
+(B) $2$
+(C) $-1$
+(D) $-2$
+是否有图片：n
+图片路径：基础30讲-习16-4
+掌握程度：***
+标签：不严谨
+答案：利用泰勒展开式
+\[
+\begin{align*}
+\sin\frac{1}{n}-k\ln\left(1 - \frac{1}{n}\right)&=\frac{1}{n}-\frac{1}{6n^{3}}+o\left(\frac{1}{n^{3}}\right)+\frac{k}{n}+\frac{k}{2n^{2}}+o\left(\frac{1}{n^{2}}\right)\\
+&=\frac{1 + k}{n}+\frac{k}{2n^{2}}+o\left(\frac{1}{n^{2}}\right).
+\end{align*}
+\]
+若级数收敛，则$1 + k = 0$，即$k = -1$，应选 (C).
+历次反馈：
+预留空间：10cm
+----------------------------------------
+
+--- 第 3 张图：基础30讲-习16-9 ---
+【豆包 AI】:
+学科：数学
+书本：基础30讲
+标题：基础30讲-习16-9
+题干：设正项数列$\{a_n\}$单调减少，且$\sum_{n = 1}^{\infty} (-1)^n a_n$发散，试问级数$\sum_{n = 1}^{\infty} \left(\frac{1}{a_n + 1}\right)^n$是否收敛？并说明理由.
+是否有图片：n
+图片路径：基础30讲-习16-9
+掌握程度：*
+标签：错题、不严谨
+答案：由正项数列$\{a_n\}$单调减少知$\lim_{n \to \infty} a_n$存在，记为$a$，$a\geq 0$，且对任意$n \in \mathbf{N}_+$都有$a_n \geq a$. 从而$\frac{1}{a_n + 1} \leq \frac{1}{a + 1}(n = 1, 2, \cdots)$. 另一方面，已知$\sum_{n = 1}^{\infty} (-1)^n a_n$发散，故$a > 0$. 因若$a = 0$，则由莱布尼茨判别法知$\sum_{n = 1}^{\infty} (-1)^n a_n$应收敛. 既然常数$a > 0$，故等比级数$\sum_{n = 1}^{\infty} \left(\frac{1}{a + 1}\right)^n$的公比$\frac{1}{a + 1} < 1$，$\sum_{n = 1}^{\infty} \left(\frac{1}{a + 1}\right)^n$收敛. 由比较判别法知$\sum_{n = 1}^{\infty} \left(\frac{1}{a_n + 1}\right)^n$亦收敛.
+历次反馈：
+预留空间：9cm
+----------------------------------------
+
+--- 第 4 张图：基础30讲-习16-11 ---
+【豆包 AI】:
+学科：数学
+书本：基础30讲
+标题：基础30讲-习16-11
+题干：判别级数$\sum_{n = 2}^{\infty} \ln\left[1 + \frac{(-1)^n}{\sqrt{n}}\right]$的敛散性.
+是否有图片：n
+图片路径：基础30讲-习16-11
+掌握程度：*
+标签：错题
+答案：这是交错级数，但不易判别$\{|u_n|\}$的单调性，因此不能使用莱布尼茨判别法. 为了能掌握一般项$u_n = \ln\left[1 + \frac{(-1)^n}{\sqrt{n}}\right]$的阶数，需使用泰勒公式.
+由泰勒公式得，
+\[
+\ln\left[1 + \frac{(-1)^n}{\sqrt{n}}\right] = \frac{(-1)^n}{\sqrt{n}} - \frac{1}{2n} + o\left(\frac{1}{n}\right),
+\]
+由比较判别法，$\lim_{n \to \infty} \frac{\frac{1}{2n} - o\left(\frac{1}{n}\right)}{\frac{1}{n}} = \frac{1}{2}$，而级数$\sum_{n = 2}^{\infty} \frac{(-1)^n}{\sqrt{n}}$是（条件）收敛的，故原级数发散.
+历次反馈：
+预留空间：15cm
+----------------------------------------
+
+--- 第 5 张图：基础30讲-习16-12 ---
+【豆包 AI】:
+学科：数学
+书本：基础30讲
+标题：基础30讲-习16-12
+题干：求幂级数$\sum_{n = 1}^{\infty}\frac{[3 + (-1)^n]^n}{n}\cdot x^n$的收敛域。
+是否有图片：n
+图片路径：基础30讲-习16-12
+掌握程度：*
+标签：错题、不规范
+答案：分析：$\lim_{n \to \infty}\sqrt[n]{\vert a_n\vert}=\lim_{n \to \infty}\frac{3 + (-1)^n}{\sqrt[n]{n}}$不存在。
+$\lim_{n \to \infty}\left|\frac{a_{n + 1}}{a_n}\right|=\lim_{n \to \infty}\frac{[3 + (-1)^{n + 1}]^{n + 1}}{n + 1}\cdot\frac{n}{[3 + (-1)^n]^n}=\lim_{n \to \infty}\frac{[3 + (-1)^{n + 1}]^{n + 1}}{[3 + (-1)^n]^n}\cdot[3 + (-1)^{n + 1}]\cdot\frac{n}{n + 1}$不存在（因为当$n$为奇数，且$n \to \infty$时，$\frac{n}{n + 1} \to 1$，$\frac{[3 + (-1)^{n + 1}]^{n + 1}}{[3 + (-1)^n]^n} \to +\infty$，$3 + (-1)^{n + 1} \to 4$）。
+但$\lim_{n \to \infty}\sqrt[n]{\vert a_n\vert}$及$\lim_{n \to \infty}\left|\frac{a_{n + 1}}{a_n}\right|$都不存在，并不能判定原级数的收敛半径一定不存在。
+解：现考虑原级数的奇、偶项级数。
+由于$a_n=\frac{[3 + (-1)^n]^n}{n}=\begin{cases}\frac{4^n}{n},&n为偶数\\\frac{2^n}{n},&n为奇数\end{cases}$，故原级数的奇、偶项级数分别为$\sum_{k = 1}^{\infty}\frac{2^{2k - 1}}{2k - 1}\cdot x^{2k - 1}$与$\sum_{k = 1}^{\infty}\frac{4^{2k}}{2k}\cdot x^{2k}$。
+①由比值判别法求出级数$\sum_{k = 1}^{\infty}\frac{2^{2k - 1}}{2k - 1}\cdot x^{2k - 1}$的收敛半径$R_1 = \frac{1}{2}$，级数$\sum_{k = 1}^{\infty}\frac{4^{2k}}{2k}\cdot x^{2k}$的收敛半径$R_2 = \frac{1}{4}$，则原级数的收敛半径$R = \min\{R_1,R_2\}=\frac{1}{4}$。
+②当$x = \frac{1}{4}$时，原级数化为$\sum_{n = 1}^{\infty}\frac{[3 + (-1)^n]^n}{n}\cdot\frac{1}{4^n}$，且$\frac{[3 + (-1)^n]^n}{n}\cdot\frac{1}{4^n}=\begin{cases}\frac{1}{(2k - 1)\cdot2^{2k - 1}},&n = 2k - 1\\\frac{1}{2k},&n = 2k\end{cases}$。
+由于$\sum_{k = 1}^{\infty}\frac{1}{(2k - 1)\cdot2^{2k - 1}}$收敛，$\sum_{k = 1}^{\infty}\frac{1}{2k}$发散，因此$\sum_{n = 1}^{\infty}\frac{[3 + (-1)^n]^n}{n}\cdot\frac{1}{4^n}$发散。
+③当$x = -\frac{1}{4}$时，原级数为$\sum_{n = 1}^{\infty}\frac{[3 + (-1)^n]^n}{n}\cdot\frac{(-1)^n}{4^n}$，且$\frac{[3 + (-1)^n]^n}{n}\cdot\frac{(-1)^n}{4^n}=\begin{cases}-\frac{1}{(2k - 1)\cdot2^{2k - 1}},&n = 2k - 1\\\frac{1}{2k},&n = 2k\end{cases}$。
+由于$-\sum_{k = 1}^{\infty}\frac{1}{(2k - 1)\cdot2^{2k - 1}}$收敛，$\sum_{k = 1}^{\infty}\frac{1}{2k}$发散，故$\sum_{n = 1}^{\infty}\frac{[3 + (-1)^n]^n}{n}\cdot\frac{(-1)^n}{4^n}$发散。
+综上，幂级数的收敛域为$(-\frac{1}{4},\frac{1}{4})$。
+历次反馈：
+预留空间：19cm
+----------------------------------------
+
+--- 第 6 张图：基础30讲-习16-13 ---
+【豆包 AI】:
+学科：数学
+书本：基础30讲
+标题：基础30讲-习16-13
+题干：求幂级数$\sum_{n = 1}^{\infty}(\frac{1}{2n + 1} - 1)x^{2n}$在区间$(-1, 1)$内的和函数$S(x)$。
+是否有图片：n
+图片路径：基础30讲-习16-13
+掌握程度：***
+标签：找错久
+答案：设
+\[
+S(x)=\sum_{n = 1}^{\infty}(\frac{1}{2n + 1} - 1)x^{2n},\ S_1(x)=\sum_{n = 1}^{\infty}\frac{x^{2n}}{2n + 1},\ S_2(x)=\sum_{n = 1}^{\infty}x^{2n}
+\]
+则
+\[
+S(x)=S_1(x)-S_2(x),\ x\in(-1, 1)
+\]
+由于
+\[
+S_2(x)=\sum_{n = 1}^{\infty}x^{2n}=\frac{x^{2}}{1 - x^{2}}
+\]
+\[
+[xS_1(x)]'=\sum_{n = 1}^{\infty}x^{2n}=\frac{x^{2}}{1 - x^{2}},\ x\in(-1, 1)
+\]
+因此
+\[
+xS_1(x)=\int_{0}^{x}\frac{t^{2}}{1 - t^{2}}dt=-x+\frac{1}{2}\ln\frac{1 + x}{1 - x}
+\]
+又由于
+\[
+S_1(0)=0
+\]
+故
+\[
+S_1(x)=
+\begin{cases}
+-1+\frac{1}{2x}\ln\frac{1 + x}{1 - x},&|x|\in(0, 1)\\
+0,&x = 0
+\end{cases}
+\]
+因此
+\[
+S(x)=S_1(x)-S_2(x)=
+\begin{cases}
+\frac{1}{2x}\ln\frac{1 + x}{1 - x}-\frac{1}{1 - x^{2}},&|x|\in(0, 1)\\
+0,&x = 0
+\end{cases}
+\]
+历次反馈：
+预留空间：14cm
+----------------------------------------
+
+--- 第 7 张图：基础30讲-习16-15 ---
+【豆包 AI】:
+学科：数学
+书本：基础30讲
+标题：基础30讲-习16-15
+题干：将函数$f(x)=\frac{1}{x^{2}-3x + 2}$展开成$x$的幂级数，并指出其收敛区间.
+是否有图片：n
+图片路径：基础30讲-习16-15
+掌握程度：*
+标签：错题、粗心
+答案：\[
+\begin{align*}
+f(x)&=\frac{1}{x^{2}-3x + 2}=\frac{1}{1 - x}-\frac{1}{2 - x}=\frac{1}{1 - x}-\frac{1}{2}\cdot\frac{1}{1-\frac{x}{2}}\\
+\end{align*}
+\]
+由麦克劳林展开式知
+\[
+\frac{1}{1 - x}=1 + x + x^{2}+\cdots+x^{n}+\cdots=\sum_{n = 1}^{\infty}x^{n - 1},x\in(-1,1)
+\]
+\[
+\frac{1}{1-\frac{x}{2}}=1+\frac{x}{2}+\left(\frac{x}{2}\right)^{2}+\cdots+\left(\frac{x}{2}\right)^{n}+\cdots=\sum_{n = 1}^{\infty}\left(\frac{x}{2}\right)^{n - 1},x\in(-2,2)
+\]
+从而有
+\[
+\begin{align*}
+f(x)&=\frac{1}{x^{2}-3x + 2}=\sum_{n = 1}^{\infty}x^{n - 1}-\frac{1}{2}\sum_{n = 1}^{\infty}\left(\frac{x}{2}\right)^{n - 1}\\
+&=\sum_{n = 1}^{\infty}\left(1-\frac{1}{2^{n}}\right)x^{n - 1},x\in(-1,1)
+\end{align*}
+\]
+历次反馈：
+预留空间：11cm
+----------------------------------------
+
+================================
+【开始新一轮任务】：2026-05-05 01:29:20
+================================
+
+--- 第 1 张图：基础30讲-习16-17 ---
+【豆包 AI】:
+学科：数学
+书本：基础30讲
+标题：基础30讲-习16-17
+题干：将幂级数$\sum_{n = 1}^{\infty}\frac{(-1)^{n - 1}}{(2n - 1)!2^{2n - 2}}x^{2n - 1}$的和函数展开成$x - 1$的幂级数.
+是否有图片：n
+图片路径：基础30讲-习16-17
+掌握程度：*
+标签：错题、公式记错
+答案：令$S(x)=\sum_{n = 1}^{\infty}\frac{(-1)^{n - 1}}{(2n - 1)!2^{2n - 2}}x^{2n - 1}=2\sum_{n = 1}^{\infty}\frac{(-1)^{n - 1}}{(2n - 1)!}(\frac{x}{2})^{2n - 1}=2\sin\frac{x}{2},-\infty<x<+\infty$，利用三角函数公式展开，得
+\[
+\begin{align*}
+S(x)&=2\sin\frac{x}{2}=2\sin\frac{1 + x - 1}{2}=2\left(\sin\frac{1}{2}\cos\frac{x - 1}{2}+\cos\frac{1}{2}\sin\frac{x - 1}{2}\right)\\
+&=2\sin\frac{1}{2}\sum_{n = 0}^{\infty}\frac{(-1)^{n}}{(2n)!}\left(\frac{x - 1}{2}\right)^{2n}+2\cos\frac{1}{2}\sum_{n = 0}^{\infty}\frac{(-1)^{n}}{(2n + 1)!}\left(\frac{x - 1}{2}\right)^{2n + 1},-\infty<x<+\infty
+\end{align*}
+\]
+历次反馈：
+预留空间：11cm
+首次做题时间：2026-05-04
+----------------------------------------
