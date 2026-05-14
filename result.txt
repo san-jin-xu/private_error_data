@@ -6731,3 +6731,850 @@ $F_{x}'|_{(1, 2, 0)} = 2y|_{(1, 2, 0)} = 4$，$F_{y}'|_{(1, 2, 0)} = 2x|_{(1, 2,
 预留空间：8cm
 首次做题时间：2026-05-05
 ----------------------------------------
+
+================================
+【开始新一轮任务】：2026-05-08 23:57:47
+================================
+
+--- 第 1 张图：基础30讲-例17-13 ---
+【豆包 AI】:
+学科：数学
+书本：基础30讲
+标题：基础30讲-例17-13
+题干：设$\boldsymbol{F}(x,y,z)=xy\boldsymbol{i}-yz\boldsymbol{j}+zx\boldsymbol{k}$，则$\text{rot }\boldsymbol{F}(1,1,0) = \underline{\quad\quad\quad}$.
+是否有图片：n
+图片路径：基础30讲-例17-13
+掌握程度：*
+标签：错题、知识点
+答案：记三元向量函数$\boldsymbol{F}(x,y,z)=(P,Q,R)$，则
+\[
+\text{rot }\boldsymbol{F}(x,y,z)=\begin{vmatrix}
+\boldsymbol{i} & \boldsymbol{j} & \boldsymbol{k}\\
+\frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z}\\
+P & Q & R
+\end{vmatrix}
+\]
+其中$P = xy$，$Q = -yz$，$R = zx$，于是
+\[
+\text{rot }\boldsymbol{F}(1,1,0)=\begin{vmatrix}
+\boldsymbol{i} & \boldsymbol{j} & \boldsymbol{k}\\
+\frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z}\\
+xy & -yz & zx
+\end{vmatrix}_{(1,1,0)}=(y\boldsymbol{i}-z\boldsymbol{j}-x\boldsymbol{k})\big|_{(1,1,0)}=\boldsymbol{i}-\boldsymbol{k}
+\]
+历次反馈：
+预留空间：6cm
+首次做题时间：2026-05-06
+----------------------------------------
+
+--- 第 2 张图：基础30讲-习17-1 ---
+【豆包 AI】:
+学科：数学
+书本：基础30讲
+标题：基础30讲-习17-1
+题干：设直线$L:\begin{cases}x + y - z + 1 = 0\\x - y + 3z + 3 = 0\end{cases}$，平面$\pi:x - 2y - z + 3 = 0$，则直线$L$（  ）.
+(A) 平行于$\pi$
+(B) 在$\pi$上
+(C) 垂直于$\pi$
+(D) 与$\pi$相交但不垂直
+是否有图片：n
+图片路径：基础30讲-习17-1
+掌握程度：***
+标签：其他方法
+答案：先将直线
+\[
+L:\begin{cases}x + y - z + 1 = 0\\x - y + 3z + 3 = 0\end{cases}
+\]
+化为点向式方程.
+由①$+$②可得$\frac{x + 2}{-1} = z$；
+由①$-$②可得$\frac{y - 1}{2} = z$.
+因此所给直线化为
+\[
+\frac{x + 2}{-1} = \frac{y - 1}{2} = \frac{z}{1},
+\]
+其方向向量为$\tau = (-1, 2, 1)$.
+又所给平面的法向量为$n = (1, -2, -1)$，有$\tau \parallel n$，因此$L \perp \pi$，故选 (C).
+历次反馈：
+预留空间：5cm
+首次做题时间：2026-05-06
+----------------------------------------
+
+--- 第 3 张图：基础30讲-习17-2 ---
+【豆包 AI】:
+学科：数学
+书本：基础30讲
+标题：基础30讲-习17-2
+题干：在曲线$\begin{cases}x=t\\y=-t^{2}\\z=t^{3}\end{cases}$的所有切线中，与平面$x + 2y + z = 4$平行的切线（  ）.
+(A) 只有1条
+(B) 只有2条
+(C) 至少有3条
+(D) 不存在
+是否有图片：n
+图片路径：基础30讲-习17-2
+掌握程度：*
+标签：错题、不严谨
+答案：曲线在$t_0$处的切向量为$\tau=(1, -2t_0, 3t_0^{2})$，该切线与平面$x + 2y + z = 4$平行$\Leftrightarrow \tau$与该平面的法向量$\boldsymbol{n}=(1, 2, 1)$垂直$\Leftrightarrow \tau\cdot\boldsymbol{n}=0\Leftrightarrow 1 - 4t_0 + 3t_0^{2}=0\Leftrightarrow t_0 = 1$或$t_0 = \frac{1}{3}$.
+将$t_0 = 1, t_0 = \frac{1}{3}$代入曲线方程可得点$(1, -1, 1)$和点$(\frac{1}{3}, -\frac{1}{9}, \frac{1}{27})$，再代入平面方程知两点均不在平面上，符合题意. 故与平面平行的切线只有2条.
+历次反馈：
+预留空间：6cm
+首次做题时间：2026-05-06
+----------------------------------------
+
+--- 第 4 张图：基础30讲-习17-5 ---
+【豆包 AI】:
+学科：数学
+书本：基础30讲
+标题：基础30讲-习17-5
+题干：直线$L:\frac{x - 1}{1} = \frac{y}{1} = \frac{z - 1}{-1}$在平面$\pi:3x - y + 3z = 5$上的投影直线$L_0$的方程为\underline{\quad\quad\quad}.
+是否有图片：n
+图片路径：基础30讲-习17-5
+掌握程度：***
+标签：其他地方
+答案：欲求直线$L$在已给平面$\pi$上的投影直线$L_0$，应先求过$L$且与$\pi$垂直的平面$\pi_1$. 为此先将$L$的方程化为一般式方程：
+\[
+\begin{cases}
+x + z - 2 = 0,\\
+y + z - 1 = 0,
+\end{cases}
+\]
+则过$L$的平面束方程为
+\[
+(x + z - 2) + \lambda(y + z - 1) = 0,
+\]
+其中与$\pi$垂直的平面$\pi_1$的法向量应满足
+\[
+3\times1 + (-1)\lambda + 3(1 + \lambda) = 0,
+\]
+可解得$\lambda = -3$，则$\pi_1$的方程为
+\[
+x - 3y - 2z + 1 = 0,
+\]
+因此$L$在$\pi$上的投影直线$L_0$的方程为
+\[
+\begin{cases}
+3x - y + 3z = 5,\\
+x - 3y - 2z + 1 = 0.
+\end{cases}
+\]
+历次反馈：
+预留空间：8cm
+首次做题时间：2026-05-06
+----------------------------------------
+
+--- 第 5 张图：基础30讲-习17-8 ---
+【豆包 AI】:
+学科：数学
+书本：基础30讲
+标题：基础30讲-习17-8
+题干：设$u$是由方程$\mathrm{e}^{z + u}-xy - yz - zu = 0$所确定的$x,y,z$的隐函数，则$u = u(x,y,z)$在点$P(1,1,0)$处方向导数的最大值为\underline{\quad\quad\quad}.
+是否有图片：n
+图片路径：基础30讲-习17-8
+掌握程度：*
+标签：错题、粗心
+答案：方向导数的最大值就是$|\mathrm{grad}\ u|_{P}|$. 由所给方程两边对$x$求偏导数，$u$视为$x,y,z$的函数，有
+\[
+\mathrm{e}^{z + u}\frac{\partial u}{\partial x}-y - z\frac{\partial u}{\partial x}=0,\frac{\partial u}{\partial x}=\frac{y}{\mathrm{e}^{z + u}-z}.
+\]
+当$x = 1,y = 1,z = 0$时$u = 0$，代入上式后，得$\left.\frac{\partial u}{\partial x}\right|_{P}=1$. 类似可得$\left.\frac{\partial u}{\partial y}\right|_{P}=1,\left.\frac{\partial u}{\partial z}\right|_{P}=0$. 所以
+\[
+\mathrm{grad}\ u|_{P}=(1,1,0),|\mathrm{grad}\ u|_{P}|=\sqrt{2}.
+\]
+历次反馈：
+预留空间：9cm
+首次做题时间：2026-05-06
+----------------------------------------
+
+================================
+【开始新一轮任务】：2026-05-14 01:34:24
+================================
+
+--- 第 1 张图：基础30讲-例18-1 ---
+【豆包 AI】:
+学科：数学
+书本：基础30讲
+标题：基础30讲-例18-1
+题干：设$\Omega$是由平面$x + y + z = 1$与三个坐标平面所围成的空间区域，则$\underset{\Omega }{\iiint }(x + 2y + 3z)dxdydz = \underline{\quad\quad\quad}$.
+是否有图片：y
+图片路径：基础30讲-例18-1
+掌握程度：*
+标签：错题、计算、轮换对称性
+答案：\textbf{\textcolor{red}{方法一}}
+由轮换对称性知，
+\[
+\underset{\Omega }{\iiint }xdv=\underset{\Omega }{\iiint }ydv=\underset{\Omega }{\iiint }zdv
+\]
+则
+\[
+I=\underset{\Omega }{\iiint }(x + 2y + 3z)dv = 6\underset{\Omega }{\iiint }zdv
+\]
+记$\Omega:0\leq z\leq 1,(x,y)\in D(z)$，$D(z)$是过$z$轴上$[0,1]$中任一点$z$作垂直于$z$轴的平面截$\Omega$所得平面区域（平移到$xOy$平面上），其面积为$\frac{1}{2}(1 - z)^2$，于是由先二后一法（定限截面法），得
+\begin{align*}
+\underset{\Omega }{\iiint }zdv&=\int_{0}^{1}zdz\underset{D(z)}{\iint }dxdy=\int_{0}^{1}\frac{1}{2}(1 - z)^2dz\\
+&=\int_{0}^{1}\frac{1}{2}(z - 2z^2 + z^3)dz\\
+&=\frac{1}{2}\left(\frac{1}{2}z^2 - \frac{2}{3}z^3 + \frac{1}{4}z^4\right)\big|_{0}^{1}=\frac{1}{24}
+\end{align*}
+因此$I = 6\times\frac{1}{24}=\frac{1}{4}$.
+\textbf{\textcolor{red}{方法二}}
+同方法一，有$I = 6\underset{\Omega }{\iiint }zdv$.
+记$\Omega:0\leq z\leq 1 - x - y,(x,y)\in D_{xy}$，$D_{xy}=\{(x,y)|0\leq x\leq 1,0\leq y\leq 1 - x\}$，于是由先一后二法（投影穿线法），得
+\begin{align*}
+\underset{\Omega }{\iiint }zdv&=\underset{D_{xy}}{\iint }\left(\int_{0}^{1 - x - y}zdz\right)dxdy=\underset{D_{xy}}{\iint }\frac{1}{2}(1 - x - y)^2dxdy\\
+&=\frac{1}{2}\int_{0}^{1}dx\int_{0}^{1 - x}(1 - x - y)^2dy\\
+&=\frac{1}{2}\int_{0}^{1}\left[-\frac{1}{3}(1 - x - y)^3\right]_{y = 0}^{y = 1 - x}dx\\
+&=\frac{1}{6}\int_{0}^{1}(1 - x)^3dx=\frac{1}{24}
+\end{align*}
+因此$I = 6\times\frac{1}{24}=\frac{1}{4}$.
+历次反馈：
+预留空间：13cm
+首次做题时间：2026-05-07
+----------------------------------------
+
+--- 第 2 张图：基础30讲-例18-2 ---
+【豆包 AI】:
+学科：数学
+书本：基础30讲
+标题：基础30讲-例18-2
+题干：设$\Omega$是由圆柱面$x^{2}+(y - 1)^{2} = 1$，旋转抛物面$8z = x^{2} + y^{2}$以及平面$z = 0$所围成的区域，则$I = \iiint_{\Omega}\sqrt{x^{2} + y^{2}}dv = \underline{\quad\quad\quad}$.
+是否有图片：y
+图片路径：基础30讲-例18-2
+掌握程度：*
+标签：错题、画图、粗心
+答案：应填$\frac{64}{75}$.
+如图 18-7 所示，用先一后二法（投影穿线法），即
+\[
+\begin{align*}
+I&=\iint_{D_{xy}}d\sigma\int_{0}^{\frac{x^{2}+y^{2}}{8}}\sqrt{x^{2} + y^{2}}dz\\
+&\xlongequal{柱面坐标法}\int_{0}^{\pi}d\theta\int_{0}^{2\sin\theta}rdr\int_{0}^{\frac{r^{2}}{8}}rdz=\frac{1}{8}\int_{0}^{\pi}d\theta\int_{0}^{2\sin\theta}r^{4}dr\\
+&=\frac{4}{5}\int_{0}^{\pi}\sin^{5}\theta d\theta=\frac{4}{5}(2\times\frac{4}{5}\times\frac{2}{3})=\frac{64}{75}
+\end{align*}
+\]
+\[
+\begin{align*}
+&\text{也可按右边推导：}\\
+&=\frac{1}{8}\iint_{D_{xy}}\sqrt{x^{2} + y^{2}}\cdot(x^{2} + y^{2})d\sigma\\
+&=\frac{1}{8}\int_{0}^{\pi}d\theta\int_{0}^{2\sin\theta}r^{3}rdr\\
+&=\frac{1}{40}\cdot2^{5}\int_{0}^{\pi}\sin^{5}\theta d\theta=\frac{64}{75}
+\end{align*}
+\]
+历次反馈：
+预留空间：13cm
+首次做题时间：2026-05-07
+----------------------------------------
+
+--- 第 3 张图：基础30讲-例18-3 ---
+【豆包 AI】:
+学科：数学
+书本：基础30讲
+标题：基础30讲-例18-3
+题干：设$\Omega =\{(x, y, z)|x^{2}+y^{2}+z^{2}\leq 1\}$，则$\underset{\Omega }{\iiint }z^{2}\mathrm{d}x\mathrm{d}y\mathrm{d}z = \underline{\quad\quad\quad}$.
+是否有图片：n
+图片路径：基础30讲-例18-3
+掌握程度：***
+标签：其他方法、轮换对称性
+答案：应填$\frac{4\pi}{15}$.
+由轮换对称性可知，$\underset{\Omega }{\iiint }z^{2}\mathrm{d}x\mathrm{d}y\mathrm{d}z = \underset{\Omega }{\iiint }x^{2}\mathrm{d}x\mathrm{d}y\mathrm{d}z = \underset{\Omega }{\iiint }y^{2}\mathrm{d}x\mathrm{d}y\mathrm{d}z$，所以
+\[
+\begin{align*}
+\underset{\Omega }{\iiint }z^{2}\mathrm{d}x\mathrm{d}y\mathrm{d}z&=\frac{1}{3}\underset{\Omega }{\iiint }(x^{2}+y^{2}+z^{2})\mathrm{d}x\mathrm{d}y\mathrm{d}z=\frac{1}{3}\cdot\int_{0}^{2\pi}\mathrm{d}\theta\int_{0}^{\pi}\mathrm{d}\varphi\int_{0}^{1}r^{2}\cdot r^{2}\sin\varphi\mathrm{d}r\\
+&=\frac{2\pi}{3}\int_{0}^{\pi}\sin\varphi\mathrm{d}\varphi\int_{0}^{1}r^{4}\mathrm{d}r=\frac{4\pi}{15}
+\end{align*}
+\]
+历次反馈：
+预留空间：6cm
+首次做题时间：2026-05-07
+----------------------------------------
+
+--- 第 4 张图：基础30讲-例18-4 ---
+【豆包 AI】:
+学科：数学
+书本：基础30讲
+标题：基础30讲-例18-4
+题干：设$\Omega = \{(x, y, z)|\sqrt{x^{2}+y^{2}}\leq z\leq 1\}$，则$\underset{\Omega }{\iiint }\frac{1}{\sqrt{x^{2}+y^{2}+z^{2}}}\mathrm{d}v = \underline{\quad\quad\quad}$.
+是否有图片：y
+图片路径：基础30讲-例18-4
+掌握程度：***
+标签：其他方法
+答案：应填$(\sqrt{2}-1)\pi$.
+如图 18-8 所示，从原点引射线穿过 $\Omega$，从 $z = 1$ 穿出，即 $r\cos\varphi = 1$，则 $r = \frac{1}{\cos\varphi}$ 为上限，于是
+\[
+\begin{align*}
+I&=\int_{0}^{2\pi}\mathrm{d}\theta\int_{0}^{\frac{\pi}{4}}\mathrm{d}\varphi\int_{0}^{\frac{1}{\cos\varphi}}\frac{1}{r}\cdot r^{2}\sin\varphi\mathrm{d}r = 2\pi\int_{0}^{\frac{\pi}{4}}\frac{1}{2}r^{2}\big|_{0}^{\frac{1}{\cos\varphi}}\cdot\sin\varphi\mathrm{d}\varphi\\
+&=\pi\int_{0}^{\frac{\pi}{4}}\frac{1}{\cos^{2}\varphi}\cdot\sin\varphi\mathrm{d}\varphi = -\pi\int_{0}^{\frac{\pi}{4}}\frac{1}{\cos^{2}\varphi}\mathrm{d}(\cos\varphi) = \pi\cdot\frac{1}{\cos\varphi}\big|_{0}^{\frac{\pi}{4}} = (\sqrt{2}-1)\pi
+\end{align*}
+\]
+历次反馈：
+预留空间：9cm
+首次做题时间：2026-05-07
+----------------------------------------
+
+--- 第 5 张图：基础30讲-例18-8 ---
+【豆包 AI】:
+学科：数学
+书本：基础30讲
+标题：基础30讲-例18-8
+题干：已知曲线$L:y = x^{2}(0\leq x\leq\sqrt{2})$，则$\int_{L}x\mathrm{d}s = \underline{\quad\quad\quad}$.
+是否有图片：n
+图片路径：基础30讲-例18-8
+掌握程度：*
+标签：错题、粗心
+答案：\[
+\begin{align*}
+\int_{L}x\mathrm{d}s&=\int_{0}^{\sqrt{2}}x\sqrt{1+(2x)^{2}}\mathrm{d}x=\frac{1}{8}\int_{0}^{\sqrt{2}}\sqrt{1 + 4x^{2}}\mathrm{d}(1 + 4x^{2})\\
+&=\left.\frac{1}{12}(1 + 4x^{2})^{\frac{3}{2}}\right|_{0}^{\sqrt{2}}=\frac{13}{6}
+\end{align*}
+\]
+历次反馈：
+预留空间：2cm
+首次做题时间：2026-05-08
+----------------------------------------
+
+--- 第 6 张图：基础30讲-例18-10 ---
+【豆包 AI】:
+学科：数学
+书本：基础30讲
+标题：基础30讲-例18-10
+题干：设$\Gamma$是空间曲线$\begin{cases}x^{2}+y^{2}+z^{2}=1\\x + y + z = 0\end{cases}$，则$\oint_{\Gamma}(x^{2}+y^{2})ds = \underline{\quad\quad\quad}$.
+是否有图片：n
+图片路径：基础30讲-例18-10
+掌握程度：*
+标签：错题、轮换对称性
+答案：应填$\frac{4}{3}\pi$.
+由轮换对称性知$\oint_{\Gamma}x^{2}ds=\oint_{\Gamma}y^{2}ds=\oint_{\Gamma}z^{2}ds$，于是
+\begin{align*}
+\oint_{\Gamma}(x^{2}+y^{2})ds&=\oint_{\Gamma}x^{2}ds+\oint_{\Gamma}y^{2}ds\\
+&=2\oint_{\Gamma}x^{2}ds=\frac{2}{3}(\oint_{\Gamma}x^{2}ds+\oint_{\Gamma}y^{2}ds+\oint_{\Gamma}z^{2}ds)\\
+&=\frac{2}{3}\oint_{\Gamma}(x^{2}+y^{2}+z^{2})ds\stackrel{(*)}{=}\frac{2}{3}\oint_{\Gamma}1ds=\frac{2}{3}\times 2\pi\times 1=\frac{4}{3}\pi.
+\end{align*}
+历次反馈：
+预留空间：12cm
+首次做题时间：2026-05-08
+----------------------------------------
+
+--- 第 7 张图：基础30讲-例18-13 ---
+【豆包 AI】:
+学科：数学
+书本：基础30讲
+标题：基础30讲-例18-13
+题干：设$\Sigma$为椭球面$\frac{x^{2}}{2}+\frac{y^{2}}{2}+z^{2}=1$的上半部分，点$P(x,y,z)\in\Sigma$，$\pi$为$\Sigma$在点$P$处的切平面，$\rho(x,y,z)$为点$O(0,0,0)$到平面$\pi$的距离，求$\iint_{\Sigma}\frac{z}{\rho(x,y,z)}\mathrm{d}S$。
+是否有图片：n
+图片路径：基础30讲-例18-13
+掌握程度：*
+标签：错题、粗心
+答案：设$(X,Y,Z)$为$\pi$上任意一点，则$\pi$的方程为$\frac{xX}{2}+\frac{yY}{2}+zZ = 1$。
+从而知$\rho(x,y,z)=\frac{|0 + 0 + 0 - 1|}{\sqrt{(\frac{x}{2})^{2}+(\frac{y}{2})^{2}+z^{2}}}=(\frac{x^{2}}{4}+\frac{y^{2}}{4}+z^{2})^{-\frac{1}{2}}$，由$z = \sqrt{1 - (\frac{x^{2}}{2}+\frac{y^{2}}{2})}$，得$\rho=(1 - \frac{x^{2}}{4}-\frac{y^{2}}{4})^{-\frac{1}{2}}$。
+由$z = \sqrt{1 - (\frac{x^{2}}{2}+\frac{y^{2}}{2})}$，有$\frac{\partial z}{\partial x}=\frac{-x}{2\sqrt{1 - (\frac{x^{2}}{2}+\frac{y^{2}}{2})}}$，$\frac{\partial z}{\partial y}=\frac{-y}{2\sqrt{1 - (\frac{x^{2}}{2}+\frac{y^{2}}{2})}}$。
+于是
+\[
+\begin{align*}
+\mathrm{d}S&=\sqrt{1 + (\frac{\partial z}{\partial x})^{2}+(\frac{\partial z}{\partial y})^{2}}\mathrm{d}\sigma\\
+&=\sqrt{1+\frac{x^{2}}{4(1 - \frac{x^{2}}{2}-\frac{y^{2}}{2})}+\frac{y^{2}}{4(1 - \frac{x^{2}}{2}-\frac{y^{2}}{2})}}\mathrm{d}\sigma\\
+&=\sqrt{\frac{4 - 2x^{2}-2y^{2}+x^{2}+y^{2}}{4(1 - \frac{x^{2}}{2}-\frac{y^{2}}{2})}}\mathrm{d}\sigma\\
+&=\frac{\sqrt{4 - x^{2}-y^{2}}}{2\sqrt{1 - (\frac{x^{2}}{2}+\frac{y^{2}}{2})}}\mathrm{d}\sigma
+\end{align*}
+\]
+所以
+\[
+\begin{align*}
+\iint_{\Sigma}\frac{z\mathrm{d}S}{\rho(x,y,z)}&=\frac{1}{4}\iint_{D_{xy}}(4 - x^{2}-y^{2})\mathrm{d}\sigma\\
+&=\frac{1}{4}\int_{0}^{2\pi}\mathrm{d}\theta\int_{0}^{\sqrt{2}}(4 - r^{2})r\mathrm{d}r\\
+&=\frac{3}{2}\pi
+\end{align*}
+\]
+其中$D_{xy}=\{(x,y)|x^{2}+y^{2}\leq2\}$。
+历次反馈：
+预留空间：15cm
+首次做题时间：2026-05-09
+----------------------------------------
+
+--- 第 8 张图：基础30讲-例18-19 ---
+【豆包 AI】:
+学科：数学
+书本：基础30讲
+标题：基础30讲-例18-19
+题干：计算曲线积分$I = \oint_{L} \frac{4x - y}{4x^{2} + y^{2}} \mathrm{d}x + \frac{x + y}{4x^{2} + y^{2}} \mathrm{d}y$，其中$L$是$x^{2} + y^{2} = 2$，方向为逆时针方向。
+是否有图片：n
+图片路径：基础30讲-例18-19
+掌握程度：*
+标签：错题、知识点
+答案：经计算有
+\[
+\frac{\partial}{\partial x} \left( \frac{x + y}{4x^{2} + y^{2}} \right) = \frac{y^{2} - 4x^{2} - 8xy}{(4x^{2} + y^{2})^{2}} = \frac{\partial}{\partial y} \left( \frac{4x - y}{4x^{2} + y^{2}} \right)
+\]
+\[
+\frac{\partial Q}{\partial x} = \frac{\partial P}{\partial y}
+\]（无旋场）
+但是这里不能用格林公式，因为在$L$围成的区域内点$O(0, 0)$处，$P, Q$均不连续，故在该区域内作一曲线$L_{1}: 4x^{2} + y^{2} = \varepsilon^{2}(\varepsilon > 0)$，取逆时针方向，从而
+\[
+\begin{align*}
+&\oint_{L} \frac{4x - y}{4x^{2} + y^{2}} \mathrm{d}x + \frac{x + y}{4x^{2} + y^{2}} \mathrm{d}y\\
+=&\oint_{L_{1}} \frac{4x - y}{4x^{2} + y^{2}} \mathrm{d}x + \frac{x + y}{4x^{2} + y^{2}} \mathrm{d}y\\
+=&\frac{1}{\varepsilon^{2}} \oint_{L_{1}} (4x - y) \mathrm{d}x + (x + y) \mathrm{d}y\\
+=&\frac{1}{\varepsilon^{2}} \iint_{D_{1}} 2 \mathrm{d}x \mathrm{d}y = \pi
+\end{align*}
+\]
+其中$D_{1}$为$L_{1}$围成的区域。
+历次反馈：
+预留空间：10cm
+首次做题时间：2026-05-10
+----------------------------------------
+
+--- 第 9 张图：基础30讲-例18-21 ---
+【豆包 AI】:
+学科：数学
+书本：基础30讲
+标题：基础30讲-例18-21
+题干：设曲线积分$\int_{C}xy^{2}dx + y\varphi(x)dy$与路径无关，其中$\varphi(x)$具有连续的导数，且$\varphi(0) = 0$，计算$\int_{(0,0)}^{(1,1)}xy^{2}dx + y\varphi(x)dy$的值。
+是否有图片：y
+图片路径：基础30讲-例18-21
+掌握程度：***
+标签：不同方法
+答案：由$P(x, y) = xy^{2}$，$Q(x, y) = y\varphi(x)$，$\frac{\partial P}{\partial y} = \frac{\partial Q}{\partial x}$，得
+\[
+2xy = y\varphi'(x),\ \varphi(x) = x^{2} + C
+\]
+再由$\varphi(0) = 0$，得$C = 0$，故$\varphi(x) = x^{2}$，所以
+\[
+\int_{(0,0)}^{(1,1)}xy^{2}dx + y\varphi(x)dy = \int_{(0,0)}^{(1,1)}xy^{2}dx + x^{2}ydy
+\]
+\textbf{\textcolor{red}{方法一}} 沿直线$y = x$从点$(0, 0)$到点$(1, 1)$积分，得
+\[
+\int_{(0,0)}^{(1,1)}xy^{2}dx + y\varphi(x)dy = \int_{0}^{1}2x^{3}dx = \frac{1}{2}
+\]
+\textbf{\textcolor{red}{方法二}} 利用折线法求积分.
+\[
+\begin{align*}
+原式&=\int_{L_{1}}xy^{2}dx + x^{2}ydy + \int_{L_{2}}xy^{2}dx + x^{2}ydy\\
+&=0 + \int_{0}^{1}xdx\\
+&=\frac{1}{2}
+\end{align*}
+\]
+\textbf{\textcolor{red}{方法三}} 利用凑微分找全微分.
+\[
+\begin{align*}
+原式&=\int_{C}xy^{2}dx + yx^{2}dy\\
+&=\int_{C}y^{2}d\left(\frac{1}{2}x^{2}\right) + x^{2}d\left(\frac{1}{2}y^{2}\right)\quad\longrightarrow udy + vdu = d(uv)\\
+&=\int_{C}d\left(\frac{1}{2}x^{2}y^{2}\right)=\left.\frac{1}{2}x^{2}y^{2}\right|_{(0,0)}^{(1,1)} = \frac{1}{2}
+\end{align*}
+\]
+历次反馈：
+预留空间：7cm
+首次做题时间：2026-05-10
+----------------------------------------
+
+--- 第 10 张图：基础30讲-例18-22 ---
+【豆包 AI】:
+学科：数学
+书本：基础30讲
+标题：基础30讲-例18-22
+题干：设直线$L$过点$A(-1,0,1)$与$B(0,0,0)$，$L$绕$z$轴旋转一周得曲面$\Sigma_0$，计算$I = \underset{\Sigma}{\iint} \frac{e^{z}}{\sqrt{x^{2}+y^{2}}}dxdy$，其中$\Sigma$是由$\Sigma_0$，$z = 1$，$z = 2$所围有界闭区域的边界曲面，取外侧.
+是否有图片：y
+图片路径：基础30讲-例18-22
+掌握程度：*
+标签：错题、粗心
+答案：$L$的方程为$\frac{x + 1}{1} = \frac{y}{0} = \frac{z - 1}{-1}$，可得其参数方程为$\begin{cases}x = -1 + t\\y = 0\\z = 1 - t\end{cases}$，即$\begin{cases}x = -z\\y = 0\end{cases}$.
+由第17讲“三、2.(4)”中的注，有$\Sigma_0$的方程为$x^{2}+y^{2}=z^{2}+0 = z^{2}$.
+如图18 - 23所示，记$\Sigma = \Sigma_1+\Sigma_2+\Sigma_3$，其中$\Sigma_1: z = 1, x^{2}+y^{2}\leq1$；$\Sigma_2: z = 2, x^{2}+y^{2}\leq4$；$\Sigma_3: z = \sqrt{x^{2}+y^{2}}, 1\leq z\leq2$. 则
+\[
+I = \underset{\Sigma}{\iint} = \underset{\Sigma_1}{\iint}+\underset{\Sigma_2}{\iint}+\underset{\Sigma_3}{\iint},
+\]
+\[
+\underset{\Sigma_1}{\iint}=-\underset{D_1}{\iint}\frac{e^{1}}{\sqrt{x^{2}+y^{2}}}dxdy=-e\int_{0}^{2\pi}d\theta\int_{0}^{1}\frac{1}{r}\cdot rdr=-2\pi e,
+\]
+\[
+\underset{\Sigma_2}{\iint}=\underset{D_2}{\iint}\frac{e^{2}}{\sqrt{x^{2}+y^{2}}}dxdy=e^{2}\int_{0}^{2\pi}d\theta\int_{0}^{2}\frac{1}{r}\cdot rdr=4\pi e^{2},
+\]
+\[
+\underset{\Sigma_3}{\iint}=-\underset{D_3}{\iint}\frac{e^{\sqrt{x^{2}+y^{2}}}}{\sqrt{x^{2}+y^{2}}}dxdy=-\int_{0}^{2\pi}d\theta\int_{1}^{2}\frac{e^{r}}{r}\cdot rdr=-2\pi(e^{2}-e),
+\]
+其中$D_1 = \{(x,y)|x^{2}+y^{2}\leq1\}$，$D_2 = \{(x,y)|x^{2}+y^{2}\leq4\}$，$D_3 = \{(x,y)|1\leq x^{2}+y^{2}\leq4\}$. 故
+\[
+I=-2\pi e + 4\pi e^{2}-2\pi(e^{2}-e)=2\pi e^{2}.
+\]
+历次反馈：
+预留空间：19cm
+首次做题时间：2026-05-10
+----------------------------------------
+
+--- 第 11 张图：基础30讲-例18-24 ---
+【豆包 AI】:
+学科：数学
+书本：基础30讲
+标题：基础30讲-例18-24
+题干：若柱面$\Sigma:x^{2}+y^{2}=1$的外侧为正，求其后半柱面正向单位法向量.
+是否有图片：n
+图片路径：基础30讲-例18-24
+掌握程度：*
+标签：错题
+答案：后半柱面，后侧为正，$x = -\sqrt{1 - y^{2}}$，$\boldsymbol{n}=-\sqrt{1 - y^{2}}\left(1,-\frac{y}{\sqrt{1 - y^{2}}},0\right)$.
+历次反馈：
+预留空间：3cm
+首次做题时间：2026-05-10
+----------------------------------------
+
+--- 第 12 张图：基础30讲-例18-25 ---
+【豆包 AI】:
+学科：数学
+书本：基础30讲
+标题：基础30讲-例18-25
+题干：设$\Sigma$为曲面$z = x^{2} + y^{2}(z\leq1)$的上侧，计算曲面积分$I = \iint_{\Sigma}(x - 1)^{3}dydz + (y - 1)^{3}dzdx + (z - 1)dxdy$。
+是否有图片：n
+图片路径：基础30讲-例18-25
+掌握程度：*
+标签：错题、正向法向量方向
+答案：曲面$\Sigma$在$xOy$坐标面上投影域为$D=\{(x,y)|x^{2} + y^{2} \leq 1\}$. 因为$\frac{\partial z}{\partial x} = 2x$，$\frac{\partial z}{\partial y} = 2y$，所以
+\[
+\begin{align*}
+I&=\iint_{\Sigma}(x - 1)^{3}dydz + (y - 1)^{3}dzdx + (z - 1)dxdy\\
+&=\iint_{D}[(x - 1)^{3}\cdot(-2x)+(y - 1)^{3}\cdot(-2y)+(x^{2} + y^{2} - 1)]dxdy\\
+&=-\iint_{D}(2x^{4} - 6x^{3} + 5x^{2} - 2x + 2y^{4} - 6y^{3} + 5y^{2} - 2y + 1)dxdy.
+\end{align*}
+\]
+因为区域$D$关于坐标轴对称，所以$\iint_{D}(-6x^{3} - 2x - 6y^{3} - 2y)dxdy = 0$，从而
+\[
+\begin{align*}
+I&=-\iint_{D}(2x^{4} + 5x^{2} + 2y^{4} + 5y^{2} + 1)dxdy\\
+&=-\int_{0}^{2\pi}d\theta\int_{0}^{1}[2r^{4}(\cos^{4}\theta + \sin^{4}\theta)+5r^{2} + 1]rdr\\
+&=-\int_{0}^{2\pi}\left[\frac{1}{3}(\cos^{4}\theta + \sin^{4}\theta)+\frac{7}{4}\right]d\theta\\
+&=-\frac{7\pi}{2}-\frac{8}{3}\int_{0}^{\frac{\pi}{2}}\sin^{4}\theta d\theta=-\frac{7\pi}{2}-\frac{8}{3}\times\frac{3}{4}\times\frac{1}{2}\times\frac{\pi}{2}=-4\pi.
+\end{align*}
+\]
+历次反馈：
+预留空间：20cm
+首次做题时间：2026-05-10
+----------------------------------------
+
+--- 第 13 张图：基础30讲-例18-26 ---
+【豆包 AI】:
+学科：数学
+书本：基础30讲
+标题：基础30讲-例18-26
+题干：设空间有界区域$\Omega$由柱面$x^{2}+y^{2}=1$与平面$z = 0$和$x + z = 1$围成，$\Sigma$为$\Omega$的边界曲面的外侧，计算曲面积分$I = \underset{\Sigma }{\iint }2xz\mathrm{d}y\mathrm{d}z + xz\cos y\mathrm{d}z\mathrm{d}x + 3yz\sin x\mathrm{d}x\mathrm{d}y$。
+是否有图片：y
+图片路径：基础30讲-例18-26
+掌握程度：*
+标签：错题、对称性
+答案：根据高斯公式，得
+\[
+I = \underset{\Omega }{\iiint }(2z - xz\sin y + 3y\sin x)\mathrm{d}x\mathrm{d}y\mathrm{d}z
+\]
+因为$\Omega$关于$xOz$坐标面对称，所以当$y \to -y$时，$\Omega$不变，故$\Omega$关于$xOz$坐标面对称，$\underset{\Omega }{\iiint }xz\sin y\mathrm{d}x\mathrm{d}y\mathrm{d}z = 0$，$\underset{\Omega }{\iiint }3y\sin x\mathrm{d}x\mathrm{d}y\mathrm{d}z = 0$。
+记$D = \{ (x, y) | x^{2}+y^{2}\leq 1\}$，则
+\[
+\begin{align*}
+I&=\underset{\Omega }{\iiint }2z\mathrm{d}x\mathrm{d}y\mathrm{d}z = \underset{D}{\iint }\mathrm{d}x\mathrm{d}y\int_{0}^{1 - x}2z\mathrm{d}z\\
+&=\underset{D}{\iint }(1 + x^{2})\mathrm{d}x\mathrm{d}y = \pi+\frac{1}{2}\int_{0}^{2\pi}\mathrm{d}\theta\int_{0}^{1}r^{3}\mathrm{d}r = \frac{5\pi}{4}
+\end{align*}
+\]
+历次反馈：
+预留空间：13cm
+首次做题时间：2026-05-10
+----------------------------------------
+
+--- 第 14 张图：基础30讲-例18-27 ---
+【豆包 AI】:
+学科：数学
+书本：基础30讲
+标题：基础30讲-例18-27
+题干：计算$\iint_{\Sigma}\frac{x\mathrm{d}y\mathrm{d}z+(z + 1)^2\mathrm{d}x\mathrm{d}y}{(x^2 + y^2 + z^2)^{\frac{1}{2}}}$，其中$\Sigma$为下半球面$z = -\sqrt{1 - x^2 - y^2}$的上侧.
+是否有图片：y
+图片路径：基础30讲-例18-27
+掌握程度：*
+标签：错题、概念、二代数没代
+答案：先将$(x^2 + y^2 + z^2)^{\frac{1}{2}} = 1$代入被积函数，
+\[
+I = \iint_{\Sigma}\frac{x\mathrm{d}y\mathrm{d}z+(z + 1)^2\mathrm{d}x\mathrm{d}y}{(x^2 + y^2 + z^2)^{\frac{1}{2}}} = \iint_{\Sigma}x\mathrm{d}y\mathrm{d}z+(z + 1)^2\mathrm{d}x\mathrm{d}y
+\]
+补充一块有向平面$\Sigma_1:\begin{cases}x^2 + y^2\leq 1\\z = 0\end{cases}$，其法向量与$z$轴正向相反，从而得到
+\[
+\begin{align*}
+I&=\underset{\Sigma+\Sigma_1}{\oiint}x\mathrm{d}y\mathrm{d}z+(z + 1)^2\mathrm{d}x\mathrm{d}y-\iint_{\Sigma_1}x\mathrm{d}y\mathrm{d}z+(z + 1)^2\mathrm{d}x\mathrm{d}y\\
+&=-\iiint_{\Omega}(3 + 2z)\mathrm{d}v+\iint_{D}1\mathrm{d}x\mathrm{d}y
+\end{align*}
+\]
+其中$\Omega$为$\Sigma+\Sigma_1$围成的空间区域，$D$为$z = 0$上的平面区域$x^2 + y^2\leq 1$，于是
+\[
+I=-2\pi - 2\iiint_{\Omega}z\mathrm{d}v+\pi=-\pi - 2\int_{0}^{2\pi}\mathrm{d}\theta\int_{0}^{1}r\mathrm{d}r\int_{-\sqrt{1 - r^2}}^{0}z\mathrm{d}z=-\frac{\pi}{2}
+\]
+历次反馈：
+预留空间：16cm
+首次做题时间：2026-05-12
+----------------------------------------
+
+--- 第 15 张图：基础30讲-例18-29 ---
+【豆包 AI】:
+学科：数学
+书本：基础30讲
+标题：基础30讲-例18-29
+题干：计算$I = \underset{\varSigma }{\iint }|xy|z^{2}dxdy + |x|y^{2}z dydz$，在平面$z = 1$和曲面$z = x^{2} + y^{2}$上，其中$\varSigma$为$z = x^{2} + y^{2}$与$z = 1$所围区域$\varOmega$的表面，方向向外。
+是否有图片：y
+图片路径：基础30讲-例18-29
+掌握程度：*
+标签：错题、粗心
+答案：由题设得，$I = \underset{\varSigma }{\iint }|xy|z^{2}dxdy + \underset{\varSigma }{\iint }|x|y^{2}z dydz\overset{记}{=}I_{1} + I_{2}$。
+\[
+\begin{align*}
+I_{1}&\overset{高斯公式}{=}\underset{\varOmega }{\iiint }|xy|\cdot 2zdv = \underset{\varOmega }{\iiint }2|xy|zdv\\
+&= 8\underset{\substack{\varOmega \\x,y\geq 0}}{\iiint }xyzdv = 8\underset{\substack{x^{2}+y^{2}\leq 1 \\x,y\geq 0}}{\iint }d\sigma\int_{x^{2}+y^{2}}^{1}xyzdv\\
+&= 4\underset{\substack{x^{2}+y^{2}\leq 1 \\x,y\geq 0}}{\iint }xy[1 - (x^{2} + y^{2})^{2}]d\sigma\\
+&= 4\int_{0}^{\frac{\pi}{2}}d\theta\int_{0}^{1}r^{2}\cos\theta\sin\theta(1 - r^{4})rdr = \frac{1}{4}
+\end{align*}
+\]
+$I_{2}$不能用高斯公式，因$\frac{\partial}{\partial x}(|x|y^{2}z)$在$x = 0$，$yz\neq 0$处不存在。而在点$(x,y,z)$与点$(-x,y,z)$处的通量分别为$|x|y^{2}z dydz$与$|x|y^{2}z(-dydz)$，又在面$z = 1$上$dz = 0$，故$I_{2} = \underset{\varSigma }{\iint }|x|y^{2}z dydz = 0$。于是$I = \frac{1}{4}$。
+历次反馈：
+预留空间：20cm
+首次做题时间：2026-05-12
+----------------------------------------
+
+--- 第 16 张图：基础30讲-例18-30 ---
+【豆包 AI】:
+学科：数学
+书本：基础30讲
+标题：基础30讲-例18-30
+题干：已知曲线$L$的方程为$\begin{cases}z = \sqrt{2 - x^{2} - y^{2}}\\z = x\end{cases}$，起点为$A(0,\sqrt{2},0)$，终点为$B(0,-\sqrt{2},0)$，计算曲线积分$I = \int_{L}(y + z)dx + (z^{2} - x^{2} + y)dy + x^{2}y^{2}dz$。
+是否有图片：y
+图片路径：基础30讲-例18-30
+掌握程度：*
+标签：错题、对称性疏忽、其他方法
+答案：\textbf{\textcolor{red}{方法一}}：由$\begin{cases}z = \sqrt{2 - x^{2} - y^{2}}\\z = x\end{cases}$，得$\sqrt{2 - x^{2} - y^{2}} = x$，即$2x^{2} + y^{2} = 2$，亦即$x^{2} + \frac{y^{2}}{2} = 1$。
+于是曲线$L$的参数方程为$\begin{cases}x = \cos t\\y = \sqrt{2}\sin t\\z = \cos t\end{cases}$，$t$从$\frac{\pi}{2}$（起点$A$）到$-\frac{\pi}{2}$（终点$B$）。
+\[
+\begin{align*}
+I&=\int_{L}(y + z)dx + (z^{2} - x^{2} + y)dy + x^{2}y^{2}dz\\
+&=\int_{\frac{\pi}{2}}^{-\frac{\pi}{2}}[(\sqrt{2}\sin t + \cos t)\cdot (-\sin t) + \sqrt{2}\sin t\cdot \sqrt{2}\cos t + \cos^{2}t\cdot 2\sin^{2}t\cdot (-\sin t)]dt\\
+&=\int_{\frac{\pi}{2}}^{-\frac{\pi}{2}}(-\sqrt{2}\sin^{2}t)dt = \int_{-\frac{\pi}{2}}^{\frac{\pi}{2}}\sqrt{2}\sin^{2}t dt\\
+&=2\sqrt{2}\int_{0}^{\frac{\pi}{2}}\sin^{2}t dt = 2\sqrt{2}\cdot \frac{1}{2}\cdot \frac{\pi}{2} = \frac{\sqrt{2}}{2}\pi
+\end{align*}
+\]
+\textbf{\textcolor{red}{方法二}}：设$L_{1}$是从点$B$到点$A$的直线段，$\Sigma$为平面$z = x$上由$L$与$L_{1}$围成的半圆面下侧，其法向量的方向余弦为$(\frac{1}{\sqrt{2}},0,-\frac{1}{\sqrt{2}})$，且在$L$与$L_{1}$上，均有$z^{2} - x^{2} = 0$。
+由斯托克斯公式，
+\[
+\begin{align*}
+&\oint_{L + L_{1}}(y + z)dx + (z^{2} - x^{2} + y)dy + x^{2}y^{2}dz\\
+=&\iint_{\Sigma}\begin{vmatrix}
+\frac{1}{\sqrt{2}}&0&-\frac{1}{\sqrt{2}}\\
+\frac{\partial}{\partial x}&\frac{\partial}{\partial y}&\frac{\partial}{\partial z}\\
+y + z&y&x^{2}y^{2}
+\end{vmatrix}dS = \frac{1}{\sqrt{2}}\iint_{\Sigma}(2x^{2}y + 1)dS
+\end{align*}
+\]
+因为曲面$\Sigma$关于$xOz$平面对称，所以$\iint_{\Sigma}2x^{2}y dS = 0$，故
+\[
+\oint_{L + L_{1}}(y + z)dx + (z^{2} - x^{2} + y)dy + x^{2}y^{2}dz = \frac{1}{\sqrt{2}}\iint_{\Sigma}dS = \frac{\sqrt{2}}{2}\pi
+\]
+又$L_{1}$的参数方程为$x = 0$，$y = y$，$z = 0$（$y$从$-\sqrt{2}$到$\sqrt{2}$），所以
+\[
+\int_{L_{1}}(y + z)dx + (z^{2} - x^{2} + y)dy + x^{2}y^{2}dz = \int_{-\sqrt{2}}^{\sqrt{2}}ydy = 0
+\]
+因此$I = \oint_{L + L_{1}} - \int_{L_{1}} = \frac{\sqrt{2}}{2}\pi$。
+\textbf{\textcolor{red}{方法三}}：如图18 - 27所示，在点$(x,y,z)$和$(x,-y,z)$处的三个方向的通量分别为
+\[
+\begin{align*}
+&(y + z)dx,(-y + z)(-dx),\\
+&y(-dy),(-y)(-dy),\\
+&x^{2}y^{2}dz,x^{2}y^{2}(-dz)
+\end{align*}
+\]
+于是
+\[
+I = \int_{L}ydx\overset{\text{由方法一}}{=}\int_{\frac{\pi}{2}}^{-\frac{\pi}{2}}\sqrt{2}\sin t d(\cos t) = 2\sqrt{2}\int_{0}^{\frac{\pi}{2}}\sin^{2}t dt = 2\sqrt{2}\cdot \frac{1}{2}\cdot \frac{\pi}{2} = \frac{\sqrt{2}}{2}\pi
+\]
+历次反馈：
+预留空间：20cm
+首次做题时间：2026-05-12
+----------------------------------------
+
+--- 第 17 张图：基础30讲-习18-3 ---
+【豆包 AI】:
+学科：数学
+书本：基础30讲
+标题：基础30讲-习18-3
+题干：设$L$是柱面$x^{2}+y^{2}=1$与平面$z = x + y$的交线，从$z$轴正向往$z$轴负向看去为逆时针方向，则曲线积分$\oint_{L} xz\mathrm{d}x + x\mathrm{d}y + \frac{y^{2}}{2}\mathrm{d}z = \underline{\quad\quad\quad}$.
+是否有图片：n
+图片路径：基础30讲-习18-3
+掌握程度：*
+标签：错题、方向反、不同方法
+答案：\textbf{\textcolor{red}{方法一}}
+将$L$的方程化为参数形式
+\[
+\begin{cases}
+x = \cos t, \\
+y = \sin t, &(0\leq t\leq 2\pi), \\
+z = \cos t + \sin t
+\end{cases}
+\]
+则
+\[
+\begin{align*}
+\oint_{L} xz\mathrm{d}x + x\mathrm{d}y + \frac{y^{2}}{2}\mathrm{d}z &= \int_{0}^{2\pi} \left[\cos t\cdot (\cos t + \sin t)\cdot (-\sin t) + \cos t\cdot \cos t + \frac{1}{2}\sin^{2}t\cdot (-\sin t + \cos t)\right]\mathrm{d}t \\
+&= \int_{0}^{2\pi} \cos^{2}t\mathrm{d}t = \int_{0}^{2\pi} \frac{1 + \cos 2t}{2}\mathrm{d}t = \pi.
+\end{align*}
+\]
+\textbf{\textcolor{red}{方法二}}
+记$S$是平面$z = x + y$上位于柱面$x^{2}+y^{2}=1$内的部分，则$S$在$xOy$平面上的投影为$D = \{(x, y)|x^{2}+y^{2}\leq 1\}$，平面$z = x + y$向上的单位法向量为$\left(-\frac{1}{\sqrt{3}}, -\frac{1}{\sqrt{3}}, \frac{1}{\sqrt{3}}\right)$.
+根据斯托克斯公式，得
+\[
+\begin{align*}
+\oint_{L} xz\mathrm{d}x + x\mathrm{d}y + \frac{y^{2}}{2}\mathrm{d}z &= \iint_{S}
+\begin{vmatrix}
+-\frac{1}{\sqrt{3}} & -\frac{1}{\sqrt{3}} & \frac{1}{\sqrt{3}} \\
+\frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z} \\
+xz & x & \frac{y^{2}}{2}
+\end{vmatrix} \mathrm{d}S \\
+&= \iint_{S} \frac{1}{\sqrt{3}}(1 - x - y)\mathrm{d}S \\
+&= \iint_{D} \frac{1}{\sqrt{3}}(1 - x - y)\sqrt{3}\mathrm{d}x\mathrm{d}y = \pi.
+\end{align*}
+\]
+历次反馈：
+预留空间：20cm
+首次做题时间：2026-05-12
+----------------------------------------
+
+--- 第 18 张图：基础30讲-习18-4 ---
+【豆包 AI】:
+学科：数学
+书本：基础30讲
+标题：基础30讲-习18-4
+题干：设$L$为取正向的圆$x^{2}+y^{2}=a^{2}$，$a>0$，则曲线积分$\oint_{L}\frac{(e^{x^{2}} - x^{2}y)\mathrm{d}x+(xy^{2}-\sin y^{2})\mathrm{d}y}{x^{2}+y^{2}} = \underline{\quad\quad\quad}$.
+是否有图片：n
+图片路径：基础30讲-习18-4
+掌握程度：*
+标签：错题、粗心
+答案：先将$L$的方程$x^{2}+y^{2}=a^{2}$代入，得
+\[
+\begin{align*}
+\text{原式}&=\frac{1}{a^{2}}\oint_{L}(e^{x^{2}} - x^{2}y)\mathrm{d}x+(xy^{2}-\sin y^{2})\mathrm{d}y\\
+&=\frac{1}{a^{2}}\iint_{x^{2}+y^{2}\leq a^{2}}(x^{2}+y^{2})\mathrm{d}x\mathrm{d}y=\frac{1}{a^{2}}\int_{0}^{2\pi}\mathrm{d}\theta\int_{0}^{a}r^{2}\cdot r\mathrm{d}r=\frac{1}{2}\pi a^{2}
+\end{align*}
+\]
+历次反馈：
+预留空间：5cm
+首次做题时间：2026-05-13
+----------------------------------------
+
+--- 第 19 张图：基础30讲-习18-5 ---
+【豆包 AI】:
+学科：数学
+书本：基础30讲
+标题：基础30讲-习18-5
+题干：设$\Sigma$为球面$x^{2}+y^{2}+z^{2}=1$，则第一型曲面积分$\underset{\Sigma }{\iint }x(4x - z)\mathrm{d}S = \underline{\quad\quad\quad}$.
+是否有图片：n
+图片路径：基础30讲-习18-5
+掌握程度：*
+标签：错题、粗心
+答案：①函数$xz$在$\Sigma$的$8$个卦限内，$4$正$4$负，且对应点有相同的绝对值，故$\underset{\Sigma }{\iint }xz\mathrm{d}S = 0$；
+②根据轮换对称性得到$\underset{\Sigma }{\iint }x^{2}\mathrm{d}S = \underset{\Sigma }{\iint }y^{2}\mathrm{d}S = \underset{\Sigma }{\iint }z^{2}\mathrm{d}S$.
+解：
+\[
+\begin{align*}
+\underset{\Sigma }{\iint }x(4x - z)\mathrm{d}S&=\underset{\Sigma }{\iint }4x^{2}\mathrm{d}S\\
+&=\frac{4}{3}\underset{\Sigma }{\iint }(x^{2}+y^{2}+z^{2})\mathrm{d}S\\
+&=\frac{4}{3}\underset{\Sigma }{\iint }\mathrm{d}S\\
+&=\frac{16\pi}{3}
+\end{align*}
+\]
+历次反馈：
+预留空间：5cm
+首次做题时间：2026-05-13
+----------------------------------------
+
+--- 第 20 张图：基础30讲-习18-6 ---
+【豆包 AI】:
+学科：数学
+书本：基础30讲
+标题：基础30讲-习18-6
+题干：设曲面$\Sigma:|x|+|y|+|z| = 1$，则$\underset{\Sigma }{\iint }(x + |y|)\mathrm{d}S = \underline{\quad\quad\quad}$.
+是否有图片：y
+图片路径：基础30讲-习18-6
+掌握程度：*
+标签：错题
+答案：因为曲面$\Sigma$对称于$yOz$平面，$x$为关于$x$的奇函数，所以$\underset{\Sigma }{\iint }x\mathrm{d}S = 0$. 又因$\Sigma$关于$x,y,z$轮换对称，所以
+\[
+\begin{align*}
+\underset{\Sigma }{\iint }|y|\mathrm{d}S&=\underset{\Sigma }{\iint }|z|\mathrm{d}S=\underset{\Sigma }{\iint }|x|\mathrm{d}S\\
+\underset{\Sigma }{\iint }|y|\mathrm{d}S&=\frac{1}{3}\underset{\Sigma }{\iint }(|x|+|y|+|z|)\mathrm{d}S=\frac{1}{3}\underset{\Sigma }{\iint }\mathrm{d}S\\
+&=\frac{1}{3}\times A_{\Sigma}
+\end{align*}
+\]
+其中$A_{\Sigma}$为$\Sigma$的面积. 而$\Sigma$由$8$块同样的等边三角形组成，每块等边三角形的边长为$\sqrt{2}$，所以
+\[
+A_{\Sigma}=8\times\frac{1}{2}\times(\sqrt{2})^2\times\sin\frac{\pi}{3}=4\sqrt{3}
+\]
+所以$\underset{\Sigma }{\iint }|y|\mathrm{d}S=\frac{4}{3}\sqrt{3}$，从而原式$=\frac{4}{3}\sqrt{3}$.
+历次反馈：
+预留空间：12cm
+首次做题时间：2026-05-13
+----------------------------------------
+
+--- 第 21 张图：基础30讲-习18-7 ---
+【豆包 AI】:
+学科：数学
+书本：基础30讲
+标题：基础30讲-习18-7
+题干：设$\Sigma$为球面$x^{2}+y^{2}+z^{2}=a^{2}$的外侧，$a>0$，则第二型曲面积分$\underset{\Sigma }{\iint }\frac{1}{x^{2}+y^{2}+z^{2}}(x^{3}dydz + y^{3}dzdx + z^{3}dxdy) = \underline{\quad\quad\quad}$.
+是否有图片：n
+图片路径：基础30讲-习18-7
+掌握程度：*
+标签：错题、三重积分不能代
+答案：记$\Omega$是$\Sigma$所围的空间区域.
+\[
+\begin{align*}
+\underset{\Sigma }{\iint }\frac{x^{3}dydz + y^{3}dzdx + z^{3}dxdy}{x^{2}+y^{2}+z^{2}}&=\frac{1}{a^{2}}\underset{\Sigma }{\iint }x^{3}dydz + y^{3}dzdx + z^{3}dxdy=\frac{3}{a^{2}}\underset{\Omega }{\iiint }(x^{2}+y^{2}+z^{2})dxdydz\\
+&=\frac{3}{a^{2}}\int_{0}^{2\pi}d\theta\int_{0}^{\pi}d\varphi\int_{0}^{a}r^{4}\sin\varphi dr=\frac{12}{5}\pi a^{3}
+\end{align*}
+\]
+历次反馈：
+预留空间：8cm
+首次做题时间：2026-05-13
+----------------------------------------
+
+--- 第 22 张图：基础30讲-习18-10 ---
+【豆包 AI】:
+学科：数学
+书本：基础30讲
+标题：基础30讲-习18-10
+题干：计算曲面积分$\iint_{\Sigma}(2x + z)\mathrm{d}y\mathrm{d}z + z\mathrm{d}x\mathrm{d}y$，其中$\Sigma$为有向曲面$z = x^{2} + y^{2}(0\leq z\leq1)$，其法向量与$z$轴正向夹角为锐角.
+是否有图片：n
+图片路径：基础30讲-习18-10
+掌握程度：*
+标签：错题、粗心
+答案：以$\Sigma_{1}$表示法向量指向$z$轴负向的有向平面$z = 1(x^{2} + y^{2} \leq 1)$，$D$为$\Sigma_{1}$在$xOy$平面上的投影区域，则
+\[
+\iint_{\Sigma_{1}}(2x + z)\mathrm{d}y\mathrm{d}z + z\mathrm{d}x\mathrm{d}y = -\iint_{D}\mathrm{d}x\mathrm{d}y = -\pi
+\]
+设$\Omega$表示由$\Sigma$和$\Sigma_{1}$所围成的空间区域，则由高斯公式知
+\[
+\begin{align*}
+\underset{\Sigma+\Sigma_{1}}{\oiint}(2x + z)\mathrm{d}y\mathrm{d}z + z\mathrm{d}x\mathrm{d}y&=-\iiint_{\Omega}(2 + 1)\mathrm{d}v=-3\int_{0}^{2\pi}\mathrm{d}\theta\int_{0}^{1}r\mathrm{d}r\int_{r^{2}}^{1}\mathrm{d}z\\
+&=-6\pi\int_{0}^{1}(r - r^{3})\mathrm{d}r=-6\pi\left(\frac{1}{2}-\frac{1}{4}\right)=-\frac{3}{2}\pi
+\end{align*}
+\]
+因此，
+\[
+\iint_{\Sigma}(2x + z)\mathrm{d}y\mathrm{d}z + z\mathrm{d}x\mathrm{d}y = -\frac{3}{2}\pi - (-\pi)=-\frac{1}{2}\pi
+\]
+历次反馈：
+预留空间：10cm
+首次做题时间：2026-05-13
+----------------------------------------
+
+--- 第 23 张图：基础30讲-习18-11 ---
+【豆包 AI】:
+学科：数学
+书本：基础30讲
+标题：基础30讲-习18-11
+题干：设$\Sigma$为任意封闭曲面，
+\[ I = \underset{\Sigma_{外侧}}{\oiint} \left( x - \frac{1}{3}x^{3} \right)dydz - \frac{4}{3}y^{3}dzdx + \left( 3y - \frac{1}{3}z^{3} \right)dxdy \]
+(1) 证明$\Sigma$为椭球面$x^{2} + 4y^{2} + z^{2} = 1$时，$I$达到最大值；
+(2) 求$I$的最大值.
+是否有图片：n
+图片路径：基础30讲-习18-11
+掌握程度：*
+标签：错题、不规范、粗心
+答案：(1) 证明 根据高斯公式，\[ I = \underset{\Omega}{\iiint} (1 - x^{2} - 4y^{2} - z^{2})dxdydz \]，其中$\Omega$为$\Sigma$所围的空间区域. 为使$I$最大，要求$\Omega$是使得$1 - x^{2} - 4y^{2} - z^{2} \geq 0$的最大空间区域，即
+\[ \Omega = \{ (x, y, z) | 1 - x^{2} - 4y^{2} - z^{2} \geq 0 \} \]
+$\Sigma$为$\Omega$的表面，即为椭球面$x^{2} + 4y^{2} + z^{2} = 1$时，$I$最大.
+(2) 解 由例 18.5 知，\[ I_{\max} = \frac{4\pi}{15} \].
+历次反馈：
+预留空间：13cm
+首次做题时间：2026-05-13
+----------------------------------------
