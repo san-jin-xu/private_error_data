@@ -148,7 +148,7 @@
 &=\frac{e^2}{e^{-1}} = e^3
 \end{align*}
 \]
-历次反馈：
+历次反馈：2026-05-14:对
 预留空间：11cm
 ----------------------------------------
 
@@ -1439,7 +1439,7 @@ s^{2}=x^{2}+(y + 10)^{2}
 \[
 \text{原式}=\int_{-1}^{0}(1 + t)dt + \int_{0}^{x}(1 - t)dt = 1 - \frac{1}{2}(1 - x)^2
 \]
-历次反馈：
+历次反馈：2026-05-14:对
 预留空间：11cm
 ----------------------------------------
 
@@ -1931,7 +1931,7 @@ a&=\frac{5}{2}
 答案：当$x\in\left[0,\frac{\pi}{2}\right]$时，过点$M$作$MD\perp OP$于点$D$，则$|PM|=\sin x$，$|OM|=\cos x$，$|MD|=\frac{|OM||PM|}{|OP|}=\frac{\cos x\cdot\sin x}{1}=\cos x\sin x=\frac{1}{2}\sin 2x$.
 当$x\in\left[\frac{\pi}{2},\pi\right]$时，同样的作图方法，但此时$|PM|=\sin(\pi - x)=\sin x$，$|OM|=\cos(\pi - x)=-\cos x$，于是$|MD|=\frac{|OM||PM|}{|OP|}=\frac{-\cos x\cdot\sin x}{1}=-\frac{1}{2}\sin 2x$.
 综上，$f(x)=\frac{1}{2}|\sin 2x|$，$x\in[0,\pi]$. 选 (B).
-历次反馈：
+历次反馈：2026-05-14:对
 预留空间：11cm
 ----------------------------------------
 
@@ -2430,7 +2430,7 @@ f(x)=\lim_{n \to \infty} \frac{\frac{x^2}{n} + x(1 - x)\sin^2 \pi x}{\frac{1}{n}
 &\xlongequal{令 u = \frac{1}{x}} \lim_{u \to 0^{+}} \frac{e^{u} - 1 - u}{u^{2}} = \lim_{u \to 0^{+}} \frac{e^{u} - 1}{2u} = \frac{1}{2}
 \end{align*}
 \]
-历次反馈：
+历次反馈：2026-05-14:对
 预留空间：11cm
 ----------------------------------------
 
@@ -2688,7 +2688,7 @@ s&=\int_{0}^{2\pi} \sqrt{[r(\theta)]^{2}+[r'(\theta)]^{2}} \mathrm{d}\theta\\
 \[
 S = 4\int_{0}^{\frac{\pi}{4}}\frac{1}{2}a^{2}\cos 2\theta\mathrm{d}\theta = a^{2}\sin 2\theta\big|_{0}^{\frac{\pi}{4}} = a^{2}
 \]
-历次反馈：
+历次反馈：2026-05-14:对
 预留空间：11cm
 ----------------------------------------
 
@@ -5738,7 +5738,7 @@ I&=\int_{0}^{a} f(x) \mathrm{d}x + \int_{0}^{b} \varphi(y) \mathrm{d}y\\
 &= \int_{-\frac{\pi}{2}}^{0} t\sin t \mathrm{d}t = -t\cos t\big|_{-\frac{\pi}{2}}^{0} + \sin t\big|_{-\frac{\pi}{2}}^{0} = 1
 \end{align*}
 \]
-历次反馈：
+历次反馈：2026-05-14:对
 预留空间：11cm
 ----------------------------------------
 

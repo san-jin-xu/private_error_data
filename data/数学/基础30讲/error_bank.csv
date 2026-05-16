@@ -76,7 +76,7 @@ a&=\frac{5}{2}
 \]",,11cm,2026-04-13
 数学,基础30讲,基础30讲-例0-56,"已知圆$O$的半径为$1$，$A$是圆上的定点，$P$是圆上一动点，角$x$的始边为射线$OA$，终边为射线$OP$。过点$P$作直线$OA$的垂线，垂足为点$M$，将点$M$到直线$OP$的距离表示为$x$的函数$f(x)$，则$y=f(x)$在$[0,\pi]$上的图像大致为（）",y,基础30讲-例0-56,***,方法不同,"当$x\in\left[0,\frac{\pi}{2}\right]$时，过点$M$作$MD\perp OP$于点$D$，则$|PM|=\sin x$，$|OM|=\cos x$，$|MD|=\frac{|OM||PM|}{|OP|}=\frac{\cos x\cdot\sin x}{1}=\cos x\sin x=\frac{1}{2}\sin 2x$.
 当$x\in\left[\frac{\pi}{2},\pi\right]$时，同样的作图方法，但此时$|PM|=\sin(\pi - x)=\sin x$，$|OM|=\cos(\pi - x)=-\cos x$，于是$|MD|=\frac{|OM||PM|}{|OP|}=\frac{-\cos x\cdot\sin x}{1}=-\frac{1}{2}\sin 2x$.
-综上，$f(x)=\frac{1}{2}|\sin 2x|$，$x\in[0,\pi]$. 选 (B).",,11cm,2026-04-06
+综上，$f(x)=\frac{1}{2}|\sin 2x|$，$x\in[0,\pi]$. 选 (B).",2026-05-14:对,11cm,2026-04-06
 数学,基础30讲,基础30讲-例0-57,设$0 < x < \frac{\pi}{2}$，证明$\cos x < \frac{\sin x}{x} < 1$,y,基础30讲-例0-57,*,错题,"如图 17 所示，作一单位圆，并在该单位圆中作$\angle COB = x(0 < x < \frac{\pi}{2})$，过点$C$作切线$CA$，交$OB$延长线于点$A$，过点$B$作$OC$的垂线$BD$，交$OC$于点$D$. 设圆心角$x$所对的$\overset{\frown}{BC}$的长为$l$.
 由$S_{\triangle OBC} < S_{扇形 OBC} < S_{\triangle OAC}$，即
 \[
@@ -278,7 +278,7 @@ f(x)=\lim_{n \to \infty} \frac{\frac{x^2}{n} + x(1 - x)\sin^2 \pi x}{\frac{1}{n}
 &\text{原式} = \lim_{x \to +\infty} x \cdot \left[ x \left( e^{\frac{1}{x}} - 1 \right) - 1 \right] \\
 &= \lim_{x \to +\infty} \frac{x \left( e^{\frac{1}{x}} - 1 \right) - 1}{\frac{1}{x}} \\
 &\xlongequal{令 u = \frac{1}{x}} \lim_{u \to 0^{+}} \frac{e^{u} - 1 - u}{u^{2}} = \lim_{u \to 0^{+}} \frac{e^{u} - 1}{2u} = \frac{1}{2}
-\end{align*}",,11cm,2026-04-13
+\end{align*}",2026-05-14:对,11cm,2026-04-13
 数学,基础30讲,基础30讲-例1-35,"设函数$f(x)=\frac{\sin x}{1+x^2}$在$x=0$处的3次泰勒多项式为$ax+bx^2+cx^3$，则（  ）. (A)$a=1,b=0,c=-\frac{7}{6}$ (B)$a=1,b=0,c=\frac{7}{6}$ (C)$a=-1,b=-1,c=-\frac{7}{6}$ (D)$a=-1,b=-1,c=\frac{7}{6}$",n,基础30讲-例1-35,*,错题,"\textbf{\textcolor{red}{方法一}}：由于在$x = 0$处有泰勒展开式
 \[
 \sin x = x - \frac{x^3}{3!} + \cdots,\frac{1}{1 + x^2} = 1 - x^2 + x^4 - \cdots
@@ -350,7 +350,7 @@ $f(x)$的定义域为$\{x|x\in(-\infty, +\infty), x\neq -1, x\neq 0, x\neq 1, x\
 \lim_{x \to \infty} \left(\frac{x + 2}{x - 1}\right)^x&=\lim_{x \to \infty} \frac{\left(1 + \frac{2}{x}\right)^x}{\left(1 - \frac{1}{x}\right)^x}\\
 &=\frac{\lim_{x \to \infty} \left(1 + \frac{2}{x}\right)^x}{\lim_{x \to \infty} \left(1 - \frac{1}{x}\right)^x}\\
 &=\frac{e^2}{e^{-1}} = e^3
-\end{align*}",,11cm,2026-04-13
+\end{align*}",2026-05-14:对,11cm,2026-04-13
 数学,基础30讲,基础30讲-习1-11,设$f(x)=\arcsin(\sin x)$，画出$f(x)$的图形,y,基础30讲-习1-11,*,错题,"\begin{align*}
 &\text{因为 }f(x + 2\pi)=\arcsin[\sin(x + 2\pi)]=\arcsin(\sin x)=f(x)，\text{ 故 }f(x)\text{ 以 }2\pi\text{ 为周期}.\\
 &\text{当 }x\in\left[-\frac{\pi}{2},\frac{\pi}{2}\right]\text{ 时，有 }\arcsin(\sin x)=x；\\
@@ -1043,7 +1043,7 @@ I = \int_{0}^{1}\frac{1}{x^{a}+x^{b}}\mathrm{d}x + \int_{1}^{+\infty}\frac{1}{x^
 数学,基础30讲,基础30讲-例9-1,"$\int \frac{\sqrt{x}}{\sqrt{4-x^3}} \, dx$",n,基础30讲-例9-1,*,错题,"\begin{align*}
 \int\frac{\sqrt{x}}{\sqrt{4 - x^3}}dx&=\frac{2}{3}\int\frac{d(x^{\frac{3}{2}})}{\sqrt{4 - (x^{\frac{3}{2}})^2}}=\frac{2}{3}\int\frac{d(x^{\frac{3}{2}})}{2\sqrt{1 - (\frac{1}{2}x^{\frac{3}{2}})^2}}\\
 &=\frac{2}{3}\int\frac{d(\frac{1}{2}x^{\frac{3}{2}})}{\sqrt{1 - (\frac{1}{2}x^{\frac{3}{2}})^2}}=\frac{2}{3}\arcsin(\frac{1}{2}x^{\frac{3}{2}})+C
-\end{align*}",2026-05-14:半对、扣分点、缺少常数C,11cm,2026-04-13
+\end{align*}","2026-05-14:半对、扣分点、缺少常数C",11cm,2026-04-13
 数学,基础30讲,基础30讲-例9-4,求不定积分$\int \frac{x \mathrm{e}^{x}}{\sqrt{\mathrm{e}^{x}-1}} \mathrm{d}x$,n,基础30讲-例9-4,*,错题,"令$u = \sqrt{e^x - 1}$，则$x = \ln(1 + u^2)$，$dx = \frac{2u}{1 + u^2}du$，从而
 \begin{align*}
 \int\frac{xe^x}{\sqrt{e^x - 1}}dx&=\int\frac{(1 + u^2)\ln(1 + u^2)}{u}\cdot\frac{2u}{1 + u^2}du = 2\int\ln(1 + u^2)du\\
@@ -1132,7 +1132,7 @@ A - B + C = -1
 \begin{align*}
 \int_{0}^{1} \arcsin \sqrt{1 - x^2} \mathrm{d}x &\stackrel{x = \cos t}{=} \int_{-\frac{\pi}{2}}^{0} \arcsin(-\sin t) \cdot (-\sin t) \mathrm{d}t\\
 &= \int_{-\frac{\pi}{2}}^{0} t\sin t \mathrm{d}t = -t\cos t\big|_{-\frac{\pi}{2}}^{0} + \sin t\big|_{-\frac{\pi}{2}}^{0} = 1
-\end{align*}",,11cm,2026-04-13
+\end{align*}",2026-05-14:对,11cm,2026-04-13
 数学,基础30讲,基础30讲-例9-15,$\int_{0}^{1} x \arcsin \sqrt{4x-4x^{2}} \mathrm{d} x = \underline{\qquad}$,n,基础30讲-例9-15,*,错题,"\begin{align*}
 &\int_{0}^{1}x\arcsin\sqrt{4x - 4x^2}\mathrm{d}x=\int_{0}^{1}x\arcsin\sqrt{1 - (1 - 2x)^2}\mathrm{d}x\\
 &\xlongequal{令1 - 2x = t}\frac{1}{2}\int_{1}^{-1}(1 - t)\arcsin\sqrt{1 - t^2}\left(-\frac{1}{2}\mathrm{d}t\right)=\frac{1}{4}\int_{-1}^{1}(1 - t)\arcsin\sqrt{1 - t^2}\mathrm{d}t\\
@@ -1323,7 +1323,7 @@ x+\frac{1}{2}+C, & -1\leq x\leq 1, \\
 当$x\geq 0$时，
 \[
 \text{原式}=\int_{-1}^{0}(1 + t)dt + \int_{0}^{x}(1 - t)dt = 1 - \frac{1}{2}(1 - x)^2
-\]",,11cm,2026-04-13
+\]",2026-05-14:对,11cm,2026-04-13
 数学,基础30讲,基础30讲-习9-16,求连续函数$f(x)$，使它满足$\int_{0}^{1} f(tx)dt = f(x) + x\sin x$,n,基础30讲-习9-16,*,错题,"当$x\neq 0$时，令$tx = u$，则原式$=\frac{1}{x}\int_{0}^{x}f(u)du = f(x)+x\sin x$，即
 \[
 \int_{0}^{x}f(u)du = xf(x)+x^{2}\sin x
@@ -1397,7 +1397,7 @@ x^2-\frac{1}{2},&0\leq x<1,\\
 于是所求的平面图形面积为
 \[
 S = 4\int_{0}^{\frac{\pi}{4}}\frac{1}{2}a^{2}\cos 2\theta\mathrm{d}\theta = a^{2}\sin 2\theta\big|_{0}^{\frac{\pi}{4}} = a^{2}
-\]",,11cm,2026-04-13
+\]",2026-05-14:对,11cm,2026-04-13
 数学,基础30讲,基础30讲-例10-4,求曲线$y=e^{-x}\sin x(x\ge0)$与$x$轴所围平面图形的面积。,y,基础30讲-例10-4,*,错题,"\begin{align*}
 S&=\int_{0}^{+\infty} \mathrm{e}^{-x}|\sin x| \mathrm{d}x=\lim_{n \to +\infty} \sum_{k = 0}^{n} \left|\int_{k\pi}^{(k + 1)\pi} \mathrm{e}^{-x} \sin x \mathrm{d}x\right|\\
 \end{align*}
