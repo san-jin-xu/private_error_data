@@ -516,7 +516,7 @@ f'(x + T)&=\lim_{\Delta x\to 0}\frac{f(x + T+\Delta x)-f(x + T)}{\Delta x}\\
 &=f'(x)
 \end{align*}
 故$f'(x)$也是以$T$为周期的周期函数.
-对于选项 (D)，举反例：$f(x)=\sqrt{x}(x\in(0,1])$有界，而$f'(x)=\frac{1}{2\sqrt{x}}(x\in(0,1])$无界. 应选 (D).",,11cm,2026-04-13
+对于选项 (D)，举反例：$f(x)=\sqrt{x}(x\in(0,1])$有界，而$f'(x)=\frac{1}{2\sqrt{x}}(x\in(0,1])$无界. 应选 (D).",2026-05-16:对,11cm,2026-04-13
 数学,基础30讲,基础30讲-例3-3,设$f(x)$在$x=0$的某邻域内有定义，并且$|f(x)|\le1-\cos x$，则$f(x)$在$x=0$处（ ）. (A) 极限存在但不连续 (B) 连续但不可导 (C) 可导且$f'(0)=0$ (D) 可导且$f'(0)\ne0$,n,基础30讲-例3-3,*,错题,"应选 (C).
 可分为三个层次去做题.
 第一层次：夹逼准则找极限.
@@ -526,7 +526,7 @@ f'(x + T)&=\lim_{\Delta x\to 0}\frac{f(x + T+\Delta x)-f(x + T)}{\Delta x}\\
 $|f(x) - f(0)| = |f(x) - 0| = |f(x)|\leq 1 - \cos x$.
 第三层次：夹逼准则找极限，此时极限是导数的定义.
 $0\leq\left|\frac{f(x) - f(0)}{x - 0}\right|\leq\frac{1 - \cos x}{|x|}$.
-因为$\lim_{x \to 0}\frac{1 - \cos x}{|x|} = \lim_{x \to 0}\frac{\frac{1}{2}x^2}{|x|} = 0$，再次使用夹逼准则，有$\lim_{x \to 0}\left|\frac{f(x) - f(0)}{x - 0}\right| = 0$，也即$\lim_{x \to 0}\frac{f(x) - f(0)}{x - 0} = 0$，故$f'(0) = 0$，应选 (C).",,11cm,2026-04-13
+因为$\lim_{x \to 0}\frac{1 - \cos x}{|x|} = \lim_{x \to 0}\frac{\frac{1}{2}x^2}{|x|} = 0$，再次使用夹逼准则，有$\lim_{x \to 0}\left|\frac{f(x) - f(0)}{x - 0}\right| = 0$，也即$\lim_{x \to 0}\frac{f(x) - f(0)}{x - 0} = 0$，故$f'(0) = 0$，应选 (C).",2026-05-16:对,11cm,2026-04-13
 数学,基础30讲,基础30讲-例3-5,设$f(x)$在$x=a$处连续，$F(x)=f(x)|x-a|$，则$f(a)=0$是$F(x)$在$x=a$处可导的（ ）. (A) 充要条件 (B) 充分非必要条件 (C) 必要非充分条件 (D) 既非充分又非必要条件,n,基础30讲-例3-5,***,不简洁,"应选 (A).
 由题意得，
 \[
@@ -938,7 +938,7 @@ I&=\int_{0}^{a} f(x) \mathrm{d}x + \int_{0}^{b} \varphi(y) \mathrm{d}y\\
 \begin{align*}
 &\lim_{n \to \infty} \left( \frac{n + 1}{n^2 + 1} + \frac{n + 2}{n^2 + 4} + \frac{n + 3}{n^2 + 9} + \cdots + \frac{n + n}{n^2 + n^2} \right) = \lim_{n \to \infty} \sum_{i = 1}^{n} \frac{n + i}{n^2 + i^2}\\
 =&\lim_{n \to \infty} \sum_{i = 1}^{n} \frac{n^2 + ni}{n^2 + i^2} \cdot \frac{1}{n} = \lim_{n \to \infty} \sum_{i = 1}^{n} \frac{1 + \frac{i}{n}}{1 + \left( \frac{i}{n} \right)^2} \cdot \frac{1}{n} = \int_{0}^{1} \frac{1 + x}{1 + x^2} dx
-\end{align*}",,11cm,2026-04-13
+\end{align*}",2026-05-16:对,11cm,2026-04-13
 数学,基础30讲,基础30讲-例8-7,"设$f(x)$是$[a,b]$上非负的连续函数，且$f(x)$不恒等于零，证明必有$\int_{a}^{b}f(x)\,\mathrm{d}x>0$",n,基础30讲-例8-7,***,不规范,"因函数$f(x)$在$[a,b]$上不恒等于零，且非负，故至少存在一点$x_0\in(a,b)$，使得$f(x_0)\neq0$，即$f(x_0)>0$。
 由连续函数的局部保号性知，存在$\delta>0$与$\eta>0$，使得当$x\in[x_0 - \delta,x_0 + \delta]\subset[a,b]$时，恒有$f(x)\geq\eta>0$。
 根据定积分的不等式性质，有$\int_{a}^{b}f(x)dx\geq\int_{x_0 - \delta}^{x_0 + \delta}f(x)dx\geq\eta\int_{x_0 - \delta}^{x_0 + \delta}dx = 2\eta\delta>0$。",,11cm,2026-04-13
@@ -1043,7 +1043,7 @@ I = \int_{0}^{1}\frac{1}{x^{a}+x^{b}}\mathrm{d}x + \int_{1}^{+\infty}\frac{1}{x^
 数学,基础30讲,基础30讲-例9-1,"$\int \frac{\sqrt{x}}{\sqrt{4-x^3}} \, dx$",n,基础30讲-例9-1,*,错题,"\begin{align*}
 \int\frac{\sqrt{x}}{\sqrt{4 - x^3}}dx&=\frac{2}{3}\int\frac{d(x^{\frac{3}{2}})}{\sqrt{4 - (x^{\frac{3}{2}})^2}}=\frac{2}{3}\int\frac{d(x^{\frac{3}{2}})}{2\sqrt{1 - (\frac{1}{2}x^{\frac{3}{2}})^2}}\\
 &=\frac{2}{3}\int\frac{d(\frac{1}{2}x^{\frac{3}{2}})}{\sqrt{1 - (\frac{1}{2}x^{\frac{3}{2}})^2}}=\frac{2}{3}\arcsin(\frac{1}{2}x^{\frac{3}{2}})+C
-\end{align*}","2026-05-14:半对、扣分点、缺少常数C",11cm,2026-04-13
+\end{align*}",2026-05-14:半对、扣分点、缺少常数C,11cm,2026-04-13
 数学,基础30讲,基础30讲-例9-4,求不定积分$\int \frac{x \mathrm{e}^{x}}{\sqrt{\mathrm{e}^{x}-1}} \mathrm{d}x$,n,基础30讲-例9-4,*,错题,"令$u = \sqrt{e^x - 1}$，则$x = \ln(1 + u^2)$，$dx = \frac{2u}{1 + u^2}du$，从而
 \begin{align*}
 \int\frac{xe^x}{\sqrt{e^x - 1}}dx&=\int\frac{(1 + u^2)\ln(1 + u^2)}{u}\cdot\frac{2u}{1 + u^2}du = 2\int\ln(1 + u^2)du\\
@@ -1858,11 +1858,12 @@ y = -\frac{1}{z}
 曲线$y=x^{2}+ax$与直线$y=bx$的交点的横坐标分别为$x_{1}=0,x_{2}=b - a$，
 \begin{align*}
 &\text{于是面积 }\\
-&S=\int_{0}^{b - a}[bx-(x^{2}+ax)]dx=\frac{1}{6}(b - a)^{3}，\text{ 注意到 }\frac{1}{6}(b - a)^{3}\text{ 的最值点与 }b - a\text{ 的最值点是一样的，故转化成求 }S^{*}=b - a\text{ 在条件 }a^{2}+b^{2}=1(a\leq0,b\geq0)\text{ 下的最值点，利用拉格朗日乘数法，令 }F(a,b,\lambda)=b - a+\lambda(a^{2}+b^{2}-1)，\text{ 由}\\
+&S=\int_{0}^{b - a}[bx-(x^{2}+ax)]dx=\frac{1}{6}(b - a)^{3}，\text{ 注意到 }\frac{1}{6}(b - a)^{3}\text{ 的最值点与 }b - a\text{ 的最值点是一样的，故转化成求 }\\
+&S^{*}=b - a\text{ 在条件 }a^{2}+b^{2}=1(a\leq0,b\geq0)\text{ 下的最值点，利用拉格朗日乘数法，令 }F(a,b,\lambda)=b - a+\lambda(a^{2}+b^{2}-1)，\text{ 由}\\
 &F_{a}'=-1 + 2\lambda a = 0,F_{b}'=1 + 2\lambda b = 0,F_{\lambda}'=a^{2}+b^{2}-1 = 0，\\
 &\text{解得驻点 }(a,b)=(-\frac{\sqrt{2}}{2},\frac{\sqrt{2}}{2})，\text{ 此时 }S=\frac{\sqrt{2}}{3}，\text{ 又当 }a = 0,b = 1\text{ 时，}S=\frac{1}{6}；\text{ 当 }a=-1,b = 0\text{ 时，}S=\frac{1}{6}，\\
 &\text{比较以上函数值，知所求区域面积的最大值是 }\frac{\sqrt{2}}{3}，\text{ 最小值是 }\frac{1}{6}。
-\end{align*}",,11cm,2026-04-13
+\end{align*}",2026-05-16:对,11cm,2026-04-13
 数学,基础30讲,基础30讲-例13-21,求曲线$x^2+4y^2=4$上到直线$2x+3y-6=0$的距离最近的点,n,基础30讲-例13-21,***,其他方法,"\textbf{\textcolor{red}{方法一}}：
 设$P(x,y)$为曲线$x^{2}+4y^{2}=4$上任意一点，则点$P$到直线$2x + 3y - 6 = 0$的距离
 \[
@@ -2590,7 +2591,7 @@ a_n&=\frac{2}{\pi}\int_{0}^{\pi}f(x)\cos nxdx=\frac{2}{\pi}\left(\int_{0}^{\pi}\
 \[
 f(x)=1 - x^2\sim S(x)=\frac{a_0}{2}+\sum_{n = 1}^{\infty}a_n\cos nx = 1 - \frac{\pi^2}{3}+\sum_{n = 1}^{\infty}\frac{4\cdot(-1)^{n + 1}}{n^2}\cos nx(0\leq x\leq \pi)
 \]
-取$x = 0$，得$1 = 1 - \frac{\pi^2}{3}+\sum_{n = 1}^{\infty}\frac{4\cdot(-1)^{n + 1}}{n^2}$，于是$\sum_{n = 1}^{\infty}\frac{(-1)^{n + 1}}{n^2}=\frac{\pi^2}{12}$.",,15cm,2026-05-02
+取$x = 0$，得$1 = 1 - \frac{\pi^2}{3}+\sum_{n = 1}^{\infty}\frac{4\cdot(-1)^{n + 1}}{n^2}$，于是$\sum_{n = 1}^{\infty}\frac{(-1)^{n + 1}}{n^2}=\frac{\pi^2}{12}$.",2026-05-16:错、公式忘记、带公式出错,15cm,2026-05-02
 数学,基础30讲,基础30讲-习16-4,"若级数$\sum_{n = 2}^{\infty}\left[\sin\frac{1}{n}-k\ln\left(1 - \frac{1}{n}\right)\right]$收敛，则$k = $（  ）.
 (A) $1$
 (B) $2$
