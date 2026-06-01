@@ -1,0 +1,1420 @@
+学科,书本,标题,题干,是否有图片,图片路径,掌握程度,标签,答案,历次反馈,预留空间,首次做题时间
+数学,李永乐线代零基础,李永乐线代零基础-例1-23,证明$D = \begin{vmatrix}1&1&1\\a&b&c\\a^{3}&b^{3}&c^{3}\end{vmatrix}=(b - a)(c - a)(c - b)(a + b + c)$。,n,李永乐线代零基础-例1-23,*,错题、其他方法,"\textbf{\textcolor{red}{方法一}}：
+\begin{align*}
+D&=\begin{vmatrix}1&1&1\\0&b - a&c - a\\0&b^{3}-a^{2}b&c^{3}-ca^{2}\end{vmatrix}=\begin{vmatrix}b - a&c - a\\b(b^{2}-a^{2})&c(c^{2}-a^{2})\end{vmatrix}\\
+&=(b - a)(c - a)\begin{vmatrix}1&1\\b(b + a)&c(c + a)\end{vmatrix}\\
+&=(b - a)(c - a)(c^{2}+ca - b^{2}-ba)\\
+&=(b - a)(c - a)[(c - b)(c + b)+a(c - b)]\\
+&=(b - a)(c - a)(c - b)(a + b + c)
+\end{align*}
+\textbf{\textcolor{red}{方法二}}：构造新的行列式
+\[
+D_{4}=\begin{vmatrix}1&1&1&1\\a&b&c&x\\a^{2}&b^{2}&c^{2}&x^{2}\\a^{3}&b^{3}&c^{3}&x^{3}\end{vmatrix}=1\cdot A_{14}+x\cdot A_{24}+x^{2}\cdot A_{34}+x^{3}\cdot A_{44}=1\cdot A_{14}+x\cdot A_{24}+x^{2}\cdot(-D)+x^{3}\cdot A_{44}
+\]
+这里$D$为所求行列式，又由范德蒙德行列式，可得，
+\begin{align*}
+D_{4}&=(b - a)(c - a)(x - a)(c - b)(x - b)(x - c)\\
+&=(b - a)(c - a)(c - b)[x^{2}-(a + b)x + ab](x - c)
+\end{align*}
+观察$x^{2}$的系数，即
+\[
+-D=(b - a)(c - a)(c - b)[-c-(a + b)]
+\]
+因此$D=(b - a)(c - a)(c - b)(a + b + c)$。",,15cm,2026-05-17
+数学,李永乐线代零基础,李永乐线代零基础-例1-27,"求平面上经过点$A(3,-2)$和$B(-1,4)$两点的直线方程.",n,李永乐线代零基础-例1-27,***,其他方法,"设所求直线方程为$ax + by + c = 0$，设点$P(x,y)$是直线上任一点，由此有：
+\[
+\begin{cases}
+ax + by + c = 0 \\
+3a - 2b + c = 0 \\
+-a + 4b + c = 0
+\end{cases}
+\]
+由于直线方程中的$a,b,c$不可能全为$0$，即关于$a,b,c$的线性方程组必有非零解.由推论2得
+\[
+\begin{vmatrix}
+x & y & 1 \\
+3 & -2 & 1 \\
+-1 & 4 & 1
+\end{vmatrix} = 0
+\]
+计算整理得
+\[
+-6x - 4y + 10 = 0
+\]
+所以直线方程为
+\[
+3x + 2y - 5 = 0
+\]",,10cm,2026-05-17
+数学,李永乐线代零基础,李永乐线代零基础-例2-11,"设$A = E - \alpha\alpha^{\mathrm{T}}, B = E + 2\alpha\alpha^{\mathrm{T}}$，其中$\alpha = \left[\frac{1}{2},0,0,\frac{1}{2}\right]^{\mathrm{T}}$，则$AB =$（  ）.
+(A)$O$
+(B)$E$
+(C)$-E$
+(D)$E + \alpha\alpha^{\mathrm{T}}$",n,李永乐线代零基础-例2-11,*,错题、粗心,"\begin{align*}
+AB&=(E - \alpha\alpha^{\mathrm{T}})(E + 2\alpha\alpha^{\mathrm{T}})\\
+&=E + 2\alpha\alpha^{\mathrm{T}} - \alpha\alpha^{\mathrm{T}} - 2\alpha\alpha^{\mathrm{T}}\alpha\alpha^{\mathrm{T}}\\
+&=E + \alpha\alpha^{\mathrm{T}} - 2\alpha(\alpha^{\mathrm{T}}\alpha)\alpha^{\mathrm{T}}
+\end{align*}
+因为
+\[
+\alpha^{\mathrm{T}}\alpha = \left[\frac{1}{2},0,0,\frac{1}{2}\right]\begin{bmatrix}
+\frac{1}{2}\\
+0\\
+0\\
+\frac{1}{2}
+\end{bmatrix}=\frac{1}{4}+0 + 0+\frac{1}{4}=\frac{1}{2}
+\]
+所以$\alpha\alpha^{\mathrm{T}} - 2\alpha(\alpha^{\mathrm{T}}\alpha)\alpha^{\mathrm{T}} = O$. 故$AB = E$. 选(B).",,10cm,2026-05-21
+数学,李永乐线代零基础,李永乐线代零基础-例2-12,设$\boldsymbol{A}=\begin{bmatrix}1&1&1\\a&b&c\\a^{2}&b^{2}&c^{2}\end{bmatrix}$，则$|2\boldsymbol{A}\boldsymbol{A}^{\mathrm{T}}| = \underline{\quad\quad\quad}$.,n,李永乐线代零基础-例2-12,*,错题,$|2\boldsymbol{A}\boldsymbol{A}^{\mathrm{T}}| = 2^{3}|\boldsymbol{A}||\boldsymbol{A}^{\mathrm{T}}| = 2^{3}|\boldsymbol{A}|^{2} = 8(b - a)^{2}(c - a)^{2}(c - b)^{2}$,,2cm,2026-05-21
+数学,李永乐线代零基础,李永乐线代零基础-例2-15,"已知$\boldsymbol{A}$是$n$阶矩阵，$\boldsymbol{A}^{2}+\boldsymbol{A}-2\boldsymbol{E}=\boldsymbol{O}$，求$\boldsymbol{A}^{-1},(\boldsymbol{A}-2\boldsymbol{E})^{-1}$。",n,李永乐线代零基础-例2-15,*,错题、粗心,"由$\boldsymbol{A}^{2}+\boldsymbol{A}-2\boldsymbol{E}=\boldsymbol{O}$，可得$\boldsymbol{A}^{2}+\boldsymbol{A}=2\boldsymbol{E}$，
+\[
+\boldsymbol{A}(\boldsymbol{A}+\boldsymbol{E}) = 2\boldsymbol{E}
+\]
+所以$\boldsymbol{A}\frac{\boldsymbol{A}+\boldsymbol{E}}{2}=\boldsymbol{E}$. 故
+\[
+\boldsymbol{A}^{-1}=\frac{\boldsymbol{A}+\boldsymbol{E}}{2}
+\]
+由$\boldsymbol{A}-2\boldsymbol{E}$构造$\boldsymbol{A}^{2}+\boldsymbol{A}$，$(\boldsymbol{A}-2\boldsymbol{E})(\boldsymbol{A}+a\boldsymbol{E})=\boldsymbol{A}^{2}+(a - 2)\boldsymbol{A}-2a\boldsymbol{E}=\boldsymbol{A}^{2}+\boldsymbol{A}+(a - 3)\boldsymbol{A}-2a\boldsymbol{E}$.
+可见$a = 3$，满足条件，于是
+\[
+(\boldsymbol{A}-2\boldsymbol{E})(\boldsymbol{A}+3\boldsymbol{E})=\boldsymbol{A}^{2}+\boldsymbol{A}-6\boldsymbol{E}=-4\boldsymbol{E}
+\]
+故$(\boldsymbol{A}-2\boldsymbol{E})^{-1}=-\frac{\boldsymbol{A}+3\boldsymbol{E}}{4}$.",,7cm,2026-05-21
+数学,李永乐线代零基础,李永乐线代零基础-例2-17,设$A$是$n$阶矩阵，证明（1）若$|A| = 0$，则$|A^{*}| = 0$；（2）$|A^{*}| = |A|^{n - 1}$。,n,李永乐线代零基础-例2-17,*,错题,"【证明】（1）由$AA^{*} = A^{*}A = |A|E$，如果$|A| = 0$，则
+\[
+AA^{*} = O
+\]
+用反证法，假设$|A^{*}| \neq 0$，则$A^{*}$可逆，用$(A^{*})^{-1}$右乘①，得$A = O$。
+$\Rightarrow A_{ij} = 0, \forall i,j \Rightarrow A^{*} = O$。这与$A^{*}$可逆相矛盾。
+故当$|A| = 0$时必有$|A^{*}| = 0$。
+（2）分类讨论
+若$|A| = 0$，则$|A^{*}| = 0$，得证。
+若$|A| \neq 0$，由$AA^{*} = A^{*}A = |A|E$，
+\[
+|A||A^{*}| = |AA^{*}| = ||A|E| = |A|^{n}
+\]
+故$|A^{*}| = |A|^{n - 1}$。",,想得久,2026-05-21
+数学,李永乐线代零基础,李永乐线代零基础-例2-18,已知$\boldsymbol{A}$可逆，证明$\boldsymbol{A}^*$可逆，且$(\boldsymbol{A}^*)^{-1} = (\boldsymbol{A}^{-1})^*$。,n,李永乐线代零基础-例2-18,*,错题,"\textbf{\textcolor{red}{方法一：}}
+因为$\boldsymbol{A}$可逆，有$|\boldsymbol{A}| \neq 0$。
+由$\boldsymbol{A}\boldsymbol{A}^* = \boldsymbol{A}^*\boldsymbol{A} = |\boldsymbol{A}|\boldsymbol{E}$，有
+\[
+\boldsymbol{A}^* \cdot \frac{1}{|\boldsymbol{A}|} \cdot \boldsymbol{A} = \frac{1}{|\boldsymbol{A}|} \cdot \boldsymbol{A}^* \cdot \boldsymbol{A} = \boldsymbol{E}
+\]
+所以$\boldsymbol{A}^*$可逆，$(\boldsymbol{A}^*)^{-1} = \frac{1}{|\boldsymbol{A}|}\boldsymbol{A}$。
+\textbf{\textcolor{red}{方法二：}}
+因为$|\boldsymbol{A}^*| = |\boldsymbol{A}|^{n - 1}$，又$|\boldsymbol{A}| \neq 0$，有$|\boldsymbol{A}^*| \neq 0$，因此$\boldsymbol{A}^*$可逆。因为
+\[
+\boldsymbol{A}^{-1} \cdot (\boldsymbol{A}^{-1})^* = |\boldsymbol{A}^{-1}|\boldsymbol{E}
+\]
+两边同时左乘$\boldsymbol{A}$有
+\[
+(\boldsymbol{A}^{-1})^* = |\boldsymbol{A}|^{-1}\boldsymbol{A} = \frac{1}{|\boldsymbol{A}|}\boldsymbol{A}
+\]
+所以
+\[
+(\boldsymbol{A}^*)^{-1} = (\boldsymbol{A}^{-1})^* = \frac{1}{|\boldsymbol{A}|}\boldsymbol{A}
+\]",,6cm,2026-05-21
+数学,李永乐线代零基础,李永乐线代零基础-例2-19,已知$\boldsymbol{A}$是$3$阶矩阵，$|\boldsymbol{A}| = \frac{1}{2}$，求$|(2\boldsymbol{A})^{-1} - 5\boldsymbol{A}^*|$.,n,李永乐线代零基础-例2-19,***,想得久、公式不熟,"\textbf{\textcolor{red}{方法一}}：因为$|\boldsymbol{A}| \neq 0$，所以$\boldsymbol{A}$可逆. 由$(k\boldsymbol{A})^{-1} = \frac{1}{k}\boldsymbol{A}^{-1}$，有
+\[
+(2\boldsymbol{A})^{-1} = \frac{1}{2}\boldsymbol{A}^{-1}
+\]
+又$\boldsymbol{A}^* = |\boldsymbol{A}|\boldsymbol{A}^{-1}$，有
+\[
+5\boldsymbol{A}^* = \frac{5}{2}\boldsymbol{A}^{-1}
+\]
+\begin{align*}
+|(2\boldsymbol{A})^{-1} - 5\boldsymbol{A}^*| &= | - 2\boldsymbol{A}^{-1}| = (-2)^3|\boldsymbol{A}^{-1}|\\
+&= (-2)^3\cdot\frac{1}{|\boldsymbol{A}|} = - 16
+\end{align*}
+\textbf{\textcolor{red}{方法二}}：
+\begin{align*}
+(2\boldsymbol{A})^{-1} &= \frac{1}{2}\boldsymbol{A}^{-1} = \frac{1}{2}\cdot\frac{1}{|\boldsymbol{A}|}\boldsymbol{A}^* = \boldsymbol{A}^*\\
+|(2\boldsymbol{A})^{-1} - 5\boldsymbol{A}^*| &= |\boldsymbol{A}^* - 5\boldsymbol{A}^*| = (-4)^3|\boldsymbol{A}^*|\\
+&= (-4)^3|\boldsymbol{A}|^2 = - 16
+\end{align*}",,9cm,2026-05-21
+数学,李永乐线代零基础,李永乐线代零基础-例2-21,设$A$为$n$阶可逆矩阵，证明非齐次线性方程组$Ax = b$有唯一解$x = A^{-1}b$.,n,李永乐线代零基础-例2-21,*,错题,"**【证明】存在性**：把$A^{-1}b$代入方程组，有
+\[ A(A^{-1}b) = (AA^{-1})b = Eb = b. \]
+所以$A^{-1}b$是方程组$Ax = b$的解.
+**唯一性**：若$\alpha$是方程$Ax = b$的解，则$A\alpha = b$，那么
+\[ A^{-1}(A\alpha) = A^{-1}b, \]
+得$\alpha = A^{-1}b$.
+因为逆矩阵是唯一的，所以方程组$Ax = b$的解唯一.",,6cm,2026-05-21
+数学,李永乐线代零基础,李永乐线代零基础-例2-24,已知$X = ABA$，其中$A = \begin{bmatrix}1&0&0&1\\0&1&1&0\\0&1&-1&0\\1&0&0&-1\end{bmatrix}$，$B = \begin{bmatrix}0&0&0&1\\0&0&1&0\\0&1&0&0\\1&0&0&0\end{bmatrix}$，则$X = \underline{\quad\quad\quad}$.,n,李永乐线代零基础-例2-24,*,错题、粗心、其他方法、分块矩阵,"\begin{align*}
+A&=\begin{bmatrix}1&0&0&1\\0&1&1&0\\0&1&-1&0\\1&0&0&-1\end{bmatrix}\stackrel{\text{记}}{=}\begin{bmatrix}E&C\\C&-E\end{bmatrix},B = \begin{bmatrix}0&0&0&1\\0&0&1&0\\0&1&0&0\\1&0&0&0\end{bmatrix}\stackrel{\text{记}}{=}\begin{bmatrix}O&C\\C&O\end{bmatrix}\\
+X&=\begin{bmatrix}E&C\\C&-E\end{bmatrix}\begin{bmatrix}O&C\\C&O\end{bmatrix}\begin{bmatrix}E&C\\C&-E\end{bmatrix}\\
+\end{align*}
+注意到$C^{2}=\begin{bmatrix}0&1\\1&0\end{bmatrix}\begin{bmatrix}0&1\\1&0\end{bmatrix}=E$，故
+\begin{align*}
+X&=\begin{bmatrix}E&C\\-C&E\end{bmatrix}\begin{bmatrix}E&C\\C&-E\end{bmatrix}=\begin{bmatrix}2E&O\\O&-2E\end{bmatrix}=\begin{bmatrix}2&0&0&0\\0&2&0&0\\0&0&-2&0\\0&0&0&-2\end{bmatrix}
+\end{align*}",,9cm,2026-05-21
+数学,李永乐线代零基础,李永乐线代零基础-例2-26,已知$A$是$3$阶矩阵，且$A^{T}A = O$，证明$A = O$.,n,李永乐线代零基础-例2-26,***,其他方法,"对$A$按列分块，记$A = [\alpha_1,\alpha_2,\alpha_3]$，
+\[
+A^{T}A =
+\begin{bmatrix}
+\alpha_1^{T} \\
+\alpha_2^{T} \\
+\alpha_3^{T}
+\end{bmatrix}
+[\alpha_1,\alpha_2,\alpha_3] =
+\begin{bmatrix}
+\alpha_1^{T}\alpha_1 & \alpha_1^{T}\alpha_2 & \alpha_1^{T}\alpha_3 \\
+\alpha_2^{T}\alpha_1 & \alpha_2^{T}\alpha_2 & \alpha_2^{T}\alpha_3 \\
+\alpha_3^{T}\alpha_1 & \alpha_3^{T}\alpha_2 & \alpha_3^{T}\alpha_3
+\end{bmatrix}
+= O
+\]
+其中$\alpha_1^{T}\alpha_1 = [a_{11},a_{21},a_{31}]
+\begin{bmatrix}
+a_{11} \\
+a_{21} \\
+a_{31}
+\end{bmatrix}
+= a_{11}^{2} + a_{21}^{2} + a_{31}^{2} = 0$. 因此$a_{11} = a_{21} = a_{31} = 0$.
+同理，对任意$i,j$，有$a_{ij} = 0$，即$A = O$.",,8cm,2026-05-21
+数学,李永乐线代零基础,李永乐线代零基础-例2-27,设$A = \begin{bmatrix}1 & 2 & -2\\4 & t & 3\\3 & -1 & 1\end{bmatrix}$，$B$为$3$阶非零矩阵，且$AB = O$，则$t = \underline{\quad\quad\quad}$.,n,李永乐线代零基础-例2-27,*,错题,"把$B$按列分块
+\[
+AB = A[\boldsymbol{\beta}_1,\boldsymbol{\beta}_2,\boldsymbol{\beta}_3] = [A\boldsymbol{\beta}_1,A\boldsymbol{\beta}_2,A\boldsymbol{\beta}_3] = (\boldsymbol{0},\boldsymbol{0},\boldsymbol{0})
+\]
+$\Rightarrow A\boldsymbol{\beta}_1 = \boldsymbol{0},A\boldsymbol{\beta}_2 = \boldsymbol{0},A\boldsymbol{\beta}_3 = \boldsymbol{0}$，$\boldsymbol{\beta}_1,\boldsymbol{\beta}_2,\boldsymbol{\beta}_3$是$Ax = \boldsymbol{0}$的解.
+由$B \neq O$，故$Ax = \boldsymbol{0}$有非零解，故
+\[
+|A| = \begin{vmatrix}1 & 2 & -2\\4 & t & 3\\3 & -1 & 1\end{vmatrix} = 7(t + 3) = 0
+\]
+所以$t = - 3$.",,8cm,2026-05-21
+数学,李永乐线代零基础,李永乐线代零基础-例2-28,设$n$阶矩阵$\boldsymbol{A}$和$\boldsymbol{B}$满足$\boldsymbol{A}+\boldsymbol{B}=\boldsymbol{AB}$，(1) 证明$\boldsymbol{A}-\boldsymbol{E}$为可逆矩阵；(2) 已知$\boldsymbol{B}=\begin{bmatrix}1&-3&0\\2&1&0\\0&0&2\end{bmatrix}$，求$\boldsymbol{A}$.,n,李永乐线代零基础-例2-28,*,错题,"(1) 由$\boldsymbol{A}+\boldsymbol{B}=\boldsymbol{AB}$，
+\begin{align*}
+\boldsymbol{AB}-\boldsymbol{A}-\boldsymbol{B}&=\boldsymbol{O}\\
+\boldsymbol{AB}-\boldsymbol{B}-\boldsymbol{A}+\boldsymbol{E}&=\boldsymbol{E}\\
+(\boldsymbol{A}-\boldsymbol{E})(\boldsymbol{B}-\boldsymbol{E})&=\boldsymbol{E}
+\end{align*}
+所以$\boldsymbol{A}-\boldsymbol{E}$可逆.
+(2) 因为$(\boldsymbol{A}-\boldsymbol{E})(\boldsymbol{B}-\boldsymbol{E})=\boldsymbol{E}$，所以$(\boldsymbol{B}-\boldsymbol{E})^{-1}=\boldsymbol{A}-\boldsymbol{E}$.
+\begin{align*}
+\boldsymbol{A}&=(\boldsymbol{B}-\boldsymbol{E})^{-1}+\boldsymbol{E}=\begin{bmatrix}0&-3&0\\2&0&0\\0&0&1\end{bmatrix}^{-1}+\boldsymbol{E}\\
+&=\begin{bmatrix}0&\frac{1}{2}&0\\-\frac{1}{3}&0&0\\0&0&1\end{bmatrix}+\boldsymbol{E}=\begin{bmatrix}1&\frac{1}{2}&0\\-\frac{1}{3}&1&0\\0&0&2\end{bmatrix}
+\end{align*}",,9cm,2026-05-21
+数学,李永乐线代零基础,李永乐线代零基础-例3-11,设$AB = A + 2B$，且$A=\begin{bmatrix}3&0&1\\1&1&0\\0&1&4\end{bmatrix}$，求$B$。,n,李永乐线代零基础-例3-11,*,错题、粗心,"由$AB = A + 2B$，有$AB - 2B = A$，有$(A - 2E)B = A$。
+又$A - 2E=\begin{bmatrix}1&0&1\\1&-1&0\\0&1&2\end{bmatrix}$可逆，故$B = (A - 2E)^{-1}A$。
+用初等行变换的方法求$B$：
+\begin{align*}
+[A - 2E\vert A]&=\begin{bmatrix}1&0&1&3&0&1\\1&-1&0&1&1&0\\0&1&2&0&1&4\end{bmatrix}\to\begin{bmatrix}1&0&1&3&0&1\\0&-1&-1&-2&1&-1\\0&1&2&0&1&4\end{bmatrix}\\
+&\to\begin{bmatrix}1&0&1&3&0&1\\0&-1&-1&-2&1&-1\\0&0&1&-2&2&3\end{bmatrix}\to\begin{bmatrix}1&0&0&5&-2&-2\\0&-1&0&-4&3&2\\0&0&1&-2&2&3\end{bmatrix}\\
+&\to\begin{bmatrix}1&0&0&5&-2&-2\\0&1&0&4&-3&-2\\0&0&1&-2&2&3\end{bmatrix}
+\end{align*}
+所以$B=\begin{bmatrix}5&-2&-2\\4&-3&-2\\-2&2&3\end{bmatrix}$。",,8cm,2026-05-22
+数学,李永乐线代零基础,李永乐线代零基础-例3-13,"设$\boldsymbol{A}=\begin{bmatrix}0&2&1\\2&-1&3\\-3&3&-4\end{bmatrix},\boldsymbol{B}=\begin{bmatrix}1&2&3\\2&-3&1\end{bmatrix}$，求$\boldsymbol{X}$，使得$\boldsymbol{X}\boldsymbol{A}=\boldsymbol{B}$.",n,李永乐线代零基础-例3-13,*,错题、粗心,"由$|\boldsymbol{A}|\neq 0$，知$\boldsymbol{A}$可逆，$\boldsymbol{X}=\boldsymbol{B}\boldsymbol{A}^{-1}$.
+故$\boldsymbol{X}^{\mathrm{T}}=(\boldsymbol{B}\boldsymbol{A}^{-1})^{\mathrm{T}}=(\boldsymbol{A}^{-1})^{\mathrm{T}}\boldsymbol{B}^{\mathrm{T}}=(\boldsymbol{A}^{\mathrm{T}})^{-1}\boldsymbol{B}^{\mathrm{T}}$.
+\begin{align*}
+[\boldsymbol{A}^{\mathrm{T}}|\boldsymbol{B}^{\mathrm{T}}]&=\begin{bmatrix}0&2&-3&1&2\\2&-1&3&2&-3\\1&3&-4&3&1\end{bmatrix}\to\begin{bmatrix}1&3&-4&3&1\\2&-1&3&2&-3\\0&2&-3&1&2\end{bmatrix}\\
+&\to\begin{bmatrix}1&3&-4&3&1\\0&-7&11&-4&-5\\0&2&-3&1&2\end{bmatrix}\to\begin{bmatrix}1&3&-4&3&1\\0&1&-1&0&3\\0&2&-3&1&2\end{bmatrix}\\
+&\to\begin{bmatrix}1&0&-1&3&-8\\0&1&-1&0&3\\0&0&-1&1&-4\end{bmatrix}\to\begin{bmatrix}1&0&-1&3&-8\\0&1&-1&0&3\\0&0&1&-1&4\end{bmatrix}\\
+&\to\begin{bmatrix}1&0&0&2&-4\\0&1&0&-1&7\\0&0&1&-1&4\end{bmatrix}
+\end{align*}
+有$\boldsymbol{X}^{\mathrm{T}}=\begin{bmatrix}2&-4\\-1&7\\-1&4\end{bmatrix}$. 因此$\boldsymbol{X}=\begin{bmatrix}2&-1&-1\\-4&7&4\end{bmatrix}$.",,15cm,2026-05-22
+数学,李永乐线代零基础,李永乐线代零基础-例3-2,解方程组$\begin{cases}x_1 + x_2 + 3x_3 = 1\\x_1 - x_2 - x_3 = -3\\5x_1 + x_2 + 7x_3 = -3\end{cases}$,n,李永乐线代零基础-例3-2,*,错题,"对增广矩阵进行初等行变换，化成阶梯形，
+\[
+\overline{\mathbf{A}} =
+\begin{bmatrix}
+1 & 1 & 3 & 1\\
+1 & -1 & -1 & -3\\
+5 & 1 & 7 & -3
+\end{bmatrix}
+\to
+\begin{bmatrix}
+1 & 1 & 3 & 1\\
+0 & -2 & -4 & -4\\
+0 & -4 & -8 & -8
+\end{bmatrix}
+\]
+\[
+\to
+\begin{bmatrix}
+1 & 1 & 3 & 1\\
+0 & 1 & 2 & 2\\
+0 & 0 & 0 & 0
+\end{bmatrix}
+\to
+\begin{bmatrix}
+1 & 0 & 1 & -1\\
+0 & 1 & 2 & 2\\
+0 & 0 & 0 & 0
+\end{bmatrix}
+\]
+化成同解方程组
+\[
+\begin{cases}x_1 + x_3 = -1\\x_2 + 2x_3 = 2\end{cases}
+\]
+自由变量$x_3$，令$x_3 = t$，有
+\[
+\begin{cases}x_1 = -1 - t\\x_2 = 2 - 2t\\x_3 = t\end{cases}
+\]
+故$\begin{pmatrix}x_1\\x_2\\x_3\end{pmatrix} = \begin{pmatrix}-1\\2\\0\end{pmatrix} + t\begin{pmatrix}-1\\-2\\1\end{pmatrix}$，$t$是任意常数. 这个方程组有无穷多个解.",,10cm,2026-05-22
+数学,李永乐线代零基础,李永乐线代零基础-例3-8,已知$\boldsymbol{A}=\begin{bmatrix}1& -1& -1& 3\\2& -1& -3& 1\\3& 2& -5& 2\end{bmatrix}$，化成行最简矩阵。,n,李永乐线代零基础-例3-8,*,错题、粗心,"\begin{align*}
+\boldsymbol{A}&=\begin{bmatrix}1& -1& -1& 3\\2& -1& -3& 1\\3& 2& -5& 2\end{bmatrix}\to\begin{bmatrix}1& -1& -1& 3\\0& 1& -1& -5\\0& 5& -2& -7\end{bmatrix}\\
+&\to\begin{bmatrix}1& 0& -2& -2\\0& 1& -1& -5\\0& 0& 3& 18\end{bmatrix}\to\begin{bmatrix}1& 0& -2& -2\\0& 1& -1& -5\\0& 0& 1& 6\end{bmatrix}\\
+&\to\begin{bmatrix}1& 0& 0& 10\\0& 1& 0& 1\\0& 0& 1& 6\end{bmatrix}
+\end{align*}",,5cm,2026-05-22
+数学,李永乐线代零基础,李永乐线代零基础-例3-17,"解齐次方程组$\begin{cases}x_1 - 2x_2 + x_3 + 2x_4 = 0,\\x_1 + x_2 - 2x_3 - 4x_4 = 0,\\x_1 - 5x_2 + 4x_3 + 8x_4 = 0.\end{cases}$",n,李永乐线代零基础-例3-17,*,错题,"对系数矩阵作初等行变换，
+\begin{align*}
+\boldsymbol{A}&=\begin{bmatrix}
+1& -2&1&2\\
+1&1& -2& -4\\
+1& -5&4&8
+\end{bmatrix}\to\begin{bmatrix}
+1& -2&1&2\\
+0&3& -3& -6\\
+0& -3&3&6
+\end{bmatrix}\\
+&\to\begin{bmatrix}
+1& -2&1&2\\
+0&1& -1& -2\\
+0&0&0&0
+\end{bmatrix}\to\begin{bmatrix}
+1&0& -1& -2\\
+0&1& -1& -2\\
+0&0&0&0
+\end{bmatrix},
+\end{align*}
+转化为求同解方程组
+\[\begin{cases}x_1 - x_3 - 2x_4 = 0,\\x_2 - x_3 - 2x_4 = 0.\end{cases}\]
+自由变量：$x_3,x_4$，有$\begin{cases}x_1 = t + 2u,\\x_2 = t + 2u,\\x_3 = t,\\x_4 = u,\end{cases}$或$\boldsymbol{x}=t\begin{bmatrix}1\\1\\1\\0\end{bmatrix}+u\begin{bmatrix}2\\2\\0\\1\end{bmatrix}$，$t,u$是任意常数.",,10cm,2026-05-24
+数学,李永乐线代零基础,李永乐线代零基础-例3-18,解方程组$\begin{cases}x_1 + x_2 + x_3 = 5 \\ 3x_1 + 2x_2 + x_3 = 13 \\ x_2 + 2x_3 = 2\end{cases}$,n,李永乐线代零基础-例3-18,*,错题、粗心,"对增广矩阵作初等行变换
+\[
+\overline{\mathbf{A}} =
+\begin{bmatrix}
+1 & 1 & 1 & 5 \\
+3 & 2 & 1 & 13 \\
+0 & 1 & 2 & 2
+\end{bmatrix}
+\to
+\begin{bmatrix}
+1 & 1 & 1 & 5 \\
+0 & -1 & -2 & -2 \\
+0 & 1 & 2 & 2
+\end{bmatrix}
+\to
+\begin{bmatrix}
+1 & 1 & 1 & 5 \\
+0 & 1 & 2 & 2 \\
+0 & 0 & 0 & 0
+\end{bmatrix}
+\to
+\begin{bmatrix}
+1 & 0 & -1 & 3 \\
+0 & 1 & 2 & 2 \\
+0 & 0 & 0 & 0
+\end{bmatrix}
+\]
+同解方程组：$\begin{cases}x_1 - x_3 = 3 \\ x_2 + 2x_3 = 2\end{cases}$
+令$x_3 = t$，方程组有无穷解
+$\begin{cases}x_1 = 3 + t \\ x_2 = 2 - 2t \\ x_3 = t\end{cases}$或$\begin{bmatrix}x_1 \\ x_2 \\ x_3\end{bmatrix} = \begin{bmatrix}3 \\ 2 \\ 0\end{bmatrix} + t\begin{bmatrix}1 \\ -2 \\ 1\end{bmatrix}$，$t$是任意常数。",,5cm,2026-05-24
+数学,李永乐线代零基础,李永乐线代零基础-例3-19,"解方程组$\begin{cases}(1 + \lambda)x_1 + x_2 + x_3 = 0,\\x_1 + (1 + \lambda)x_2 + x_3 = 3,\\x_1 + x_2 + (1 + \lambda)x_3 = \lambda.\end{cases}$",n,李永乐线代零基础-例3-19,*,错题、爪型、考虑不充分,"对增广矩阵作初等行变换
+\[
+\overline{\boldsymbol{A}} =
+\begin{bmatrix}
+1 + \lambda & 1 & 1 & 0\\
+1 & 1 + \lambda & 1 & 3\\
+1 & 1 & 1 + \lambda & \lambda
+\end{bmatrix}
+\to
+\begin{bmatrix}
+1 + \lambda & 1 & 1 & 0\\
+-\lambda & \lambda & 0 & 3\\
+-\lambda & 0 & \lambda & \lambda
+\end{bmatrix}
+\]
+当$\lambda = 0$，
+\[
+\overline{\boldsymbol{A}} \to
+\begin{bmatrix}
+1 & 1 & 1 & 0\\
+0 & 0 & 0 & 3\\
+0 & 0 & 0 & 0
+\end{bmatrix}
+\]
+$r(\boldsymbol{A}) = 1,r(\overline{\boldsymbol{A}}) = 2$.
+方程组无解.
+当$\lambda \neq 0$时，
+\[
+\overline{\boldsymbol{A}} \to
+\begin{bmatrix}
+1 + \lambda & 1 & 1 & 0\\
+-1 & 1 & 0 & \frac{3}{\lambda}\\
+-1 & 0 & 1 & 1
+\end{bmatrix}
+\to
+\begin{bmatrix}
+3 + \lambda & 0 & 0 & -\frac{3 + \lambda}{\lambda}\\
+-1 & 1 & 0 & \frac{3}{\lambda}\\
+-1 & 0 & 1 & 1
+\end{bmatrix}
+\]
+若$\lambda \neq 0$且$\lambda \neq - 3$，$r(\boldsymbol{A}) = r(\overline{\boldsymbol{A}}) = 3$，方程组有唯一解
+\[
+\begin{cases}
+x_1 = -\frac{1}{\lambda},\\
+x_2 = \frac{2}{\lambda},\\
+x_3 = 1 - \frac{1}{\lambda}.
+\end{cases}
+\]
+若$\lambda = - 3$，$r(\boldsymbol{A}) = r(\overline{\boldsymbol{A}}) = 2$，方程组有无穷多解，则
+\[
+\overline{\boldsymbol{A}} \to
+\begin{bmatrix}
+0 & 0 & 0 & 0\\
+-1 & 1 & 0 & -1\\
+-1 & 0 & 1 & 1
+\end{bmatrix}
+\to
+\begin{bmatrix}
+-1 & 1 & 0 & -1\\
+-1 & 0 & 1 & 1\\
+0 & 0 & 0 & 0
+\end{bmatrix}
+\]
+同解方程组：$\begin{cases}-x_1 + x_2 = -1,\\-x_1 + x_3 = 1.\end{cases}$
+这里选$x_1$作为自由变量，设$x_1 = t$，则$x_2 = t - 1,x_3 = t + 1$，即
+\[
+\begin{cases}
+x_1 = t\\
+x_2 = t - 1\\
+x_3 = t + 1
+\end{cases}
+\]
+或
+\[
+\begin{bmatrix}
+x_1\\
+x_2\\
+x_3
+\end{bmatrix}
+= t
+\begin{bmatrix}
+1\\
+1\\
+1
+\end{bmatrix}
++
+\begin{bmatrix}
+0\\
+-1\\
+1
+\end{bmatrix}
+,t为任意常数.
+\]",,15cm,2026-05-24
+数学,李永乐线代零基础,李永乐线代零基础-习1-1,计算行列式$D = \begin{vmatrix}x&-1&0&0\\0&x&-1&0\\0&0&x&-1\\a_4&a_3&a_2&x + a_1\end{vmatrix}$。,n,李永乐线代零基础-习1-1,***,其他方法,"\begin{align*}
+D&=\begin{vmatrix}0&-1&0&0\\x^2&x&-1&0\\0&0&x&-1\\a_4 + a_3x&a_3&a_2&x + a_1\end{vmatrix}\\
+&=\begin{vmatrix}0&-1&0&0\\0&x&-1&0\\x^3&0&x&-1\\a_4 + a_3x + a_2x^2&a_3&a_2&x + a_1\end{vmatrix}\\
+&=\begin{vmatrix}0&-1&0&0\\0&x&-1&0\\0&0&x&-1\\a_4 + a_3x + a_2x^2 + a_1x^3 + x^4&a_3&a_2&x + a_1\end{vmatrix}
+\end{align*}
+按第一列展开，有
+\begin{align*}
+D&=(x^4 + a_1x^3 + a_2x^2 + a_3x + a_4)\cdot(-1)^{4 + 1}\cdot\begin{vmatrix}-1&0&0\\x&-1&0\\0&x&-1\end{vmatrix}\\
+&=x^4 + a_1x^3 + a_2x^2 + a_3x + a_4
+\end{align*}",,10cm,2026-05-24
+数学,李永乐线代零基础,李永乐线代零基础-习1-2,$A$是$3$阶矩阵，$|A| = 3$，交换$A$的第一行和第二行得到矩阵$B$，则$|BA^{*}| = \underline{\quad\quad\quad}$.,n,李永乐线代零基础-习1-2,***,其他方法,"\textbf{\textcolor{red}{方法一}}：$|B|=-|A|=-3$，$|A^{*}| = |A|^{3 - 1} = 9$，则$|BA^{*}|=-|A|\cdot|A|^{3 - 1}=-27$.
+\textbf{\textcolor{red}{方法二}}：由$\begin{bmatrix}0&1&0\\1&0&0\\0&0&1\end{bmatrix}A = B$，可得
+\[
+BA^{*} = \begin{bmatrix}0&1&0\\1&0&0\\0&0&1\end{bmatrix}AA^{*} = |A|\begin{bmatrix}0&1&0\\1&0&0\\0&0&1\end{bmatrix}E = 3\begin{bmatrix}0&1&0\\1&0&0\\0&0&1\end{bmatrix}
+\]
+所以
+\[
+|BA^{*}| = 3^{3}\begin{vmatrix}0&1&0\\1&0&0\\0&0&1\end{vmatrix}=-27
+\]",,4cm,2026-05-24
+数学,李永乐线代零基础,李永乐线代零基础-习1-6,设3阶矩阵$\boldsymbol{X}$满足$\boldsymbol{AX}=\boldsymbol{B}+2\boldsymbol{X}$，其中$\boldsymbol{A}=\begin{bmatrix}3&1&1\\0&1&2\\0&0&4\end{bmatrix}$，$\boldsymbol{B}=\begin{bmatrix}1&1&0\\1&0&2\\2&0&2\end{bmatrix}$，求$\boldsymbol{X}$.,n,李永乐线代零基础-习1-6,*,错题、粗心,"\textbf{\textcolor{red}{方法一}}：
+由$\boldsymbol{AX}=\boldsymbol{B}+2\boldsymbol{X}$，得$(\boldsymbol{A}-2\boldsymbol{E})\boldsymbol{X}=\boldsymbol{B}$. 由
+\[
+|\boldsymbol{A}-2\boldsymbol{E}|=\begin{vmatrix}
+1&1&1\\
+0&-1&2\\
+0&0&2
+\end{vmatrix}=-2\neq 0
+\]
+所以
+\begin{align*}
+\boldsymbol{X}&=(\boldsymbol{A}-2\boldsymbol{E})^{-1}\boldsymbol{B}\\
+&=-\frac{1}{2}\begin{bmatrix}
+-2&-2&3\\
+0&2&-2\\
+0&0&-1
+\end{bmatrix}\begin{bmatrix}
+1&1&0\\
+1&0&2\\
+2&0&2
+\end{bmatrix}=\begin{bmatrix}
+-1&1&-1\\
+1&0&0\\
+1&0&1
+\end{bmatrix}
+\end{align*}
+\textbf{\textcolor{red}{方法二}}：
+或者用初等行变换
+\begin{align*}
+(\boldsymbol{A}-2\boldsymbol{E},\boldsymbol{B})&=\begin{bmatrix}
+1&1&1&1&1&0\\
+0&-1&2&1&0&2\\
+0&0&2&2&0&2
+\end{bmatrix}\to\begin{bmatrix}
+1&1&1&1&1&0\\
+0&-1&0&-1&0&0\\
+0&0&1&1&0&1
+\end{bmatrix}\\
+&\to\begin{bmatrix}
+1&1&0&0&1&-1\\
+0&1&0&1&0&0\\
+0&0&1&1&0&1
+\end{bmatrix}\to\begin{bmatrix}
+1&0&0&-1&1&-1\\
+0&1&0&1&0&0\\
+0&0&1&1&0&1
+\end{bmatrix}
+\end{align*}
+故$\boldsymbol{X}=\begin{bmatrix}
+-1&1&-1\\
+1&0&0\\
+1&0&1
+\end{bmatrix}$.",,9cm,2026-05-24
+数学,李永乐线代零基础,李永乐线代零基础-例4-11,"设$A,B$均为3阶矩阵，且$AB = C$. 证明：$C$的列向量可由$A$的列向量线性表出. 若$B$可逆，则$C$和$A$的列向量组等价.",n,李永乐线代零基础-例4-11,***,不简洁,"设$A = [\alpha_1,\alpha_2,\alpha_3],C = [\gamma_1,\gamma_2,\gamma_3],B = [b_{ij}]$.
+由$AB = C$有
+\[
+[\alpha_1,\alpha_2,\alpha_3]
+\begin{bmatrix}
+b_{11} & b_{12} & b_{13}\\
+b_{21} & b_{22} & b_{23}\\
+b_{31} & b_{32} & b_{33}
+\end{bmatrix}
+= [\gamma_1,\gamma_2,\gamma_3]
+\]
+即
+\[
+\begin{cases}
+b_{11}\alpha_1 + b_{21}\alpha_2 + b_{31}\alpha_3 = \gamma_1\\
+b_{12}\alpha_1 + b_{22}\alpha_2 + b_{32}\alpha_3 = \gamma_2\\
+b_{13}\alpha_1 + b_{23}\alpha_2 + b_{33}\alpha_3 = \gamma_3
+\end{cases}
+\]
+所以$C$的列向量可由$A$的列向量线性表出.
+若$B$可逆，由$AB = C$有$A = CB^{-1}$，记$B^{-1} = [k_{ij}]$，有
+\[
+[\alpha_1,\alpha_2,\alpha_3]= [\gamma_1,\gamma_2,\gamma_3]
+\begin{bmatrix}
+k_{11} & k_{12} & k_{13}\\
+k_{21} & k_{22} & k_{23}\\
+k_{31} & k_{32} & k_{33}
+\end{bmatrix}
+\]
+\[
+\alpha_i = k_{1i}\gamma_1 + k_{2i}\gamma_2 + k_{3i}\gamma_3(i = 1,2,3)
+\]
+于是$A$的列向量可由$C$的列向量线性表出. 从而$B$可逆时，$C$和$A$的列向量组等价.",,15cm,2026-05-24
+数学,李永乐线代零基础,李永乐线代零基础-例4-23,设$A$为$n\times m$矩阵，$B$为$m\times n$矩阵，且$n < m$. 若$AB = E$，证明$B$的列向量线性无关.,n,李永乐线代零基础-例4-23,*,错题、行列向量搞混,"设$B = [\beta_1,\beta_2,\cdots,\beta_n]$. 若$k_1\beta_1 + k_2\beta_2 + \cdots + k_n\beta_n = 0$，即
+\[
+[\beta_1,\beta_2,\cdots,\beta_n]\begin{pmatrix}
+k_1 \\
+k_2 \\
+\vdots \\
+k_n
+\end{pmatrix}=k_1\beta_1 + k_2\beta_2 + \cdots + k_n\beta_n = B\begin{pmatrix}
+k_1 \\
+k_2 \\
+\vdots \\
+k_n
+\end{pmatrix}= 0.
+\]
+由
+\[
+AB\begin{pmatrix}
+k_1 \\
+k_2 \\
+\vdots \\
+k_n
+\end{pmatrix}= A0 = 0,
+\]
+则
+\[
+E\begin{pmatrix}
+k_1 \\
+k_2 \\
+\vdots \\
+k_n
+\end{pmatrix}= 0,即\begin{pmatrix}
+k_1 \\
+k_2 \\
+\vdots \\
+k_n
+\end{pmatrix}= 0,
+\]
+故$B$的列向量$\beta_1,\beta_2,\cdots,\beta_n$线性无关.",,10cm,2026-05-25
+数学,李永乐线代零基础,李永乐线代零基础-例4-25,证明：$r(\boldsymbol{A} + \boldsymbol{B}) \leq r(\boldsymbol{A}) + r(\boldsymbol{B})$。,n,李永乐线代零基础-例4-25,***,其他方法,"\textbf{\textcolor{red}{方法一：(初等变换)}}
+\begin{align*}
+\begin{bmatrix}
+\boldsymbol{A} + \boldsymbol{B} \\
+\boldsymbol{B}
+\end{bmatrix} &\to
+\begin{bmatrix}
+\boldsymbol{A} \\
+\boldsymbol{B}
+\end{bmatrix}\\
+\text{故 }r(\boldsymbol{A} + \boldsymbol{B}) &\leq r\begin{bmatrix}
+\boldsymbol{A} + \boldsymbol{B} \\
+\boldsymbol{B}
+\end{bmatrix} = r\begin{bmatrix}
+\boldsymbol{A} \\
+\boldsymbol{B}
+\end{bmatrix} = r\begin{bmatrix}
+\boldsymbol{A} \\
+\boldsymbol{B}
+\end{bmatrix}^{\mathrm{T}}\\
+&= r(\boldsymbol{A}^{\mathrm{T}}, \boldsymbol{B}^{\mathrm{T}}) \leq r(\boldsymbol{A}^{\mathrm{T}}) + r(\boldsymbol{B}^{\mathrm{T}})\\
+&= r(\boldsymbol{A}) + r(\boldsymbol{B})
+\end{align*}
+\textbf{\textcolor{red}{方法二：(三秩相等)}}
+设$r(\boldsymbol{A}) = r$，极大线性无关组为$\boldsymbol{\alpha}_{i_1}, \boldsymbol{\alpha}_{i_2}, \cdots, \boldsymbol{\alpha}_{i_r}$；$r(\boldsymbol{B}) = t$，极大线性无关为$\boldsymbol{\beta}_{j_1}, \boldsymbol{\beta}_{j_2}, \cdots, \boldsymbol{\beta}_{j_t}$。
+\[
+\boldsymbol{A} + \boldsymbol{B} = (\boldsymbol{\alpha}_1 + \boldsymbol{\beta}_1, \boldsymbol{\alpha}_2 + \boldsymbol{\beta}_2, \cdots, \boldsymbol{\alpha}_n + \boldsymbol{\beta}_n)
+\]
+所以$\boldsymbol{\alpha}_1 + \boldsymbol{\beta}_1, \boldsymbol{\alpha}_2 + \boldsymbol{\beta}_2, \cdots, \boldsymbol{\alpha}_n + \boldsymbol{\beta}_n$可由$\boldsymbol{\alpha}_{i_1}, \boldsymbol{\alpha}_{i_2}, \cdots, \boldsymbol{\alpha}_{i_r}, \boldsymbol{\beta}_{j_1}, \boldsymbol{\beta}_{j_2}, \cdots, \boldsymbol{\beta}_{j_t}$线性表出。故
+\begin{align*}
+r(\boldsymbol{A} + \boldsymbol{B}) &= r(\boldsymbol{\alpha}_1 + \boldsymbol{\beta}_1, \boldsymbol{\alpha}_2 + \boldsymbol{\beta}_2, \cdots, \boldsymbol{\alpha}_n + \boldsymbol{\beta}_n) \leq r(\boldsymbol{\alpha}_{i_1}, \boldsymbol{\alpha}_{i_2}, \cdots, \boldsymbol{\alpha}_{i_r}, \boldsymbol{\beta}_{j_1}, \boldsymbol{\beta}_{j_2}, \cdots, \boldsymbol{\beta}_{j_t})\\
+&\leq r + t = r(\boldsymbol{A}) + r(\boldsymbol{B})
+\end{align*}",,9cm,2026-05-26
+数学,李永乐线代零基础,李永乐线代零基础-例4-26,"证明：$r(AB) \leq \min\{r(A), r(B)\}$",n,李永乐线代零基础-例4-26,*,错题、其他方法,"\textbf{\textcolor{red}{方法一：（三秩相等）}}
+\[
+AB = [\alpha_1, \alpha_2, \cdots, \alpha_n]
+\begin{bmatrix}
+b_{11} & \cdots & b_{1s} \\
+b_{21} & \cdots & b_{2s} \\
+\vdots & & \vdots \\
+b_{n1} & \cdots & b_{ns}
+\end{bmatrix}
+= [\gamma_1, \gamma_2, \cdots, \gamma_s]
+\]
+$AB$的列向量可由$\alpha_1, \alpha_2, \cdots, \alpha_n$线性表示，即$AB$的列向量可由$A$的列向量线性表示，故$r(AB)=AB$的列秩$\leq A$的列秩$= r(A)$。
+取$B$的行向量，$A$作为矩阵左乘，同理可得$r(AB)\leq r(B)$。
+\textbf{\textcolor{red}{方法二：（初等行变换法，见$P68$性质$5$）}}",,15cm,2026-05-26
+数学,李永乐线代零基础,李永乐线代零基础-例4-27,求齐次方程组$\begin{cases}x_1 + 2x_2 - x_3 - 5x_5 = 0\\x_2 - 2x_3 + x_4 + x_5 = 0\\2x_1 + 4x_2 - 2x_3 + x_4 - 8x_5 = 0\end{cases}$的基础解系与通解。,n,李永乐线代零基础-例4-27,*,错题,"对系数矩阵作初等行变换化为行最简：
+\[
+\boldsymbol{A}=\begin{bmatrix}
+1 & 2 & -1 & 0 & -5\\
+0 & 1 & -2 & 1 & 1\\
+2 & 4 & -2 & 1 & -8
+\end{bmatrix}\to\cdots\to\begin{bmatrix}
+1 & 0 & 3 & 0 & -3\\
+0 & 1 & -2 & 0 & -1\\
+0 & 0 & 0 & 1 & 2
+\end{bmatrix}
+\]
+$n - r(\boldsymbol{A}) = 5 - 3 = 2$。
+同解方程组为
+\[
+\begin{cases}
+x_1 + 3x_3 - 3x_5 = 0\\
+x_2 - 2x_3 - x_5 = 0\\
+x_4 + 2x_5 = 0
+\end{cases}
+\]
+解得
+\[
+\begin{cases}
+x_1 = -3x_3 + 3x_5\\
+x_2 = 2x_3 + x_5\\
+x_4 = -2x_5
+\end{cases}
+\]
+分别令$\begin{pmatrix}x_3\\x_5\end{pmatrix}$为$\begin{pmatrix}1\\0\end{pmatrix},\begin{pmatrix}0\\1\end{pmatrix}$，代入方程组求得$\begin{pmatrix}x_1\\x_2\\x_4\end{pmatrix}$分别为$\begin{pmatrix}-3\\2\\0\end{pmatrix}$和$\begin{pmatrix}3\\1\\-2\end{pmatrix}$，得到基础解系
+\[
+\boldsymbol{\eta}_1=\begin{pmatrix}-3\\2\\1\\0\\0\end{pmatrix},\boldsymbol{\eta}_2=\begin{pmatrix}3\\1\\0\\-2\\1\end{pmatrix}
+\]
+得到通解：$k_1\boldsymbol{\eta}_1 + k_2\boldsymbol{\eta}_2$，$k_1,k_2$为任意常数。",,14cm,2026-05-26
+数学,李永乐线代零基础,李永乐线代零基础-例4-28,解齐次方程组$\begin{cases}x_1 + 3x_2 - 5x_3 - x_4 + 2x_5 = 0\\2x_1 + 6x_2 - 8x_3 + 5x_4 + 3x_5 = 0\\x_1 + 3x_2 - 3x_3 + 6x_4 + x_5 = 0\end{cases}$,n,李永乐线代零基础-例4-28,*,错题、粗心,"\textbf{\textcolor{red}{方法一}}：对系数矩阵作初等行变换化为行最简，有
+\[
+A =
+\begin{bmatrix}
+1 & 3 & -5 & -1 & 2\\
+2 & 6 & -8 & 5 & 3\\
+1 & 3 & -3 & 6 & 1
+\end{bmatrix}
+\to
+\begin{bmatrix}
+1 & 3 & -5 & -1 & 2\\
+0 & 0 & 2 & 7 & -1\\
+0 & 0 & 0 & 0 & 0
+\end{bmatrix}
+\to
+\begin{bmatrix}
+1 & 3 & 0 & \frac{33}{2} & -\frac{1}{2}\\
+0 & 0 & 1 & \frac{7}{2} & -\frac{1}{2}\\
+0 & 0 & 0 & 0 & 0
+\end{bmatrix}
+\]
+$n - r(A) = 5 - 2 = 3$.
+同解方程组为$\begin{cases}x_1 = -3x_2 - \frac{33}{2}x_4 + \frac{1}{2}x_5\\x_3 = -\frac{7}{2}x_4 + \frac{1}{2}x_5\end{cases}$.
+令$\begin{pmatrix}x_2\\x_4\\x_5\end{pmatrix}$分别为$\begin{pmatrix}1\\0\\0\end{pmatrix}$，$\begin{pmatrix}0\\1\\0\end{pmatrix}$，$\begin{pmatrix}0\\0\\1\end{pmatrix}$，代入方程组求得
+$\begin{pmatrix}x_1\\x_3\end{pmatrix}$分别为$\begin{pmatrix}-3\\0\end{pmatrix}$，$\begin{pmatrix}-\frac{33}{2}\\-\frac{7}{2}\end{pmatrix}$，$\begin{pmatrix}\frac{1}{2}\\\frac{1}{2}\end{pmatrix}$，
+得基础解系
+\[
+\eta_1 =
+\begin{pmatrix}
+-3\\
+1\\
+0\\
+0\\
+0
+\end{pmatrix}
+,
+\eta_2 =
+\begin{pmatrix}
+-\frac{33}{2}\\
+0\\
+-\frac{7}{2}\\
+1\\
+0
+\end{pmatrix}
+,
+\eta_3 =
+\begin{pmatrix}
+\frac{1}{2}\\
+0\\
+\frac{1}{2}\\
+0\\
+1
+\end{pmatrix}
+\]
+得到通解：$k_1\eta_1 + k_2\eta_2 + k_3\eta_3$，$k_1,k_2$为任意常数.
+\textbf{\textcolor{red}{方法二}}：
+\[
+A \to
+\begin{bmatrix}
+1 & 3 & -5 & -1 & 2\\
+0 & 0 & 2 & 7 & -1\\
+0 & 0 & 0 & 0 & 0
+\end{bmatrix}
+\to
+\begin{bmatrix}
+1 & 3 & -1 & 13 & 0\\
+0 & 0 & -2 & -7 & 1\\
+0 & 0 & 0 & 0 & 0
+\end{bmatrix}
+\]
+同解方程组为$\begin{cases}x_1 = -3x_2 + x_3 - 13x_4\\x_5 = 2x_3 + 7x_4\end{cases}$.
+令$\begin{pmatrix}x_2\\x_3\\x_4\end{pmatrix}$分别为$\begin{pmatrix}1\\0\\0\end{pmatrix}$，$\begin{pmatrix}0\\1\\0\end{pmatrix}$，$\begin{pmatrix}0\\0\\1\end{pmatrix}$. 则
+$\begin{pmatrix}x_1\\x_5\end{pmatrix}$分别为$\begin{pmatrix}-3\\0\end{pmatrix}$，$\begin{pmatrix}1\\2\end{pmatrix}$，$\begin{pmatrix}-13\\7\end{pmatrix}$，
+得到另一个基础解系
+\[
+\xi_1 =
+\begin{pmatrix}
+-3\\
+1\\
+0\\
+0\\
+0
+\end{pmatrix}
+,
+\xi_2 =
+\begin{pmatrix}
+1\\
+0\\
+1\\
+0\\
+2
+\end{pmatrix}
+,
+\xi_3 =
+\begin{pmatrix}
+-13\\
+0\\
+0\\
+1\\
+7
+\end{pmatrix}
+\]",,15cm,2026-05-26
+数学,李永乐线代零基础,李永乐线代零基础-例4-29,"已知齐次方程组$\begin{cases}ax_1 + x_2 + x_3 = 0,\\x_1 + ax_2 + x_3 = 0,\\x_1 + x_2 + ax_3 = 0\end{cases}$有非零解，求$a$的值并求方程组的通解。",n,李永乐线代零基础-例4-29,*,错题、疏忽,"$\boldsymbol{Ax} = \boldsymbol{0}$有非零解$\Leftrightarrow r(\boldsymbol{A}) < n\Leftrightarrow |\boldsymbol{A}| = 0$.
+\[
+|\boldsymbol{A}| =
+\begin{vmatrix}
+a & 1 & 1 \\
+1 & a & 1 \\
+1 & 1 & a
+\end{vmatrix}
+= (a + 2)(a - 1)^2 = 0
+\]
+所以$a = -2$或$1$.
+当$a = 1$时，
+\[
+\boldsymbol{A} \to
+\begin{bmatrix}
+1 & 1 & 1 \\
+0 & 0 & 0 \\
+0 & 0 & 0
+\end{bmatrix}
+\]
+$n - r(\boldsymbol{A}) = 3 - 1 = 2$.
+同解方程组为$x_1 + x_2 + x_3 = 0$.
+自由变量$x_2,x_3$，则基础解系为
+\[
+\boldsymbol{\eta}_1 =
+\begin{bmatrix}
+-1 \\
+1 \\
+0
+\end{bmatrix}
+,
+\boldsymbol{\eta}_2 =
+\begin{bmatrix}
+-1 \\
+0 \\
+1
+\end{bmatrix}
+\]
+通解：$k_1\boldsymbol{\eta}_1 + k_2\boldsymbol{\eta}_2$，$k_1,k_2$是任意常数.
+当$a = -2$时，
+\[
+\boldsymbol{A} \to
+\begin{bmatrix}
+1 & 0 & -1 \\
+0 & 1 & -1 \\
+0 & 0 & 0
+\end{bmatrix}
+\]
+$n - r(\boldsymbol{A}) = 3 - 2 = 1$.
+同解方程组为$\begin{cases}x_1 = x_3,\\x_2 = x_3.\end{cases}$
+自由变量$x_3$，则基础解系为
+\[
+\boldsymbol{\eta}_1 =
+\begin{bmatrix}
+1 \\
+1 \\
+1
+\end{bmatrix}
+\]
+通解：$k\boldsymbol{\eta}_1$，$k$是任意常数.",,15cm,2026-05-26
+数学,李永乐线代零基础,李永乐线代零基础-例4-30,设$\boldsymbol{A}$是$m\times n$矩阵，$\boldsymbol{B}$是$n\times s$矩阵. 若$\boldsymbol{AB}=\boldsymbol{O}$. 证明 $r(\boldsymbol{A})+r(\boldsymbol{B})\leq n$.,n,李永乐线代零基础-例4-30,*,错题、不规范,"对$\boldsymbol{B}$按列分块，记$\boldsymbol{B}=(\boldsymbol{\beta}_1,\boldsymbol{\beta}_2,\cdots,\boldsymbol{\beta}_s)$，
+\[
+\boldsymbol{AB}=\boldsymbol{A}(\boldsymbol{\beta}_1,\boldsymbol{\beta}_2,\cdots,\boldsymbol{\beta}_s)=(\boldsymbol{A}\boldsymbol{\beta}_1,\boldsymbol{A}\boldsymbol{\beta}_2,\cdots,\boldsymbol{A}\boldsymbol{\beta}_s)=(0,0,\cdots,0).
+\]
+得$\boldsymbol{A}\boldsymbol{\beta}_j = 0(j = 1,2,\cdots,s)$，$\boldsymbol{\beta}_j$是齐次方程组$\boldsymbol{Ax}=0$的解.
+因$\boldsymbol{Ax}=0$解集的秩为$n - r(\boldsymbol{A})$，而$\boldsymbol{\beta}_1,\boldsymbol{\beta}_2,\cdots,\boldsymbol{\beta}_s$是$\boldsymbol{Ax}=0$解集的子集合，得
+\[
+r(\boldsymbol{\beta}_1,\boldsymbol{\beta}_2,\cdots,\boldsymbol{\beta}_s)\leq n - r(\boldsymbol{A}).
+\]
+故$r(\boldsymbol{A})+r(\boldsymbol{B})\leq n$.",,11cm,2026-05-26
+数学,李永乐线代零基础,李永乐线代零基础-习2-4,"已知$\alpha_1,\alpha_2,\alpha_3$线性无关，判断向量组的线性相关性：
+(1)$\alpha_1 - \alpha_2,\alpha_2 - \alpha_3,\alpha_3 - \alpha_1$；
+(2)$\alpha_1 + \alpha_2,\alpha_2 + \alpha_3,\alpha_3 - \alpha_1$；
+(3)$\alpha_1 + \alpha_2,\alpha_2 + \alpha_3,\alpha_3 + \alpha_1$；
+(4)$\alpha_1 - \alpha_2,2\alpha_2 + 3\alpha_3,\alpha_1 + 3\alpha_2 + 5\alpha_3$。",n,李永乐线代零基础-习2-4,***,其他方法,"(1) 由$(\alpha_1 - \alpha_2)+(\alpha_2 - \alpha_3)+(\alpha_3 - \alpha_1)= \boldsymbol{0}$，这里系数为$1,1,1$不全为$0$，所以$\alpha_1 - \alpha_2,\alpha_2 - \alpha_3,\alpha_3 - \alpha_1$线性相关。
+(2) 由$(\alpha_1 + \alpha_2)-(\alpha_2 + \alpha_3)+(\alpha_3 - \alpha_1)= \boldsymbol{0}$，这里系数为$1,-1,1$不全为$0$，所以$\alpha_1 + \alpha_2,\alpha_2 + \alpha_3,\alpha_3 - \alpha_1$线性相关。
+(3) 由$(\alpha_1 + \alpha_2,\alpha_2 + \alpha_3,\alpha_3 + \alpha_1)= (\alpha_1,\alpha_2,\alpha_3)\begin{bmatrix}1&0&1\\1&1&0\\0&1&1\end{bmatrix}$，又因为$\begin{vmatrix}1&0&1\\1&1&0\\0&1&1\end{vmatrix}= 2\neq 0$。
+于是
+\[
+r(\alpha_1 + \alpha_2,\alpha_2 + \alpha_3,\alpha_3 + \alpha_1)= r(\alpha_1,\alpha_2,\alpha_3)= 3
+\]
+所以$\alpha_1 + \alpha_2,\alpha_2 + \alpha_3,\alpha_3 + \alpha_1$线性无关。
+(4) 由$(\alpha_1 - \alpha_2,2\alpha_2 + 3\alpha_3,\alpha_1 + 3\alpha_2 + 5\alpha_3)= (\alpha_1,\alpha_2,\alpha_3)\begin{bmatrix}1&0&1\\-1&2&3\\0&3&5\end{bmatrix}$，因$\begin{vmatrix}1&0&1\\-1&2&3\\0&3&5\end{vmatrix}\neq 0$，所以$\begin{bmatrix}1&0&1\\-1&2&3\\0&3&5\end{bmatrix}$可逆。
+于是$r(\alpha_1 + \alpha_2,\alpha_2 + \alpha_3,\alpha_3 + \alpha_1)= r(\alpha_1,\alpha_2,\alpha_3)= 3$，故$\alpha_1 - \alpha_2,2\alpha_2 + 3\alpha_3,\alpha_1 + 3\alpha_2 + 5\alpha_3$线性无关。",,线性无关矩阵法,2026-05-27
+数学,李永乐线代零基础,李永乐线代零基础-习2-6,"设$\boldsymbol{\alpha}_1=\begin{pmatrix}1\\2\\1\end{pmatrix},\boldsymbol{\alpha}_2=\begin{pmatrix}2\\3\\1\end{pmatrix},\boldsymbol{\alpha}_3=\begin{pmatrix}a\\3\\1\end{pmatrix},\boldsymbol{\alpha}_4=\begin{pmatrix}2\\b\\3\end{pmatrix}$。(1)若向量组的秩为$2$，求$a,b$。(2)若向量$\boldsymbol{\alpha}_4$不能由$\boldsymbol{\alpha}_1,\boldsymbol{\alpha}_2,\boldsymbol{\alpha}_3$线性表示，求$a,b$。",n,李永乐线代零基础-习2-6,***,不简洁、其他方法,"(1) 经过初等行变换，矩阵的秩和向量组的秩都不变
+\[
+\boldsymbol{A}=(\boldsymbol{\alpha}_1,\boldsymbol{\alpha}_2,\boldsymbol{\alpha}_3,\boldsymbol{\alpha}_4)=\begin{bmatrix}1&2&a&2\\2&3&3&b\\1&1&1&3\end{bmatrix}\to\begin{bmatrix}1&2&a&2\\0&1&2a - 3&4 - b\\0&0&a - 2&5 - b\end{bmatrix}
+\]
+由于$r(\boldsymbol{A})=r(\boldsymbol{\alpha}_1,\boldsymbol{\alpha}_2,\boldsymbol{\alpha}_3,\boldsymbol{\alpha}_4)=2$，解得$a = 2,b = 5$。
+(2) 设$x_1\boldsymbol{\alpha}_1+x_2\boldsymbol{\alpha}_2+x_3\boldsymbol{\alpha}_3=\boldsymbol{\alpha}_4$。
+\[
+\overline{\boldsymbol{A}}\to\begin{bmatrix}1&2&a&2\\0&1&2a - 3&4 - b\\0&0&a - 2&5 - b\end{bmatrix}
+\]
+$\boldsymbol{\alpha}_4$不能由$\boldsymbol{\alpha}_1,\boldsymbol{\alpha}_2,\boldsymbol{\alpha}_3$线性表示，即方程组$\boldsymbol{A}\boldsymbol{x}=\boldsymbol{\alpha}_4$无解，故解得$a = 2,b\neq 5$。",,14cm,2026-05-27
+数学,李永乐线代零基础,李永乐线代零基础-习2-7,"设$A = \alpha\alpha^{\mathrm{T}}+\beta\beta^{\mathrm{T}}$，$\alpha,\beta$均是$n$维列向量. 证明：(1)$r(A)\leq 2$；(2)当$\alpha,\beta$线性相关时，$r(A)\leq 1$.",n,李永乐线代零基础-习2-7,*,错题、不严谨、其他方法,"(1) 由矩阵秩的公式
+\[
+r(A)=r(\alpha\alpha^{\mathrm{T}}+\beta\beta^{\mathrm{T}})\leq r(\alpha\alpha^{\mathrm{T}})+r(\beta\beta^{\mathrm{T}})\leq r(\alpha)+r(\beta)\leq 1 + 1 = 2.
+\]
+(2) 当$\alpha,\beta$线性相关时，若$\alpha=\beta = 0$，则$A = O$，有$r(A)=0$. 若$\alpha\neq 0$，于是$\beta = k\alpha$，
+\[
+A=\alpha\alpha^{\mathrm{T}}+(k\alpha)(k\alpha)^{\mathrm{T}}=(1 + k^{2})\alpha\alpha^{\mathrm{T}}.
+\]
+从而
+\[
+r(A)=r[(1 + k^{2})\alpha\alpha^{\mathrm{T}}]=r(\alpha\alpha^{\mathrm{T}})=1,
+\]
+所以$r(A)\leq 1$.",,12cm,2026-05-27
+数学,李永乐线代零基础,李永乐线代零基础-习2-8,"设$A$是$n$阶矩阵，$A^{*}$是$A$的伴随矩阵，证明
+\[ r(A^{*}) =
+\begin{cases}
+n, & r(A) = n. \\
+1, & r(A) = n - 1. \\
+0, & r(A) \leq n - 2.
+\end{cases}
+\]",n,李永乐线代零基础-习2-8,*,错题、公式,"若$r(A) = n$，则$|A| \neq 0 \Rightarrow |A^{*}| = |A|^{n - 1} \neq 0$，所以$r(A^{*}) = n$.
+若$r(A) = n - 1$，则$A$中有$n - 1$阶子式不为$0$，即$\exists A_{ij} \neq 0$，使得$A^{*} \neq O$，于是有$r(A^{*}) \geq 1$. 又$AA^{*} = |A|E$，但$|A| = 0$，知$AA^{*} = O$.
+因此，$r(A) + r(A^{*}) \leq n$，而$r(A) = n - 1$，有$r(A^{*}) \leq 1$，因此$r(A^{*}) = 1$.
+若$r(A) \leq n - 2$，则$A$中$n - 1$阶子式全为$0$，所以$A_{ij} \equiv 0$，$\forall i, j$，即
+$A^{*} = O \Rightarrow r(A^{*}) = 0$.",,9cm,2026-05-27
+数学,李永乐线代零基础,李永乐线代零基础-例5-3,"将$\boldsymbol{\alpha}_1,\boldsymbol{\alpha}_2,\boldsymbol{\alpha}_3$进行施密特正交化，其中$\boldsymbol{\alpha}_1=\begin{pmatrix}1\\2\\-1\end{pmatrix},\boldsymbol{\alpha}_2=\begin{pmatrix}-1\\3\\1\end{pmatrix},\boldsymbol{\alpha}_3=\begin{pmatrix}4\\-1\\0\end{pmatrix}$。",n,李永乐线代零基础-例5-3,*,错题、粗心,"先正交化：
+\begin{align*}
+\boldsymbol{\beta}_1&=\boldsymbol{\alpha}_1=\begin{pmatrix}1\\2\\-1\end{pmatrix}\\
+\boldsymbol{\beta}_2&=\boldsymbol{\alpha}_2-\frac{(\boldsymbol{\alpha}_2,\boldsymbol{\beta}_1)}{(\boldsymbol{\beta}_1,\boldsymbol{\beta}_1)}\boldsymbol{\beta}_1=\begin{pmatrix}-1\\3\\1\end{pmatrix}-\frac{4}{6}\begin{pmatrix}1\\2\\-1\end{pmatrix}=\frac{1}{3}\begin{pmatrix}-5\\5\\5\end{pmatrix}=\frac{5}{3}\begin{pmatrix}-1\\1\\1\end{pmatrix}\\
+\boldsymbol{\beta}_3&=\boldsymbol{\alpha}_3-\frac{(\boldsymbol{\alpha}_3,\boldsymbol{\beta}_1)}{(\boldsymbol{\beta}_1,\boldsymbol{\beta}_1)}\boldsymbol{\beta}_1-\frac{(\boldsymbol{\alpha}_3,\boldsymbol{\beta}_2)}{(\boldsymbol{\beta}_2,\boldsymbol{\beta}_2)}\boldsymbol{\beta}_2=\begin{pmatrix}4\\-1\\0\end{pmatrix}-\frac{2}{6}\begin{pmatrix}1\\2\\-1\end{pmatrix}+\frac{5}{3}\begin{pmatrix}-1\\1\\1\end{pmatrix}=2\begin{pmatrix}1\\0\\1\end{pmatrix}
+\end{align*}
+再单位化：
+\[
+\boldsymbol{\gamma}_1=\frac{1}{\sqrt{6}}\begin{pmatrix}1\\2\\-1\end{pmatrix},\boldsymbol{\gamma}_2=\frac{1}{\sqrt{3}}\begin{pmatrix}-1\\1\\1\end{pmatrix},\boldsymbol{\gamma}_3=\frac{1}{\sqrt{2}}\begin{pmatrix}1\\0\\1\end{pmatrix}
+\]",,13cm,2026-05-28
+数学,李永乐线代零基础,李永乐线代零基础-例5-4,"设$\boldsymbol{A}=[a_{ij}]_{3\times3}$为正交矩阵，且$a_{11}=1,\boldsymbol{b}=\begin{pmatrix}1\\0\\0\end{pmatrix}$，求线性方程组$\boldsymbol{A}\boldsymbol{x}=\boldsymbol{b}$的解是\underline{\quad\quad\quad}。",n,李永乐线代零基础-例5-4,*,错题,"已知$\boldsymbol{A}$为正交矩阵且$a_{11}=1$，可知$\boldsymbol{A}$的第一列为$\begin{pmatrix}1\\0\\0\end{pmatrix}$，第一行为$(1,0,0)$。因此
+\[
+\boldsymbol{A}=\begin{bmatrix}
+1 & 0 & 0 \\
+0 & a_{22} & a_{23} \\
+0 & a_{32} & a_{33}
+\end{bmatrix}
+\]
+$\boldsymbol{A}$是正交矩阵，故$\boldsymbol{A}$可逆. 方程组$\boldsymbol{A}\boldsymbol{x}=\boldsymbol{b}$的解是唯一的.
+显然
+\[
+\boldsymbol{A}\boldsymbol{x}=\begin{bmatrix}
+1 & 0 & 0 \\
+0 & a_{22} & a_{32} \\
+0 & a_{23} & a_{33}
+\end{bmatrix}\begin{pmatrix}1\\0\\0\end{pmatrix}=\begin{pmatrix}1\\0\\0\end{pmatrix}=\boldsymbol{b}
+\]
+因此方程组的唯一解为
+\[
+\boldsymbol{x}=\begin{pmatrix}1\\0\\0\end{pmatrix}
+\]",,9cm,2026-05-28
+数学,李永乐线代零基础,李永乐线代零基础-例5-5,求$A = \begin{bmatrix}0&2&-2\\2&4&4\\-2&4&-3\end{bmatrix}$的特征值和特征向量。,n,李永乐线代零基础-例5-5,*,错题、方法、系数k不为0,"由特征多项式
+\begin{align*}
+|\lambda E - A| &= \begin{vmatrix}\lambda&-2&2\\-2&\lambda - 4&-4\\2&-4&\lambda + 3\end{vmatrix}=\begin{vmatrix}\lambda&-2&2 - 2\lambda\\-2&\lambda - 4&0\\2&-4&\lambda - 1\end{vmatrix}\\
+&=\begin{vmatrix}\lambda + 4&-10&0\\-2&\lambda - 4&0\\2&-4&\lambda - 1\end{vmatrix}= (\lambda - 1)\begin{vmatrix}\lambda + 4&-10\\-2&\lambda - 4\end{vmatrix}\\
+&= (\lambda - 1)(\lambda^2 - 36)
+\end{align*}
+$A$的特征值：$1,6,-6$。
+当$\lambda = 1$时，由$(E - A)x = 0$。
+\[
+E - A = \begin{bmatrix}1&-2&2\\-2&-3&-4\\2&-4&4\end{bmatrix}\to\begin{bmatrix}1&-2&2\\0&-7&0\\0&0&0\end{bmatrix}\to\begin{bmatrix}1&0&2\\0&1&0\\0&0&0\end{bmatrix}
+\]
+自由变量取$x_3$。令$x_3 = 1$，有特征向量$\alpha_1 = (-2,0,1)^T$。
+当$\lambda = 6$时，由$(6E - A)x = 0$，
+\[
+6E - A = \begin{bmatrix}6&-2&2\\-2&2&-4\\2&-4&9\end{bmatrix}\to\begin{bmatrix}1&-1&2\\0&-2&5\\0&0&0\end{bmatrix}
+\]
+自由变量取$x_3$。令$x_3 = 2$，有特征向量$\alpha_2 = (1,5,2)^T$。
+当$\lambda = -6$时，由$(-6E - A)x = 0$，
+\[
+-6E - A = \begin{bmatrix}-6&-2&2\\-2&-10&-4\\2&-4&-3\end{bmatrix}\to\begin{bmatrix}1&5&2\\0&2&1\\0&0&0\end{bmatrix}\to\begin{bmatrix}1&1&0\\0&2&1\\0&0&0\end{bmatrix}
+\]
+自由变量：$x_2$。令$x_2 = 1$，有特征向量$\alpha_3 = (-1,1,-2)^T$。
+故$A$的特征值为$1$的特征向量为$k_1\alpha_1,k_1\neq 0$。
+$A$的特征值为$6$的特征向量为$k_2\alpha_2,k_2\neq 0$。
+$A$的特征值为$-6$的特征向量为$k_3\alpha_3,k_3\neq 0$。",,20cm,2026-05-28
+数学,李永乐线代零基础,李永乐线代零基础-例5-6,已知$\boldsymbol{A}=\begin{bmatrix}8&-2&-1\\-2&5&-2\\-3&-6&6\end{bmatrix}$，求$\boldsymbol{A}$的特征值和特征向量。,n,李永乐线代零基础-例5-6,*,错题、粗心,"由特征多项式
+\begin{align*}
+|\lambda\boldsymbol{E}-\boldsymbol{A}|&=\begin{vmatrix}\lambda - 8&2&1\\2&\lambda - 5&2\\3&6&\lambda - 6\end{vmatrix}=\begin{vmatrix}\lambda - 8&2&1\\2&\lambda - 5&2\\27 - 3\lambda&0&\lambda - 9\end{vmatrix}\\
+&=\begin{vmatrix}\lambda - 5&2&1\\8&\lambda - 5&2\\0&0&\lambda - 9\end{vmatrix}=(\lambda - 9)\begin{vmatrix}\lambda - 5&2\\8&\lambda - 5\end{vmatrix}\\
+&=(\lambda - 9)^2(\lambda - 1)=0
+\end{align*}
+$\boldsymbol{A}$的特征值：$1$，$9$，$9$。
+当$\lambda = 1$时，由$(\boldsymbol{E}-\boldsymbol{A})\boldsymbol{x}=\boldsymbol{0}$，
+\[
+\boldsymbol{E}-\boldsymbol{A}=\begin{bmatrix}-7&2&1\\2&-4&2\\3&6&-5\end{bmatrix}\to\begin{bmatrix}1&-2&1\\0&12&-8\\0&0&0\end{bmatrix}
+\]
+得特征向量$\boldsymbol{\alpha}_1=(1,2,3)^{\mathrm{T}}$。
+当$\lambda = 9$时，由$(9\boldsymbol{E}-\boldsymbol{A})\boldsymbol{x}=\boldsymbol{0}$，
+\[
+9\boldsymbol{E}-\boldsymbol{A}=\begin{bmatrix}1&2&1\\2&4&2\\3&6&3\end{bmatrix}\to\begin{bmatrix}1&2&1\\0&0&0\\0&0&0\end{bmatrix}
+\]
+得特征向量$\boldsymbol{\alpha}_2=(-2,1,0)^{\mathrm{T}}$，$\boldsymbol{\alpha}_3=(-1,0,1)^{\mathrm{T}}$。
+故$\boldsymbol{A}$的特征值$\lambda_1 = 1$的特征向量为$k_1\boldsymbol{\alpha}_1$，$k_1\neq 0$。$\boldsymbol{A}$的特征值$\lambda_2=\lambda_3 = 9$的特征向量为$k_2\boldsymbol{\alpha}_2 + k_3\boldsymbol{\alpha}_3$，$k_2$，$k_3$不全为$0$。",,20cm,2026-05-29
+数学,李永乐线代零基础,李永乐线代零基础-例5-7,求$A = \begin{bmatrix}-1&0&2\\1&2&-1\\1&3&0\end{bmatrix}$的特征值和特征向量。,n,李永乐线代零基础-例5-7,*,错题、粗心,"由特征多项式
+\begin{align*}
+|\lambda E - A| &= \begin{vmatrix}\lambda + 1&0&-2\\-1&\lambda - 2&1\\-1&-3&\lambda\end{vmatrix}=\begin{vmatrix}\lambda - 1&0&-2\\0&\lambda - 2&1\\\lambda - 1&-3&\lambda\end{vmatrix}\\
+&=\begin{vmatrix}\lambda - 1&0&-2\\0&\lambda - 2&1\\0&-3&\lambda + 2\end{vmatrix}= (\lambda - 1)^2(\lambda + 1)
+\end{align*}
+$A$的特征值：$1,1,-1$。
+当$\lambda = 1$时，由$(E - A)x = 0$，
+\[
+E - A = \begin{bmatrix}2&0&-2\\-1&-1&1\\-1&-3&1\end{bmatrix}\to\begin{bmatrix}1&0&-1\\0&1&0\\0&0&0\end{bmatrix}
+\]
+得特征向量为$\alpha_1 = (1,0,1)^T$。
+当$\lambda = -1$时，由$(-E - A)x = 0$，
+\[
+-E - A = \begin{bmatrix}0&0&-2\\-1&-3&1\\-1&-3&-1\end{bmatrix}\to\begin{bmatrix}1&3&0\\0&0&1\\0&0&0\end{bmatrix}
+\]
+得特征向量为$\alpha_2 = (-3,1,0)^T$。
+故$A$的特征值为$1$的特征向量为$k_1\alpha_1,k_1\neq 0$。
+$A$的特征值为$-1$的特征向量为$k_2\alpha_2,k_2\neq 0$。",,15cm,2026-05-29
+数学,李永乐线代零基础,李永乐线代零基础-例5-8,求$A = \begin{bmatrix}2&-1&2\\5&-3&3\\-1&0&-2\end{bmatrix}$的特征值和特征向量。,n,李永乐线代零基础-例5-8,*,错题,"由特征多项式
+\begin{align*}
+|\lambda E - A| &= \begin{vmatrix}\lambda - 2&1&-2\\-5&\lambda + 3&-3\\1&0&\lambda + 2\end{vmatrix}=\begin{vmatrix}\lambda - 1&1&-2\\\lambda - 2&\lambda + 3&-3\\1&0&\lambda + 2\end{vmatrix}\\
+&=\begin{vmatrix}\lambda + 1&1&-2\\\lambda + 1&\lambda + 3&-3\\-\lambda - 1&0&\lambda + 2\end{vmatrix}=\begin{vmatrix}\lambda + 1&1&-2\\0&\lambda + 2&-1\\0&1&\lambda\end{vmatrix}\\
+&= (\lambda + 1)\begin{vmatrix}\lambda + 2&-1\\1&\lambda\end{vmatrix}= (\lambda + 1)(\lambda^2 + 2\lambda + 1)= (\lambda + 1)^3
+\end{align*}
+$A$的特征值：$-1$(三重根)。
+\[
+-E - A = \begin{bmatrix}-3&1&-2\\-5&2&-3\\1&0&1\end{bmatrix}\to\begin{bmatrix}1&0&1\\0&1&1\\0&0&0\end{bmatrix}
+\]
+得特征向量为$\alpha = (-1,-1,1)^T$。",,15cm,2026-05-29
+数学,李永乐线代零基础,李永乐线代零基础-例5-10,"若$A$是$n$阶可逆矩阵，且$A\alpha = \lambda\alpha,\alpha\neq 0$. 证明：$\lambda\neq 0$.",n,李永乐线代零基础-例5-10,***,其他方法,"\textbf{\textcolor{red}{方法一：（反证法）}}若$\lambda = 0$，则有$A\alpha = 0,\alpha\neq 0$，于是$Ax = 0$有非零解，那么$|A| = 0$，与$A$可逆矛盾.
+\textbf{\textcolor{red}{方法二：}}由$A\alpha = \lambda\alpha,A$可逆，有$\alpha = \lambda A^{-1}\alpha$，又因$\alpha\neq 0$，故必有$\lambda\neq 0$.
+$A^{-1}\alpha = \frac{1}{\lambda}\alpha$.
+\textbf{\textcolor{red}{方法三：}}$\prod \lambda_{i}=|A|$. 因$A$可逆，故$|A|\neq 0$，故$\prod \lambda_{i}\neq 0$，可得$\lambda_{i}\neq 0$.",,4cm,2026-05-29
+数学,李永乐线代零基础,李永乐线代零基础-例5-12,"设$A$是$3$阶矩阵，$A$的各行元素之和均为$3$，$\boldsymbol{\alpha}_1 = (1, -2, 1)^T$，$\boldsymbol{\alpha}_2 = (0, -1, 1)^T$是$A\boldsymbol{x} = \boldsymbol{0}$的两个解. 求$A$的特征值、特征向量.",n,李永乐线代零基础-例5-12,***,其他方法,"因$A$的各行元素之和均为$3$，即有
+\[
+\begin{cases}
+a_{11} + a_{12} + a_{13} = 3, \\
+a_{21} + a_{22} + a_{23} = 3, \\
+a_{31} + a_{32} + a_{33} = 3.
+\end{cases}
+\]
+\[
+\begin{bmatrix}
+a_{11} & a_{12} & a_{13} \\
+a_{21} & a_{22} & a_{23} \\
+a_{31} & a_{32} & a_{33}
+\end{bmatrix}
+\begin{bmatrix}
+1 \\
+1 \\
+1
+\end{bmatrix}
+=
+\begin{bmatrix}
+3 \\
+3 \\
+3
+\end{bmatrix}
+\]，即$A\begin{bmatrix}
+1 \\
+1 \\
+1
+\end{bmatrix}
+=
+\begin{bmatrix}
+3 \\
+3 \\
+3
+\end{bmatrix}
+= 3\begin{bmatrix}
+1 \\
+1 \\
+1
+\end{bmatrix}$，
+所以$\lambda_1 = 3$是$A$的特征值，$\boldsymbol{\alpha} = (1, 1, 1)^T$是矩阵$A$对应的特征向量. 又
+$A\boldsymbol{\alpha}_1 = \boldsymbol{0} = 0\boldsymbol{\alpha}_1$，
+$A\boldsymbol{\alpha}_2 = \boldsymbol{0} = 0\boldsymbol{\alpha}_2$.
+所以$\lambda_2 = \lambda_3 = 0$，$\boldsymbol{\alpha}_1$，$\boldsymbol{\alpha}_2$是矩阵$A$对应于$\lambda = 0$的特征向量且线性无关.
+因此$A$的特征值：$3,0,0$.
+特征值$3$对应的特征向量是：$k\begin{bmatrix}
+1 \\
+1 \\
+1
+\end{bmatrix}$，$k \neq 0$.
+特征值$0$对应的特征向量：$k_1\begin{bmatrix}
+1 \\
+-2 \\
+1
+\end{bmatrix} + k_2\begin{bmatrix}
+0 \\
+-1 \\
+1
+\end{bmatrix}$，$k_1$，$k_2$不全为$0$.",,20cm,2026-05-29
+数学,李永乐线代零基础,李永乐线代零基础-例5-13,已知$A$是$n$阶矩阵，且$A^{2}=A$. 证明：$A$的特征值只能是$0$或$1$.,n,李永乐线代零基础-例5-13,*,错题,"设$\lambda$是$A$的任一特征值，$\alpha$是对应的特征向量，即$A\alpha=\lambda\alpha,\alpha\neq 0$. 那么
+\[
+A(A\alpha) = A(\lambda\alpha)=\lambda A\alpha=\lambda^{2}\alpha.
+\]
+又因$A^{2}=A$有$A^{2}\alpha = A\alpha$. 因此$\lambda^{2}\alpha=\lambda\alpha\Rightarrow (\lambda^{2}-\lambda)\alpha = 0$.
+由于$\alpha\neq 0$，故必有$\lambda^{2}-\lambda = 0$. 因此，特征值$\lambda$只能是$0$或$1$.",,9cm,2026-05-30
+数学,李永乐线代零基础,李永乐线代零基础-例5-14,设$\lambda_1$和$\lambda_2$是矩阵$\boldsymbol{A}$不同的特征值，对应的特征向量分别为$\boldsymbol{\alpha}_1$和$\boldsymbol{\alpha}_2$，证明$\boldsymbol{\alpha}_1 + \boldsymbol{\alpha}_2$不是$\boldsymbol{A}$的特征向量.,n,李永乐线代零基础-例5-14,***,其他方法,"【证明】（反证法）. 已知$\boldsymbol{A}\boldsymbol{\alpha}_1 = \lambda_1\boldsymbol{\alpha}_1$，$\boldsymbol{A}\boldsymbol{\alpha}_2 = \lambda_2\boldsymbol{\alpha}_2$. 设$\boldsymbol{\alpha}_1 + \boldsymbol{\alpha}_2$为$\boldsymbol{A}$对应$\lambda$的特征向量，即
+\[
+\boldsymbol{A}(\boldsymbol{\alpha}_1 + \boldsymbol{\alpha}_2) = \lambda(\boldsymbol{\alpha}_1 + \boldsymbol{\alpha}_2).
+\]
+于是
+\[
+\lambda_1\boldsymbol{\alpha}_1 + \lambda_2\boldsymbol{\alpha}_2 = \lambda\boldsymbol{\alpha}_1 + \lambda\boldsymbol{\alpha}_2,
+\]
+即
+\[
+(\lambda_1 - \lambda)\boldsymbol{\alpha}_1 + (\lambda_2 - \lambda)\boldsymbol{\alpha}_2 = \boldsymbol{0}.
+\]
+因$\lambda_1 \neq \lambda_2$知$\boldsymbol{\alpha}_1$，$\boldsymbol{\alpha}_2$线性无关，故
+\[
+\lambda_1 - \lambda = 0,\lambda_2 - \lambda = 0.
+\]
+于是$\lambda_1 = \lambda = \lambda_2$，与题设矛盾. 故$\boldsymbol{\alpha}_1 + \boldsymbol{\alpha}_2$不是$\boldsymbol{A}$的特征向量.",,10cm,2026-05-30
+数学,李永乐线代零基础,李永乐线代零基础-例5-18,已知矩阵$\boldsymbol{A}=\begin{bmatrix}1&-2&-4\\-2&x&-2\\-4&-2&1\end{bmatrix}$和$\boldsymbol{B}=\begin{bmatrix}5&0&0\\0&y&0\\0&0&-4\end{bmatrix}$相似，求$x$和$y$。,n,李永乐线代零基础-例5-18,*,错题、粗心、其他方法,"\textbf{\textcolor{red}{方法一}}：由$\boldsymbol{A}\sim\boldsymbol{B}$有$\sum a_{ii}=\sum b_{ii}$，$|\boldsymbol{A}| = |\boldsymbol{B}|$，即
+\[
+\begin{cases}
+1 + x + 1 = 5 + y + (-4)\\
+-5(3x + 8) = -20y
+\end{cases}
+\]
+解得$x = 4$，$y = 5$。
+\textbf{\textcolor{red}{方法二}}：由$\boldsymbol{A}\sim\boldsymbol{B}$知$|\lambda\boldsymbol{E}-\boldsymbol{A}| = |\lambda\boldsymbol{E}-\boldsymbol{B}|$，
+\begin{align*}
+|\lambda\boldsymbol{E}-\boldsymbol{A}|&=\begin{vmatrix}
+\lambda - 1&2&4\\
+2&\lambda - x&2\\
+4&2&\lambda - 1
+\end{vmatrix}\\
+&=\begin{vmatrix}
+\lambda - 5&0&5 - \lambda\\
+2&\lambda - x&2\\
+4&2&\lambda - 1
+\end{vmatrix}=\begin{vmatrix}
+\lambda - 5&0&0\\
+2&\lambda - x&4\\
+4&2&\lambda + 3
+\end{vmatrix}\\
+&= (\lambda - 5)[\lambda^2 + (3 - x)\lambda - 3x - 8]
+\end{align*}
+\begin{align*}
+|\lambda\boldsymbol{E}-\boldsymbol{B}|&= (\lambda - 5)(\lambda - y)(\lambda + 4)\\
+&= (\lambda - 5)[\lambda^2 + (4 - y)\lambda - 4y]\\
+&\Rightarrow x = 4,y = 5
+\end{align*}",,6cm,2026-05-30
+数学,李永乐线代零基础,李永乐线代零基础-例5-26,"已知$\boldsymbol{A}$是秩为$1$的$3$阶实对称矩阵，$\lambda = 5$是$\boldsymbol{A}$的特征值，对应的特征向量是$\boldsymbol{\alpha}_1=(1,3,-2)^{\mathrm{T}}$. 求$\boldsymbol{A}$的其他的特征值，特征向量.",n,李永乐线代零基础-例5-26,***,好题,"因为$r(\boldsymbol{A}) = 1$，知$|\boldsymbol{A}| = 0$. 所以$0$是$\boldsymbol{A}$的特征值.
+由于$\boldsymbol{A}$是实对称矩阵，有$\boldsymbol{A}\sim\boldsymbol{\Lambda}$. 那么$r(\boldsymbol{A}) = r(\boldsymbol{\Lambda}) = 1$. 因此
+\[
+\boldsymbol{\Lambda}=\begin{bmatrix}
+5&0&0\\
+0&0&0\\
+0&0&0
+\end{bmatrix}
+\]
+设$\lambda = 0$的特征向量$\boldsymbol{\alpha}=(x_1,x_2,x_3)^{\mathrm{T}}$，则$\boldsymbol{\alpha}$和$\boldsymbol{\alpha}_1$正交，即
+\[
+x_1 + 3x_2 - 2x_3 = 0
+\]
+得基础解系
+\[
+\boldsymbol{\alpha}_2=(-3,1,0)^{\mathrm{T}},\boldsymbol{\alpha}_3=(2,0,1)^{\mathrm{T}}
+\]
+因此$\lambda_2 = \lambda_3 = 0$对应的特征向量是$k_2\boldsymbol{\alpha}_2 + k_3\boldsymbol{\alpha}_3$，即
+\[
+k_2\begin{bmatrix}
+-3\\
+1\\
+0
+\end{bmatrix}+k_3\begin{bmatrix}
+2\\
+0\\
+1
+\end{bmatrix}
+\]
+且$k_2,k_3$不全为$0$.",,8cm,2026-05-30
+数学,李永乐线代零基础,李永乐线代零基础-例6-2,用配方法将二次型$f = x_1x_2 + 2x_1x_3 - 4x_2x_3$化成标准形，并写出所用坐标变换。,n,李永乐线代零基础-例6-2,*,错题,"设$\begin{cases}x_1 = y_1 + y_2\\x_2 = y_1 - y_2\\x_3 = y_3\end{cases}$，则
+\begin{align*}
+f&=(y_1 + y_2)(y_1 - y_2)+2(y_1 + y_2)y_3 - 4(y_1 - y_2)y_3\\
+&=y_1^2 - y_2^2 - 2y_1y_3 + 6y_2y_3\\
+&=(y_1^2 - 2y_1y_3 + y_3^2)-y_3^2 - y_2^2 + 6y_2y_3\\
+&=(y_1 - y_3)^2-(y_2^2 - 6y_2y_3 + 9y_3^2)+9y_3^2 - y_3^2\\
+&=(y_1 - y_3)^2-(y_2 - 3y_3)^2 + 8y_3^2
+\end{align*}
+令$\begin{cases}z_1 = y_1 - y_3\\z_2 = y_2 - 3y_3\\z_3 = y_3\end{cases}$，则有$\begin{cases}y_1 = z_1 + z_3\\y_2 = z_2 + 3z_3\\y_3 = z_3\end{cases}$，那么令$\begin{cases}x_1 = z_1 + z_2 + 4z_3\\x_2 = z_1 - z_2 - 2z_3\\x_3 = z_3\end{cases}$，得$f = z_1^2 - z_2^2 + 8z_3^2$。",,20cm,2026-05-31
+数学,李永乐线代零基础,李永乐线代零基础-例6-3,将二次型$f = x_1^2 + x_2^2 + x_3^2 + 4x_1x_2 + 4x_1x_3 + 4x_2x_3$用正交变换化成标准形，并写出所用的坐标变换。,n,李永乐线代零基础-例6-3,*,错题、粗心,"二次型矩阵为
+\[
+A =
+\begin{bmatrix}
+1 & 2 & 2 \\
+2 & 1 & 2 \\
+2 & 2 & 1
+\end{bmatrix}
+\]
+由特征多项式
+\[
+|\lambda E - A| =
+\begin{vmatrix}
+\lambda - 1 & -2 & -2 \\
+-2 & \lambda - 1 & -2 \\
+-2 & -2 & \lambda - 1
+\end{vmatrix}
+= (\lambda - 5)(\lambda + 1)^2
+\]
+$A$的特征值：$5$，$-1$，$-1$。
+当$\lambda = 5$时，由$(5E - A)x = 0$，可得
+\[
+\begin{bmatrix}
+4 & -2 & -2 \\
+-2 & 4 & -2 \\
+-2 & -2 & 4
+\end{bmatrix}
+\to
+\begin{bmatrix}
+1 & 0 & -1 \\
+0 & 1 & -1 \\
+0 & 0 & 0
+\end{bmatrix}
+\]
+得$\alpha_1 = (1,1,1)^T$。
+当$\lambda = -1$时，由$(-E - A)x = 0$，可得
+\[
+\begin{bmatrix}
+-2 & -2 & -2 \\
+-2 & -2 & -2 \\
+-2 & -2 & -2
+\end{bmatrix}
+\to
+\begin{bmatrix}
+1 & 1 & 1 \\
+0 & 0 & 0 \\
+0 & 0 & 0
+\end{bmatrix}
+\]
+得$\alpha_2 = (-1,1,0)^T$，$\alpha_3 = (-1,0,1)^T$。
+将$\alpha_2,\alpha_3$进行施密特正交化
+\[
+\beta_2 = \alpha_2 =
+\begin{bmatrix}
+-1 \\
+1 \\
+0
+\end{bmatrix}
+\]
+\[
+\beta_3 = \alpha_3 - \frac{(\alpha_3,\beta_2)}{(\beta_2,\beta_2)}\beta_2 =
+\begin{bmatrix}
+-1 \\
+0 \\
+1
+\end{bmatrix}
+- \frac{1}{2}
+\begin{bmatrix}
+-1 \\
+1 \\
+0
+\end{bmatrix}
+= \frac{1}{2}
+\begin{bmatrix}
+-1 \\
+-1 \\
+2
+\end{bmatrix}
+\]
+单位化：
+\[
+\gamma_1 = \frac{1}{\sqrt{3}}
+\begin{bmatrix}
+1 \\
+1 \\
+1
+\end{bmatrix}
+,
+\gamma_2 = \frac{1}{\sqrt{2}}
+\begin{bmatrix}
+-1 \\
+1 \\
+0
+\end{bmatrix}
+,
+\gamma_3 = \frac{1}{\sqrt{6}}
+\begin{bmatrix}
+-1 \\
+-1 \\
+2
+\end{bmatrix}
+\]
+令
+\[
+P = (\gamma_1,\gamma_2,\gamma_3) =
+\begin{bmatrix}
+\frac{1}{\sqrt{3}} & -\frac{1}{\sqrt{2}} & -\frac{1}{\sqrt{6}} \\
+\frac{1}{\sqrt{3}} & \frac{1}{\sqrt{2}} & -\frac{1}{\sqrt{6}} \\
+\frac{1}{\sqrt{3}} & 0 & \frac{2}{\sqrt{6}}
+\end{bmatrix}
+\]
+则$P^{-1}AP = \Lambda =
+\begin{bmatrix}
+5 & 0 & 0 \\
+0 & -1 & 0 \\
+0 & 0 & -1
+\end{bmatrix}
+$。
+那么二次型$x^TAx$经正交变换
+\[
+\begin{bmatrix}
+x_1 \\
+x_2 \\
+x_3
+\end{bmatrix}
+=
+\begin{bmatrix}
+\frac{1}{\sqrt{3}} & -\frac{1}{\sqrt{2}} & -\frac{1}{\sqrt{6}} \\
+\frac{1}{\sqrt{3}} & \frac{1}{\sqrt{2}} & -\frac{1}{\sqrt{6}} \\
+\frac{1}{\sqrt{3}} & 0 & \frac{2}{\sqrt{6}}
+\end{bmatrix}
+\begin{bmatrix}
+y_1 \\
+y_2 \\
+y_3
+\end{bmatrix}
+\]
+化为标准形
+\[
+f = x^TAx = y^T\Lambda y = 5y_1^2 - y_2^2 - y_3^2
+\]",,20cm,2026-05-31
+数学,李永乐线代零基础,李永乐线代零基础-例6-9,判断二次型$2x_{1}^{2}+5x_{2}^{2}+5x_{3}^{2}+4x_{1}x_{2}-4x_{1}x_{3}-8x_{2}x_{3}$是否是正定二次型。,n,李永乐线代零基础-例6-9,*,错题、粗心、其他方法,"\textbf{\textcolor{red}{方法一：(用顺序主子式)}}设二次型矩阵为
+\[
+\boldsymbol{A} =
+\begin{bmatrix}
+2 & 2 & -2 \\
+2 & 5 & -4 \\
+-2 & -4 & 5
+\end{bmatrix}
+\]
+计算顺序主子式：
+一阶顺序主子式$\Delta_{1}=2>0$，二阶顺序主子式$\Delta_{2}=\begin{vmatrix}2 & 2 \\ 2 & 5\end{vmatrix}=6>0$，
+三阶顺序主子式$\Delta_{3}=|\boldsymbol{A}| = 10>0$。
+因此，$f$是正定二次型。
+\textbf{\textcolor{red}{方法二：(用特征值)}}由特征多项式为
+\[
+|\lambda\boldsymbol{E}-\boldsymbol{A}| =
+\begin{vmatrix}
+\lambda - 2 & -2 & 2 \\
+-2 & \lambda - 5 & 4 \\
+2 & 4 & \lambda - 5
+\end{vmatrix}
+= (\lambda - 1)^2(\lambda - 10)
+\]
+矩阵$\boldsymbol{A}$的特征值为：$1,1,10$全大于$0$。因此，$f$是正定二次型。
+\textbf{\textcolor{red}{方法三：(用配方法)}}
+\begin{align*}
+f&=2[x_{1}^{2}+2x_{1}(x_{2}-x_{3})]+5x_{2}^{2}+5x_{3}^{2}-8x_{2}x_{3}\\
+&=2(x_{1}+x_{2}-x_{3})^{2}-2(x_{2}-x_{3})^{2}+5x_{2}^{2}+5x_{3}^{2}-8x_{2}x_{3}\\
+&=2(x_{1}+x_{2}-x_{3})^{2}+3(x_{2}^{2}-\frac{4}{3}x_{2}x_{3})+3x_{3}^{2}\\
+&=2(x_{1}+x_{2}-x_{3})^{2}+3(x_{2}-\frac{2}{3}x_{3})^{2}+\frac{5}{3}x_{3}^{2}
+\end{align*}
+其中$p = 3,q = 0$，因此$f$是正定二次型。",,10cm,2026-05-31
+数学,李永乐线代零基础,李永乐线代零基础-例6-11,已知$\boldsymbol{A}=\begin{bmatrix}-1&1&1\\1&-1&-1\\1&-1&-1\end{bmatrix}$，若$\boldsymbol{A}+k\boldsymbol{E}$正定，则$k$的范围是\underline{\quad\quad\quad}。,n,李永乐线代零基础-例6-11,***,其他方法,"由特征多项式$|\lambda\boldsymbol{E}-\boldsymbol{A}|=\begin{vmatrix}\lambda + 1&-1&-1\\-1&\lambda + 1&1\\-1&1&\lambda + 1\end{vmatrix}=\lambda^2(\lambda + 3)$。
+知$\boldsymbol{A}$的特征值是：$0,0,-3$。故$\boldsymbol{A}+k\boldsymbol{E}$的特征值是：$k,k,k - 3$，所以
+\[
+\begin{cases}
+k>0\\
+k - 3>0
+\end{cases}
+\Rightarrow k>3
+\]",,10cm,2026-05-31
+数学,李永乐线代零基础,李永乐线代零基础-习3-1,设$A$为$n$阶矩阵，且$A^{2}=A$，证明矩阵$A - 2E$可逆。,n,李永乐线代零基础-习3-1,***,其他方法,"\textbf{\textcolor{red}{方法一：}}因$A^{2}-A = O$，有
+\[
+(A - 2E)(A + E)+2E = A^{2}-A = O
+\]
+\[
+(A - 2E)\left[-\frac{1}{2}(A + E)\right]=E
+\]
+所以$A - 2E$可逆。
+\textbf{\textcolor{red}{方法二：}}设$\lambda$是$A$的一个特征值，$\alpha$是对应的特征向量. 即
+\[
+A\alpha=\lambda\alpha,\alpha\neq 0
+\]
+由$A^{2}=A$，有$\lambda^{2}\alpha=\lambda\alpha$，则
+\[
+(\lambda^{2}-\lambda)\alpha = 0,\alpha\neq 0
+\]
+所以$\lambda = 0$或$1$. 若$A = E$，那么特征值都是$1$；若$A = O$，那么特征值都是$0$；若$A=\begin{bmatrix}1&0\\0&0\end{bmatrix}$，那么特征值是$0$和$1$.
+由于$A - 2E$特征值都不为$0$.
+所以$A - 2E$可逆。",,5cm,2026-06-01
+数学,李永乐线代零基础,李永乐线代零基础-习3-3,设$A$是$m\times n$矩阵，$B$是$n\times m$矩阵，若$\lambda\neq 0$是特征值$AB$的特征值，证明$\lambda$也是矩阵$BA$的特征值.,n,李永乐线代零基础-习3-3,*,错题,"设$\lambda$是$AB$的特征值，则
+\[
+AB\alpha = \lambda\alpha,\alpha\neq 0
+\]
+则
+\[
+(BA)B\alpha = B(AB\alpha) = B(\lambda\alpha) = \lambda(B\alpha)
+\]
+由于$\lambda\neq 0,\alpha\neq 0,AB\alpha\neq 0$，故$B\alpha\neq 0$.
+因此，$\lambda$是矩阵$BA$的特征值，且$B\alpha$是对应的特征向量.",,8cm,2026-06-01
+数学,李永乐线代零基础,李永乐线代零基础-习3-4,已知\(\boldsymbol{A}=\begin{bmatrix}0&2&1\\0&1&0\\1&a&0\end{bmatrix}\)相似于对角矩阵. (1) 求\(a\). (2) 求可逆矩阵\(\boldsymbol{P}\)和\(\boldsymbol{\Lambda}\)，使得\(\boldsymbol{P}^{-1}\boldsymbol{AP}=\boldsymbol{\Lambda}\).,n,李永乐线代零基础-习3-4,*,错题、粗心,"(1) \(\boldsymbol{A}\)的特征多项式为
+\begin{align*}
+|\lambda\boldsymbol{E}-\boldsymbol{A}|&=\begin{vmatrix}\lambda& -2& -1\\0&\lambda - 1&0\\-1&-a&\lambda\end{vmatrix}\\
+&=(\lambda - 1)\begin{vmatrix}\lambda& -1\\-1&\lambda\end{vmatrix}\\
+&=(\lambda - 1)(\lambda^2 - 1)\\
+&=(\lambda - 1)^2(\lambda + 1)
+\end{align*}
+\(\boldsymbol{A}\)的特征值为\(1,1,-1\).
+由\(\boldsymbol{A}\sim\boldsymbol{\Lambda}\)，因为\(\lambda = 1\)是二重特征值，\(\lambda = 1\)应有\(2\)个线性相关的特征向量. 故\((\boldsymbol{E}-\boldsymbol{A})\boldsymbol{x}=\boldsymbol{0}\)应有\(2\)个线性无关的解.
+\[
+\boldsymbol{E}-\boldsymbol{A}=\begin{bmatrix}1& -2& -1\\0&0&0\\-1&-a&1\end{bmatrix}\to\begin{bmatrix}1& -2& -1\\0&a + 2&0\\0&0&0\end{bmatrix}
+\]
+因为\(n - r(\boldsymbol{E}-\boldsymbol{A}) = 2\)，故\(a=-2\).
+(2) 把\(a = - 2\)代入矩阵\(\boldsymbol{A}\)中.
+对于\(\lambda = 1\)，由\((\boldsymbol{E}-\boldsymbol{A})\boldsymbol{x}=\boldsymbol{0}\)，
+\[
+\boldsymbol{E}-\boldsymbol{A}=\begin{bmatrix}1& -2& -1\\0&0&0\\-1&2&1\end{bmatrix}\to\begin{bmatrix}1& -2& -1\\0&0&0\\0&0&0\end{bmatrix}
+\]
+得特征向量为\(\boldsymbol{\alpha}_1=(2,1,0)^{\mathrm{T}},\boldsymbol{\alpha}_2=(1,0,1)^{\mathrm{T}}\).
+对于\(\lambda=-1\)，由\((-\boldsymbol{E}-\boldsymbol{A})\boldsymbol{x}=\boldsymbol{0}\)，
+\[
+-\boldsymbol{E}-\boldsymbol{A}=\begin{bmatrix}-1& -2& -1\\0&-2&0\\-1&2&-1\end{bmatrix}\to\begin{bmatrix}1&0&1\\0&1&0\\0&0&0\end{bmatrix}
+\]
+得特征向量是\(\boldsymbol{\alpha}_3=(-1,0,1)^{\mathrm{T}}\). 令
+\[
+\boldsymbol{P}=(\boldsymbol{\alpha}_1,\boldsymbol{\alpha}_2,\boldsymbol{\alpha}_3)=\begin{bmatrix}2&1& -1\\1&0&0\\0&1&1\end{bmatrix}
+\]
+有
+\[
+\boldsymbol{P}^{-1}\boldsymbol{AP}=\boldsymbol{\Lambda}=\begin{bmatrix}1&0&0\\0&1&0\\0&0&-1\end{bmatrix}
+\]",,知识点不熟悉,2026-06-01
+数学,李永乐线代零基础,李永乐线代零基础-习3-5,"已知3阶实对称矩阵$A$的特征值为$3,0,0$；且$\alpha=(1,1,1)^T$是特征值3对应的特征向量.求矩阵$A$.",n,李永乐线代零基础-习3-5,*,错题、不规范、其他方法,"设$x=(x_1,x_2,x_3)^T$是矩阵$A$对应于特征值$\lambda = 0$的特征向量.因为$A$是实对称矩阵，则$x$与$\alpha$相互正交：
+\[
+x_1 + x_2 + x_3 = 0,
+\]
+得$\alpha_2 = (-1,1,0)^T,\alpha_3 = (-1,0,1)^T$，是$\lambda = 0$的特征向量.
+由$A\alpha = 3\alpha,A\alpha_2 = 0\alpha_2,A\alpha_3 = 0\alpha_3$，有
+\[
+A(\alpha,\alpha_2,\alpha_3)=(3\alpha,0,0).
+\]
+\begin{align*}
+A&=(3\alpha,0,0)(\alpha,\alpha_2,\alpha_3)^{-1}\\
+&=\begin{bmatrix}3&0&0\\3&0&0\\3&0&0\end{bmatrix}\begin{bmatrix}1&-1&-1\\1&1&0\\1&0&1\end{bmatrix}^{-1}\\
+&=\begin{bmatrix}3&0&0\\3&0&0\\3&0&0\end{bmatrix}\cdot\frac{1}{3}\begin{bmatrix}1&1&1\\-1&2&-1\\-1&-1&2\end{bmatrix}=\begin{bmatrix}1&1&1\\1&1&1\\1&1&1\end{bmatrix}.
+\end{align*}",,20cm,2026-06-01
+数学,李永乐线代零基础,李永乐线代零基础-习3-6,"设$A$是$3$阶实对称矩阵，$A^{2}+2A = O$，且$r(A)=2$.
+(1)求$A$的特征值.
+(2)求$r(A - E)$.
+(3)若$A + kE$为正定矩阵，求$k$.",n,李永乐线代零基础-习3-6,***,想得久,"(1)设$A\alpha=\lambda\alpha,\alpha\neq 0$，由$A^{2}+2A = O$，有$\lambda^{2}+2\lambda = 0$，得$\lambda = 0$或$-2$.
+又$A$是实对称矩阵，$r(A)=2$，有$r(A)=r(\Lambda)=2$.
+\[
+A\sim\Lambda=\begin{bmatrix}
+-2&0&0\\
+0&-2&0\\
+0&0&0
+\end{bmatrix}
+\]
+所以$A$的特征值：$-2$，$-2$，$0$.
+(2)
+\[
+A - E\sim\Lambda - E=\begin{bmatrix}
+-3&0&0\\
+0&-3&0\\
+0&0&-1
+\end{bmatrix}
+\]
+所以$r(A - E)=3$.
+(3)$A + kE$的特征值：$-2 + k$，$-2 + k$，$k$. 则
+\[
+A + kE\text{ 正定}\Leftrightarrow\begin{cases}
+-2 + k>0\\
+k>0
+\end{cases}
+\]
+所以$k>2$.",,15cm,2026-06-01
+数学,李永乐线代零基础,李永乐线代零基础-习3-7,"二次型$f(x_1,x_2,x_3)=(x_1 + x_2)^2 + (x_2 - x_3)^2 + (x_3 + x_1)^2$的秩为\underline{\quad\quad\quad}.",n,李永乐线代零基础-习3-7,*,错题、其他方法、粗心,"\begin{align*}
+f&=2x_1^2 + 2x_2^2 + 2x_3^2 + 2x_1x_2 - 2x_2x_3 + 2x_1x_3.\\
+A&=\begin{bmatrix}
+2&1&1\\
+1&2&-1\\
+1&-1&2
+\end{bmatrix},
+\end{align*}
+因$r(A)=2$，故$r(f)=2$.
+【注】若令
+\[
+\begin{cases}
+y_1 = x_1 + x_2,\\
+y_2 = x_2 - x_3,\\
+y_3 = x_1 + x_3.
+\end{cases}
+\]
+而认为标准形是$f = y_1^2 + y_2^2 + y_3^2$，这个做法是错误的. 因为
+\[
+\begin{vmatrix}
+1&1&0\\
+0&1&-1\\
+1&0&1
+\end{vmatrix}=0,
+\]
+这个变换不是坐标变换.",,13cm,2026-06-01

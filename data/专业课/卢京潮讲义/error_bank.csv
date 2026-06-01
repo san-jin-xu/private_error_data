@@ -1,0 +1,166 @@
+学科,书本,标题,题干,是否有图片,图片路径,掌握程度,标签,答案,历次反馈,预留空间,首次做题时间
+专业课,卢京潮讲义,卢京潮讲义-例4-4,已知$F(s)=\frac{s + 3}{s^2 + 2s + 2}$，求$f(t)=$?,n,卢京潮讲义-例4-4,*,错题,"\textbf{\textcolor{red}{解一：}}
+\begin{align*}
+F(s)&=\frac{s + 3}{(s + 1 - j)(s + 1 + j)}=\frac{C_1}{s + 1 - j}+\frac{C_2}{s + 1 + j}\\
+C_1&=\lim_{s\to -1 + j}(s + 1 - j)\frac{s + 3}{(s + 1 - j)(s + 1 + j)}=\frac{2 + j}{2j}\\
+C_2&=\lim_{s\to -1 - j}(s + 1 + j)\frac{s + 3}{(s + 1 - j)(s + 1 + j)}=\frac{2 - j}{-2j}\\
+f(t)&=\frac{2 + j}{2j}e^{(-1 + j)t}-\frac{2 - j}{2j}e^{(-1 - j)t}=\frac{1}{2j}e^{-t}[(2 + j)e^{jt}-(2 - j)e^{-jt}]\\
+&=\frac{1}{2j}e^{-t}\left[2j\frac{e^{jt}+e^{-jt}}{2}+4j\frac{e^{jt}-e^{-jt}}{2j}\right]=\frac{1}{2j}e^{-t}\cdot j[2\cos t + 4\sin t]=e^{-t}[\cos t + 2\sin t]
+\end{align*}
+\textbf{\textcolor{red}{解二：}}
+\begin{align*}
+F(s)&=\frac{s + 3}{(s + 1)^2 + 1^2}=\frac{s + 1 + 2}{(s + 1)^2 + 1^2}=\frac{s + 1}{(s + 1)^2 + 1^2}+2\frac{1}{(s + 1)^2 + 1^2}\\
+f(t)&=e^{-t}\cos t + 2e^{-t}\sin t
+\end{align*}",,5cm,2026-05-19
+专业课,卢京潮讲义,卢京潮讲义-例4-5,已知$F(s)=\frac{s + 2}{s(s + 1)^2(s + 3)}$，求$f(t) = $?,n,卢京潮讲义-例4-5,*,错题,"\begin{align*}
+F(s)&=\frac{C_2}{(s + 1)^2}+\frac{C_1}{s + 1}+\frac{C_3}{s}+\frac{C_4}{s + 3}\\
+C_2&=\lim_{s\rightarrow -1}(s + 1)^2\frac{s + 2}{s(s + 1)^2(s + 3)}=\frac{-1 + 2}{(-1)(-1 + 3)}=-\frac{1}{2}\\
+C_1&=\frac{1}{1!}\lim_{s\rightarrow -1}\frac{d}{ds}\left[(s + 1)^2\frac{s + 2}{s(s + 1)^2(s + 3)}\right]=\lim_{s\rightarrow -1}\frac{s(s + 3)-(s + 2)[s + 3 + s]}{s^2(s + 3)^2}=-\frac{3}{4}\\
+C_3&=\lim_{s\rightarrow 0}s\cdot\frac{s + 2}{s(s + 1)^2(s + 3)}=\frac{2}{3}\\
+C_4&=\lim_{s\rightarrow -3}(s + 3)\frac{s + 2}{s(s + 1)^2(s + 3)}=\frac{1}{12}\\
+F(s)&=-\frac{1}{2}\cdot\frac{1}{(s + 1)^2}-\frac{3}{4}\cdot\frac{1}{s + 1}+\frac{2}{3}\cdot\frac{1}{s}+\frac{1}{12}\cdot\frac{1}{s + 3}\\
+f(t)&=-\frac{1}{2}te^{-t}-\frac{3}{4}e^{-t}+\frac{2}{3}+\frac{1}{12}e^{-3t}
+\end{align*}",,10cm,2026-05-19
+专业课,卢京潮讲义,卢京潮讲义-例4-6,在R - C电路中，已知$u_r = Ri + u_c$，$i = C\dot{u}_c$，$u_r(t) = E_0\cdot1(t)$，求$u_c(t)$。,y,卢京潮讲义-例4-6,*,错题,"\begin{align*}
+&由u_r = Ri + u_c，i = C\dot{u}_c可得RC\dot{u}_c + u_c = u_r\\
+&进行拉普拉斯变换：RC[sU_c(s) - u_c(0)] + U_c(s) = U_r(s)\\
+&整理得(RCs + 1)U_c(s) = U_r(s) + RCu_c(0)\\
+&已知U_r(s)=\frac{E_0}{s}，则U_c(s)=\frac{U_r(s)}{RCs + 1}+\frac{RCu_c(0)}{RCs + 1}=\frac{E_0}{s(RCs + 1)}+\frac{RCu_c(0)}{RCs + 1}\\
+&进一步变形为U_c(s)=\frac{E_0/RC}{s(s+\frac{1}{RC})}+\frac{u_c(0)}{s+\frac{1}{RC}}=\frac{C_0}{s}+\frac{C_1}{s+\frac{1}{RC}}+\frac{u_c(0)}{s+\frac{1}{RC}}\\
+&其中C_0=\lim_{s \to 0}s\frac{E_0/RC}{s(s+\frac{1}{RC})}=E_0，C_1=\lim_{s \to -\frac{1}{RC}}(s+\frac{1}{RC})\frac{E_0/RC}{s(s+\frac{1}{RC})}=-E_0\\
+&所以U_c(s)=\frac{E_0}{s}-\frac{E_0}{s+\frac{1}{RC}}+\frac{u_c(0)}{s+\frac{1}{RC}}\\
+&进行拉普拉斯反变换得u_c(t)=E_0 - E_0e^{-\frac{1}{RC}t}+u_c(0)\cdot e^{-\frac{1}{RC}t}=E_0 - [E_0 - u_c(0)]\cdot e^{-\frac{1}{RC}t}
+\end{align*}",,12cm,2026-05-19
+专业课,卢京潮讲义,卢京潮讲义-例4-7,已知$G(s)=\frac{4s - 4}{s^3 + 3s^2 + 2s}$，将其化为首1、尾1标准型，并确定其增益。,n,卢京潮讲义-例4-7,*,错题,"\begin{align*}
+G(s)&=\frac{4(s - 1)}{s^3 + 3s^2 + 2s}=\frac{4(s - 1)}{s(s + 1)(s + 2)}\\
+G(s)&=\frac{4}{2}\cdot\frac{s - 1}{s(\frac{1}{2}s^2 + \frac{3}{2}s + 1)}= 2\cdot\frac{(s - 1)}{s(\frac{1}{2}s + 1)(s + 1)}\\
+K&=2
+\end{align*}",,3cm,2026-05-19
+专业课,卢京潮讲义,卢京潮讲义-例4-8,已知某系统在0初条件下的单位阶跃响应为$c(t)=1-\frac{2}{3}e^{-t}-\frac{1}{3}e^{-4t}$，试求：（1）系统的传递函数；（2）系统的增益；（3）系统的特征根及相应的模态；（4）画出对应的零极点图；（5）求系统的单位脉冲响应；（6）求系统微分方程；（7）当$c(0)=-1$，$c'(0)=0$；$r(t)=1(t)$时，求系统的响应。,y,卢京潮讲义-例4-8,*,错题、粗心,"(1)
+\begin{align*}
+C(s)&=\frac{1}{s}-\frac{2}{3}\cdot\frac{1}{s + 1}-\frac{1}{3}\cdot\frac{1}{s + 4}=\frac{2(s + 2)}{s(s + 1)(s + 4)}\\
+G(s)&=\frac{C(s)}{R(s)}=\frac{C(s)}{1/s}=s\cdot C(s)=\frac{2(s + 2)}{(s + 1)(s + 4)}
+\end{align*}
+(2)
+\[
+K=\frac{2\times2}{4}=1
+\]
+(3)
+\[
+\begin{cases}
+\lambda_1=-1\\
+\lambda_2=-4
+\end{cases}
+\]
+\[
+\begin{cases}
+e^{-t}\\
+e^{-4t}
+\end{cases}
+\]
+(4) 零极点图为在复平面上，零点为$s=-2$，极点为$s=-1$和$s=-4$。
+(5)
+\begin{align*}
+k(t)&=L^{-1}[G(s)]=L^{-1}\left[\frac{2(s + 2)}{(s + 1)(s + 4)}\right]=L^{-1}\left[\frac{C_1}{s + 1}+\frac{C_2}{s + 4}\right]\\
+C_1&=\lim_{s\rightarrow -1}\frac{2(s + 2)}{s + 4}=\frac{2}{3}\\
+C_2&=\lim_{s\rightarrow -4}\frac{2(s + 2)}{s + 1}=\frac{4}{3}\\
+k(t)&=L^{-1}\left[\frac{2}{3}\cdot\frac{1}{s + 1}+\frac{4}{3}\cdot\frac{1}{s + 4}\right]=\frac{2}{3}e^{-t}+\frac{4}{3}e^{-4t}
+\end{align*}
+(6)
+\begin{align*}
+G(s)&=\frac{2(s + 2)}{(s + 1)(s + 4)}=\frac{2s + 4}{s^2+5s + 4}=\frac{C(s)}{R(s)}\\
+(s^2 + 5s + 4)C(s)&=(2s + 4)R(s)\\
+L^{-1}: \ddot{c}+5\dot{c}+4c&=2\dot{r}+4r
+\end{align*}
+(7)
+\begin{align*}
+L: &[s^2C(s)-sc(0)-\dot{c}(0)]+5[sC(s)-c(0)]+[4C(s)]\\
+&(s^2 + 5s + 4)C(s)-(s + 5)c(0)-\dot{c}(0)=2(s + 2)R(s)\\
+C(s)&=\frac{2(s + 2)}{s^2 + 5s + 4}\cdot\frac{1}{s}-\frac{s + 5}{s^2 + 5s + 4}=\frac{-s^2-3s + 4}{s(s + 1)(s + 4)}
+\end{align*}
+其中初条件引起的自由响应部分
+\begin{align*}
+C_0(s)&=\frac{-(s + 5)}{(s + 1)(s + 4)}=\frac{C_1}{s + 1}+\frac{C_2}{s + 4}=\frac{-4}{3}\cdot\frac{1}{s + 1}+\frac{1}{3}\cdot\frac{1}{s + 4}\\
+C_1&=\lim_{s\rightarrow -1}\frac{-(s + 5)}{s + 4}=-\frac{4}{3}\\
+C_2&=\lim_{s\rightarrow -4}\frac{-(s + 5)}{s + 1}=\frac{1}{3}\\
+c_0(t)&=\frac{-4}{3}e^{-t}+\frac{1}{3}e^{-4t}\\
+c(t)&=c_r(t)+c_0(t)=\left(1-\frac{2}{3}e^{-t}-\frac{1}{3}e^{-4t}\right)-\left(\frac{4}{3}e^{-t}-\frac{1}{3}e^{-4t}\right)=1 - 2e^{-t}
+\end{align*}",,20cm,2026-05-19
+专业课,卢京潮讲义,卢京潮讲义-例5-1,系统如图，被控对象微分方程为$T_0\dot{u}_c + u_c = K_0u_a$，求系统传递函数$\Phi(s)=\frac{U_c(s)}{U_r(s)}$。,y,卢京潮讲义-例5-1,*,错题,"(1) 求$G_0(s)$
+由$(T_0s + 1)\cdot U_c(s) = K_0\cdot U_a(s)$可得$G_0(s)=\frac{U_c(s)}{U_a(s)}=\frac{K_0}{T_0s + 1}$ (1)
+(2) 由运放$I_{a(s)}=\frac{U_r(s)+U_c(s)}{R_0}=\frac{-U_a(s)}{\frac{1}{1/R + Cs}}=\frac{-U_a(s)}{\frac{R}{1 + RCs}}$
+则$\frac{U_a(s)}{U_r(s)+U_c(s)}=-\frac{R}{R_0}\cdot\frac{1}{CRs + 1}$ (2)
+由$\begin{cases}G_0(s)=\frac{U_c(s)}{U_a(s)}=\frac{K_0}{T_0s + 1}&(1)\\\frac{U_a(s)}{U_r(s)+U_c(s)}=-\frac{R}{R_0}\cdot\frac{1}{CRs + 1}&(2)\end{cases}$
+可得$\frac{U_c(s)}{U_r(s)+U_c(s)}=-\frac{RK_0}{R_0}\cdot\frac{1}{(T_0s + 1)(CRs + 1)}$
+整理得$\Phi(s)=\frac{U_c(s)}{U_r(s)}=\frac{-RK_0}{T_0CRR_0s^2+(T_0 + CR)R_0s+(R_0 + RK_0)}$
+进一步变形为$\Phi(s)=\frac{\frac{-RK_0}{R_0 + RK_0}}{\frac{T_0CRR_0}{R_0 + RK_0}s^2+\frac{(T_0 + CR)R_0}{R_0 + RK_0}s + 1}$，$K_{\Phi}=\frac{-RK_0}{R_0 + RK_0}$",,15cm,2026-05-19
+专业课,卢京潮讲义,卢京潮讲义-例6-3,对给定的控制系统结构图进行化简。,y,卢京潮讲义-例6-3,*,错题,"\[
+\frac{G_1G_2G_3G_4G_5G_6}{1 + G_2G_3H_2 + G_4G_5H_3 + G_3G_4H_4 + G_1G_2G_3G_4G_5G_6H_1 + G_2G_3G_4G_5H_2H_3}
+\]",,20cm,2026-05-20
+专业课,卢京潮讲义,卢京潮讲义-例6-4,对给定的控制系统结构图进行化简。,y,卢京潮讲义-例6-4,*,错题、负号漏掉,\[ \frac{C(s)}{R(s)}=\frac{G_1G_2G_3 - G_4G_3(1 + G_1G_2H_1)}{1 + G_1G_2H_1 + G_3H_2 + G_2H_3 + G_1G_2G_3H_1H_2} \],,20cm,2026-05-20
+专业课,卢京潮讲义,卢京潮讲义-例7-2,求传递函数$\frac{C(s)}{R(s)}$，系统方框图为：,y,卢京潮讲义-例7-2,*,错题,"\begin{align*}
+G(s)&=\frac{1}{\Delta}\sum_{k = 1}^{n}P_k\Delta_k\\
+\Delta&=1-[-G_1G_2H_1 - G_2G_3H_2 - G_1G_2G_3 - G_4H_2 - G_1G_4]\\
+&=1 + G_1G_2H_1+G_2G_3H_2 + G_1G_2G_3+G_4H_2 + G_1G_4\\
+P_1&=G_1G_2G_3,\quad \Delta_1 = 1\\
+P_2&=G_1G_4,\quad \Delta_2 = 1\\
+\Phi(s)&=\frac{G_1G_2G_3 + G_1G_4}{1 + G_1G_2H_1+G_2G_3H_2 + G_1G_2G_3+G_4H_2 + G_1G_4}
+\end{align*}",,5cm,2026-05-20
+专业课,卢京潮讲义,卢京潮讲义-例7-5,求传递函数$\frac{C(s)}{R(s)}$，系统结构图如图所示。,y,卢京潮讲义-例7-5,*,错题,"\begin{align*}
+\Delta&=1 - [G_2H_2 - G_1G_2G_3G_4H_1 - G_1G_2G_4H_1]\\
+&=1 - G_2H_2 + G_1G_2G_3G_4H_1 + G_1G_2G_4H_1\\
+P_1&=G_1G_2G_3G_4,\quad \Delta_1 = 1\\
+P_2&=G_1G_2G_4,\quad \Delta_2 = 1\\
+P_3&=G_2G_3G_4G_5,\quad \Delta_3 = 1\\
+P_4&=G_2G_4G_5,\quad \Delta_4 = 1\\
+P_5&=-G_3G_4G_6,\quad \Delta_5 = 1\\
+P_6&=-G_6H_2G_2G_4,\quad \Delta_6 = 1\\
+\Phi(s)&=\frac{G_1G_2G_3G_4 + G_1G_2G_4 + G_2G_3G_4G_5 + G_2G_4G_5 - G_3G_4G_6 - G_2G_4G_6H_2}{1 - G_2H_2 + G_1G_2G_3G_4H_1 + G_1G_2G_4H_1}
+\end{align*}",,9cm,2026-05-20
+专业课,卢京潮讲义,卢京潮讲义-例8-1,系统如图所示，现采用负反馈方式，欲将系统调节时间减小到原来的$0.1$倍，且保证原放大倍数不变，试确定参数$K_{0}$和$K_{H}$的取值。已知$G(s)=\frac{10}{0.2s + 1}$，原系统中$T = 0.2$，$K = 10$，闭环系统应满足$T^{*}=0.1T = 0.02$，$K^{*}=K = 10$。,y,卢京潮讲义-例8-1,*,错题、概念,"依题意，$G(s)=\frac{10}{0.2s + 1}$，$\begin{cases}T = 0.2\\K = 10\end{cases}$，闭环系统应满足$\begin{cases}T^{*}=0.1T = 0.02\\K^{*}=K = 10\end{cases}$。
+\begin{align*}
+\Phi(s)&=\frac{K_{O}G(s)}{1 + K_{H}G(s)}\\
+&=\frac{\frac{10K_{O}}{0.2s + 1}}{1 + \frac{10K_{H}}{0.2s + 1}}\\
+&=\frac{10K_{O}}{0.2s + 1 + 10K_{H}}\\
+&=\frac{\frac{10K_{O}}{1 + 10K_{H}}}{\frac{0.2}{1 + 10K_{H}}s + 1}
+\end{align*}
+由$\begin{cases}\frac{0.2}{1 + 10K_{H}} = T^{*}=0.02\\\frac{10K_{O}}{1 + 10K_{H}} = K^{*}=10\end{cases}$，解得$\begin{cases}K_{H}=0.9\\K_{O}=10\end{cases}$。",,10cm,2026-05-25
+专业课,卢京潮讲义,卢京潮讲义-例9-2,二阶系统的结构图及单位阶跃响应分别如图(a)，(b)所示，试确定系统参数$K_1$，$K_2$，$a$的值。,y,卢京潮讲义-例9-2,*,错题、计算,"由结构图可得系统闭环传递函数
+\[
+\Phi(s)=\frac{K_1K_2/s(s + a)}{1 + K_2/s(s + a)}=\frac{K_1K_2}{s^2 + as + K_2}\rightarrow
+\begin{cases}
+K_2 = \omega_n^2\\
+a = 2\xi\omega_n
+\end{cases}
+\]
+由单位阶跃响应曲线有
+\[
+h(\infty)=2=\lim_{s\rightarrow0}\Phi(s)R(s)=\lim_{s\rightarrow0}\frac{K_1K_2}{s^2 + as + K_2}=K_1
+\]
+\[
+\begin{cases}
+t_p=\frac{\pi}{\sqrt{1-\xi^2}\omega_n}=0.75\\
+\sigma\%=\frac{2.18 - 2}{2}=0.09=e^{-\xi\pi/\sqrt{1-\xi^2}}
+\end{cases}
+\]
+联立求解得$\begin{cases}\xi = 0.608\\\omega_n = 5.278\end{cases}$
+\[
+\begin{cases}
+K_2 = \omega_n^2 = 5.278^2 = 27.85\\
+a = 2\xi\omega_n = 2\times0.608\times5.278 = 6.42
+\end{cases}
+\]
+因此有$K_1 = 2$，$K_2 = 27.85$，$a = 6.42$。",,11cm,2026-05-30
+专业课,卢京潮讲义,卢京潮讲义-例9-3,对于典型欠阻尼二阶系统，已知$5\% \leq \sigma\% < 16.3\%$，$2 < \omega_n \leq 5$，试确定满足要求的系统极点分布范围。,y,卢京潮讲义-例9-3,*,错题、公式,"依题意有
+\[
+\begin{cases}
+0.707 \geq \xi > 0.5 \\
+2 < \omega_n \leq 5
+\end{cases}
+\]
+\[
+\begin{cases}
+45^{\circ} \leq \beta < 60^{\circ} \\
+2 < \omega_n \leq 5
+\end{cases}
+\]",,6cm,2026-05-30

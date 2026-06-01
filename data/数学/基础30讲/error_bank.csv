@@ -11,7 +11,7 @@
 &=\sqrt{\frac{4b^{2}}{9a^{2}}-\frac{4c}{3a}}=\sqrt{\frac{4b^{2}}{9a^{2}}+\frac{4}{3}\cdot\frac{a + b}{a}}=\sqrt{\frac{4}{9}\cdot\frac{b^{2}}{a^{2}}+\frac{4}{3}\left(1+\frac{b}{a}\right)}\\
 &=\sqrt{\frac{4}{9}\left(\frac{b^{2}}{a^{2}}+3+\frac{3b}{a}\right)}=\sqrt{\frac{4}{9}\left(\frac{b}{a}+\frac{3}{2}\right)^{2}+\frac{1}{3}}
 \end{align*}
-由(2)可得$-2<\frac{b}{a}<-1$，令$\frac{b}{a}=t$，则$g(t)=\sqrt{\frac{4}{9}\left(\frac{b}{a}+\frac{3}{2}\right)^{2}+\frac{1}{3}}=\sqrt{\frac{4}{9}\left(t+\frac{3}{2}\right)^{2}+\frac{1}{3}}$，当$t = - 2$时，$g(-2)=\sqrt{\frac{1}{9}+\frac{1}{3}}=\frac{2}{3}$，当$t = - 1$时，$g(-1)=\sqrt{\frac{1}{9}+\frac{1}{3}}=\frac{2}{3}$，故$|x_1 - x_2|<\frac{2}{3}$。",,11cm,2026-04-13
+由(2)可得$-2<\frac{b}{a}<-1$，令$\frac{b}{a}=t$，则$g(t)=\sqrt{\frac{4}{9}\left(\frac{b}{a}+\frac{3}{2}\right)^{2}+\frac{1}{3}}=\sqrt{\frac{4}{9}\left(t+\frac{3}{2}\right)^{2}+\frac{1}{3}}$，当$t = - 2$时，$g(-2)=\sqrt{\frac{1}{9}+\frac{1}{3}}=\frac{2}{3}$，当$t = - 1$时，$g(-1)=\sqrt{\frac{1}{9}+\frac{1}{3}}=\frac{2}{3}$，故$|x_1 - x_2|<\frac{2}{3}$。",2026-05-24:半对、二次函数的首项系数为0未考虑,11cm,2026-04-13
 数学,基础30讲,基础30讲-例0-16,"设$a,b,c$均为正数，且$a+b+c=1$，证明：(1)$ab+bc+ac\le\frac{1}{3}$；(2)$\frac{a^2}{b}+\frac{b^2}{c}+\frac{c^2}{a}\ge1$",n,基础30讲-例0-16,*,错题,"(1) 因为 $a^2 + b^2\geqslant2ab,b^2 + c^2\geqslant2bc,c^2 + a^2\geqslant2ac$，所以 $2(a^2 + b^2 + c^2)\geqslant2(ab + bc + ca)$，即 $a^2 + b^2 + c^2\geqslant ab + bc + ca$。
 又 $(a + b + c)^2 = 1$，即
 \[
@@ -27,7 +27,7 @@
 由$5x^{2}y^{2}+y^{4}=1$，则$x^{2}=\frac{1 - y^{4}}{5y^{2}}$，$y\neq 0$，因为若$y = 0$，则$0 = 1$，矛盾. 于是
 \[
 x^{2}+y^{2}=\frac{1 - y^{4}}{5y^{2}}+y^{2}=\frac{1}{5y^{2}}+\frac{4y^{2}}{5}\geqslant 2\sqrt{\frac{1}{5y^{2}}\cdot\frac{4y^{2}}{5}}=\frac{4}{5}
-\]",,11cm,2026-04-13
+\]",2026-05-27:其他方法、不等式方法,11cm,2026-04-13
 数学,基础30讲,基础30讲-例0-26,证明：$x_1^2 + (x_2 - x_1)^2 + (x_3 - x_2)^2 + \dots + (a - x_{n-1})^2 \ge \frac{a^2}{n} \ (n \ge 2)$,n,基础30讲-例0-26,*,错题,"\begin{align*}
 &x_1^2+(x_2 - x_1)^2+(x_3 - x_2)^2+\cdots+(a - x_{n - 1})^2\\
 =&\frac{1}{n}\left[x_1^2+(x_2 - x_1)^2+(x_3 - x_2)^2+\cdots+(a - x_{n - 1})^2\right](1^2 + 1^2+\cdots+1^2)\\
@@ -66,7 +66,7 @@ a&=\frac{5}{2}
 数学,基础30讲,基础30讲-例0-40,若函数$y = f(x-1)$的图像与函数$y = \ln\sqrt{x} + 1$的图像关于直线$y = x$对称，则$f(x)=$（ ）。(A)$e^{2x-1}$ (B)$e^{2x}$ (C)$e^{2x+1}$ (D)$e^{2x+2}$,n,基础30讲-例0-40,*,错题,由$y = \ln\sqrt{x} + 1$，解得$x = \mathrm{e}^{2(y - 1)}$，于是$y = \mathrm{e}^{2(x - 1)} = f(x - 1)$，得$f(x) = \mathrm{e}^{2x}$.,,11cm,2026-04-13
 数学,基础30讲,基础30讲-例0-41,函数$y = f(x)$的图像与函数$y = g(x)$的图像关于直线$x + y = 0$对称，则$y = f(x)$的反函数是（ ）。(A)$y = g(x)$ (B)$y = g(-x)$ (C)$y = -g(x)$ (D)$y = -g(-x)$,n,基础30讲-例0-41,*,错题,"应选 (D).
 设点$P(x,y)$满足$y = f(x)$，关于直线$y = -x$的对称点为$P'(-y,-x)$，关于$y = x$的对称点为$(y, x)$，于是$y = f^{-1}(x)$的图像与$y = g(x)$的图像关于原点对称，即$y = f^{-1}(x) = -g(-x)$.",,11cm,2026-04-13
-数学,基础30讲,基础30讲-例0-43,已知函数$f(x)=a\left(1-2\left|x-\frac{1}{2}\right|\right)$，$a$为常数且$a>0$。(1) 证明：函数$f(x)$的图像关于直线$x=\frac{1}{2}$对称；(2) 若$x_0$满足$f\left[f\left(x_0\right)\right]=x_0$，但$f\left(x_0\right)\neq x_0$，则称$x_0$为函数$f(x)$的二阶周期点，若$0<a<\frac{1}{2}$，求$f(x)$的二阶周期点的个数。,n,基础30讲-例0-43,*,错题,"(1) 由题设，有$f\left(\frac{1}{2} + x\right) = a(1 - 2|x|)$，$f\left(\frac{1}{2} - x\right) = a(1 - 2|x|)$，于是$f\left(\frac{1}{2} + x\right) = f\left(\frac{1}{2} - x\right)$，故$f(x)$的图像关于直线$x = \frac{1}{2}$对称。(2) 当$0 < a < \frac{1}{2}$时，$f[f(x)] = \begin{cases}4a^2x, & x\leqslant \frac{1}{2}\\4a^2(1 - x), & x > \frac{1}{2}\end{cases}$，$f[f(x)] = x$的解为$x = 0$，且$f(0) = 0$，故$f(x)$没有二阶周期点。",,11cm,2026-04-13
+数学,基础30讲,基础30讲-例0-43,已知函数$f(x)=a\left(1-2\left|x-\frac{1}{2}\right|\right)$，$a$为常数且$a>0$。(1) 证明：函数$f(x)$的图像关于直线$x=\frac{1}{2}$对称；(2) 若$x_0$满足$f\left[f\left(x_0\right)\right]=x_0$，但$f\left(x_0\right)\neq x_0$，则称$x_0$为函数$f(x)$的二阶周期点，若$0<a<\frac{1}{2}$，求$f(x)$的二阶周期点的个数。,n,基础30讲-例0-43,*,错题,"(1) 由题设，有$f\left(\frac{1}{2} + x\right) = a(1 - 2|x|)$，$f\left(\frac{1}{2} - x\right) = a(1 - 2|x|)$，于是$f\left(\frac{1}{2} + x\right) = f\left(\frac{1}{2} - x\right)$，故$f(x)$的图像关于直线$x = \frac{1}{2}$对称。(2) 当$0 < a < \frac{1}{2}$时，$f[f(x)] = \begin{cases}4a^2x, & x\leqslant \frac{1}{2}\\4a^2(1 - x), & x > \frac{1}{2}\end{cases}$，$f[f(x)] = x$的解为$x = 0$，且$f(0) = 0$，故$f(x)$没有二阶周期点。",2026-05-31:错,11cm,2026-04-13
 数学,基础30讲,基础30讲-例0-50,已知$-\frac{\pi}{2}<x<0$，$\sin x+\cos x=\frac{1}{5}$，则$\sin x-\cos x=(\ )$。(A)$\frac{7}{5}$ (B)$-\frac{7}{5}$ (C)$\frac{\sqrt{7}}{5}$ (D)$-\frac{\sqrt{7}}{5}$,n,基础30讲-例0-50,***,思路不同,"应选(B).
 由$(\sin x + \cos x)^2 = \sin^2 x + 2\sin x\cos x + \cos^2 x = \frac{1}{25}$，于是$2\sin x\cos x = -\frac{24}{25}$，则$(\sin x - \cos x)^2 = 1 - 2\sin x\cos x = \frac{49}{25}$.
 当$-\frac{\pi}{2} < x < 0$时，$\sin x < 0$，$\cos x > 0$，$\sin x - \cos x < 0$，故$\sin x - \cos x = -\frac{7}{5}$.",,11cm,2026-04-13
@@ -106,7 +106,7 @@ a&=\frac{5}{2}
 于是
 \[
 \frac{\sqrt{2}}{2} < x \leq 1
-\]",,11cm,2026-04-13
+\]",2026-05-19:对、其他方法,11cm,2026-04-13
 数学,基础30讲,基础30讲-例0-61,设$f(x)=\arctan x$，$g(x)=\tan x$，求$g[f(x)]$与$f[g(x)]$，并作它们的图像。,y,基础30讲-例0-61,*,错题,"当$f(x)\in\left(-\frac{\pi}{2},\frac{\pi}{2}\right)$时，$g = f^{-1}$，故
 \[
 g[f(x)] = f^{-1}[f(x)] = x(x\in\mathbf{R})
@@ -134,7 +134,7 @@ x - \pi, & x\in\left(\frac{\pi}{2},\frac{3\pi}{2}\right) \\
 f[g(x)] = x - \left[\frac{x + \frac{\pi}{2}}{\pi}\right]\pi,x\neq\left(k + \frac{1}{2}\right)\pi(k = 0,\pm1,\pm2,\cdots)
 \]",,11cm,2026-04-13
 数学,基础30讲,基础30讲-例0-62,已知数列$\{a_n\}$的前$n$项和为$S_n$，$a_1=1$，$S_n=2a_{n+1}$，则$S_n=(\ )$。(A)$2^{n-1}$　(B)$\left(\dfrac{3}{2}\right)^{n-1}$　(C)$\left(\dfrac{2}{3}\right)^{n-1}$　(D)$\dfrac{1}{2^{n-1}}$,n,基础30讲-例0-62,*,错题,由$a_{n + 1}=S_{n + 1}-S_{n}$，故$S_{n}=2a_{n + 1}=2(S_{n + 1}-S_{n})$，即$3S_{n}=2S_{n + 1}$，$\frac{S_{n + 1}}{S_{n}}=\frac{3}{2}$，所以$\{ S_{n}\}$是以$S_{1}=a_{1}=1$为首项，$q = \frac{3}{2}$为公比的等比数列，即$S_{n}=\left(\frac{3}{2}\right)^{n - 1}$ ，选 (B).,,11cm,2026-04-13
-数学,基础30讲,基础30讲-例0-64,设$S_n$是数列$\{a_n\}$的前$n$项和，且$a_1=-1$，$a_{n+1}=S_nS_{n+1}$，则$S_n=\underline{\quad\quad}$。,n,基础30讲-例0-64,***,想得久,由$a_{n+1}=S_{n+1}-S_{n}=S_{n+1}\cdot S_{n}$，有$\frac{S_{n+1}-S_{n}}{S_{n+1}\cdot S_{n}}=1$，即$\frac{1}{S_{n}}-\frac{1}{S_{n+1}}=-1$，故数列$\{\frac{1}{S_{n}}\}$是以$-1$为首项、公差为$-1$的等差数列，即$\frac{1}{S_{n}}=-1-(n - 1)=-n$，所以$S_{n}=-\frac{1}{n}$.,,11cm,2026-04-13
+数学,基础30讲,基础30讲-例0-64,设$S_n$是数列$\{a_n\}$的前$n$项和，且$a_1=-1$，$a_{n+1}=S_nS_{n+1}$，则$S_n=\underline{\quad\quad}$。,n,基础30讲-例0-64,***,想得久,由$a_{n+1}=S_{n+1}-S_{n}=S_{n+1}\cdot S_{n}$，有$\frac{S_{n+1}-S_{n}}{S_{n+1}\cdot S_{n}}=1$，即$\frac{1}{S_{n}}-\frac{1}{S_{n+1}}=-1$，故数列$\{\frac{1}{S_{n}}\}$是以$-1$为首项、公差为$-1$的等差数列，即$\frac{1}{S_{n}}=-1-(n - 1)=-n$，所以$S_{n}=-\frac{1}{n}$.,2026-05-22:对、其他方法,11cm,2026-04-13
 数学,基础30讲,基础30讲-例0-66,"定义在$(-\infty,0)\cup(0,+\infty)$上的函数$f(x)$，如果对于任意给定的等比数列$\{a_n\}$，$\{f(a_n)\}$仍是等比数列，那么称$f(x)$为“保等比数列函数”。现有定义在$(-\infty,0)\cup(0,+\infty)$上的如下函数：①$f(x)=x^2$；②$f(x)=2^x$；③$f(x)=\sqrt{|x|}$；④$f(x)=\ln|x|$。其中是“保等比数列函数”的$f(x)$的所有序号为（ ）。(A) ①② (B) ③④ (C) ①③ (D) ②④",n,基础30讲-例0-66,***,思路不正规,"应选 (C).
 设数列$\{ a_{n}\}$满足$\frac{a_{n + 1}}{a_{n}} = q$（$q \neq 0$），对于①，②，③，④，分别有$\frac{a_{n + 1}^{2}}{a_{n}^{2}} = q^{2}$，$\frac{2^{a_{n + 1}}}{2^{a_{n}}} = 2^{a_{n + 1} - a_{n}}$，$\frac{\sqrt{|a_{n + 1}|}}{\sqrt{|a_{n}|}} = \sqrt{\left|\frac{a_{n + 1}}{a_{n}}\right|} = \sqrt{|q|}$，$\frac{\ln|a_{n + 1}|}{\ln|a_{n}|}$. 由题设，要求比值为非零常数，故选 (C).",,11cm,2026-04-13
 数学,基础30讲,基础30讲-例0-67,已知数列$\{x_n\}$满足：$x_1=0$，$x_{n+1}=-x_n^2+x_n+c$（$n\in\mathbb{N}_+$）。证明：数列$\{x_n\}$是单调递减数列的充分必要条件是$c<0$,n,基础30讲-例0-67,*,错题,"充分性：当$c < 0$时，$x_{n + 1}=-x_{n}^{2}+x_{n}+c$，由于$-x_{n}^{2}+c < 0$，故$x_{n + 1} < x_{n}$；
@@ -145,7 +145,7 @@ f[g(x)] = x - \left[\frac{x + \frac{\pi}{2}}{\pi}\right]\pi,x\neq\left(k + \frac
 \[0 < a_{k + 1} < 1 - \sin1 < 1\]
 于是\(0 < a_n < 1\)，\(n = 1,2,3,\cdots\).
 又\(0 < a_n < 1\)时，有\(a_{n + 1} - a_n = a_n - \sin a_n - a_n = -\sin a_n < 0\)，即\(a_{n + 1} < a_n\).
-综上，\(0 < a_{n + 1} < a_n < 1\). 证毕.",,11cm,2026-04-13
+综上，\(0 < a_{n + 1} < a_n < 1\). 证毕.",2026-05-24:对,11cm,2026-04-13
 数学,基础30讲,基础30讲-例0-71,一曲线在旧坐标系中的方程为$y=5x^2-4x-1$，问坐标系经过怎样的平移能使曲线的方程化为最简形式，并由此画出方程所表示的图形。,y,基础30讲-例0-71,***,思路不同,"\begin{align*}
 y&=5\left(x^2 - \frac{4}{5}x\right) - 1 = 5\left(x - \frac{2}{5}\right)^2 - \frac{9}{5}\\
 y + \frac{9}{5}&=5\left(x - \frac{2}{5}\right)^2
@@ -179,7 +179,7 @@ x = \frac{1}{2}(e^{y} - e^{-y})
 交换上式中$x, y$的位置后就是$y = f(x)$的反函数，即
 \[
 y = f^{-1}(x) = \frac{1}{2}(e^{x} - e^{-x}), -\infty < x < +\infty
-\]",,11cm,2026-04-13
+\]",2026-05-20:对,11cm,2026-04-13
 数学,基础30讲,基础30讲-例1-4,设$f(x)=x^2$，$f[\varphi(x)]=-x^2+2x+3$，且$\varphi(x)\ge0$，求$\varphi(x)$及其定义域与值域.,n,基础30讲-例1-4,***,方法不同,"由题设条件知，$f[\varphi(x)]=\varphi^{2}(x)=-x^{2}+2x + 3$，于是$\varphi(x)=\sqrt{-x^{2}+2x + 3}$.  因$\varphi(x)\geq0$
 由$-x^{2}+2x + 3\geq0$，即$(x - 3)(x + 1)\leq0$，知$\varphi(x)$的定义域为$[-1,3]$.
 又$\sqrt{-x^{2}+2x + 3}=\sqrt{-(x - 1)^{2}+4}$，当$x = 1$时，$\varphi(1)=2$为最大值，显然$\varphi(-1)=\varphi(3)=0$为最小值，故$\varphi(x)$的值域为$[0,2]$.",,11cm,2026-04-13
@@ -204,7 +204,7 @@ y = f^{-1}(x) = \frac{1}{2}(e^{x} - e^{-x}), -\infty < x < +\infty
 \[
 \frac{\mathrm{d}[\ln y(x)]}{\mathrm{d}x}=\frac{6}{x}-\frac{2}{1 - x}-\frac{8}{1 - 2x}=\frac{24x^2 - 28x + 6}{x(1 - x)(1 - 2x)} = 0
 \]
-即$12x^2 - 14x + 3 = 0$，解得$x=\frac{7\pm\sqrt{13}}{12}$，因为$\frac{7 + \sqrt{13}}{12}>\frac{1}{2}$不符合题意，又$\lim_{x\rightarrow0^{+}}y(x)=\lim_{x\rightarrow(\frac{1}{2})^{-}}y(x)=0<y(\frac{7 - \sqrt{13}}{12})$，故$y$的最大值点为$x=\frac{7 - \sqrt{13}}{12}$。",,11cm,2026-04-13
+即$12x^2 - 14x + 3 = 0$，解得$x=\frac{7\pm\sqrt{13}}{12}$，因为$\frac{7 + \sqrt{13}}{12}>\frac{1}{2}$不符合题意，又$\lim_{x\rightarrow0^{+}}y(x)=\lim_{x\rightarrow(\frac{1}{2})^{-}}y(x)=0<y(\frac{7 - \sqrt{13}}{12})$，故$y$的最大值点为$x=\frac{7 - \sqrt{13}}{12}$。",2026-05-21:错,11cm,2026-04-13
 数学,基础30讲,基础30讲-例1-11,"已知$\mathrm{e}^{x}=\sum_{n=0}^{\infty} \frac{x^{n}}{n!}, x \in \mathbf{R}$，则$2^{x}=$（）. (A)$\sum_{n=1}^{\infty} \frac{(x \ln 2)^{n}}{n!}$ (B)$\sum_{n=0}^{\infty} \frac{(x \ln 2)^{n}}{n!}$ (C)$\sum_{n=1}^{\infty} \frac{(\ln 2) x^{n}}{n!}$ (D)$\sum_{n=0}^{\infty} \frac{(\ln 2) x^{n}}{n!}$",n,基础30讲-例1-11,*,错题,"由于$2^x = e^{x\ln 2}$，又$e^x = \sum_{n=0}^{\infty} \frac{x^n}{n!} , x \in \mathbf{R}$，因此$2^x = \sum_{n=0}^{\infty} \frac{(x\ln 2)^n}{n!}$，应选 (B).",,11cm,2026-04-13
 数学,基础30讲,基础30讲-例1-12,设$y=\sin x$，$0\leqslant x\leqslant 2\pi$，求其所有单调区间上的反函数,y,基础30讲-例1-12,*,错题、知识点模糊,"当$0\leq x\leq \frac{\pi}{2}$时，对$y = \sin x$，有$x = \arcsin y$，$y\in[0,1]$，此时反函数为$y = \arcsin x$，$x\in[0,1]$。
 当$\frac{\pi}{2} < x\leq \frac{3\pi}{2}$时，有$-\frac{\pi}{2} < x - \pi\leq \frac{\pi}{2}$，此时$\sin(x - \pi) = -\sin(\pi - x) = -\sin x = -y$，于是有$x - \pi = -\arcsin y$，故$x = \pi - \arcsin y$，$y\in[-1,1)$，此时反函数为$y = \pi - \arcsin x$，$x\in[-1,1)$。
@@ -223,7 +223,7 @@ e^{\tan x}-e^{\sin x}&=e^{\sin x}(e^{\tan x - \sin x}-1) \sim \tan x - \sin x = 
 &\text{因为 }\lim_{x \to 0} \frac{\sin x}{e^x - a}(\cos x - b) = 5 \neq 0\text{，由例 1.20 的 (2) 知，}\lim_{x \to 0}(e^x - a) = 0\text{，故 }a = 1\text{，此时原极限变为}\\
 &\lim_{x \to 0} \frac{\sin x}{e^x - 1}(\cos x - b) = \lim_{x \to 0}(\cos x - b) = 1 - b\text{，故 }b = - 4
 \end{align*}",,11cm,2026-04-13
-数学,基础30讲,基础30讲-例1-23,设$f(x)=\ln^{10}x$，$g(x)=x$，$h(x)=e^{\frac{x}{10}}$，则当$x$充分大时，有( ). (A) $g(x) < h(x) < f(x)$ (B) $h(x) < g(x) < f(x)$ (C) $f(x) < g(x) < h(x)$ (D) $g(x) < f(x) < h(x)$,n,基础30讲-例1-23,*,错题,"因为$\lim_{x \to +\infty} \frac{g(x)}{f(x)} = +\infty,\lim_{x \to +\infty} \frac{h(x)}{g(x)} = +\infty$，所以当$x$充分大时，有$f(x)<g(x)<h(x)$ . 故选项 (C) 正确 .",,11cm,2026-04-13
+数学,基础30讲,基础30讲-例1-23,设$f(x)=\ln^{10}x$，$g(x)=x$，$h(x)=e^{\frac{x}{10}}$，则当$x$充分大时，有( ). (A) $g(x) < h(x) < f(x)$ (B) $h(x) < g(x) < f(x)$ (C) $f(x) < g(x) < h(x)$ (D) $g(x) < f(x) < h(x)$,n,基础30讲-例1-23,*,错题,"因为$\lim_{x \to +\infty} \frac{g(x)}{f(x)} = +\infty,\lim_{x \to +\infty} \frac{h(x)}{g(x)} = +\infty$，所以当$x$充分大时，有$f(x)<g(x)<h(x)$ . 故选项 (C) 正确 .",2026-05-30:对,11cm,2026-04-13
 数学,基础30讲,基础30讲-例1-25,"求极限$I=\lim_{x \to \infty} \frac{a_n x^n + a_{n-1} x^{n-1} + \dots + a_1 x + a_0}{b_m x^m + b_{m-1} x^{m-1} + \dots + b_1 x + b_0}$，其中$a_n(\neq 0), b_m(\neq 0)$为常数",n,基础30讲-例1-25,*,错题、不规范,"若$n = m$，则
 \begin{align*}
 I&=\lim_{x \to \infty} \frac{a_n + \frac{a_{n - 1}}{x} + \cdots + \frac{a_1}{x^{n - 1}} + \frac{a_0}{x^n}}{b_m + \frac{b_{m - 1}}{x} + \cdots + \frac{b_1}{x^{n - 1}} + \frac{b_0}{x^n}}\\
@@ -374,7 +374,7 @@ $f(x)$的定义域为$\{x|x\in(-\infty, +\infty), x\neq -1, x\neq 0, x\neq 1, x\
 \lim_{x \to 0} \frac{a_1^x + a_2^x + \cdots + a_n^x - n}{x}&=\ln(a_1 a_2 \cdots a_n)\\
 \lim_{x \to 0} \left( 1 + \frac{a_1^x + a_2^x + \cdots + a_n^x - n}{n} \right)^{\frac{n}{a_1^x + a_2^x + \cdots + a_n^x - n}}&=e
 \end{align*}
-所以，原式$=a_1 a_2 \cdots a_n$",,11cm,2026-04-13
+所以，原式$=a_1 a_2 \cdots a_n$",2026-05-21:错,11cm,2026-04-13
 数学,基础30讲,基础30讲-习1-15,"设$\lim\limits_{x \to 0} \frac{\ln(1+x)-(ax+bx^2)}{x^2}=2$，求常数$a,b$",n,基础30讲-习1-15,***,方法不同,"\textbf{\textcolor{red}{方法一}}
 \begin{align*}
 &\text{原极限}=\lim_{x \to 0} \frac{x - \frac{1}{2}x^2 + o(x^2) - ax - bx^2}{x^2}\\
@@ -422,7 +422,7 @@ a^n \leq a_1^n + a_2^n + \cdots + a_m^n \leq m \cdot a^n
 &= \frac{1}{2} \lim_{n \to \infty} \frac{a_n}{1 - \cos a_n + a_n}\\
 &= \frac{1}{2} \lim_{n \to \infty} \frac{1}{\frac{1 - \cos a_n}{a_n} + 1}\\
 &= \frac{1}{2}
-\end{align*}",,11cm,2026-04-13
+\end{align*}",2026-05-23:对,11cm,2026-04-13
 数学,基础30讲,基础30讲-例2-12,"设$0<x_1<3$，$x_{n+1}=\sqrt{x_n(3-x_n)}(n=1,2,\dots)$，证明数列$\{x_n\}$的极限存在，并求此极限",n,基础30讲-例2-12,*,错题,"由例2.1知数列$\{x_n\}$是有界的，对任意正整数$n>1$，都有$0<x_n\leq\frac{3}{2}$。
 再证明$\{x_n\}$单调：当$n>1$时，
 \begin{align*}
@@ -544,7 +544,7 @@ F_{-}'(a)=\lim_{x \to a^{-}}\frac{-(x - a)f(x)}{x - a}=-\lim_{x \to a^{-}}f(x)=-
 \[
 F_{+}'(a)=\lim_{x \to a^{+}}\frac{(x - a)f(x)}{x - a}=\lim_{x \to a^{+}}f(x)=f(a),
 \]
-故$f(a)=0$是$F(x)$在$x=a$处可导的充要条件，应选 (A).",,11cm,2026-04-13
+故$f(a)=0$是$F(x)$在$x=a$处可导的充要条件，应选 (A).",2026-05-27:对,11cm,2026-04-13
 数学,基础30讲,基础30讲-例3-8,"设曲线$y = f(x) = x^n$在点$(1, 1)$处的切线与$x$轴的交点为$(\xi_n, 0)$，则$\lim\limits_{n\to\infty} f(\xi_n) =$ \underline{\quad\quad\quad}.",n,基础30讲-例3-8,*,错题,"应填$\frac{1}{e}$.
 由于$f'(1)=\left.\frac{\mathrm{d}y}{\mathrm{d}x}\right|_{x = 1}=\left.nx^{n - 1}\right|_{x = 1}=n, n = 1, 2, \cdots$，故过点$(1, 1)$的切线方程为$y - 1 = n(x - 1)$，令$y = 0$得$x = \xi_n = 1 - \frac{1}{n}$. 于是
 \[
@@ -575,7 +575,7 @@ f'(a)&=\lim_{x\to a}\frac{f(x)-f(a)}{x - a}\\
 &=\lim_{x\to a}\frac{(x - a)\cdot\varphi(x)-0}{x - a}\\
 &=\lim_{x\to a}\varphi(x)\\
 &=\varphi(a)
-\end{align*}",,11cm,2026-04-13
+\end{align*}",2026-05-17:对,11cm,2026-04-13
 数学,基础30讲,基础30讲-习3-6,设$f(x)$满足$f(0)=0$，且$f'(0)$存在，则$\lim\limits_{x \to 0} \frac{f(1-\sqrt{\cos x})}{\ln(1-x\sin x)} = \underline{\quad\quad}$,n,基础30讲-习3-6,***,方法不同,"\begin{align*}
 \text{原式}&=\lim_{x \to 0} \frac{f(1 - \sqrt{\cos x}) - f(0)}{(1 - \sqrt{\cos x}) - 0} \cdot \lim_{x \to 0} \frac{1 - \sqrt{\cos x}}{\ln(1 - x \sin x)}\\
 &=f'(0)\lim_{x \to 0} \frac{1 - \sqrt{\cos x}}{\ln(1 - x \sin x)}\\
@@ -624,13 +624,13 @@ f(\mathrm{e}) = \ln\sqrt{x}\big|_{x = \mathrm{e}} = \frac{1}{2}, f'[f(\mathrm{e}
 当$f(x)=3x^2 + e^x = 3 + e$时，有$x = 1$，于是
 \[
 \left.\varphi''(y)\right|_{y = 3 + e}=-\left.\frac{f''(x)}{[f'(x)]^3}\right|_{x = 1}=-\left.\frac{6 + e^x}{(6x + e^x)^3}\right|_{x = 1}=-\frac{1}{(6 + e)^2}
-\]",,11cm,2026-04-13
+\]",2026-05-22:对,11cm,2026-04-13
 数学,基础30讲,基础30讲-例4-11,设函数$y=y(x)$由方程$x\mathrm{e}^{f(y)}=\mathrm{e}^{y}\ln 2$确定，其中$f$具有二阶导数，且$f'\neq 1$，则$\frac{\mathrm{d}^2y}{\mathrm{d}x^2}=$\underline{\quad\quad\quad},n,基础30讲-例4-11,*,错题,"\begin{align*}
 &\text{应填}-\frac{[1 - f'(y)]^{2} - f''(y)}{x^{2}[1 - f'(y)]^{3}}\\
 &\text{方程}x\mathrm{e}^{f(y)} = \mathrm{e}^{y}\ln 2\text{两端取对数，得}\ln x + f(y) = y + \ln(\ln 2)\text{.两端关于}x\text{求导，得}\frac{1}{x} + f'(y)\cdot y' = y'\\
 &\text{两端继续关于}x\text{求导，得}-\frac{1}{x^{2}} + f''(y)\cdot (y')^{2} + f'(y)\cdot y'' = y''\text{，由此可得}\\
 &y'' = -\frac{[1 - f'(y)]^{2} - f''(y)}{x^{2}[1 - f'(y)]^{3}}
-\end{align*}",,11cm,2026-04-13
+\end{align*}",2026-05-31:错、粗心,11cm,2026-04-13
 数学,基础30讲,基础30讲-例4-13,求函数$y=x^{\frac{1}{x}}(x>0)$的导数,n,基础30讲-例4-13,*,错题,"\begin{align*}
 y'&=\left(x^{\frac{1}{x}}\right)'=\left(e^{\frac{1}{x}\ln x}\right)'\\
 &=e^{\frac{1}{x}\ln x}\left(-\frac{1}{x^{2}}\cdot\ln x+\frac{1}{x}\cdot\frac{1}{x}\right)\\
@@ -648,7 +648,7 @@ y^{(n)}=\sin\left(x + n\cdot\frac{\pi}{2}\right)
 即
 \[
 (\sin x)^{(n)}=\sin\left(x + n\cdot\frac{\pi}{2}\right),n = 1,2,\cdots
-\]",,11cm,2026-04-13
+\]",2026-05-17:对,11cm,2026-04-13
 数学,基础30讲,基础30讲-例4-18,设$f(x)=x^2\ln(1-x)$，则当$n\ge3$时，$f^{(n)}(0) = (\quad)$。(A) $-\frac{n!}{n-2}$ (B) $\frac{n!}{n-2}$ (C) $-\frac{(n-2)!}{n}$ (D) $\frac{(n-2)!}{n}$,n,基础30讲-例4-18,*,错题,"应选(A).
 利用泰勒公式展开，有
 \begin{align*}
@@ -694,12 +694,12 @@ f'(0)&=\lim_{x\to0}\frac{\frac{g(x)}{x}-0}{x - 0}=\lim_{x\to0}\frac{g(x)}{x^2}=\
 \[
 \lim_{x \to +\infty} \left[\frac{1}{x}+\ln(1+e^{x}) - x\right] = \lim_{x \to +\infty} \left[\frac{1}{x}+\ln(1+e^{-x})\right] = 0
 \]
-所以直线$y = x$是曲线$y=\frac{1}{x}+\ln(1+e^{x})$在$x \to +\infty$时的一条斜渐近线。",,11cm,2026-04-13
-数学,基础30讲,基础30讲-例5-14,"画出$r = \sin^2\theta\ (0 \le \theta \le \pi)$在直角坐标系和极坐标系下的图像；给出参数方程的处理方法，并将$\begin{cases} x = \sin t, \\ y = \cos^3 t \end{cases}\ (0 \le t \le 2\pi)$化为直角坐标方程。",y,基础30讲-例5-14,*,错题,"\[
+所以直线$y = x$是曲线$y=\frac{1}{x}+\ln(1+e^{x})$在$x \to +\infty$时的一条斜渐近线。",2026-05-21:对,11cm,2026-04-13
+数学,基础30讲,基础30讲-例5-14,画出$r = \sin^2\theta\ (0 \le \theta \le \pi)$在直角坐标系和极坐标系下的图像。,y,基础30讲-例5-14,*,错题,"\[
 r = \sin^2\theta = \frac{1 - \cos 2\theta}{2}(0\leqslant\theta\leqslant\pi)
 \]
 在直角坐标系的观点下，视$\theta$为$x$，$r$为$y$，即可画出图像。
-用描点法，可画出其在极坐标下的图像。",,11cm,2026-04-13
+用描点法，可画出其在极坐标下的图像。",2026-05-19:对,11cm,2026-04-13
 数学,基础30讲,基础30讲-习5-1,设函数$f(x)$，$g(x)$具有二阶导数，且$g''(x)<0$。若$g(x_0)=a$是$g(x)$的极值，则$f[g(x)]$在$x_0$取极大值的一个充分条件是（ ）。(A)$f'(a)<0$；(B)$f'(a)>0$；(C)$f''(a)<0$；(D)$f''(a)>0$,n,基础30讲-习5-1,*,错题,"由于$g(x_0)$是$g(x)$的极值，故由题设知$g'(x_0)=0$。记$y = f[g(x)]$，则
 $\left.\frac{\mathrm{d}y}{\mathrm{d}x}\right|_{x = x_0}=f'(a)g'(x_0)=0$，从而$x = x_0$是函数$y = f[g(x)]$的驻点。由于
 \[
@@ -727,7 +727,7 @@ y&=x^{\frac{5}{3}}-5x^{\frac{2}{3}}\\
 y'&=\frac{5}{3}x^{\frac{2}{3}}-\frac{10}{3}x^{-\frac{1}{3}}\\
 y''&=\frac{10}{9}x^{-\frac{1}{3}}+\frac{10}{9}x^{-\frac{4}{3}}=\frac{10(x + 1)}{9\sqrt[3]{x^{4}}}
 \end{align*}
-令$y'' = 0$，得$x = -1$，又$x\to0$时，$y''\to+\infty$。由于在$x = -1$的左、右邻域内$y''$变号，在$x = 0$的左、右邻域内$y''$不变号，故拐点为$(-1, -6)$。",,11cm,2026-04-13
+令$y'' = 0$，得$x = -1$，又$x\to0$时，$y''\to+\infty$。由于在$x = -1$的左、右邻域内$y''$变号，在$x = 0$的左、右邻域内$y''$不变号，故拐点为$(-1, -6)$。",2026-05-26:对,11cm,2026-04-13
 数学,基础30讲,基础30讲-例6-1,"设函数$f(x)$在$[0,1]$上连续，且$f(1)=0$，$f\left(\frac{1}{2}\right)=1$，证明：存在$\eta\in\left(\frac{1}{2},1\right)$，使得$f(\eta)=\eta$",n,基础30讲-例6-1,*,错题,"令$F(x)=f(x)-x$，则函数$F(x)=f(x)-x$在$[\frac{1}{2},1]$上连续，且有
 \[
 F(\frac{1}{2})=f(\frac{1}{2})-\frac{1}{2}=\frac{1}{2}>0,F(1)=f(1)-1=-1<0
@@ -738,7 +738,7 @@ F(\frac{1}{2})=f(\frac{1}{2})-\frac{1}{2}=\frac{1}{2}>0,F(1)=f(1)-1=-1<0
 数学,基础30讲,基础30讲-例6-5,"设$f(x)$在$[a,b]$上连续，在$(a,b)$内可导，$f(a)=0$，$a>0$，证明：存在$\xi\in(a,b)$，使得$f(\xi)=\frac{b-\xi}{a}f'(\xi)$",n,基础30讲-例6-5,*,错题,"令$F(x)=f(x)(b - x)^a$，显然$F(a)=F(b)=0$，由罗尔定理知，存在$\xi\in(a,b)$，使得$F'(\xi)=0$，即$f'(\xi)(b - \xi)^a - af(\xi)(b - \xi)^{a - 1}=0$，已知$a>0$，故$f(\xi)=\frac{b - \xi}{a}f'(\xi)$。",,11cm,2026-04-13
 数学,基础30讲,基础30讲-例6-6,"设函数$f(x)$在$[0,1]$上连续，在$(0,1)$内二阶可导，过点$A(0,f(0))$与点$B(1,f(1))$的直线与曲线$y=f(x)$相交于点$C(c,f(c))$，其中$0<c<1$，证明：存在$\xi\in(0,1)$，使得$f''(\xi)=0$",y,基础30讲-例6-6,*,错题,"根据题意，过点$A$与点$B$的直线方程为$y_1 = [f(1) - f(0)]x + f(0)$。
 令$F(x) = f(x) - y_1 = f(x) - [f(1) - f(0)]x - f(0)$，又$f(c) = [f(1) - f(0)]\cdot c + f(0)$，且$F(0) = 0$，$F(1) = 0$，$F(c) = f(c) - [f(1) - f(0)]\cdot c - f(0) = 0$，则$F(x)$在$[0,c]$与$[c,1]$上均满足罗尔定理的条件，于是可得$F'(\xi_1) = F'(\xi_2) = 0$，$\xi_1 \in (0,c)$，$\xi_2 \in (c,1)$。
-再由罗尔定理可得$F''(\xi) = f''(\xi) = 0$，$\xi \in (\xi_1,\xi_2) \subset (0,1)$，命题得证。",,11cm,2026-04-13
+再由罗尔定理可得$F''(\xi) = f''(\xi) = 0$，$\xi \in (\xi_1,\xi_2) \subset (0,1)$，命题得证。",2026-05-31:对,11cm,2026-04-13
 数学,基础30讲,基础30讲-例6-8,"若$f(x)$在$(a,b)$内可导且$f'(x)$有界，证明：$f(x)$在$(a,b)$内有界。",n,基础30讲-例6-8,*,错题,"因为$f(x)$在$(a,b)$内可导，所以$f(x)$在$(a,b)$内连续，因此对任意$x_0 \in (a,b)$，$f(x_0)$存在，对任意$x \in (a,b)$，不妨设$x < x_0$，对$f(x)$在$[x,x_0]$上应用拉格朗日中值定理，有
 \[
 f(x)-f(x_0)=f'(\xi)(x - x_0), \xi \in (x,x_0)
@@ -780,13 +780,13 @@ h'(x)&=\frac{xf'(x)-f(x)}{x^2}\\
 \[ \int_{0}^{1}[f(\frac{1}{2})+f'(\frac{1}{2})(x - \frac{1}{2})]dx<0 \]
 因为$\int_{0}^{1}f'(\frac{1}{2})(x - \frac{1}{2})dx = 0$，所以$\int_{0}^{1}f(\frac{1}{2})dx<0$，$f(\frac{1}{2})<0$.",,11cm,2026-04-13
 数学,基础30讲,基础30讲-例6-15,若$3a^2 - 5b < 0$，则方程$x^5 + 2ax^3 + 3bx + 4c = 0$（ ）。(A) 无实根；(B) 有唯一实根；(C) 有三个不同实根；(D) 有五个不同实根,n,基础30讲-例6-15,*,错题,"由于$f(x)=x^5 + 2ax^3 + 3bx + 4c$是奇次多项式，故方程$f(x)=0$至少有一个实根，令$f'(x)=0$，可知双二次方程$5x^4 + 6ax^2 + 3b = 0$对应于$x^2$的判别式$\Delta = 12(3a^2 - 5b) < 0$，则方程$f'(x)=0$无实根，$f(x)$单调，所以方程$f(x)=0$有唯一实根. 故答案选 (B).
-令$t = x^2$，则$5t^2 + 6at + 3b = 0$，$\Delta = 36a^2 - 60b = 12(3a^2 - 5b) < 0$",,11cm,2026-04-13
+令$t = x^2$，则$5t^2 + 6at + 3b = 0$，$\Delta = 36a^2 - 60b = 12(3a^2 - 5b) < 0$",2026-05-30:对,11cm,2026-04-13
 数学,基础30讲,基础30讲-例6-17,已知方程$e^x = kx$有且仅有一个实根，则$k$的取值范围是\underline{\quad\quad\quad}。,y,基础30讲-例6-17,*,错题,"\textbf{\textcolor{red}{方法一}}：直接法. 令$F(x)=e^x - kx$，则$F^\prime(x)=e^x - k$，当$k < 0$时，$F^\prime(x) > 0$，$F(x)$单调增加，又$\lim_{x \to -\infty} F(x)=-\infty$，$\lim_{x \to +\infty} F(x)=+\infty$，则$F(x)=0$有且仅有一个实根；
 当$k = 0$时，$F(x)=e^x$，$F(x)$恒大于$0$，显然不满足；
 当$k > 0$时，令$F^\prime(x)=0$，有$x = \ln k$，则当$x \in (-\infty, \ln k)$时，$F(x)$单调减少，当$x \in (\ln k, +\infty)$时，$F(x)$单调增加，又$\lim_{x \to +\infty} F(x)=+\infty$，$\lim_{x \to -\infty} F(x)=+\infty$，则当且仅当$F(\ln k)=0$时，$F(x)=0$有且仅有一个实根，解得$k = e$.
 综上，当$k = e$或$k < 0$时，方程$e^x = kx$有且仅有一个实根.
 \textbf{\textcolor{red}{方法二}}：分离法. 联立方程组$\begin{cases}y = \frac{e^x}{x}\\y = k\end{cases}$，且由例5.13，可得图6 - 1.
-故当$k = e$或$k < 0$时，$y = \frac{e^x}{x}$与$y = k$有且仅有一个交点，即方程$e^x = kx$有且仅有一个实根.",,11cm,2026-04-13
+故当$k = e$或$k < 0$时，$y = \frac{e^x}{x}$与$y = k$有且仅有一个交点，即方程$e^x = kx$有且仅有一个实根.",2026-05-28:对,11cm,2026-04-13
 数学,基础30讲,基础30讲-例6-18,已知方程$x^n + nx - 1 = 0$，其中$n$为正整数。证明此方程存在唯一正实根$x_n$,n,基础30讲-例6-18,*,错题,"记$f_{n}(x)=x^{n}+nx - 1$. 当$x > 0$时，$f_{n}'(x)=nx^{n - 1}+n > 0$，故$f_{n}(x)$在$[0, +\infty)$上单调增加. 由于$f_{n}(0)=-1 < 0$，$f_{n}(1)=n\geq1$，根据连续函数的零点定理知方程$x^{n}+nx - 1 = 0$存在唯一正实根$x_{n}$，且$0 < x_{n} < 1$.",,11cm,2026-04-13
 数学,基础30讲,基础30讲-例6-19,证明当$0<x<\frac{\pi}{2}$时，有$\sin x > \frac{2x}{\pi}$,n,基础30讲-例6-19,*,错题、不同方法,"\textbf{\textcolor{red}{方法一}}：若证$\sin x>\frac{2x}{\pi}$，即需证$\frac{\sin x}{x}>\frac{2}{\pi}$，令$f(x)=\frac{\sin x}{x},x\in(0,\frac{\pi}{2})$，则
 \[
@@ -861,7 +861,7 @@ g'(x)&=\frac{1}{1 + x}-\frac{1}{x}+\frac{1}{(1 + x)^2}+\frac{\frac{1}{2\sqrt{x}}
 \[
 F(1) = a_0 + \frac{a_1}{2} + \frac{a_2}{3} + \cdots + \frac{a_n}{n + 1} = 0
 \]
-故由罗尔定理知，存在$\xi\in(0, 1)$，使$F'(\xi) = 0$，即$a_0 + a_1\xi + a_2\xi^2 + \cdots + a_n\xi^n = 0$，故所证方程在$(0, 1)$内至少有一个根。",,11cm,2026-04-13
+故由罗尔定理知，存在$\xi\in(0, 1)$，使$F'(\xi) = 0$，即$a_0 + a_1\xi + a_2\xi^2 + \cdots + a_n\xi^n = 0$，故所证方程在$(0, 1)$内至少有一个根。",2026-05-19:对,11cm,2026-04-13
 数学,基础30讲,基础30讲-习6-8,"设$f(x)$在$[0,1]$上具有二阶导数，且满足条件$|f(x)|\le a$，$|f''(x)|\le b$，其中$a,b$都是非负常数，$c$是$(0,1)$内任意一点。(1)写出$f(x)$在点$x=c$处带拉格朗日型余项的一阶泰勒公式；(2)证明$|f'(x)|\le 2a+\frac{b}{2}$",n,基础30讲-习6-8,*,错题,"(1)解：$f(x)=f(c)+f'(c)(x - c)+\frac{f''(\xi)}{2!}(x - c)^2$，其中$\xi = c+\theta(x - c)$，$0<\theta<1$。
 (2)证明：在以上一阶泰勒公式中，分别令$x = 0$和$x = 1$，则有
 \[
@@ -914,14 +914,14 @@ s^{2}=x^{2}+(y + 10)^{2}
 对于选项 (C)：$\lim_{x\to0^{-}}F(x)=0$，$\lim_{x\to0^{+}}F(x)=1$，由于$F(x)$在$x = 0$处左右极限不同，故$F(x)$不连续.
 由$F'(x)=f(x)$知，$F(x)$必连续，故可排除 (A)，(C).
 对于选项 (B)：当$x>0$时，$F'(x)=\cos x-(x + 1)\sin x-\cos x=-(x + 1)\sin x\neq(x + 1)\cos x$，故可排除 (B).
-因此选 (D).",,11cm,2026-04-13
+因此选 (D).",2026-05-27:对,11cm,2026-04-13
 数学,基础30讲,基础30讲-例8-3,"在区间$[-1,2]$上，以下四个结论：①$f(x)=\begin{cases}2, & x>0, \\1, & x=0, \\-1, & x<0\end{cases}$有原函数，但其定积分不存在；②$f(x)=\begin{cases}2x\sin\frac{1}{x^2}-\frac{2}{x}\cos\frac{1}{x^2}, & x\neq0, \\0, & x=0\end{cases}$有原函数，其定积分也存在；③$f(x)=\begin{cases}\frac{1}{x}, & x\neq0, \\0, & x=0\end{cases}$没有原函数，其定积分也不存在；④$f(x)=\begin{cases}2x\cos\frac{1}{x}+\sin\frac{1}{x}, & x\neq0, \\0, & x=0\end{cases}$有原函数，其定积分也存在。正确结论的个数为( ). (A)1 (B)2 (C)3 (D)4",n,基础30讲-例8-3,*,错题,"本题通过具体的例子考查考生是否能够明确区分不定积分与定积分的存在性.逐个分析即可.
 对于$f(x)=\begin{cases}2, & x>0\\1, & x = 0\\-1, & x<0\end{cases}$，由于$x = 0$是其跳跃间断点，根据不定积分存在定理，在任意一个包含$x = 0$的区间$[a,b]$上，$f(x)$一定不存在原函数，但由于$f(x)$满足定积分存在定理，故定积分$\int_{a}^{b}f(x)dx$存在，所以①错误.
 对于$f(x)=\begin{cases}2x\sin\frac{1}{x^2}-\frac{2}{x}\cos\frac{1}{x^2}, & x\neq0\\0, & x = 0\end{cases}$，$x = 0$是其振荡间断点，但是容易验证：
 若$F(x)=\begin{cases}x^2\sin\frac{1}{x^2}, & x\neq0\\0, & x = 0\end{cases}$，则$F'(x)=f(x)(-\infty<x<+\infty)$，所以$f(x)$存在原函数，但在任意一个包含$x = 0$的区间$[a,b]$上，定积分$\int_{a}^{b}f(x)dx$不存在，因为在$x = 0$的邻域内$f(x)$无界，所以②错误.
 对于$f(x)=\begin{cases}\frac{1}{x}, & x\neq0\\0, & x = 0\end{cases}$，因为$x = 0$是其无穷间断点，所以$f(x)$在包含$x = 0$的区间$[a,b]$上不存在原函数，定积分$\int_{a}^{b}f(x)dx$也不存在，所以③正确.
 对于$f(x)=\begin{cases}2x\cos\frac{1}{x}+\sin\frac{1}{x}, & x\neq0\\0, & x = 0\end{cases}$，它在$(-\infty,+\infty)$内存在原函数$F(x)=\begin{cases}x^2\cos\frac{1}{x}, & x\neq0\\0, & x = 0\end{cases}$，并且在任意一个包含$x = 0$的区间$[a,b]$上，定积分$\int_{a}^{b}f(x)dx$也存在，因为$f(x)$有界且只有一个振荡间断点，所以④正确.
-综上所述，答案选择(B).",,11cm,2026-04-13
+综上所述，答案选择(B).",2026-05-27:对,11cm,2026-04-13
 数学,基础30讲,基础30讲-例8-4,"设可导函数$y=f(x)$在$[0,+\infty)$上的值域是$[0,+\infty)$，$f(0)=0$，$f'(x)>0$，$x=\varphi(y)$是$y=f(x)$的反函数。记$I=\int_{0}^{a}f(x)\,\mathrm{d}x+\int_{0}^{b}\varphi(y)\,\mathrm{d}y$，常数$a,b>0$，当$a<\varphi(b)$时，则（ ）。(A)$I>ab$ (B)$I<ab$ (C)$I=ab$ (D)$I$与$ab$的大小关系不确定",y,基础30讲-例8-4,*,错题,"应选 (A).
 由题设易知，$f(x)$是过原点且在$[0, +\infty)$上单调递增的函数. 已知$x = \varphi(y)$是$y = f(x)$的反函数，则$x = \varphi(y)$与$y = f(x)$在同一坐标系下共线，如图 8 - 3 所示.
 由图 8 - 3 可知，
@@ -953,7 +953,7 @@ $\sin(\sin x), \cos(\cos x)$ 均在 $\left[0, \frac{\pi}{2}\right]$ 上连续，
 \int_{0}^{\frac{\pi}{2}} \cos(\cos x)dx \xlongequal{x = \frac{\pi}{2} - t} \int_{0}^{\frac{\pi}{2}} \cos(\sin t)dt > \int_{0}^{\frac{\pi}{2}} \cos tdt = 1
 \]
 ，即 $N > 1$，
-因此选 (A).",,11cm,2026-04-13
+因此选 (A).",2026-05-28:错、复合函数积分放缩未考虑外层函数的单调性,11cm,2026-04-13
 数学,基础30讲,基础30讲-例8-11,"设函数$y=f(x)$在区间$[-1,3]$上的图形如图8-6所示，则函数$F(x)=\int_{0}^{x}f(t)\mathrm{d}t$的图形为（  ）。",y,基础30讲-例8-11,*,错题,"应选 (D).
 本题有三个要点：第一，变限积分只要存在就必连续，故排除 (B); 第二，由$f(x)$有两个跳跃间断点可知，$F(x)$应有两个不可导点，排除 (A); 第三，$F(0)=\int_{0}^{0}f(t)dt = 0$，所以$F(x)$的图像过原点，排除 (C).
 故答案选择 (D).",,11cm,2026-04-13
@@ -963,7 +963,7 @@ $\sin(\sin x), \cos(\cos x)$ 均在 $\left[0, \frac{\pi}{2}\right]$ 上连续，
 &\leq |C| + \mathrm{e}^{-ax}\int_{0}^{x} |f(t)\mathrm{e}^{at}| \mathrm{d}t \leq |C| + M\mathrm{e}^{-ax}\int_{0}^{x} \mathrm{e}^{at} \mathrm{d}t\\
 &=|C| + \frac{M}{a}(1 - \mathrm{e}^{-ax}) \leq |C| + \frac{M}{a}
 \end{align*}
-得证。",,11cm,2026-04-13
+得证。",2026-05-22:对,11cm,2026-04-13
 数学,基础30讲,基础30讲-例8-15,设$a>b>0$，反常积分$\int_{0}^{+\infty} \frac{1}{x^a + x^b} dx$收敛，则（  ）. (A)$a>1$且$b>1$ (B)$a>1$且$b<1$ (C)$a<1$且$a+b>1$ (D)$a<1$且$b<1$,n,基础30讲-例8-15,*,错题,"应选 (B).
 理论依据在 “四、2” 的注中讲过了，来看此题：
 \[
@@ -987,7 +987,7 @@ I = \int_{0}^{1}\frac{1}{x^{a}+x^{b}}\mathrm{d}x + \int_{1}^{+\infty}\frac{1}{x^
 数学,基础30讲,基础30讲-例8-19,已知$\alpha>0$，则对于反常积分$\int_{1}^{+\infty} \frac{\ln x}{x^{\alpha}} \mathrm{d} x$的敛散性的判别，正确的是（）. (A) 当$0<\alpha \le 1$时，积分收敛 (B) 当$\alpha>1$时，积分收敛 (C) 敛散性与$\alpha$无关，必收敛 (D) 敛散性与$\alpha$无关，必发散,n,基础30讲-例8-19,*,错题,"应选(B).
 当$0 < \alpha \leq 1$且$x$充分大时，$\frac{\ln x}{x^{\alpha}} > \frac{1}{x^{\alpha}}$，由于$\int_{1}^{+\infty}\frac{1}{x^{\alpha}}\mathrm{d}x$发散，因此$\int_{1}^{+\infty}\frac{\ln x}{x^{\alpha}}\mathrm{d}x$发散；
 当$\alpha > 1$时，取充分小的正数$\varepsilon$，使$\alpha - \varepsilon > 1$，由$\lim_{x \to +\infty}\frac{\frac{\ln x}{x^{\alpha}}}{\frac{1}{x^{\alpha - \varepsilon}}}\stackrel{\frac{“0”}{“0”}}{=}\lim_{x \to +\infty}\frac{\ln x}{x^{\varepsilon}} = 0$，且$\int_{1}^{+\infty}\frac{1}{x^{\alpha - \varepsilon}}\mathrm{d}x$收敛，故$\int_{1}^{+\infty}\frac{\ln x}{x^{\alpha}}\mathrm{d}x$收敛.
-故选(B).",,11cm,2026-04-13
+故选(B).",2026-05-17:对,11cm,2026-04-13
 数学,基础30讲,基础30讲-习8-3,若反常积分$\int_{0}^{+\infty} \frac{\ln x}{(1+x) x^{1-p}} \mathrm{d} x$收敛，则（）. (A)$p<1$ (B)$p>1$ (C)$0<p<1$ (D)$0 \leq p<1$,n,基础30讲-习8-3,***,不规范,"此积分为有一个瑕点$x = 0$的无穷区间上的反常积分，可写为
 \[
 \int_{0}^{+\infty} \frac{\ln x}{(1 + x)x^{1 - p}} \mathrm{d}x = \int_{0}^{1} \frac{\ln x}{(1 + x)x^{1 - p}} \mathrm{d}x + \int_{1}^{+\infty} \frac{\ln x}{(1 + x)x^{1 - p}} \mathrm{d}x
@@ -1039,7 +1039,7 @@ I = \int_{0}^{1}\frac{1}{x^{a}+x^{b}}\mathrm{d}x + \int_{1}^{+\infty}\frac{1}{x^
 \text{收敛}, & p > 1 \\
 \text{发散}, & p \leq 1
 \end{cases}
-\]",,11cm,2026-04-13
+\]",2026-05-29:错、反常积分敛散性判别直接求积分法,11cm,2026-04-13
 数学,基础30讲,基础30讲-例9-1,"$\int \frac{\sqrt{x}}{\sqrt{4-x^3}} \, dx$",n,基础30讲-例9-1,*,错题,"\begin{align*}
 \int\frac{\sqrt{x}}{\sqrt{4 - x^3}}dx&=\frac{2}{3}\int\frac{d(x^{\frac{3}{2}})}{\sqrt{4 - (x^{\frac{3}{2}})^2}}=\frac{2}{3}\int\frac{d(x^{\frac{3}{2}})}{2\sqrt{1 - (\frac{1}{2}x^{\frac{3}{2}})^2}}\\
 &=\frac{2}{3}\int\frac{d(\frac{1}{2}x^{\frac{3}{2}})}{\sqrt{1 - (\frac{1}{2}x^{\frac{3}{2}})^2}}=\frac{2}{3}\arcsin(\frac{1}{2}x^{\frac{3}{2}})+C
@@ -1106,7 +1106,7 @@ A - B + C = -1
 \begin{align*}
 \int\frac{4x^2 - 6x - 1}{(x + 1)(2x - 1)^2}dx &= \int\frac{dx}{x + 1} - \int\frac{2}{(2x - 1)^2}dx\\
 &= \ln|x + 1| + \frac{1}{2x - 1} + C_1
-\end{align*}",,11cm,2026-04-13
+\end{align*}",2026-05-21:错、粗心,11cm,2026-04-13
 数学,基础30讲,基础30讲-例9-10,"$\int \frac{2x+3}{x^2-x+1}\,\mathrm{d}x = \underline{\quad}$",n,基础30讲-例9-10,*,错题,"\begin{align*}
 &\int\frac{2x + 3}{x^2 - x + 1}dx=\int\frac{2x - 1 + 4}{x^2 - x + 1}dx\\
 =&\int\frac{1}{x^2 - x + 1}d(x^2 - x + 1)+\int\frac{4}{x^2 - x + 1}dx\\
@@ -1166,7 +1166,7 @@ A - B + C = -1
 \]
 \[
 \int_{0}^{\pi}x\sin^{9}xdx = \frac{\pi}{2}\int_{0}^{\pi}\sin^{9}xdx = \pi\times\frac{8}{9}\times\frac{6}{7}\times\frac{4}{5}\times\frac{2}{3} = \frac{128\pi}{315}.
-\]",,11cm,2026-04-13
+\]",2026-05-17:错题、区间再现公式、粗心,11cm,2026-04-13
 数学,基础30讲,基础30讲-例9-19,设$f(x)=\int_{1}^{x^2} e^{-t^2} dt$，则$\int_{0}^{1} x f(x) dx = (\ )$。选项：(A)$\frac{1}{4}(e^{-1}+1)$，(B)$\frac{1}{4}(e^{-1}-1)$，(C)$\frac{1}{4}(e+1)$，(D)$\frac{1}{4}(e-1)$,n,基础30讲-例9-19,*,错题,"由于$f(x)=\int_{1}^{x^{2}} \mathrm{e}^{-t^{2}} \mathrm{d}t$不能积出来，故由分部积分公式有$\int_{0}^{1}xf(x)\mathrm{d}x=\left.\frac{x^{2}}{2}f(x)\right|_{0} ^{1}-\int_{0}^{1}\frac{x^{2}}{2}\cdot f'(x)\mathrm{d}x$。
 令$x = 1$，由$f(x)$表达式可得$f(1)=\int_{1}^{1} \mathrm{e}^{-t^{2}} \mathrm{d}t = 0$，又$f'(x)=\mathrm{e}^{-x^{4}}(x^{2})' = 2x\mathrm{e}^{-x^{4}}$，因此
 \begin{align*}
@@ -1210,7 +1210,7 @@ F'(x)=\frac{1}{2}\cdot 2xf(x^{2})=xf(x^{2})
 \[
 F''(x)=f(x^{2})+2x^{2}f'(x^{2})
 \]
-因为$f(x)<-2xf'(x)$，所以$f(x^{2})+2x^{2}f'(x^{2})<0$，即$F''(x)<0$，另外，$F(0)=F'(0)=0$，故由判别极值的第二充分条件，$F(x)$在$x = 0$处取极大值，选(A).",,11cm,2026-04-13
+因为$f(x)<-2xf'(x)$，所以$f(x^{2})+2x^{2}f'(x^{2})<0$，即$F''(x)<0$，另外，$F(0)=F'(0)=0$，故由判别极值的第二充分条件，$F(x)$在$x = 0$处取极大值，选(A).",2026-05-28:对,11cm,2026-04-13
 数学,基础30讲,基础30讲-例9-28,计算$I_n = \int_{0}^{+\infty} x^n e^{-x} \mathrm{d}x$（$n$为非负整数）,n,基础30讲-例9-28,*,错题,"由分部积分法，得
 \[
 I_n=-\int_{0}^{+\infty}x^n\mathrm{d}(e^{-x})=(-x^n e^{-x})\big|_{0}^{+\infty}+n\int_{0}^{+\infty}x^{n - 1}e^{-x}dx=nI_{n - 1}, n = 1, 2, \cdots,
@@ -1239,7 +1239,7 @@ f(x) = (\ln^2 x)' = \frac{2\ln x}{x},
 于是
 \[
 \int xf'(x)\mathrm{d}x = 2\ln x - \ln^2 x + C.
-\]",,11cm,2026-04-13
+\]",2026-05-20:对,11cm,2026-04-13
 数学,基础30讲,基础30讲-习9-6,$\int_{2}^{+\infty} \frac{dx}{(x+7)\sqrt{x-2}}$,n,基础30讲-习9-6,*,错题、计算,"\begin{align*}
 &\text{令 }t = \sqrt{x - 2}，\text{ 则 }x = t^2 + 2，dx = 2tdt\text{。当 }x = 2\text{ 时，}t = 0\text{；当 }x \to +\infty\text{ 时，}t \to +\infty\text{。}\\
 &\text{原式}=\int_{0}^{+\infty} \frac{2tdt}{(t^2 + 9)t} = \lim_{b \to +\infty} \left(\frac{2}{3} \arctan \frac{t}{3}\big|_{0}^{b}\right) = \frac{\pi}{3}
@@ -1342,7 +1342,7 @@ f(x)&=2\cos x-\int xd(\sin x)\\
 &=2\cos x - x\sin x - \cos x + C\\
 &=\cos x - x\sin x + C
 \end{align*}
-当$x = 0$时，上式$f(0)$仍满足题干。",,11cm,2026-04-13
+当$x = 0$时，上式$f(0)$仍满足题干。",2026-05-30:对,11cm,2026-04-13
 数学,基础30讲,基础30讲-习9-17,设$f(x)=\int_{0}^{1} t|t-x| dt$，求$f'(x)$,n,基础30讲-习9-17,*,错题、不规范,"当$x\leq0$时，
 \[
 f(x)=\int_{0}^{1}t(t-x)\mathrm{d}t=\frac{1}{3}-\frac{x}{2}
@@ -1383,14 +1383,14 @@ f'(x)=\begin{cases}
 x^2-\frac{1}{2},&0\leq x<1,\\
 \frac{1}{2},&x\geq1
 \end{cases}
-\]",,11cm,2026-04-13
+\]",2026-05-29:对,11cm,2026-04-13
 数学,基础30讲,基础30讲-例10-2,"求由摆线$\begin{cases} x=a(t-\sin t), \\ y=a(1-\cos t) \end{cases} (a>0)$的一拱与$x$轴所围平面图形的面积。",y,基础30讲-例10-2,*,错题、计算,"\begin{align*}
 &\text{当}t = 0\text{或}t = 2\pi\text{时，}y = 0\text{. 故当}t\text{由}0\text{变到}2\pi\text{时，曲线正好成一拱，所以}\\
 &S=\int_{0}^{2\pi a}y(x)dx\overset{x = a(t - \sin t)}{\underset{y(x)=y[a(t - \sin t)]=y[x(t)]}{=}}\int_{0}^{2\pi}a(1 - \cos t)[a(t - \sin t)]'dt\\
 &=\int_{0}^{2\pi}a^2(1 - \cos t)^2dt=a^2\int_{0}^{2\pi}(1 - 2\cos t+\cos^2t)dt\\
 &=a^2\int_{0}^{2\pi}dt - 2a^2\int_{0}^{2\pi}\cos tdt+a^2\int_{0}^{2\pi}\cos^2tdt\\
 &=2a^2\pi + 4a^2\int_{0}^{\frac{\pi}{2}}\cos^2tdt=3a^2\pi.
-\end{align*}",,11cm,2026-04-13
+\end{align*}",2026-05-21:错、粗心,11cm,2026-04-13
 数学,基础30讲,基础30讲-例10-3,伯努利双纽线$r^2=a^2\cos2\theta$围成的图形的面积为\underline{\quad\quad\quad}。,y,基础30讲-例10-3,*,错题,"应填$a^{2}$。
 如图 10-3 所示，利用对称性，所求图形面积是阴影部分面积的 4 倍。
 阴影部分的图形由射线$\theta = 0$，$\theta = \frac{\pi}{4}$与伯努利双纽线$r^{2}=a^{2}\cos 2\theta$围成，
@@ -1432,7 +1432,7 @@ V&=\int_{0}^{\pi}\pi y^{2}(x)dx=\int_{0}^{\pi}\pi e^{-x}\sin xdx\\
 V &= 2\pi\int_{\frac{1}{2}}^{\frac{\sqrt{3}}{2}}xydy = 2\pi\int_{\frac{1}{2}}^{\frac{\sqrt{3}}{2}}\frac{y^2}{\sqrt{1 - y^2}}dy\\
 &\xlongequal{令y = \sin t}2\pi\int_{\frac{\pi}{6}}^{\frac{\pi}{3}}\sin^2tdt = 2\pi\int_{\frac{\pi}{6}}^{\frac{\pi}{3}}\frac{1 - \cos 2t}{2}dt\\
 &=\frac{\pi^2}{6}
-\end{align*}",,11cm,2026-04-13
+\end{align*}",2026-05-26:对,11cm,2026-04-13
 数学,基础30讲,基础30讲-例10-7,过坐标原点作曲线$y=e^x$的切线，该切线与曲线$y=e^x$以及$x$轴围成的向$x$轴负向无限伸展的平面图形记为$D$。求：(1)$D$的面积$A$；(2)$D$绕直线$x=1$旋转一周所成的旋转体的体积$V$。,y,基础30讲-例10-7,*,错题、其他方法、粗心,"设切点坐标为$P(x_0,y_0)$，于是曲线$y = e^x$在点$P$的切线斜率为$y'(x_0)=e^{x_0}$，切线方程为$y - y_0 = e^{x_0}(x - x_0)$。因为该切线经过点$(0,0)$，所以$-y_0 = -x_0e^{x_0}$，又因为$y_0 = e^{x_0}$，代入求得$x_0 = 1$，从而$y_0 = e^{x_0} = e$，切线方程为$y = ex$。
 (1) 取水平条面积微元，则$D$的面积
 \begin{align*}
@@ -1598,7 +1598,7 @@ V_y&=2\pi\int_{0}^{2\pi a}xy(x)dx\\
 &= 2\pi\int_{0}^{2}(8 + 2x^2 - x^4)dx = \frac{448}{15}\pi
 \end{align*}",,11cm,2026-04-13
 数学,基础30讲,基础30讲-例11-1,"(1) 设$f(x),g(x)$在$[a,b]$上连续，且$g(x)$在$[a,b]$上不变号，证明：存在$\xi\in(a,b)$，使得$\int_{a}^{b}f(x)g(x)\mathrm{d}x=f(\xi)\int_{a}^{b}g(x)\mathrm{d}x$；(2) 设$f(x)$在$[1,2]$上连续，计算$\lim_{n\to\infty}\int_{1}^{2}f(x)\mathrm{e}^{-x^{n}}\mathrm{d}x$。",n,基础30讲-例11-1,*,错题,"(1)证：若$g(x) \equiv 0$，结论显然成立；若$g(x) \neq 0$，由于不变号，不妨设$g(x) > 0$。令$F(x) = \int_{a}^{x} f(t)g(t)dt$，$G(x) = \int_{a}^{x} g(t)dt$，在$[a,b]$上应用柯西中值定理，有$\frac{F(b) - F(a)}{G(b) - G(a)} = \frac{F'(\xi)}{G'(\xi)}$，即$\frac{\int_{a}^{b} f(x)g(x)dx - 0}{\int_{a}^{b} g(x)dx - 0} = \frac{f(\xi)g(\xi)}{g(\xi)} = f(\xi)$，$\int_{a}^{b} f(x)g(x)dx = f(\xi)\int_{a}^{b} g(x)dx$，$\xi \in (a,b)$，其中$\int_{a}^{b} g(x)dx > 0$。同理可得$g(x) < 0$时成立。得证。
-(2)解：由(1)知，$\int_{1}^{2} f(x)e^{-x^n}dx = f(\xi_n)\int_{1}^{2} e^{-x^n}dx$，$1 < \xi_n < 2$。因$f(x)$在$[1,2]$上连续，则$f(\xi_n)$有界；又在$(1,2)$内，$e^x > x^n + 1 > 0$，即$\frac{1}{e^{x^n}} < \frac{1}{x^n + 1} < \frac{1}{x^n}$。于是$0 < \int_{1}^{2} e^{-x^n}dx < \int_{1}^{2} x^{-n}dx = \left.\frac{1}{1 - n}x^{1 - n}\right|_{1}^{2} = \frac{1}{1 - n}(2^{1 - n} - 1)$，$\lim_{n \to \infty} \frac{1}{1 - n}(2^{1 - n} - 1) = 0$，由夹逼准则得$\lim_{n \to \infty} \int_{1}^{2} e^{-x^n}dx = 0$。故$\lim_{n \to \infty} \int_{1}^{2} f(x)e^{-x^n}dx = \lim_{n \to \infty} f(\xi_n) \lim_{n \to \infty} \int_{1}^{2} e^{-x^n}dx = 0$。",,11cm,2026-04-13
+(2)解：由(1)知，$\int_{1}^{2} f(x)e^{-x^n}dx = f(\xi_n)\int_{1}^{2} e^{-x^n}dx$，$1 < \xi_n < 2$。因$f(x)$在$[1,2]$上连续，则$f(\xi_n)$有界；又在$(1,2)$内，$e^x > x^n + 1 > 0$，即$\frac{1}{e^{x^n}} < \frac{1}{x^n + 1} < \frac{1}{x^n}$。于是$0 < \int_{1}^{2} e^{-x^n}dx < \int_{1}^{2} x^{-n}dx = \left.\frac{1}{1 - n}x^{1 - n}\right|_{1}^{2} = \frac{1}{1 - n}(2^{1 - n} - 1)$，$\lim_{n \to \infty} \frac{1}{1 - n}(2^{1 - n} - 1) = 0$，由夹逼准则得$\lim_{n \to \infty} \int_{1}^{2} e^{-x^n}dx = 0$。故$\lim_{n \to \infty} \int_{1}^{2} f(x)e^{-x^n}dx = \lim_{n \to \infty} f(\xi_n) \lim_{n \to \infty} \int_{1}^{2} e^{-x^n}dx = 0$。",2026-05-19:错,11cm,2026-04-13
 数学,基础30讲,基础30讲-例11-2,"设$f(x)$在$[0,\frac{\pi}{2}]$上有二阶导数，且$f(0)=2$，$f(\frac{\pi}{2})=1$，$\int_{0}^{\frac{\pi}{2}} f(x) e^{\sin x} \cos x dx = 2(e-1)$。证明：存在$\xi \in (0,\frac{\pi}{2})$，使$f''(\xi) < 0$",n,基础30讲-例11-2,***,想得久,"由推广的积分中值定理知，存在$\eta\in\left(0,\frac{\pi}{2}\right)$，使得$f(\eta)\int_{0}^{\frac{\pi}{2}}e^{\sin x}\cos xdx = 2(e - 1)$。
 又$\int_{0}^{\frac{\pi}{2}}e^{\sin x}\cos xdx = e^{\sin x}\big|_{0}^{\frac{\pi}{2}} = e - 1$，于是$f(\eta)\cdot(e - 1)=2(e - 1)$，即存在$\eta\in\left(0,\frac{\pi}{2}\right)$，使得$f(\eta)=2$。
 因$f(0)=f(\eta)=2$，由罗尔定理知，存在$\xi_1\in(0,\eta)$，使得$f'(\xi_1)=0$。又因为$f\left(\frac{\pi}{2}\right)=1$，$f(\eta)\neq f\left(\frac{\pi}{2}\right)$，由拉格朗日中值定理知，存在$\xi_2\in\left(\eta,\frac{\pi}{2}\right)$，使得
@@ -1639,7 +1639,7 @@ $\frac{n}{2(n + 1)} = \frac{1}{n + 1} \int_{0}^{n} f(t) \mathrm{d}t < \frac{1}{x
 &=\frac{M}{2}\left(\frac{1}{2}-\frac{1}{3}\right)\\
 &=\frac{M}{12}
 \end{align*}
-得证。",,11cm,2026-04-13
+得证。",2026-05-28:对,11cm,2026-04-13
 数学,基础30讲,基础30讲-例11-8,"设$f(x)$在$[0,1]$上具有一阶连续导数，且$f(0)=f(1)=0$。记$M=\max_{x\in[0,1]}\{|f'(x)|\}$，证明：$\left|\int_{0}^{1} f(x) \mathrm{d} x\right| \leqslant \frac{1}{4} M$",n,基础30讲-例11-8,*,错题,"将大区间$[0,1]$分成两个小区间$[0,x]$和$[x,1]$.
 在$[0,x]$上对$f(x)$使用拉格朗日中值定理，得$f(x)-f(0)=f(x)=f'(\xi_1)x$，其中$\xi_1\in(0,x)$，于是$|f(x)| = |f'(\xi_1)|x$.
 在$[x,1]$上对$f(x)$使用拉格朗日中值定理，得$f(1)-f(x)=-f(x)=f'(\xi_2)(1 - x)$，其中$\xi_2\in(x,1)$，于是$|f(x)| = |f'(\xi_2)|(1 - x)$.
@@ -1706,7 +1706,7 @@ f(x)=f(1)+f'(1)(x - 1)+\frac{f''(\xi)}{2}(x - 1)^2\ (\xi\text{是介于}x,1\text
 0\leq I_1 = \lim_{x \to 0 \atop y \to 0}\frac{|xy|}{\sqrt{x^2 + y^2}}\leq \lim_{x \to 0 \atop y \to 0}\frac{\frac{1}{2}(x^2 + y^2)}{\sqrt{x^2 + y^2}} = 0
 \]
 由夹逼准则，得$I_1 = 0$，故$I_1$存在.
-取路径$y = x$，则$I_2 = \lim_{x \to 0 \atop y = x}\frac{x|y|}{x^2 + y^2}=\lim_{x \to 0}\frac{x|x|}{2x^2}$，又$\lim_{x \to 0^+}\frac{x|x|}{2x^2}=\frac{1}{2}$，$\lim_{x \to 0^-}\frac{x|x|}{2x^2}=-\frac{1}{2}$，极限不存在，故$I_2$不存在.",,11cm,2026-04-13
+取路径$y = x$，则$I_2 = \lim_{x \to 0 \atop y = x}\frac{x|y|}{x^2 + y^2}=\lim_{x \to 0}\frac{x|x|}{2x^2}$，又$\lim_{x \to 0^+}\frac{x|x|}{2x^2}=\frac{1}{2}$，$\lim_{x \to 0^-}\frac{x|x|}{2x^2}=-\frac{1}{2}$，极限不存在，故$I_2$不存在.",2026-05-29:对,11cm,2026-04-13
 数学,基础30讲,基础30讲-例13-5,"设函数$f(x, y) = \int_{0}^{xy} e^{-xt^2} dt$，则$f'_x(1, +\infty) = \underline{\quad\quad}$",n,基础30讲-例13-5,*,错题,"应填$-\frac{\sqrt{\pi}}{4}$.
 当$x > 0$时，
 \[
@@ -1723,7 +1723,7 @@ f_{x}'(1,+\infty)=\frac{\sqrt{\pi}}{2}\left(\frac{1}{\sqrt{x}}\right)'\big|_{x =
 f_{x}'(x,y)=-\frac{1}{2}x^{-\frac{3}{2}}\cdot\int_{0}^{x^{\frac{3}{2}}y}e^{-u^{2}}du+\frac{1}{\sqrt{x}}e^{-x^{3}y^{2}}\cdot\frac{3}{2}\sqrt{xy}
 \]
 前面求导，后面不动 + 前面不动，后面求导
-于是$f_{x}'(1,+\infty)=-\frac{1}{2}\int_{0}^{+\infty}e^{-u^{2}}du=-\frac{\sqrt{\pi}}{4}$. 略复杂.",,11cm,2026-04-13
+于是$f_{x}'(1,+\infty)=-\frac{1}{2}\int_{0}^{+\infty}e^{-u^{2}}du=-\frac{\sqrt{\pi}}{4}$. 略复杂.",2026-05-30:对,11cm,2026-04-13
 数学,基础30讲,基础30讲-例13-6,"设函数$f(x,y)$可微，$f(0,0)=0$，$\frac{\partial f}{\partial x}=-f(x,y)$，$\frac{\partial f}{\partial y}=e^{-x}\cos y$，求$f(x,y)$",n,基础30讲-例13-6,*,错题、不规范,"由$\frac{\partial f}{\partial y}=\mathrm{e}^{-x} \cos y$，得$f(x, y)=\mathrm{e}^{-x} \sin y+\varphi(x)$，于是$\frac{\partial f}{\partial x}=-\mathrm{e}^{-x} \sin y+\varphi^{\prime}(x)$。
 又$\frac{\partial f}{\partial x}=-f(x, y)$，故
 \[
@@ -1761,7 +1761,7 @@ f_{x}'(x,y)=-\frac{1}{2}x^{-\frac{3}{2}}\cdot\int_{0}^{x^{\frac{3}{2}}y}e^{-u^{2
 故
 \[
 \left.f_y'(x,y)\right|_{y = \mathrm{e}^x}=-1
-\]",,11cm,2026-04-13
+\]",2026-05-21:对,11cm,2026-04-13
 数学,基础30讲,基础30讲-例13-11,"设对任意的$x,y$有$\left(\frac{\partial f}{\partial x}\right)^2 + \left(\frac{\partial f}{\partial y}\right)^2 = 4$，用变量代换$x=uv$，$y=\frac{u^2-v^2}{2}$将函数$f(x,y)$变换成函数$g(u,v)$，且满足关系式$a\left(\frac{\partial g}{\partial u}\right)^2 - b\left(\frac{\partial g}{\partial v}\right)^2 = u^2 + v^2$，求$a,b$",n,基础30讲-例13-11,*,错题,"解：$g(u,v)=f(uv,\frac{u^2 - v^2}{2})$，于是
 \begin{align*}
 \frac{\partial g}{\partial u}&=\frac{\partial f}{\partial x}v+\frac{\partial f}{\partial y}u,\\
@@ -1793,7 +1793,7 @@ dz|_{(0, 0)} = -\frac{1}{3}dx - \frac{2}{3}dy.
 则$F'_x(x, y, z) = y + e^{xz}z$，$F'_y(x, y, z) = x - \frac{z}{y}$，$F'_z(x, y, z) = -\ln y + e^{xz}x$。于是，
 $F'_x(0, 1, 1) = 2 \neq 0$，$F'_y(0, 1, 1) = -1 \neq 0$，$F'_z(0, 1, 1) = 0$。
 因此，在点$(0, 1, 1)$的某一个邻域$U_1$内，存在一个连续且具有连续偏导数的隐函数$x = x(y, z)$；在点$(0, 1, 1)$的某一个邻域$U_2$内，也存在一个连续且具有连续偏导数的隐函数$y = y(x, z)$。于是，在邻域$U = U_1\cap U_2$内，就存在两个连续且具有连续偏导数的隐函数$x = x(y, z)$和$y = y(x, z)$，故应选 (D)。",,11cm,2026-04-13
-数学,基础30讲,基础30讲-例13-14,"设$F(x,y)$在点$(x_0,y_0)$的某邻域内有连续的偏导数，且$F(x_0,y_0)=0$，则$F'_y(x_0,y_0)\neq0$是$F(x,y)=0$在点$(x_0,y_0)$的某邻域内能确定一个连续函数$y=y(x)$，且满足$y_0=y(x_0)$，并有连续导数的（）。(A) 必要非充分条件 (B) 充分非必要条件 (C) 充要条件 (D) 既不充分又不必要条件",n,基础30讲-例13-14,*,错题,"由隐函数存在定理 1 知，在题设条件下，$F_y'(x_0,y_0)\neq 0$是方程$F(x,y)=0$在点$(x_0,y_0)$的某邻域内能确定一个连续函数$y = y(x)$，且满足$y_0 = y(x_0)$，并有连续导数的充分条件，但不是必要条件. 如反例也可举$F(x,y)=(y - x)^2$. 有$F(0,0)=0$，且$F_y' = 2(y - x)$，有$F_y'(0,0)=0$，但$F(x,y)=0$可以确定隐函数$y = x$. 应选 (B).",,11cm,2026-04-13
+数学,基础30讲,基础30讲-例13-14,"设$F(x,y)$在点$(x_0,y_0)$的某邻域内有连续的偏导数，且$F(x_0,y_0)=0$，则$F'_y(x_0,y_0)\neq0$是$F(x,y)=0$在点$(x_0,y_0)$的某邻域内能确定一个连续函数$y=y(x)$，且满足$y_0=y(x_0)$，并有连续导数的（）。(A) 必要非充分条件 (B) 充分非必要条件 (C) 充要条件 (D) 既不充分又不必要条件",n,基础30讲-例13-14,*,错题,"由隐函数存在定理 1 知，在题设条件下，$F_y'(x_0,y_0)\neq 0$是方程$F(x,y)=0$在点$(x_0,y_0)$的某邻域内能确定一个连续函数$y = y(x)$，且满足$y_0 = y(x_0)$，并有连续导数的充分条件，但不是必要条件. 如反例也可举$F(x,y)=(y - x)^2$. 有$F(0,0)=0$，且$F_y' = 2(y - x)$，有$F_y'(0,0)=0$，但$F(x,y)=0$可以确定隐函数$y = x$. 应选 (B).",2026-05-20:对,11cm,2026-04-13
 数学,基础30讲,基础30讲-例13-16,"设函数$z = z(x, y)$由方程$F\left(x + zy^{-1}, y + zx^{-1}\right) = 0$所确定，其中$F$具有连续偏导数，且$xF_1' + yF_2' \neq 0$，则$x\frac{\partial z}{\partial x} + y\frac{\partial z}{\partial y} = \underline{\quad\quad}$",n,基础30讲-例13-16,***,其他方法,"\textbf{\textcolor{red}{方法一：公式法}}
 令$G(x, y, z) = F(x + zy^{-1}, y + zx^{-1})$，则由公式法得
 \[
@@ -1953,7 +1953,7 @@ f(x, y)=(x + y^2 + 2y)e^x
 \[
 A = f_{xx}''(0, -1)=1, B = f_{xy}''(0, -1)=0, C = f_{yy}''(0, -1)=2
 \]
-由于$AC - B^2>0$，$A>0$，因此函数$f(x, y)$的极小值为$f(0, -1)=-1$。",,11cm,2026-04-20
+由于$AC - B^2>0$，$A>0$，因此函数$f(x, y)$的极小值为$f(0, -1)=-1$。",2026-05-28:半对、二元函数极值公式记错、粗心,11cm,2026-04-20
 数学,基础30讲,基础30讲-习13-14,"求曲线$x^3 - xy + y^3 = 1(x\ge0, y\ge0)$上的点到坐标原点的最长距离与最短距离",n,基础30讲-习13-14,***,不严谨,"\textbf{\textcolor{red}{方法一}}：设$(x,y)$为曲线上的任意一点，目标函数为距离的平方，即$f(x,y)=x^{2}+y^{2}$，构造拉格朗日函数
 \[F(x,y,\lambda)=x^{2}+y^{2}+\lambda(x^{3}-xy + y^{3}-1)\]
 令
@@ -1997,7 +1997,7 @@ F_{+}'(0)&=\lim_{t\to 0^{+}}\frac{F(t)-F(0)}{t - 0}=\lim_{t\to 0^{+}}\frac{\sqrt
 \begin{align*}
 f(x) &= \iint_{D(x)}\frac{v\ln\sqrt{u^2+v^2}}{u + v}dudv = \iint_{D(x)}\frac{u\ln\sqrt{u^2+v^2}}{u + v}dudv\\
 &=\frac{1}{2}\iint_{D(x)}\ln\sqrt{u^2+v^2}dudv=\frac{1}{4}\iint_{D(x)}\ln(u^2 + v^2)dudv.
-\end{align*}",,11cm,2026-04-13
+\end{align*}",2026-05-29:对,11cm,2026-04-13
 数学,基础30讲,基础30讲-例14-5,"设函数$f(x, y)$连续，则二次积分$\int_{\frac{\pi}{2}}^{\pi} \mathrm{d} x \int_{\sin x}^{1} f(x, y) \mathrm{d} y=(\ )$. (A) $\int_{0}^{1} \mathrm{d} y \int_{\pi}^{\pi+\arcsin y} f(x, y) \mathrm{d} x$ (B) $\int_{0}^{1} \mathrm{d} y \int_{\pi-\arcsin y}^{\pi} f(x, y) \mathrm{d} x$ (C) $\int_{0}^{1} \mathrm{d} y \int_{\frac{\pi}{2}}^{\pi+\arcsin y} f(x, y) \mathrm{d} x$ (D) $\int_{0}^{1} \mathrm{d} y \int_{\frac{\pi}{2}}^{\pi-\arcsin y} f(x, y) \mathrm{d} x$",y,基础30讲-例14-5,***,其他方法、不简洁,"应选 (B).
 根据所给二次积分得到积分区域为$D$：$\begin{cases} \sin x < y < 1, \\ \frac{\pi}{2} < x < \pi, \end{cases}$ 如图 14 - 7 所示，则
 \[
@@ -2021,7 +2021,7 @@ f(x)&=\int_{0}^{x^{2}} \mathrm{d}y\int_{x}^{\sqrt{y}} \sin \frac{y}{t} \mathrm{d
 \begin{align*}
 原式&=\int_{0}^{1}dx\int_{0}^{x}\arcsin\sqrt{4x - 4x^2}dy\\
 &=\int_{0}^{1}x\arcsin\sqrt{4x - 4x^2}dx=\frac{1}{2}
-\end{align*}",,11cm,2026-04-13
+\end{align*}",2026-05-22:错,11cm,2026-04-13
 数学,基础30讲,基础30讲-例14-8,"设区域$D=\{(x,y)\mid x^2+y^2\leq\sqrt{2}\}$，则$\iint_D\left(x^2+\frac{y^2}{2}\right)dxdy=$\underline{\quad\quad\quad}",n,基础30讲-例14-8,***,其他方法,"\begin{align*}
 \iint_D (x^2 + \frac{y^2}{2}) \mathrm{d}x\mathrm{d}y&=\iint_D (y^2 + \frac{x^2}{2}) \mathrm{d}x\mathrm{d}y=\frac{1}{2}(1 + \frac{1}{2})\iint_D (x^2 + y^2) \mathrm{d}x\mathrm{d}y\\
 &=\frac{1}{2}(1 + \frac{1}{2})\int_0^{2\pi} \mathrm{d}\theta\int_0^{2^{\frac{1}{4}}} (r^2 \cos^2 \theta + r^2 \sin^2 \theta)r\mathrm{d}r = \frac{3\pi}{4}
@@ -2048,7 +2048,7 @@ I^2 &= \int_{0}^{+\infty} e^{-x^2} dx \cdot \int_{0}^{+\infty} e^{-x^2} dx = \in
 &= \int_{0}^{\frac{\pi}{2}} d\theta \cdot \int_{0}^{+\infty} e^{-r^2} \cdot rdr = \frac{\pi}{2} \cdot \left(-\frac{1}{2}\right) \int_{0}^{+\infty} e^{-r^2} d(-r^2) \\
 &= -\frac{\pi}{4} e^{-r^2} \big|_{0}^{+\infty} = \frac{\pi}{4}
 \end{align*}
-由积分的保号性知$I > 0$，故$I = \int_{0}^{+\infty} e^{-x^2} dx = \frac{\sqrt{\pi}}{2}$。",,11cm,2026-04-13
+由积分的保号性知$I > 0$，故$I = \int_{0}^{+\infty} e^{-x^2} dx = \frac{\sqrt{\pi}}{2}$。",2026-05-31:对,11cm,2026-04-13
 数学,基础30讲,基础30讲-例14-12,计算$\int_{-\infty}^{+\infty} x^2 e^{-x^2} dx$,n,基础30讲-例14-12,***,其他方法,"\begin{align*}
 \int_{-\infty}^{+\infty} x^2 e^{-x^2} dx&=2\int_{0}^{+\infty} x^2 e^{-x^2} dx\\
 2\int_{0}^{+\infty} x^2 e^{-x^2} dx&=2\int_{0}^{+\infty} x^{2\cdot\frac{3}{2}-1} e^{-x^2} dx=\Gamma(\frac{3}{2})=\frac{1}{2}\cdot\Gamma(\frac{1}{2})=\frac{\sqrt{\pi}}{2}
@@ -2093,7 +2093,7 @@ I&=\int_{0}^{\frac{\pi}{2}}\mathrm{d}\theta\int_{0}^{\frac{1}{\cos\theta+\sin\th
 &=\frac{1}{2}\int_{0}^{\frac{\pi}{2}}e^{\frac{\sin\theta}{\cos\theta+\sin\theta}}\frac{1}{(\cos\theta+\sin\theta)^{2}}\mathrm{d}\theta\\
 &=\frac{1}{2}\int_{0}^{\frac{\pi}{2}}e^{\frac{\sin\theta}{\cos\theta+\sin\theta}}\mathrm{d}\left(\frac{\sin\theta}{\cos\theta+\sin\theta}\right)\\
 &=\frac{1}{2}\left.e^{\frac{\sin\theta}{\cos\theta+\sin\theta}}\right|_{0}^{\frac{\pi}{2}}=\frac{1}{2}(e - 1)
-\end{align*}",,11cm,2026-04-13
+\end{align*}",2026-05-28:对,11cm,2026-04-13
 数学,基础30讲,基础30讲-例14-17,"设 $D$ 为 $(x-1)^2+y^2=1$ 与 $(x-2)^2+y^2=4$ 及 $x$ 轴所围区域在第一象限的部分，则 $D$ 的形心 $(\bar{x},\bar{y})=$\underline{\quad\quad\quad}。",y,基础30讲-例14-17,*,错题,"应填$\left(\frac{7}{3}, \frac{28}{9\pi}\right)$.
 $D$绕$y$轴旋转一周所成的旋转体的体积
 \[
@@ -2142,7 +2142,7 @@ r(\overline{x}, \overline{y}) = \frac{V_x}{2\pi S} = \frac{\frac{28\pi}{3}}{2\pi
 \[0\leq \theta \leq \pi, 0\leq r \leq 2\sin\theta,\]
 因此
 \[\iint_D f(xy)dxdy = \int_{0}^{\pi}d\theta\int_{0}^{2\sin\theta} f(r^2\cos\theta\sin\theta)r dr,\]
-可知 (C) 不正确, (D) 正确. 故选 (D).",,11cm,2026-04-13
+可知 (C) 不正确, (D) 正确. 故选 (D).",2026-05-31:对,11cm,2026-04-13
 数学,基础30讲,基础30讲-习14-6,设$f(x)$为连续函数，$F(t) = \int_{1}^{t} \mathrm{d}y \int_{y}^{t} f(x) \mathrm{d}x$，则$F'(t) = \underline{\qquad}$,n,基础30讲-习14-6,***,其他方法、不简洁,"\begin{align*}
 F(t) &= \int_{1}^{t} \mathrm{d}y\int_{y}^{t} f(x)\mathrm{d}x\\
 &= \int_{1}^{t} \mathrm{d}x\int_{1}^{x} f(x)\mathrm{d}y\\
@@ -2154,7 +2154,7 @@ F(t) &= \int_{1}^{t} \mathrm{d}y\int_{y}^{t} f(x)\mathrm{d}x\\
 \begin{align*}
 原式&=-\iint_{D}dxdy = -\int_{-\frac{\pi}{2}}^{\frac{\pi}{2}}dx\int_{\sin x}^{1}dy\\
 &=-\int_{-\frac{\pi}{2}}^{\frac{\pi}{2}}(1 - \sin x)dx = -2\int_{0}^{\frac{\pi}{2}}dx = -\pi.
-\end{align*}",,11cm,2026-04-13
+\end{align*}",2026-05-23:半对、粗心,11cm,2026-04-13
 数学,基础30讲,基础30讲-习14-8,"设区域$D=\{(x,y)\mid x^2+y^2\le1, x\ge0\}$，计算二重积分$I=\iint\limits_D \frac{1+xy}{1+x^2+y^2}dxdy$",n,基础30讲-习14-8,*,错题,"因为
 \begin{align*}
 I_1&=\iint_{D}\frac{1}{1+x^{2}+y^{2}}dxdy=\int_{-\frac{\pi}{2}}^{\frac{\pi}{2}}d\theta\int_{0}^{1}\frac{1}{1+r^{2}}rdr=\frac{\pi}{2}\ln(1 + r^{2})\big|_{0}^{1}=\frac{\pi}{2}\ln2\\
@@ -2163,7 +2163,7 @@ I_2&=\iint_{D}\frac{xy}{1+x^{2}+y^{2}}dxdy=\int_{-\frac{\pi}{2}}^{\frac{\pi}{2}}
 所以
 \[
 I = I_1 + I_2=\frac{\pi}{2}\ln2
-\]",,11cm,2026-04-13
+\]",2026-05-17:对,11cm,2026-04-13
 数学,基础30讲,基础30讲-习14-12,(1)设积分区域$D$能使二重积分$\iint_D (1-2x^2-y^2)d\sigma$的值达到最大，求出该积分区域$D$；(2)对(1)中的二重积分$\iint_D (1-2x^2-y^2)d\sigma$，求出其最大值。,n,基础30讲-习14-12,*,错题,"(1)由二重积分的性质可知，当积分区域$D$包含了所有使被积函数$1 - 2x^2 - y^2$大于等于零的区域，而不包含使被积函数$1 - 2x^2 - y^2$小于零的区域，即当$D$是椭圆$2x^2 + y^2 = 1$所围的平面闭区域时，此二重积分的值达到最大。
 (2)由(1)知$D=\{(x, y)|2x^2 + y^2 \leq 1\}$，此时令$\begin{cases}x = \frac{1}{\sqrt{2}}r\cos\theta\\y = r\sin\theta\end{cases}$，则
 \begin{align*}
@@ -2171,7 +2171,7 @@ I = I_1 + I_2=\frac{\pi}{2}\ln2
 &=\int_{0}^{2\pi}d\theta\int_{0}^{1}(1 - r^2)\frac{1}{\sqrt{2}}rdr\\
 &=2\pi\cdot\frac{1}{\sqrt{2}}\int_{0}^{1}(r - r^3)dr\\
 &=\sqrt{2}\pi\left(\frac{1}{2}r^2 - \frac{1}{4}r^4\right)\big|_{0}^{1}=\frac{\sqrt{2}\pi}{4}
-\end{align*}",,11cm,2026-04-13
+\end{align*}",2026-05-20:对,11cm,2026-04-13
 数学,基础30讲,基础30讲-例15-4,微分方程$\frac{y\mathrm{d}y}{1+y^2}=\frac{\mathrm{d}x}{x(1+x^2)}$的解为\underline{\quad\quad\quad},n,基础30讲-例15-4,*,错题,"两边积分，得$\int\frac{y\mathrm{d}y}{1 + y^2} = \int(\frac{1}{x} - \frac{x}{1 + x^2})\mathrm{d}x$，则
 \begin{align*}
 \frac{1}{2}\ln(1 + y^2) &= \ln|x| - \frac{1}{2}\ln(1 + x^2) + \ln C_1\\
@@ -2195,7 +2195,7 @@ y(x) &= e^{-\int dx}\left(\int e^{-x}\cos x\cdot e^{\int dx}dx + C\right)\\
 \[
 x = \mathrm{e}^{-\int\frac{1}{y}\mathrm{d}y}\left(\int 3y\mathrm{e}^{\int\frac{1}{y}\mathrm{d}y}\mathrm{d}y + C\right)=\frac{1}{y}\left(\int 3y^2\mathrm{d}y + C\right)=y^2+\frac{C}{y}
 \]
-将$y|_{x = 1} = 1$代入上式，得$C = 0$，于是$x = y^2$，即$y = \pm\sqrt{x}$. 注意到$y|_{x = 1} = 1$，故将$y = -\sqrt{x}$舍去，得$y = \sqrt{x}$.",,11cm,2026-04-13
+将$y|_{x = 1} = 1$代入上式，得$C = 0$，于是$x = y^2$，即$y = \pm\sqrt{x}$. 注意到$y|_{x = 1} = 1$，故将$y = -\sqrt{x}$舍去，得$y = \sqrt{x}$.",2026-05-22:半对、其他方法,11cm,2026-04-13
 数学,基础30讲,基础30讲-例15-10,"设$a>0$，函数$f(x)$在$[0,+\infty)$内连续有界。证明：微分方程$y'+ay=f(x)$的解在$[0,+\infty)$内有界",n,基础30讲-例15-10,*,错题,"\[ y = \mathrm{e}^{-\int a\mathrm{d}x}\left[\int f(x)\cdot\mathrm{e}^{\int a\mathrm{d}x}\mathrm{d}x + C\right] = \mathrm{e}^{-ax}\left[\int f(x)\cdot\mathrm{e}^{ax}\mathrm{d}x + C\right] = \mathrm{e}^{-ax}\left[\int_{0}^{x} f(t)\mathrm{e}^{at}\mathrm{d}t + C\right] \]
 由例 8.14 知$y(x)$在$[0, +\infty)$内有界.",,11cm,2026-04-13
 数学,基础30讲,基础30讲-例15-12,求微分方程$y'' = y'[1+(y')^2]$满足$y(0)=0$，$y'(0)=1$的特解,n,基础30讲-例15-12,***,其他方法,"令$y' = p$，则$y'' = p'$，代入题干微分方程得
@@ -2232,9 +2232,9 @@ p = \pm C_0 y^{\frac{2}{3}} = C_1 y^{\frac{2}{3}}, \quad \text{其中 } C_1 \neq
 \]
 即$\frac{\mathrm{d}y}{y^{\frac{2}{3}}} = C_1 \mathrm{d}x$，两边积分，得$3y^{\frac{1}{3}} = C_1 x + C_2$。
 由$y(0) = 0$，得$C_2 = 0$，故$y = C_3 x^3, \quad \text{其中 } C_3 \neq 0$。
-又$C_3 = 0$时，$y \equiv 0$，满足题意，故$y = Cx^3$，其中$C$为任意常数。",,11cm,2026-04-13
+又$C_3 = 0$时，$y \equiv 0$，满足题意，故$y = Cx^3$，其中$C$为任意常数。",2026-05-26:半对、参数C为0未考虑,11cm,2026-04-13
 数学,基础30讲,基础30讲-例15-14,求满足$f(0)=0$的具有一阶连续导数的$f(x)$，使$[yf'(x)+y^2]dx+(x^2+2xy)dy=0$为全微分方程，并求此全微分方程的通解,n,基础30讲-例15-14,*,错题、其他方法、未化简至最简,"由定义，有$\frac{\partial(x^{2}+2xy)}{\partial x}=\frac{\partial[yf'(x)+y^{2}]}{\partial y}$，即$2x + 2y = f'(x)+2y$，故$f'(x)=2x$，于是$f(x)=x^{2}+C_{1}$。
-由$f(0)=0$，得$C_{1}=0$，即$f(x)=x^{2}$。于是有$(2xy + y^{2})dx+(x^{2}+2xy)dy = d(x^{2}y+xy^{2}) = 0$，故通解为$x^{2}y+xy^{2}=C$，$C$为任意常数。",,11cm,2026-04-13
+由$f(0)=0$，得$C_{1}=0$，即$f(x)=x^{2}$。于是有$(2xy + y^{2})dx+(x^{2}+2xy)dy = d(x^{2}y+xy^{2}) = 0$，故通解为$x^{2}y+xy^{2}=C$，$C$为任意常数。",2026-05-26:半对、不熟悉,11cm,2026-04-13
 数学,基础30讲,基础30讲-例15-16,设函数$y=f(x)$满足微分方程$y''+2y'+5y=0$，且$f(0)=1$，$f'(0)=-1$，则$f(x)=$\underline{\quad\quad\quad},n,基础30讲-例15-16,*,错题、粗心,"应填$e^{-x}\cos 2x$。
 特征方程为$r^2 + 2r + 5 = 0$，$r_{1,2} = \frac{-2\pm\sqrt{2^2 - 4\times5}}{2} = -1\pm 2i$，故通解为
 \[
@@ -2292,7 +2292,7 @@ y&=-\int\frac{\sqrt{1 - x^{2}}}{x}\mathrm{d}x=-\int\frac{\cos^{2}t}{\sin t}\math
 由$x = 1$，$y = 0$，可得$C = 0$. 故$Q$点的轨迹方程为
 \[
 y=\ln\frac{1 + \sqrt{1 - x^{2}}}{x}-\sqrt{1 - x^{2}}
-\]",,11cm,2026-04-13
+\]",2026-05-23:半对、粗心,11cm,2026-04-13
 数学,基础30讲,基础30讲-例15-23,已知高温物体置于低温介质中，$t$时刻物体温度$T(t)\ ^\circ\text{C}$对时间（单位：$\min$）的变化率与$t$时刻物体和介质的温差$T-T_0$成正比（$T>T_0$），比例系数为$k$，$k>0$。现将一初始温度为$120\ ^\circ\text{C}$的物体在$20\ ^\circ\text{C}$恒温介质中冷却，$30\ \text{min}$后该物体温度降至$30\ ^\circ\text{C}$，则$T(t)=$\underline{\quad\quad\quad},n,基础30讲-例15-23,*,错题、变化率正负,"\begin{align*}
 &\text{应填 }100\text{e}^{-\frac{\ln 10}{30}t} + 20 。\\
 &\text{由题意得}\\
@@ -2303,7 +2303,7 @@ y=\ln\frac{1 + \sqrt{1 - x^{2}}}{x}-\sqrt{1 - x^{2}}
 &T = 100\text{e}^{-kt} + 20 。\\
 &\text{将 }t = 30，T = 30\text{ 代入上式得 }k = \frac{\ln 10}{30} ，所以\\
 &T(t)=100\text{e}^{-\frac{\ln 10}{30}t} + 20 。
-\end{align*}",,11cm,2026-04-13
+\end{align*}",2026-05-24:对,11cm,2026-04-13
 数学,基础30讲,基础30讲-习15-3,微分方程$y'\tan x = y\ln y$的通解是,n,基础30讲-习15-3,*,错题、粗心、未化简至最简,"原方程分离变量，有$\frac{\mathrm{d}y}{y\ln y} = \frac{\cos x}{\sin x}\mathrm{d}x$，积分得
 \[
 \ln|\ln y|=\ln|\sin x|+C_1
@@ -2317,9 +2317,9 @@ e^y&=e^{-x}\left[\frac{1}{2}e^{x}(\sin x - \cos x)+C\right]
 e^y&=e^{-\int dx}\left(\int\sin x\cdot e^{\int dx}dx + C\right)=e^{-x}\left(\int e^{x}\sin xdx + C\right)\\
 &=e^{-x}\left[\frac{1}{2}e^{x}(\sin x - \cos x)+C\right]
 \end{align*}
-其中$C$为任意常数.",,11cm,2026-04-13
+其中$C$为任意常数.",2026-05-19:提示,11cm,2026-04-13
 数学,基础30讲,基础30讲-习15-6,（仅数学一、数学二）微分方程$xy''+3y'=0$的通解为,n,基础30讲-习15-6,***,去绝对值,"令 $p = y'$，则原方程化为 $p' + \frac{3}{x} p = 0$，其通解为 $p = C x^{-3}$。
-因此 $y = \int C x^{-3} \mathrm{d}x = C_1 - \frac{C}{2} x^{-2} = C_1 + \frac{C_2}{x^2}$（$C_1, C_2$ 为任意常数）。",,11cm,2026-04-13
+因此 $y = \int C x^{-3} \mathrm{d}x = C_1 - \frac{C}{2} x^{-2} = C_1 + \frac{C_2}{x^2}$（$C_1, C_2$ 为任意常数）。",2026-05-29:对,11cm,2026-04-13
 数学,基础30讲,基础30讲-习15-8,（仅数学一）方程$x^2\frac{d^2y}{dx^2}-2y=x^2$的通解为,n,基础30讲-习15-8,*,错题、粗心,"此为欧拉方程。
 当$x>0$时，令$x = e^t$，有$t = \ln x$，经计算化原方程为$\frac{d^2y}{dt^2}-\frac{dy}{dt}-2y = e^{2t}$，其特征方程为$r^2 - r - 2 = 0$，特征根$r_1 = 2$，$r_2 = -1$，则其齐次方程的通解为$Y = C_1e^{2t}+C_2e^{-t}$。设特解$y^* = Ate^{2t}$，可得$A = \frac{1}{3}$。从而得通解为
 \[
@@ -2374,7 +2374,7 @@ y'' = y'[1+(y')^2]
 数学,基础30讲,基础30讲-例16-1,证明：$\sum_{n=1}^{\infty} (u_{n+1}-u_n)$ 收敛 $\Leftrightarrow \lim_{n\to\infty} u_n$ 存在,n,基础30讲-例16-1,*,错题、概念问题,"\begin{align*}
 S_n &= \sum_{k = 1}^{n}(u_{k + 1} - u_k) = (u_2 - u_1) + (u_3 - u_2) + \cdots + (u_{n + 1} - u_n) = u_{n + 1} - u_1\\
 \end{align*}
-故$\sum_{n = 1}^{\infty}(u_{n + 1} - u_n)$收敛$\Leftrightarrow \lim_{n \to \infty}S_n$存在，即$\lim_{n \to \infty}u_{n + 1} - u_1$存在，也即$\lim_{n \to \infty}u_{n + 1}$存在$\Leftrightarrow \lim_{n \to \infty}u_n$存在.",,8cm,2026-04-20
+故$\sum_{n = 1}^{\infty}(u_{n + 1} - u_n)$收敛$\Leftrightarrow \lim_{n \to \infty}S_n$存在，即$\lim_{n \to \infty}u_{n + 1} - u_1$存在，也即$\lim_{n \to \infty}u_{n + 1}$存在$\Leftrightarrow \lim_{n \to \infty}u_n$存在.",2026-05-29:对,8cm,2026-04-20
 数学,基础30讲,基础30讲-例16-2,记$\sum_{n=1}^{\infty} u_n$的部分和$S_n = u_1 + u_2 + \dots + u_n$，若$\lim_{n \to \infty} u_n = 0$，$\lim_{n \to \infty} S_{2n} = S$（或$\lim_{n \to \infty} S_{2n+1} = S$），证明：$\sum_{n=1}^{\infty} u_n = S$,n,基础30讲-例16-2,*,错题、概念问题,"由于$\lim_{n \to \infty} u_{n}=0$，因此$\lim_{n \to \infty} u_{2n + 1}=0$。结合$\lim_{n \to \infty} S_{2n}=S$，有
 \begin{align*}
 \lim_{n \to \infty} S_{2n + 1}&=\lim_{n \to \infty}(S_{2n}+u_{2n + 1})\\
@@ -2389,7 +2389,7 @@ S_n &= \sum_{k = 1}^{n}(u_{k + 1} - u_k) = (u_2 - u_1) + (u_3 - u_2) + \cdots + 
 &\leq 1 + 1 + \frac{1}{1\times2} + \frac{1}{2\times3} + \cdots + \frac{1}{(n - 1)n}\\
 &= 1 + 1 + \left(1 - \frac{1}{2}\right) + \left(\frac{1}{2} - \frac{1}{3}\right) + \cdots + \left(\frac{1}{n - 1} - \frac{1}{n}\right) = 3 - \frac{1}{n} < 3
 \end{align*}
-即$\{S_{n+1}\}$有界，由收敛原则，有$\sum_{n=0}^{\infty} \frac{1}{n!}$收敛。",,13cm,2026-04-20
+即$\{S_{n+1}\}$有界，由收敛原则，有$\sum_{n=0}^{\infty} \frac{1}{n!}$收敛。",2026-05-24:对,13cm,2026-04-20
 数学,基础30讲,基础30讲-例16-6,(1) 设$\sum_{n=1}^{\infty} u_n$是正项级数，若$\sum_{n=1}^{\infty} \sqrt{u_n u_{n+1}}$收敛，且$\{u_n\}$单调减少，证明：$\sum_{n=1}^{\infty} u_n$收敛；(2) 设$\sum_{n=1}^{\infty} u_n$和$\sum_{n=1}^{\infty} v_n$都是正项级数，且$\sum_{n=1}^{\infty} u_n$和$\sum_{n=1}^{\infty} v_n$都收敛，证明：$\sum_{n=1}^{\infty} u_n v_n$收敛。,n,基础30讲-例16-6,***,其他方法,"(1) 由$\{u_n\}$单调减少可得$u_{n + 1} \leq u_n$，两边同时乘以$u_{n + 1}$，进而可得$u_{n + 1}^2 \leq u_n u_{n + 1}$，于是$u_{n + 1} \leq \sqrt{u_n u_{n + 1}}$. 因为$\sum_{n = 1}^{\infty} \sqrt{u_n u_{n + 1}}$收敛，所以$\sum_{n = 1}^{\infty} u_n$收敛.
 (2) 由$\sum_{n = 1}^{\infty} u_n$和$\sum_{n = 1}^{\infty} v_n$收敛可得$\sum_{n = 1}^{\infty} u_n^2$和$\sum_{n = 1}^{\infty} v_n^2$收敛，且$u_n v_n \leq \frac{1}{2}(u_n^2 + v_n^2)$，故由比较判别法知$\sum_{n = 1}^{\infty} u_n v_n$收敛.",,16cm,2026-04-21
 数学,基础30讲,基础30讲-例16-7,设有方程$x^n + nx - 1 = 0$，其中$n$为正整数。证明此方程存在唯一的正实根$x_n$，并证明当$a>1$时，级数$\sum_{n=1}^{\infty} x_n^a$收敛。,n,基础30讲-例16-7,*,错题,"证：记$f_{n}(x)=x^{n}+nx - 1$. 当$x > 0$时，$f_{n}'(x)=nx^{n - 1}+n > 0$，故$f_{n}(x)$在$[0, +\infty)$上单调增加.
@@ -2403,7 +2403,7 @@ S_n &= \sum_{k = 1}^{n}(u_{k + 1} - u_k) = (u_2 - u_1) + (u_3 - u_2) + \cdots + 
 0 < x_{n}^{a}<\left(\frac{1}{n}\right)^{a}.
 \]
 又当$a > 1$时，正项级数$\sum_{n = 1}^{\infty}\frac{1}{n^{a}}$收敛，所以级数$\sum_{n = 1}^{\infty}x_{n}^{a}$收敛.
-注：记$f_{n}(x)=x^{n}+nx - 1$，若是观察到$f_{n}\left(\frac{1}{n}\right)=\left(\frac{1}{n}\right)^{n}>0$，则此时$0 < x_{n}<\frac{1}{n}$，进而有$0 < x_{n}^{a}<\frac{1}{n^{a}}$. 这样更简单.",,15cm,2026-04-21
+注：记$f_{n}(x)=x^{n}+nx - 1$，若是观察到$f_{n}\left(\frac{1}{n}\right)=\left(\frac{1}{n}\right)^{n}>0$，则此时$0 < x_{n}<\frac{1}{n}$，进而有$0 < x_{n}^{a}<\frac{1}{n^{a}}$. 这样更简单.",2026-05-27:对,15cm,2026-04-21
 数学,基础30讲,基础30讲-例16-10,"设数列$\{a_n\},\{b_n\}$满足$0<a_n<\frac{\pi}{2}$，$0<b_n<\frac{\pi}{2}$，$\cos a_n - a_n = \cos b_n$，且级数$\sum_{n=1}^{\infty} b_n$收敛。证明：(1)$\lim_{n\to\infty} a_n = 0$；(2)级数$\sum_{n=1}^{\infty} \frac{a_n}{b_n}$收敛。",n,基础30讲-例16-10,*,错题,"由$\cos a_n - \cos b_n = a_n > 0$，知$0 < a_n < b_n$，则由夹逼准则，得$\lim_{n \to \infty}a_n = 0$。
 联想到$1 - \cos x \sim \frac{1}{2}x^2(x \to 0)$
 \begin{align*}
@@ -2413,7 +2413,7 @@ S_n &= \sum_{k = 1}^{n}(u_{k + 1} - u_k) = (u_2 - u_1) + (u_3 - u_2) + \cdots + 
 &=\frac{1}{2}
 \end{align*}
 (1) 由例 2.11 可知$\lim_{n \to \infty}a_n = 0$。
-(2) 由例 2.11 可知$\lim_{n \to \infty}\frac{a_n}{b_n} = \frac{1}{2}$，又级数$\sum_{n = 1}^{\infty}b_n$收敛，所以级数$\sum_{n = 1}^{\infty}\frac{a_n}{b_n}$收敛。",,14cm,2026-04-21
+(2) 由例 2.11 可知$\lim_{n \to \infty}\frac{a_n}{b_n} = \frac{1}{2}$，又级数$\sum_{n = 1}^{\infty}b_n$收敛，所以级数$\sum_{n = 1}^{\infty}\frac{a_n}{b_n}$收敛。",2026-05-23:错,14cm,2026-04-21
 数学,基础30讲,基础30讲-例16-11,设$a>0$，则下列对级数$\sum_{n=1}^{\infty} \frac{a^n n!}{n^n}$的敛散性说法正确的是（ ）。(A)当$0<a<\text{e}$时，原级数收敛；当$a\ge\text{e}$时，原级数发散 (B)当$0<a<\text{e}$时，原级数发散；当$a\ge\text{e}$时，原级数收敛 (C)当$0<a<\text{e}$时，原级数收敛；当$a\ge\text{e}$时，原级数收敛 (D)当$0<a<\text{e}$时，原级数发散；当$a\ge\text{e}$时，原级数发散,n,基础30讲-例16-11,***,不简洁,"首先计算$\lim_{n \to \infty}\frac{u_{n+1}}{u_{n}}$：
 \begin{align*}
 \lim_{n \to \infty}\frac{u_{n+1}}{u_{n}}&=\lim_{n \to \infty}\frac{a^{n + 1}\cdot (n + 1)!}{(n + 1)^{n + 1}}\cdot\frac{n^{n}}{a^{n}\cdot n!}\\
@@ -2492,7 +2492,7 @@ g(x)=\int_{0}^{x}\sum_{n = 0}^{\infty}t^{n}dt = \sum_{n = 0}^{\infty}\int_{0}^{x
 =&[-\ln(1 - x)]\cdot\frac{1}{1 - x}(-1<x<1)
 \end{align*}",,16cm,2026-05-01
 数学,基础30讲,基础30讲-例16-29,"设函数$y = f(x)$满足$y'' + 2y' + 5y = 0$，且$f(0) = 1, f'(0) = -1$。(1) 求$f(x)$的表达式；(2) 设$a_n = \int_{n\pi}^{+\infty} f(x) \mathrm{d}x$，求$\sum_{n = 1}^{\infty} a_n$。",n,基础30讲-例16-29,*,错题、等比级数,"(1) 由例 15.16 可知，$f(x) = \mathrm{e}^{-x} \cos 2x$。
-(2) 由于$\int f(x) \mathrm{d}x = \int \mathrm{e}^{-x} \cos 2x \mathrm{d}x = \frac{\begin{vmatrix}(\mathrm{e}^{-x})' & (\cos 2x)' \\\mathrm{e}^{-x} & \cos 2x\end{vmatrix}}{(-1)^2 + 2^2} + C = \frac{-\mathrm{e}^{-x} \cos 2x + 2\mathrm{e}^{-x} \sin 2x}{5} + C$，因此$a_n = \frac{\mathrm{e}^{-n\pi}}{5}$，故$\sum_{n = 1}^{\infty} a_n = \frac{\mathrm{e}^{-\pi}}{5(1 - \mathrm{e}^{-\pi})} = \frac{1}{5(\mathrm{e}^{\pi} - 1)}$。",,16cm,2026-05-01
+(2) 由于$\int f(x) \mathrm{d}x = \int \mathrm{e}^{-x} \cos 2x \mathrm{d}x = \frac{\begin{vmatrix}(\mathrm{e}^{-x})' & (\cos 2x)' \\\mathrm{e}^{-x} & \cos 2x\end{vmatrix}}{(-1)^2 + 2^2} + C = \frac{-\mathrm{e}^{-x} \cos 2x + 2\mathrm{e}^{-x} \sin 2x}{5} + C$，因此$a_n = \frac{\mathrm{e}^{-n\pi}}{5}$，故$\sum_{n = 1}^{\infty} a_n = \frac{\mathrm{e}^{-\pi}}{5(1 - \mathrm{e}^{-\pi})} = \frac{1}{5(\mathrm{e}^{\pi} - 1)}$。",2026-05-26:半对、公式记错,16cm,2026-05-01
 数学,基础30讲,基础30讲-例16-33,"设数列$\{a_n\}$满足$a_1 = 1, (n + 1)a_{n + 1} = (n + \frac{1}{2})a_n$，证明：当$|x| < 1$时，幂级数$\sum_{n = 1}^{\infty}a_nx^n$收敛，并求其和函数.",n,基础30讲-例16-33,*,错题,"由条件可知，$a_n \neq 0$，且
 \[
 \lim_{n \to \infty}\frac{|a_{n + 1}|}{|a_n|} = \lim_{n \to \infty}\frac{n + \frac{1}{2}}{n + 1} = 1
@@ -2513,7 +2513,7 @@ S'(x) - \frac{1}{2(1 - x)}S(x) = \frac{1}{1 - x}
 \[
 S(x) = e^{\int\frac{dx}{2(1 - x)}}\left[\int e^{-\int\frac{dx}{2(1 - x)}} \cdot \frac{1}{1 - x}dx + C\right] = \frac{C}{\sqrt{1 - x}} - 2
 \]
-由题设知$S(0) = 0$，得$C = 2$，所以$S(x) = 2\left(\frac{1}{\sqrt{1 - x}} - 1\right), |x| < 1$.",,16cm,2026-05-01
+由题设知$S(0) = 0$，得$C = 2$，所以$S(x) = 2\left(\frac{1}{\sqrt{1 - x}} - 1\right), |x| < 1$.",2026-05-30:错、找和函数与其导数关系式,16cm,2026-05-01
 数学,基础30讲,基础30讲-例16-34,"设$a_n = \int_0^1 x^n\sqrt{1 - x^2}dx$，$b_n = \int_0^{\frac{\pi}{2}} \sin^n tdt$，$n = 1, 2, \cdots$，计算$\sum_{n = 1}^{\infty} (-1)^n \frac{a_n}{b_n}$。",n,基础30讲-例16-34,***,其他方法,"首先，令$x = \sin t$，则$a_n = \int_0^{\frac{\pi}{2}} \sin^n t \cos^2 tdt = \int_0^{\frac{\pi}{2}} \sin^n t(1 - \sin^2 t)dt = b_n - b_{n + 2}$。
 由华里士公式，知$b_{n + 2} = \frac{n + 1}{n + 2}b_n$，故$a_n = b_n - \frac{n + 1}{n + 2}b_n = \frac{1}{n + 2}b_n$。于是
 \[
@@ -2536,7 +2536,7 @@ S(x) &= S(0) + \int_0^x \left(-\frac{t^2}{1 + t}\right)dt\\
 当$x = 1$时，根据莱布尼茨判别法，知$\sum_{n = 1}^{\infty} (-1)^n \cdot \frac{1}{n + 2}$收敛，故
 \[
 \sum_{n = 1}^{\infty} (-1)^n \frac{a_n}{b_n} = \lim_{x \to 1^-} S(x) = \frac{1}{2} - \ln 2
-\]",,20cm,2026-05-01
+\]",2026-05-22:错、粗心,20cm,2026-05-01
 数学,基础30讲,基础30讲-例16-35,"设$f(x)=\int_{0}^{\sin x}\sin(t^{2})dt$，$g(x)=\sum_{n = 1}^{\infty}\frac{x^{2n + 1}}{n^{2}+2}$，当$x\to 0$时，$f(x)$是$g(x)$的（  ）.
 (A) 高阶无穷小
 (B) 低阶无穷小
@@ -2591,7 +2591,7 @@ a_n&=\frac{2}{\pi}\int_{0}^{\pi}f(x)\cos nxdx=\frac{2}{\pi}\left(\int_{0}^{\pi}\
 \[
 f(x)=1 - x^2\sim S(x)=\frac{a_0}{2}+\sum_{n = 1}^{\infty}a_n\cos nx = 1 - \frac{\pi^2}{3}+\sum_{n = 1}^{\infty}\frac{4\cdot(-1)^{n + 1}}{n^2}\cos nx(0\leq x\leq \pi)
 \]
-取$x = 0$，得$1 = 1 - \frac{\pi^2}{3}+\sum_{n = 1}^{\infty}\frac{4\cdot(-1)^{n + 1}}{n^2}$，于是$\sum_{n = 1}^{\infty}\frac{(-1)^{n + 1}}{n^2}=\frac{\pi^2}{12}$.",2026-05-16:错、公式忘记、带公式出错,15cm,2026-05-02
+取$x = 0$，得$1 = 1 - \frac{\pi^2}{3}+\sum_{n = 1}^{\infty}\frac{4\cdot(-1)^{n + 1}}{n^2}$，于是$\sum_{n = 1}^{\infty}\frac{(-1)^{n + 1}}{n^2}=\frac{\pi^2}{12}$.","2026-05-16:错、公式忘记、带公式出错,2026-05-27:提示、傅立叶级数公式忘记",15cm,2026-05-02
 数学,基础30讲,基础30讲-习16-4,"若级数$\sum_{n = 2}^{\infty}\left[\sin\frac{1}{n}-k\ln\left(1 - \frac{1}{n}\right)\right]$收敛，则$k = $（  ）.
 (A) $1$
 (B) $2$
@@ -2619,7 +2619,7 @@ $\lim_{n \to \infty}\left|\frac{a_{n + 1}}{a_n}\right|=\lim_{n \to \infty}\frac{
 由于$\sum_{k = 1}^{\infty}\frac{1}{(2k - 1)\cdot2^{2k - 1}}$收敛，$\sum_{k = 1}^{\infty}\frac{1}{2k}$发散，因此$\sum_{n = 1}^{\infty}\frac{[3 + (-1)^n]^n}{n}\cdot\frac{1}{4^n}$发散。
 ③当$x = -\frac{1}{4}$时，原级数为$\sum_{n = 1}^{\infty}\frac{[3 + (-1)^n]^n}{n}\cdot\frac{(-1)^n}{4^n}$，且$\frac{[3 + (-1)^n]^n}{n}\cdot\frac{(-1)^n}{4^n}=\begin{cases}-\frac{1}{(2k - 1)\cdot2^{2k - 1}},&n = 2k - 1\\\frac{1}{2k},&n = 2k\end{cases}$。
 由于$-\sum_{k = 1}^{\infty}\frac{1}{(2k - 1)\cdot2^{2k - 1}}$收敛，$\sum_{k = 1}^{\infty}\frac{1}{2k}$发散，故$\sum_{n = 1}^{\infty}\frac{[3 + (-1)^n]^n}{n}\cdot\frac{(-1)^n}{4^n}$发散。
-综上，幂级数的收敛域为$(-\frac{1}{4},\frac{1}{4})$。",,19cm,2026-05-02
+综上，幂级数的收敛域为$(-\frac{1}{4},\frac{1}{4})$。",2026-05-20:对,19cm,2026-05-02
 数学,基础30讲,基础30讲-习16-13,"求幂级数$\sum_{n = 1}^{\infty}(\frac{1}{2n + 1} - 1)x^{2n}$在区间$(-1, 1)$内的和函数$S(x)$。",n,基础30讲-习16-13,***,找错久,"设
 \[
 S(x)=\sum_{n = 1}^{\infty}(\frac{1}{2n + 1} - 1)x^{2n},\ S_1(x)=\sum_{n = 1}^{\infty}\frac{x^{2n}}{2n + 1},\ S_2(x)=\sum_{n = 1}^{\infty}x^{2n}
@@ -2658,7 +2658,7 @@ S(x)=S_1(x)-S_2(x)=
 \frac{1}{2x}\ln\frac{1 + x}{1 - x}-\frac{1}{1 - x^{2}},&|x|\in(0, 1)\\
 0,&x = 0
 \end{cases}
-\]",,14cm,2026-05-02
+\]",2026-05-23:半对、不规范,14cm,2026-05-02
 数学,基础30讲,基础30讲-习16-15,将函数$f(x)=\frac{1}{x^{2}-3x + 2}$展开成$x$的幂级数，并指出其收敛区间.,n,基础30讲-习16-15,*,错题、粗心,"\begin{align*}
 f(x)&=\frac{1}{x^{2}-3x + 2}=\frac{1}{1 - x}-\frac{1}{2 - x}=\frac{1}{1 - x}-\frac{1}{2}\cdot\frac{1}{1-\frac{x}{2}}\\
 \end{align*}
@@ -2673,13 +2673,13 @@ f(x)&=\frac{1}{x^{2}-3x + 2}=\frac{1}{1 - x}-\frac{1}{2 - x}=\frac{1}{1 - x}-\fr
 \begin{align*}
 f(x)&=\frac{1}{x^{2}-3x + 2}=\sum_{n = 1}^{\infty}x^{n - 1}-\frac{1}{2}\sum_{n = 1}^{\infty}\left(\frac{x}{2}\right)^{n - 1}\\
 &=\sum_{n = 1}^{\infty}\left(1-\frac{1}{2^{n}}\right)x^{n - 1},x\in(-1,1)
-\end{align*}",,11cm,2026-05-02
+\end{align*}",2026-05-26:对,11cm,2026-05-02
 数学,基础30讲,基础30讲-习16-17,将幂级数$\sum_{n = 1}^{\infty}\frac{(-1)^{n - 1}}{(2n - 1)!2^{2n - 2}}x^{2n - 1}$的和函数展开成$x - 1$的幂级数.,n,基础30讲-习16-17,*,错题、公式记错,"令$S(x)=\sum_{n = 1}^{\infty}\frac{(-1)^{n - 1}}{(2n - 1)!2^{2n - 2}}x^{2n - 1}=2\sum_{n = 1}^{\infty}\frac{(-1)^{n - 1}}{(2n - 1)!}(\frac{x}{2})^{2n - 1}=2\sin\frac{x}{2},-\infty<x<+\infty$，利用三角函数公式展开，得
 \begin{align*}
 S(x)&=2\sin\frac{x}{2}=2\sin\frac{1 + x - 1}{2}=2\left(\sin\frac{1}{2}\cos\frac{x - 1}{2}+\cos\frac{1}{2}\sin\frac{x - 1}{2}\right)\\
 &=2\sin\frac{1}{2}\sum_{n = 0}^{\infty}\frac{(-1)^{n}}{(2n)!}\left(\frac{x - 1}{2}\right)^{2n}+2\cos\frac{1}{2}\sum_{n = 0}^{\infty}\frac{(-1)^{n}}{(2n + 1)!}\left(\frac{x - 1}{2}\right)^{2n + 1},-\infty<x<+\infty
-\end{align*}",,11cm,2026-05-04
-数学,基础30讲,基础30讲-例17-3,已知直线$L$是直线$L_0$：\[\begin{cases}2x - z - 3 = 0\\y - 2z + 4 = 0\end{cases}\]在平面$x + y - z = 5$上的投影方程，求$L$的表达式。,n,基础30讲-例17-3,*,错题、知识点,设过直线$L_0$的平面束方程为$(2x - z - 3) + \lambda(y - 2z + 4) = 0$，即\[2x + \lambda y - (2\lambda + 1)z + 4\lambda - 3 = 0\]，其中$\lambda$为待定常数. 此平面与平面$x + y - z = 5$垂直的条件是\[2\cdot1 + \lambda\cdot1 - (2\lambda + 1)\cdot(-1) = 0\]，解得$\lambda = -1$，故直线$L$为\[\begin{cases}2x - y + z - 7 = 0\\x + y - z = 5\end{cases}\],,10cm,2026-05-05
+\end{align*}",2026-05-31:错,11cm,2026-05-04
+数学,基础30讲,基础30讲-例17-3,已知直线$L$是直线$L_0$：\[\begin{cases}2x - z - 3 = 0\\y - 2z + 4 = 0\end{cases}\]在平面$x + y - z = 5$上的投影方程，求$L$的表达式。,n,基础30讲-例17-3,*,错题、知识点,设过直线$L_0$的平面束方程为$(2x - z - 3) + \lambda(y - 2z + 4) = 0$，即\[2x + \lambda y - (2\lambda + 1)z + 4\lambda - 3 = 0\]，其中$\lambda$为待定常数. 此平面与平面$x + y - z = 5$垂直的条件是\[2\cdot1 + \lambda\cdot1 - (2\lambda + 1)\cdot(-1) = 0\]，解得$\lambda = -1$，故直线$L$为\[\begin{cases}2x - y + z - 7 = 0\\x + y - z = 5\end{cases}\],2026-05-24:半对、粗心,10cm,2026-05-05
 数学,基础30讲,基础30讲-例17-4,"设有直线$L_1:\frac{x - 1}{1}=\frac{y - 5}{-2}=\frac{z + 8}{1}$与$L_2:\begin{cases}x - y = 6\\2y + z = 3\end{cases}$，则$L_1$与$L_2$的夹角为（  ）.
 (A) $\frac{\pi}{6}$
 (B) $\frac{\pi}{4}$
@@ -2701,7 +2701,7 @@ $\tau=(x_{t}', y_{t}', z_{t}')|_{t = 0}=(1, 0, f_{x}'(0, 0)) = (1, 0, 3)$。
 数学,基础30讲,基础30讲-例17-8,"求曲面$z - e^{z} + 2xy = 3$在点$(1, 2, 0)$处的切平面方程\underline{\quad\quad\quad}。",n,基础30讲-例17-8,*,错题、粗心,"应填$2x + y - 4 = 0$。
 令$F(x, y, z) = z - e^{z} + 2xy - 3$，则$\boldsymbol{n}=(F_{x}', F_{y}', F_{z}')|_{(1, 2, 0)}$，其中
 $F_{x}'|_{(1, 2, 0)} = 2y|_{(1, 2, 0)} = 4$，$F_{y}'|_{(1, 2, 0)} = 2x|_{(1, 2, 0)} = 2$，$F_{z}'|_{(1, 2, 0)} = (1 - e^{z})|_{(1, 2, 0)} = 0$。
-故切平面方程为$4(x - 1) + 2(y - 2) + 0\cdot(z - 0) = 0$，即$2x + y - 4 = 0$。",,4cm,2026-05-05
+故切平面方程为$4(x - 1) + 2(y - 2) + 0\cdot(z - 0) = 0$，即$2x + y - 4 = 0$。",2026-05-19:对,4cm,2026-05-05
 数学,基础30讲,基础30讲-例17-9,"设$f$可微，则曲面$\mathrm{e}^{2x - z} = f(\pi y - \sqrt{2}z)$是（  ）.
 (A) 旋转抛物面
 (B) 双叶双曲面
@@ -2787,7 +2787,7 @@ x - 3y - 2z + 1 = 0.
 当$x = 1,y = 1,z = 0$时$u = 0$，代入上式后，得$\left.\frac{\partial u}{\partial x}\right|_{P}=1$. 类似可得$\left.\frac{\partial u}{\partial y}\right|_{P}=1,\left.\frac{\partial u}{\partial z}\right|_{P}=0$. 所以
 \[
 \mathrm{grad}\ u|_{P}=(1,1,0),|\mathrm{grad}\ u|_{P}|=\sqrt{2}.
-\]",,9cm,2026-05-06
+\]",2026-05-23:对,9cm,2026-05-06
 数学,基础30讲,基础30讲-例18-1,设$\Omega$是由平面$x + y + z = 1$与三个坐标平面所围成的空间区域，则$\underset{\Omega }{\iiint }(x + 2y + 3z)dxdydz = \underline{\quad\quad\quad}$.,y,基础30讲-例18-1,*,错题、计算、轮换对称性,"\textbf{\textcolor{red}{方法一}}
 由轮换对称性知，
 \[
@@ -2813,7 +2813,7 @@ I=\underset{\Omega }{\iiint }(x + 2y + 3z)dv = 6\underset{\Omega }{\iiint }zdv
 &=\frac{1}{2}\int_{0}^{1}\left[-\frac{1}{3}(1 - x - y)^3\right]_{y = 0}^{y = 1 - x}dx\\
 &=\frac{1}{6}\int_{0}^{1}(1 - x)^3dx=\frac{1}{24}
 \end{align*}
-因此$I = 6\times\frac{1}{24}=\frac{1}{4}$.",,13cm,2026-05-07
+因此$I = 6\times\frac{1}{24}=\frac{1}{4}$.",2026-05-30:对,13cm,2026-05-07
 数学,基础30讲,基础30讲-例18-2,设$\Omega$是由圆柱面$x^{2}+(y - 1)^{2} = 1$，旋转抛物面$8z = x^{2} + y^{2}$以及平面$z = 0$所围成的区域，则$I = \iiint_{\Omega}\sqrt{x^{2} + y^{2}}dv = \underline{\quad\quad\quad}$.,y,基础30讲-例18-2,*,错题、画图、粗心,"应填$\frac{64}{75}$.
 如图 18-7 所示，用先一后二法（投影穿线法），即
 \begin{align*}
@@ -2881,7 +2881,7 @@ I&=\int_{0}^{2\pi}\mathrm{d}\theta\int_{0}^{\frac{\pi}{4}}\mathrm{d}\varphi\int_
 =&\frac{1}{\varepsilon^{2}} \oint_{L_{1}} (4x - y) \mathrm{d}x + (x + y) \mathrm{d}y\\
 =&\frac{1}{\varepsilon^{2}} \iint_{D_{1}} 2 \mathrm{d}x \mathrm{d}y = \pi
 \end{align*}
-其中$D_{1}$为$L_{1}$围成的区域。",,10cm,2026-05-10
+其中$D_{1}$为$L_{1}$围成的区域。",2026-05-20:对,10cm,2026-05-10
 数学,基础30讲,基础30讲-例18-21,"设曲线积分$\int_{C}xy^{2}dx + y\varphi(x)dy$与路径无关，其中$\varphi(x)$具有连续的导数，且$\varphi(0) = 0$，计算$\int_{(0,0)}^{(1,1)}xy^{2}dx + y\varphi(x)dy$的值。",y,基础30讲-例18-21,***,不同方法,"由$P(x, y) = xy^{2}$，$Q(x, y) = y\varphi(x)$，$\frac{\partial P}{\partial y} = \frac{\partial Q}{\partial x}$，得
 \[
 2xy = y\varphi'(x),\ \varphi(x) = x^{2} + C
@@ -3006,7 +3006,7 @@ y + z&y&x^{2}y^{2}
 于是
 \[
 I = \int_{L}ydx\overset{\text{由方法一}}{=}\int_{\frac{\pi}{2}}^{-\frac{\pi}{2}}\sqrt{2}\sin t d(\cos t) = 2\sqrt{2}\int_{0}^{\frac{\pi}{2}}\sin^{2}t dt = 2\sqrt{2}\cdot \frac{1}{2}\cdot \frac{\pi}{2} = \frac{\sqrt{2}}{2}\pi
-\]",,20cm,2026-05-12
+\]",2026-05-24:错、疏忽,20cm,2026-05-12
 数学,基础30讲,基础30讲-习18-3,设$L$是柱面$x^{2}+y^{2}=1$与平面$z = x + y$的交线，从$z$轴正向往$z$轴负向看去为逆时针方向，则曲线积分$\oint_{L} xz\mathrm{d}x + x\mathrm{d}y + \frac{y^{2}}{2}\mathrm{d}z = \underline{\quad\quad\quad}$.,n,基础30讲-习18-3,*,错题、方向反、不同方法,"\textbf{\textcolor{red}{方法一}}
 将$L$的方程化为参数形式
 \[
