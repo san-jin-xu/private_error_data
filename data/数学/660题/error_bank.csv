@@ -1,0 +1,166 @@
+学科,书本,标题,题干,是否有图片,图片路径,掌握程度,标签,答案,历次反馈,预留空间,首次做题时间
+数学,660题,660题-361a,计算行列式$\begin{vmatrix}0&2&2&2\\2&0&2&2\\2&2&0&2\\2&2&2&0\end{vmatrix}=$\underline{\quad\quad\quad}.,n,660题-361a,*,错题、粗心、其他方法、知识点,"\begin{align*}
+&\begin{vmatrix}0&2&2&2\\2&0&2&2\\2&2&0&2\\2&2&2&0\end{vmatrix}\\
+=&\begin{vmatrix}6&6&6&6\\2&0&2&2\\2&2&0&2\\2&2&2&0\end{vmatrix}\\
+=&6\begin{vmatrix}1&1&1&1\\2&0&2&2\\2&2&0&2\\2&2&2&0\end{vmatrix}\\
+=&6\begin{vmatrix}1&1&1&1\\0& -2&0&0\\0&0& -2&0\\0&0&0& -2\end{vmatrix}\\
+=& - 48
+\end{align*}",,6cm,2026-06-03
+数学,660题,660题-361b,计算行列式$\begin{vmatrix}1&2&3&4\\1&2^2&3^2&4^2\\1&2^3&3^3&4^3\\9&8&7&6\end{vmatrix}=$\underline{\quad\quad\quad}。,n,660题-361b,*,错题,"\begin{align*}
+&\text{把第一行加到第四行，提出公因数 }10\text{，再把第四行逐行互换到第一行，由范德蒙行列式}\\
+&\text{原式}=10\begin{vmatrix}1&2&3&4\\1&2^2&3^2&4^2\\1&2^3&3^3&4^3\\1&1&1&1\end{vmatrix}=-10\begin{vmatrix}1&1&1&1\\1&2&3&4\\1&2^2&3^2&4^2\\1&2^3&3^3&4^3\end{vmatrix}\\
+&=-10(2 - 1)(3 - 1)(4 - 1)(3 - 2)(4 - 2)(4 - 3)\\
+&=-120
+\end{align*}",,9cm,2026-06-03
+数学,660题,660题-363,"计算行列式$D = \begin{vmatrix}
+x & 4 & 3 & 2 & 1 \\
+x & 4 & 3 & 2 & 2 \\
+x & 4 & 3 & 3 & 3 \\
+x & 4 & 4 & 4 & 4 \\
+x & x & x & x & x
+\end{vmatrix}=\underline{\quad\quad\quad}$.",n,660题-363,*,错题、粗心、其他方法,"\begin{align*}
+&\text{根据行列式的特点，将第 4 列的}(-1)\text{倍加到第 5 列得到}\\
+D&= \begin{vmatrix}
+x & 4 & 3 & 2 & -1 \\
+x & 4 & 3 & 2 & 0 \\
+x & 4 & 3 & 3 & 0 \\
+x & 4 & 4 & 4 & 0 \\
+x & x & x & x & 0
+\end{vmatrix}\\
+&\text{将第 3 列的}(-1)\text{倍加到第 4 列，再第 2 列的}(-1)\text{倍加到第 3 列得到}\\
+D&= \begin{vmatrix}
+x & 4 & -1 & -1 & -1 \\
+x & 4 & -1 & -1 & 0 \\
+x & 4 & -1 & 0 & 0 \\
+x & 4 & 0 & 0 & 0 \\
+x & x & 0 & 0 & 0
+\end{vmatrix}\\
+&\text{将第 1 列的}(-1)\text{倍加到第 2 列得到}\\
+D&= \begin{vmatrix}
+x & 4 - x & -1 & -1 & -1 \\
+x & 4 - x & -1 & -1 & 0 \\
+x & 4 - x & -1 & 0 & 0 \\
+x & 4 - x & 0 & 0 & 0 \\
+x & 0 & 0 & 0 & 0
+\end{vmatrix}= (-1)^{10} \cdot (-1)^3(4 - x)x = x(x - 4)
+\end{align*}",,9cm,2026-06-03
+数学,660题,660题-364,"\[ D = \begin{vmatrix}
+n & n - 1 & n - 2 & \cdots & 3 & 2 & 1 \\
+0 & 0 & 0 & \cdots & 0 & 2 & 2 \\
+0 & 0 & 0 & \cdots & 3 & 0 & 3 \\
+\vdots & \vdots & \vdots & & \vdots & \vdots & \vdots \\
+0 & 0 & n - 2 & \cdots & 0 & 0 & n - 2 \\
+0 & n - 1 & 0 & \cdots & 0 & 0 & n - 1 \\
+n & 0 & 0 & \cdots & 0 & 0 & n
+\end{vmatrix}=\underline{\quad\quad\quad} \]",n,660题-364,*,错题、粗心、其他方法,"\[ (-1)^{\frac{n(n - 1)}{2}}(1 - \sum_{k = 2}^{n}k)n! \]
+分析：这个$n$阶行列式的第一行，最后一列与次对角线上的元素均为$1,2,\cdots,n$，其余元素为$0$，这是爪形行列式的变形，我们用次对角线上的元素将最后一列中的$2,\cdots,n$全部消为$0$.
+将第$1,2,\cdots,n - 1$列的$(-1)$倍均加到最后一列得到
+\[ D = \begin{vmatrix}
+n & n - 1 & n - 2 & \cdots & 3 & 2 & 1 - (2 + \cdots + n) \\
+0 & 0 & 0 & \cdots & 0 & 2 & 0 \\
+0 & 0 & 0 & \cdots & 3 & 0 & 0 \\
+\vdots & \vdots & \vdots & & \vdots & \vdots & \vdots \\
+0 & 0 & n - 2 & \cdots & 0 & 0 & 0 \\
+0 & n - 1 & 0 & \cdots & 0 & 0 & 0 \\
+n & 0 & 0 & \cdots & 0 & 0 & 0
+\end{vmatrix} \]
+次对角线上的元素乘积$a_{1n}a_{2,n - 1}\cdots a_{n - 1,2}a_{n1}$的符号为$(-1)^{\frac{n(n - 1)}{2}}$，于是
+\[ D = (-1)^{\frac{n(n - 1)}{2}}(1 - \sum_{k = 2}^{n}k)n! \]",,13cm,2026-06-03
+数学,660题,660题-365,"设$A$为三阶矩阵，互换矩阵$A$的$1,2$行，再将第$1$行的$2$倍加到第$2$行得矩阵$B$，若$|A| = 3$，则$|A + B| = \underline{\quad\quad\quad}$.",n,660题-365,*,错题、粗心,"【答案】$12$
+【分析】记$P_1 = \begin{bmatrix}0&1&0\\1&0&0\\0&0&1\end{bmatrix},P_2 = \begin{bmatrix}1&0&0\\2&1&0\\0&0&1\end{bmatrix}$，由题设得$B = P_2P_1A$，于是$|A + B| = |A + P_2P_1A| = |(E + P_2P_1)A| = |E + P_2P_1||A|$.
+由于
+\begin{align*}
+E + P_2P_1 &= \begin{bmatrix}1&0&0\\0&1&0\\0&0&1\end{bmatrix} + \begin{bmatrix}1&0&0\\2&1&0\\0&0&1\end{bmatrix}\begin{bmatrix}0&1&0\\1&0&0\\0&0&1\end{bmatrix}\\
+&= \begin{bmatrix}1&0&0\\0&1&0\\0&0&1\end{bmatrix} + \begin{bmatrix}0&1&0\\2&2&0\\0&0&1\end{bmatrix}\\
+&= \begin{bmatrix}1&1&0\\1&3&0\\0&0&2\end{bmatrix}
+\end{align*}
+\[
+|E + P_2P_1| = \begin{vmatrix}1&1&0\\1&3&0\\0&0&2\end{vmatrix} = 4
+\]
+又$|A| = 3$，所以$|A + B| = 12$.",,10cm,2026-06-02
+数学,660题,660题-366,"设$n$阶矩阵$\boldsymbol{A} = [\boldsymbol{\alpha}_1,\boldsymbol{\alpha}_2,\cdots,\boldsymbol{\alpha}_n],\boldsymbol{B} = [\boldsymbol{\alpha}_n,\boldsymbol{\alpha}_1,\cdots,\boldsymbol{\alpha}_{n - 1}]$，若行列式$|\boldsymbol{A}| = 1$，则$|\boldsymbol{A} - \boldsymbol{B}| = \underline{\quad\quad\quad}$.",n,660题-366,***,其他方法、不简洁,"将$|\boldsymbol{A} - \boldsymbol{B}|$的其余各列加到第一列，则
+\begin{align*}
+|\boldsymbol{A} - \boldsymbol{B}|&=|\boldsymbol{\alpha}_1 - \boldsymbol{\alpha}_n,\boldsymbol{\alpha}_2 - \boldsymbol{\alpha}_1,\cdots,\boldsymbol{\alpha}_n - \boldsymbol{\alpha}_{n - 1}|\\
+&=| \boldsymbol{0},\boldsymbol{\alpha}_2 - \boldsymbol{\alpha}_1,\cdots,\boldsymbol{\alpha}_n - \boldsymbol{\alpha}_{n - 1}| = 0.
+\end{align*}",,10cm,2026-06-02
+数学,660题,660题-367,"设3阶矩阵$A = [\boldsymbol{\alpha}_1,\boldsymbol{\alpha}_2,\boldsymbol{\alpha}_3]$，其中$\boldsymbol{\alpha}_1,\boldsymbol{\alpha}_2,\boldsymbol{\alpha}_3$为3维列向量，若$|A| = \frac{1}{2}$，则$|\boldsymbol{\alpha}_1 + \boldsymbol{\alpha}_2,\boldsymbol{\alpha}_2 + \boldsymbol{\alpha}_3,\boldsymbol{\alpha}_3 + \boldsymbol{\alpha}_1| = \underline{\quad\quad\quad}$.",n,660题-367,***,其他方法、知识点,"\textbf{\textcolor{red}{方法一}}：
+由于$(\boldsymbol{\alpha}_1 + \boldsymbol{\alpha}_2,\boldsymbol{\alpha}_2 + \boldsymbol{\alpha}_3,\boldsymbol{\alpha}_3 + \boldsymbol{\alpha}_1) = (\boldsymbol{\alpha}_1,\boldsymbol{\alpha}_2,\boldsymbol{\alpha}_3)\begin{bmatrix}1 & 0 & 1\\1 & 1 & 0\\0 & 1 & 1\end{bmatrix}$，所以
+\[
+|\boldsymbol{\alpha}_1 + \boldsymbol{\alpha}_2,\boldsymbol{\alpha}_2 + \boldsymbol{\alpha}_3,\boldsymbol{\alpha}_3 + \boldsymbol{\alpha}_1| = |\boldsymbol{\alpha}_1,\boldsymbol{\alpha}_2,\boldsymbol{\alpha}_3|\begin{vmatrix}1 & 0 & 1\\1 & 1 & 0\\0 & 1 & 1\end{vmatrix}= \frac{1}{2} \cdot 2 = 1
+\]
+\textbf{\textcolor{red}{方法二}}：
+也可以用行列式的性质求解，将第2列的$(-1)$倍加到第1列，再将第3列的1倍加到第1列得
+\[
+|\boldsymbol{\alpha}_1 + \boldsymbol{\alpha}_2,\boldsymbol{\alpha}_2 + \boldsymbol{\alpha}_3,\boldsymbol{\alpha}_3 + \boldsymbol{\alpha}_1| = |\boldsymbol{\alpha}_1 - \boldsymbol{\alpha}_3,\boldsymbol{\alpha}_2 + \boldsymbol{\alpha}_3,\boldsymbol{\alpha}_3 + \boldsymbol{\alpha}_1| = |2\boldsymbol{\alpha}_1,\boldsymbol{\alpha}_2 + \boldsymbol{\alpha}_3,\boldsymbol{\alpha}_3 + \boldsymbol{\alpha}_1|
+\]
+将第1列的$\left(- \frac{1}{2}\right)$倍加到第3列，再将第3列的$(-1)$倍加到第2列得
+\[
+|\boldsymbol{\alpha}_1 + \boldsymbol{\alpha}_2,\boldsymbol{\alpha}_2 + \boldsymbol{\alpha}_3,\boldsymbol{\alpha}_3 + \boldsymbol{\alpha}_1| = |2\boldsymbol{\alpha}_1,\boldsymbol{\alpha}_2 + \boldsymbol{\alpha}_3,\boldsymbol{\alpha}_3| = |2\boldsymbol{\alpha}_1,\boldsymbol{\alpha}_2,\boldsymbol{\alpha}_3| = 2|\boldsymbol{\alpha}_1,\boldsymbol{\alpha}_2,\boldsymbol{\alpha}_3| = 1
+\]",,5cm,2026-06-02
+数学,660题,660题-370,已知$\boldsymbol{A} = \begin{bmatrix}0&1&0&0\\1&0&0&0\\0&0&1&-1\\0&0&-1&1\end{bmatrix}$，则$\boldsymbol{A}^5 = \underline{\quad\quad\quad}$.,n,660题-370,***,其他方法、知识点,"\begin{align*}
+&\text{分析：}\left[\begin{array}{cc}\boldsymbol{A}&\boldsymbol{O}\\\boldsymbol{O}&\boldsymbol{B}\end{array}\right]^n = \left[\begin{array}{cc}\boldsymbol{A}^n&\boldsymbol{O}\\\boldsymbol{O}&\boldsymbol{B}^n\end{array}\right]，\text{其中}\\
+&\text{①}\left[\begin{array}{ll}0&1\\1&0\end{array}\right]\text{是两行互换的初等矩阵，则}\\
+&\left[\begin{array}{ll}0&1\\1&0\end{array}\right]^{2n} = \boldsymbol{E}，\left[\begin{array}{ll}0&1\\1&0\end{array}\right]^{2n + 1} = \left[\begin{array}{ll}0&1\\1&0\end{array}\right]，\left[\begin{array}{ll}0&1\\1&0\end{array}\right]^5 = \left[\begin{array}{ll}0&1\\1&0\end{array}\right].\\
+&\text{② 如}r(\boldsymbol{A}) = 1，则\boldsymbol{A}^n = l^{n - 1}\boldsymbol{A}，l = \sum a_{ii}.\\
+&\left[\begin{array}{cc}1&-1\\-1&1\end{array}\right]^5 = \left(\left[\begin{array}{c}1\\-1\end{array}\right](1,-1)\right)^5 = 2^4\left[\begin{array}{cc}1&-1\\-1&1\end{array}\right] = \left[\begin{array}{cc}2^4&-2^4\\-2^4&2^4\end{array}\right].\\
+&\text{故而}，\boldsymbol{A}^5 = \left[\begin{array}{cccc}0&1&0&0\\1&0&0&0\\0&0&2^4&-2^4\\0&0&-2^4&2^4\end{array}\right].
+\end{align*}",,10cm,2026-06-02
+数学,660题,660题-371,已知$CA - AB = C - B$，其中$A = \begin{bmatrix}1&1&0\\1&1&0\\0&0&2\end{bmatrix}$，$B = \begin{bmatrix}2&3&1\\0&0&0\\0&0&0\end{bmatrix}$，则$C^5 = \underline{\quad\quad\quad}$.,n,660题-371,*,错题、粗心,"\begin{align*}
+&\text{由 }CA - AB = C - B\text{ 得 }CA - C = AB - B\text{ 即有 }C(A - E) = (A - E)B.\\
+&\text{又 }A - E = \begin{bmatrix}0&1&0\\1&0&0\\0&0&1\end{bmatrix}\text{ 可逆. 有 }C = (A - E)B(A - E)^{-1}\text{，故}\\
+&C^5 = (A - E)B^5(A - E)^{-1}\\
+&= \begin{bmatrix}0&1&0\\1&0&0\\0&0&1\end{bmatrix}\begin{bmatrix}2&3&1\\0&0&0\\0&0&0\end{bmatrix}^5\begin{bmatrix}0&1&0\\1&0&0\\0&0&1\end{bmatrix}^{-1}\\
+&= \begin{bmatrix}0&1&0\\1&0&0\\0&0&1\end{bmatrix}2^4\begin{bmatrix}2&3&1\\0&0&0\\0&0&0\end{bmatrix}\begin{bmatrix}0&1&0\\1&0&0\\0&0&1\end{bmatrix}\\
+&= \begin{bmatrix}0&0&0\\48&32&16\\0&0&0\end{bmatrix}.
+\end{align*}",,其他方法,2026-06-02
+数学,660题,660题-372,"设$A,B$都是$n$阶矩阵，且$A^{2}-AB = E$，则$r(AB - BA + 2A) = \underline{\quad\quad\quad}$.",n,660题-372,***,不简洁,"由于$A(A - B) = E$，且$A,A - B$均为$n$阶矩阵，故知$A$可逆且其逆是$A - B$，那么
+\[
+A(A - B) = (A - B)A = E.
+\]
+即有$A^{2}-AB = A^{2}-BA$. 故$AB = BA$. 从而
+\[
+r(AB - BA + 2A) = r(2A) = r(A) = n.
+\]",,5cm,2026-06-02
+数学,660题,660题-375,已知$\boldsymbol{A}=\begin{bmatrix}1&1&a&4\\1&0&2&a\\-1&a&1&0\end{bmatrix}$，$r(\boldsymbol{A}) = 3$，则$a$的取值范围为\underline{\quad\quad}。,n,660题-375,*,错题、不规范,"$a\neq 3$。分析：经初等变换矩阵秩不变，
+\[
+\boldsymbol{A}\to\begin{bmatrix}1&1&a&4\\0&1&a - 2&4 - a\\0&0&(a + 1)(3 - a)&a(a - 3)\end{bmatrix}
+\]
+$r(\boldsymbol{A}) = 3\Leftrightarrow(a + 1)(3 - a)$与$a(a - 3)$不全为$0\Leftrightarrow a\neq 3$。",,10cm,2026-06-02
+数学,660题,660题-377,设矩阵$\boldsymbol{A}$的伴随矩阵$\boldsymbol{A}^* = \begin{bmatrix}4&-2&0&0\\-3&1&0&0\\0&0&-4&0\\0&0&0&-1\end{bmatrix}$，则$\boldsymbol{A} = \underline{\quad\quad\quad}$。,n,660题-377,*,错题、粗心,"\begin{align*}
+&\text{因为 }\boldsymbol{A}\boldsymbol{A}^* = |\boldsymbol{A}|\boldsymbol{E}，\text{故 }\boldsymbol{A} = |\boldsymbol{A}|(\boldsymbol{A}^*)^{-1}，\text{由已知得}\\
+&|\boldsymbol{A}^*| = \begin{vmatrix}4&-2\\-3&1\end{vmatrix}\cdot\begin{vmatrix}-4&0\\0&-1\end{vmatrix}=-8，\\
+&\text{又 }|\boldsymbol{A}^*| = |\boldsymbol{A}|^3，\text{得 }|\boldsymbol{A}|=-2.\text{ 又}\\
+&(\boldsymbol{A}^*)^{-1} = \begin{bmatrix}4&-2&0&0\\-3&1&0&0\\0&0&-4&0\\0&0&0&-1\end{bmatrix}^{-1} = \begin{bmatrix}-\frac{1}{2}&-1&0&0\\-\frac{3}{2}&-2&0&0\\0&0&-\frac{1}{4}&0\\0&0&0&-1\end{bmatrix}，\\
+&\text{所以 }\boldsymbol{A} = |\boldsymbol{A}|(\boldsymbol{A}^*)^{-1} = \begin{bmatrix}1&2&0&0\\3&4&0&0\\0&0&\frac{1}{2}&0\\0&0&0&2\end{bmatrix}.
+\end{align*}",,12cm,2026-06-03
+数学,660题,660题-380,设$J = \begin{bmatrix} 0 & 1 & & & \\ & 0 & 1 & & \\ & & \ddots & \ddots & \\ & & & 0 & 1 \\ & & & & 0 \end{bmatrix}$是$n$阶矩阵，记$A = E + J + J^2 + \cdots + J^{n - 1}$，则$A^{-1} = \underline{\quad\quad\quad}$.,n,660题-380,*,错题,"\textbf{\textcolor{red}{方法1}}
+求出$A$，然后对$(A,E)$作初等行变换，请同学完成（练练运算）.
+\textbf{\textcolor{red}{方法2}}
+注意$J^n = O$，用定义法：
+\[ (E - J)(E + J + J^2 + \cdots + J^{n - 1}) = E - J^n = E \]
+所以$A^{-1} = E - J$.",,12cm,2026-06-03
+数学,660题,660题-382,四阶矩阵$A$和$B$满足$2ABA^{-1} = AB + 6E$，若$A = \begin{bmatrix}1 & 2 & 0 & 0\\1 & 3 & 0 & 0\\0 & 0 & 0 & 2\\0 & 0 & -1 & 0\end{bmatrix}$，则$B = \underline{\quad\quad\quad}$.,n,660题-382,*,错题、不简洁、粗心,"\begin{align*}
+&\text{化简矩阵方程，矩阵方程两边左乘}A^{-1}\text{、右乘}A\text{有}\\
+&2B = BA + 6E，\\
+&\text{于是}B(2E - A) = 6E.\text{ 由于}2E - A\text{可逆，所以}\\
+&B = 6(2E - A)^{-1} = 6\begin{bmatrix}1 & -2 & 0 & 0\\-1 & -1 & 0 & 0\\0 & 0 & 2 & -2\\0 & 0 & 1 & 2\end{bmatrix}^{-1}\\
+&= 6\begin{bmatrix}\frac{1}{3} & -\frac{2}{3} & 0 & 0\\-\frac{1}{3} & -\frac{1}{3} & 0 & 0\\0 & 0 & \frac{1}{3} & \frac{1}{3}\\0 & 0 & -\frac{1}{6} & \frac{1}{3}\end{bmatrix}= \begin{bmatrix}2 & -4 & 0 & 0\\-2 & -2 & 0 & 0\\0 & 0 & 2 & 2\\0 & 0 & -1 & 2\end{bmatrix}
+\end{align*}",,16cm,2026-06-03
+数学,660题,660题-383,已知矩阵$A = \begin{bmatrix}1 & 2 & 1\\2 & 3 & a + 2\\1 & a & -2\end{bmatrix}$和$B = \begin{bmatrix}1 & 1 & a\\-1 & a & 1\\1 & -1 & 2\end{bmatrix}$不等价，则$a = \underline{\quad\quad\quad}$.,n,660题-383,*,错题、其他方法,"矩阵$A$和$B$等价$\Leftrightarrow r(A) = r(B)$. 由
+\[
+|A| = \begin{vmatrix}1 & 2 & 1\\2 & 3 & a + 2\\1 & a & -2\end{vmatrix}=-(a + 1)(a - 3)
+\]
+\[
+|B| = \begin{vmatrix}1 & 1 & a\\-1 & a & 1\\1 & -1 & 2\end{vmatrix}=(a + 1)(4 - a)
+\]
+当$a = 3$时，$r(A) = 2$，$r(B) = 3$，当$a = 4$时，$r(A) = 3$，$r(B) = 2$，所以$a = 3$或$a = 4$时，矩阵$A$和$B$不等价.",,10cm,2026-06-03
+数学,660题,660题-384,"已知$A = \begin{bmatrix}1&2&3&4\\2&3&4&5\\3&4&5&6\\4&5&6&7\end{bmatrix},B = \begin{bmatrix}0&1&-1&2\\0&-1&2&3\\0&0&1&4\\0&0&0&2\end{bmatrix}$，则秩$r(AB + 2A) = \underline{\quad\quad\quad}$.",n,660题-384,***,其他方法、不简洁,"由$AB + 2A = A(B + 2E)$，而
+\[
+B + 2E = \begin{bmatrix}2&1&-1&2\\0&1&2&3\\0&0&3&4\\0&0&0&4\end{bmatrix}
+\]
+是可逆矩阵，故$r(AB + 2A) = r(A(B + 2E)) = r(A)$.
+经初等变换矩阵的秩不变，易见
+\[
+A = \begin{bmatrix}1&2&3&4\\2&3&4&5\\3&4&5&6\\4&5&6&7\end{bmatrix} \to \begin{bmatrix}1&2&3&4\\1&1&1&1\\1&1&1&1\\1&1&1&1\end{bmatrix} \to \begin{bmatrix}1&2&3&4\\0&-1&-2&-3\\0&0&0&0\\0&0&0&0\end{bmatrix}
+\]
+所以$r(AB + 2A) = 2$.",,9cm,2026-06-03

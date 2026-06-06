@@ -123,3 +123,53 @@ L_5 &= G_3H_1G_2H_2,\ \Delta = 1 - (L_1 + L_2 + L_3 + L_4 + L_5)
 \[
 \frac{C(s)}{R(s)}=\frac{P_1\Delta_1 + P_2\Delta_2}{\Delta}=\frac{G_1G_2 + G_3}{1 + G_2H_1 + G_1G_2H_2 + G_1G_2 + G_3 - G_3H_1G_2H_2}
 \]",,5cm,2026-05-31
+专业课,卢京潮课本,卢京潮课本-习3-2,设某高阶系统可用一阶微分方程$T\dot{c}(t)+c(t)=\tau\dot{r}(t)+r(t)$近似描述，其中，$0<(T - \tau)<1$。试证系统的动态性能指标为$t_d=\left[0.693+\ln\left(\frac{T - \tau}{T}\right)\right]T$，$t_r = 2.2T$，$t_s=\left[3+\ln\left(\frac{T - \tau}{T}\right)\right]T$。,n,卢京潮课本-习3-2,***,提示、知识点模糊,"设单位阶跃输入$R(s)=\frac{1}{s}$。
+当初始条件为$0$时有$\frac{C(s)}{R(s)}=\frac{\tau s + 1}{Ts + 1}$。
+所以
+\begin{align*}
+C(s)&=\frac{\tau s + 1}{Ts + 1}\cdot\frac{1}{s}=\frac{1}{s}-\frac{T - \tau}{Ts + 1}\\
+C(t)&=h(t)=1-\frac{T - \tau}{T}e^{-t/T}
+\end{align*}
+(1) 当$t = t_d$时
+\begin{align*}
+h(t)&=0.5=1-\frac{T - \tau}{T}e^{-t_d/T}\\
+\frac{1}{2}&=\frac{T - \tau}{T}e^{-t_d/T}；-\ln2=\ln\left(\frac{T - \tau}{T}\right)-\frac{t_d}{T}
+\end{align*}
+所以$t_d=T\left[\ln2+\ln\left(\frac{T - \tau}{T}\right)\right]$。
+(2) 求$t_r$（即$c(t)$从$0.1$到$0.9$所需时间）
+当$h(t)=0.9=1-\frac{T - \tau}{T}e^{-t_2/T}$；$t_2=T\left[\ln\left(\frac{T - \tau}{T}\right)-\ln0.1\right]$
+当$h(t)=0.1=1-\frac{T - \tau}{T}e^{-t_1/T}$；$t_1=T\left[\ln\left(\frac{T - \tau}{T}\right)-\ln0.9\right]$
+则$t_r=t_2 - t_1=T\ln\frac{0.9}{0.1}=2.2T$。
+(3) 求$t_s$
+\begin{align*}
+h(t_s)&=0.95=1-\frac{T - \tau}{T}e^{-t_s/T}\\
+t_s&=T\left[\ln\frac{T - \tau}{T}-\ln0.05\right]=T\left[\ln\frac{T - \tau}{T}+\ln20\right]=T\left[3+\ln\frac{T - \tau}{T}\right]
+\end{align*}",,20cm,2026-06-01
+专业课,卢京潮课本,卢京潮课本-习3-5,一种测定直流电动机传递函数的方法是给电枢加一定的电压，保持励磁电流不变，测出电机的稳态转速；另外要记录电动机从静止到速度为稳态值的$50\%$或$63.2\%$所需的时间，利用转速时间曲线（见图 3 - 48）和所测数据，并假设传递函数为$G(s)=\frac{\Theta(s)}{V(s)}=\frac{K}{s(s + a)}$，可求得$K$和$a$的值。若实测结果是：加$10\text{V}$电压可得$1200\text{r}/\text{min}$的稳态转速，而达到该值$50\%$的时间为$1.2\text{s}$，试求电动机的传递函数。提示：注意$\frac{\Omega(s)}{V(s)}=\frac{K}{s + a}$，其中$\omega(t)=\frac{\text{d}\theta}{\text{d}t}$，单位是$\text{rad}/\text{s}$。,y,卢京潮课本-习3-5,*,错题、单位,"依题意有
+\begin{align*}
+v(t)&=10\ (\text{V})\\
+\omega(\infty)&=\frac{1200\times 2\pi}{60}=40\pi\ (\text{rad}/\text{s})\\
+\omega(1.2)&=0.5\omega(\infty)=20\pi\ (\text{rad}/\text{s})
+\end{align*}
+设系统传递函数$G_0(s)=\frac{\Omega(s)}{V(s)}=\frac{K}{s + a}$
+应有
+\begin{align*}
+\omega(\infty)&=\lim_{s \to 0}sG_0(s)\cdot V(s)=\lim_{s \to 0}s\cdot\frac{10}{s}\cdot\frac{K}{s + a}=\frac{10K}{a}=40\pi\\
+\omega(t)&=\mathcal{L}^{-1}[G_0(s)\cdot V(s)]=\mathcal{L}^{-1}\left[\frac{10K}{s(s + a)}\right]=\frac{10K}{a}\mathcal{L}^{-1}\left[\frac{1}{s}-\frac{1}{s + a}\right]=\frac{10K}{a}[1 - \text{e}^{-at}]
+\end{align*}
+由式(2)，式(3)
+\begin{align*}
+\omega(1.2)&=\frac{10K}{a}[1 - \text{e}^{-1.2a}]=40\pi[1 - \text{e}^{-1.2a}]=20\pi
+\end{align*}
+得
+\begin{align*}
+1 - \text{e}^{-1.2a}&=0.5
+\end{align*}
+解出
+\begin{align*}
+a&=\frac{-\ln0.5}{1.2}=0.5776
+\end{align*}
+将式(4)代入式(3)得
+\begin{align*}
+K&=4\pi a = 7.2586
+\end{align*}",,14cm,2026-06-01
