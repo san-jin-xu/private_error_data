@@ -409,7 +409,7 @@ z_{xy}''&=f_{11}''\cdot 2x^{2}y\cdot 2xy^{2}+f_{12}''\cdot x\mathrm{e}^{xy}\cdot
 &=f_{11}''\cdot 4x^{3}y^{3}+f_{22}''\cdot xy\mathrm{e}^{2xy}+f_{12}''\cdot 4x^{2}y^{2}\mathrm{e}^{xy}+f_{1}'\cdot 4xy + f_{2}'\cdot(1 + xy)\mathrm{e}^{xy}
 \end{align*}
 \]
-历次反馈：
+历次反馈：2026-06-09:对
 预留空间：11cm
 ----------------------------------------
 
@@ -594,7 +594,7 @@ F_{z}'&=x(z + y)^{x - 1}
 &= \int_{0}^{1} \mathrm{d}x \int_{0}^{1} \frac{1}{(1 + x)(1 + y^2)} \mathrm{d}y
 \end{align*}
 \]
-历次反馈：
+历次反馈：2026-06-09:对
 预留空间：11cm
 ----------------------------------------
 
@@ -666,7 +666,7 @@ F(t) &= \int_{1}^{t} \mathrm{d}y\int_{y}^{t} f(x)\mathrm{d}x\\
 &=-\int_{-\frac{\pi}{2}}^{\frac{\pi}{2}}(1 - \sin x)dx = -2\int_{0}^{\frac{\pi}{2}}dx = -\pi.
 \end{align*}
 \]
-历次反馈：2026-05-23:半对、粗心
+历次反馈：2026-05-23:半对、粗心,2026-06-07:对
 预留空间：11cm
 ----------------------------------------
 
@@ -765,7 +765,7 @@ y&=C_1 + C_2e^x + C_3\cos x + C_4\sin x\\
 y'' = y'[1+(y')^2]
 \]
 因为曲线$l$与直线$y = x$相切于原点，所以$y(0) = 0$，$y'(0) = 1$，由例15.12可知，$y = \arcsin\frac{\mathrm{e}^x}{\sqrt{2}}-\frac{\pi}{4}$.
-历次反馈：
+历次反馈：2026-06-09:错、害怕计算
 预留空间：11cm
 ----------------------------------------
 
@@ -784,7 +784,7 @@ y'' = y'[1+(y')^2]
 \ln|\ln y|=\ln|\sin x|+C_1
 \]
 故通解为$\ln y = C\sin x$或$y = \mathrm{e}^{C\sin x}$，其中$C$为任意常数。
-历次反馈：
+历次反馈：2026-06-08:对
 预留空间：11cm
 ----------------------------------------
 
@@ -895,7 +895,7 @@ y = C_3u^2+\frac{C_4}{u}+\frac{1}{3}u^2\ln u = C_3x^2-\frac{C_4}{x}+\frac{1}{3}x
 答案：\(\lim\limits_{n \to \infty} \frac{x_{n + 1}}{x_n} = \frac{1}{2} < 1\)，由数列极限的保号性可知，存在正整数\(N\)，当\(n > N\)时，\(\frac{x_{n + 1}}{x_n} < 1\)。
 又\(x_n > 0\)，于是\(x_{n + 1} < x_n\)。所以\(\{x_n\}\)单调递减且有下界，于是\(\lim\limits_{n \to \infty} x_n\)存在。
 设\(\lim\limits_{n \to \infty} x_n = A \geq 0\)。若\(A > 0\)，此时\(\lim\limits_{n \to \infty} \frac{x_{n + 1}}{x_n} = \frac{\lim\limits_{n \to \infty} x_{n + 1}}{\lim\limits_{n \to \infty} x_n} = \frac{A}{A} = 1\)，矛盾。于是\(A = 0\)，即\(\lim\limits_{n \to \infty} x_n = 0\)。
-历次反馈：
+历次反馈：2026-06-08:半对、小错误、其他方法
 预留空间：11cm
 ----------------------------------------
 
@@ -1145,7 +1145,7 @@ y''&=\frac{10}{9}x^{-\frac{1}{3}}+\frac{10}{9}x^{-\frac{4}{3}}=\frac{10(x + 1)}{
 F(1) = a_0 + \frac{a_1}{2} + \frac{a_2}{3} + \cdots + \frac{a_n}{n + 1} = 0
 \]
 故由罗尔定理知，存在$\xi\in(0, 1)$，使$F'(\xi) = 0$，即$a_0 + a_1\xi + a_2\xi^2 + \cdots + a_n\xi^n = 0$，故所证方程在$(0, 1)$内至少有一个根。
-历次反馈：2026-05-19:对
+历次反馈：2026-05-19:对,2026-06-09:对
 预留空间：11cm
 ----------------------------------------
 
@@ -1358,7 +1358,7 @@ s^{2}=x^{2}+(y + 10)^{2}
 &=\int_{-\frac{\pi}{4}}^{\frac{\pi}{4}} e^{\frac{x}{2}}\sqrt{\cos x}dx + 2e^{\frac{x}{2}}\sqrt{\cos x}\big|_{-\frac{\pi}{4}}^{\frac{\pi}{4}} - \int_{-\frac{\pi}{4}}^{\frac{\pi}{4}} e^{\frac{x}{2}}\sqrt{\cos x}dx\\
 &=\sqrt[4]{8}(e^{\frac{\pi}{8}} - e^{-\frac{\pi}{8}})
 \end{align*}
-历次反馈：
+历次反馈：2026-06-08:错
 预留空间：11cm
 ----------------------------------------
 
@@ -1383,7 +1383,7 @@ s^{2}=x^{2}+(y + 10)^{2}
 &\text{原式}=3\int_{0}^{1}\frac{\sqrt{t}}{1 + t}dt\stackrel{\sqrt{t}=u}{=}6\int_{0}^{1}\frac{u^2}{1 + u^2}du = 6 - 6\arctan 1 = 6 - \frac{3}{2}\pi
 \end{align*}
 \]
-历次反馈：
+历次反馈：2026-06-07:提示、想得久
 预留空间：11cm
 ----------------------------------------
 
@@ -1834,7 +1834,7 @@ a&=\frac{5}{2}
 掌握程度：*
 标签：错题
 答案：由$y = \ln\sqrt{x} + 1$，解得$x = \mathrm{e}^{2(y - 1)}$，于是$y = \mathrm{e}^{2(x - 1)} = f(x - 1)$，得$f(x) = \mathrm{e}^{2x}$.
-历次反馈：
+历次反馈：2026-06-08:对
 预留空间：11cm
 ----------------------------------------
 
@@ -2173,7 +2173,7 @@ y + \frac{9}{5}&=5\left(x - \frac{2}{5}\right)^2
 掌握程度：*
 标签：错题
 答案：由于$2^x = e^{x\ln 2}$，又$e^x = \sum_{n=0}^{\infty} \frac{x^n}{n!} , x \in \mathbf{R}$，因此$2^x = \sum_{n=0}^{\infty} \frac{(x\ln 2)^n}{n!}$，应选 (B).
-历次反馈：
+历次反馈：2026-06-07:对
 预留空间：11cm
 ----------------------------------------
 
@@ -2230,7 +2230,7 @@ e^{\tan x}-e^{\sin x}&=e^{\sin x}(e^{\tan x - \sin x}-1) \sim \tan x - \sin x = 
 \lim f(x)=\lim\frac{f(x)}{g(x)}\cdot g(x)\overset{四则运算法则}{=}\lim\frac{f(x)}{g(x)}\cdot\lim g(x)=A\cdot 0 = 0
 \]
 (2)由于$g(x)=\frac{f(x)}{\frac{f(x)}{g(x)}}$，则$\lim g(x)=\lim\frac{f(x)}{\frac{f(x)}{g(x)}}\overset{四则运算法则}{=}\frac{\lim f(x)}{\lim\frac{f(x)}{g(x)}}=\frac{0}{A}=0$
-历次反馈：
+历次反馈：2026-06-07:半对、不规范
 预留空间：11cm
 ----------------------------------------
 
@@ -2250,7 +2250,7 @@ e^{\tan x}-e^{\sin x}&=e^{\sin x}(e^{\tan x - \sin x}-1) \sim \tan x - \sin x = 
 &\lim_{x \to 0} \frac{\sin x}{e^x - 1}(\cos x - b) = \lim_{x \to 0}(\cos x - b) = 1 - b\text{，故 }b = - 4
 \end{align*}
 \]
-历次反馈：
+历次反馈：2026-06-07:半对、不规范
 预留空间：11cm
 ----------------------------------------
 
@@ -2562,7 +2562,7 @@ y = f^{-1}(x) = \frac{1}{2}(e^{x} - e^{-x}), -\infty < x < +\infty
 答案：由题设条件知，$f[\varphi(x)]=\varphi^{2}(x)=-x^{2}+2x + 3$，于是$\varphi(x)=\sqrt{-x^{2}+2x + 3}$.  因$\varphi(x)\geq0$
 由$-x^{2}+2x + 3\geq0$，即$(x - 3)(x + 1)\leq0$，知$\varphi(x)$的定义域为$[-1,3]$.
 又$\sqrt{-x^{2}+2x + 3}=\sqrt{-(x - 1)^{2}+4}$，当$x = 1$时，$\varphi(1)=2$为最大值，显然$\varphi(-1)=\varphi(3)=0$为最小值，故$\varphi(x)$的值域为$[0,2]$.
-历次反馈：
+历次反馈：2026-06-08:半对、粗心
 预留空间：11cm
 ----------------------------------------
 
@@ -2667,7 +2667,7 @@ s&=\int_{0}^{2\pi} \sqrt{[r(\theta)]^{2}+[r'(\theta)]^{2}} \mathrm{d}\theta\\
 &=2a^2\pi + 4a^2\int_{0}^{\frac{\pi}{2}}\cos^2tdt=3a^2\pi.
 \end{align*}
 \]
-历次反馈：2026-05-21:错、粗心
+历次反馈：2026-05-21:错、粗心,2026-06-07:对
 预留空间：11cm
 ----------------------------------------
 
@@ -2867,7 +2867,7 @@ F(x)=\int xdx=\frac{1}{2}x^{2}+C
 \[
 \overline{f}=\frac{1}{3 - 1}\int_{1}^{3}f(x)dx=\frac{1}{2}F(1)=\frac{1}{4}
 \]
-历次反馈：
+历次反馈：2026-06-08:对
 预留空间：11cm
 ----------------------------------------
 
@@ -3561,7 +3561,7 @@ I^2 &= \int_{0}^{+\infty} e^{-x^2} dx \cdot \int_{0}^{+\infty} e^{-x^2} dx = \in
 \end{align*}
 \]
 故$\int_{-\infty}^{+\infty} x^2 e^{-x^2} dx=\frac{\sqrt{\pi}}{2}$。
-历次反馈：
+历次反馈：2026-06-08:半对、伽马函数
 预留空间：11cm
 ----------------------------------------
 
@@ -4113,7 +4113,7 @@ y=\ln\frac{1 + \sqrt{1 - x^{2}}}{x}-\sqrt{1 - x^{2}}
 y + \sqrt{x^{2}+y^{2}} = C
 \]
 由$L$经过点$(\frac{1}{2},0)$，知$C = \frac{1}{2}$。于是$L$的方程为$y + \sqrt{x^{2}+y^{2}} = \frac{1}{2}$，即$y = \frac{1}{4} - x^{2}(x > 0)$。
-历次反馈：
+历次反馈：2026-06-07:对
 预留空间：11cm
 ----------------------------------------
 
@@ -4182,7 +4182,7 @@ x = \mathrm{e}^{-\int\frac{1}{y}\mathrm{d}y}\left(\int 3y\mathrm{e}^{\int\frac{1
 \]
 (1) 由例 2.11 可知$\lim_{n \to \infty}a_n = 0$。
 (2) 由例 2.11 可知$\lim_{n \to \infty}\frac{a_n}{b_n} = \frac{1}{2}$，又级数$\sum_{n = 1}^{\infty}b_n$收敛，所以级数$\sum_{n = 1}^{\infty}\frac{a_n}{b_n}$收敛。
-历次反馈：2026-05-23:错
+历次反馈：2026-05-23:错,2026-06-09:错
 预留空间：14cm
 ----------------------------------------
 
@@ -4314,7 +4314,7 @@ f'(x) = x^{p - 1}(\sqrt{x + 1} + \sqrt{x})\left(p + \frac{\sqrt{x}}{2\sqrt{x + 1
 \lim_{x \to +\infty} \left(p + \frac{\sqrt{x}}{2\sqrt{x + 1}}\right) = p + \frac{1}{2} > 0
 \]
 所以当$x$充分大时，$f(x)$单调增加，于是当$n$充分大时，$a_n = \frac{1}{f(n)}$单调减少，故由莱布尼茨判别法知，当$-\frac{1}{2} < p \leq \frac{1}{2}$时，原级数条件收敛；当$p + \frac{1}{2} \leq 0$，即$p \leq -\frac{1}{2}$时，$a_n$不趋于$0(n \to \infty)$，故当$p \leq -\frac{1}{2}$时，原级数发散。
-历次反馈：
+历次反馈：2026-06-09:不规范
 预留空间：10cm
 ----------------------------------------
 
@@ -4624,7 +4624,7 @@ x_k &= 2\ln(1 + x_{k - 1}) > 2\ln(1 + x_k) = x_{k + 1}
 掌握程度：***
 标签：不规范
 答案：设$f(x)=\frac{1}{x} \sin \frac{1}{x}$，若取$x_n=\frac{1}{n\pi} \to 0, n \to \infty$，则$f(x_n)=n\pi \cdot \sin(n\pi)=0$，于是$\lim_{n \to \infty} f(x_n)=0$；若取$x_n'=\frac{1}{(2n+\frac{1}{2})\pi} \to 0, n \to \infty$，则$f(x_n')=(2n+\frac{1}{2})\pi \to +\infty, n \to \infty$. 根据归结原则，极限$\lim_{x \to 0} \frac{1}{x} \sin \frac{1}{x}$不存在，且当$x \to 0$时，$\frac{1}{x} \sin \frac{1}{x}$是无界量，但不是无穷大量.
-历次反馈：
+历次反馈：2026-06-09:对
 预留空间：11cm
 ----------------------------------------
 
@@ -4954,7 +4954,7 @@ f(\mathrm{e}) = \ln\sqrt{x}\big|_{x = \mathrm{e}} = \frac{1}{2}, f'[f(\mathrm{e}
 \[
 \left.\varphi''(y)\right|_{y = 3 + e}=-\left.\frac{f''(x)}{[f'(x)]^3}\right|_{x = 1}=-\left.\frac{6 + e^x}{(6x + e^x)^3}\right|_{x = 1}=-\frac{1}{(6 + e)^2}
 \]
-历次反馈：2026-05-22:对
+历次反馈：2026-05-22:对,2026-06-08:对
 预留空间：11cm
 ----------------------------------------
 
@@ -5218,7 +5218,7 @@ f'(x)=\cos x - \frac{2}{\pi},f''(x)=-\sin x<0
 F(\frac{1}{2})=f(\frac{1}{2})-\frac{1}{2}=\frac{1}{2}>0,F(1)=f(1)-1=-1<0
 \]
 由于$F(\frac{1}{2})\cdot F(1)<0$，根据零点定理可知，存在$\eta\in(\frac{1}{2},1)$，使得$F(\eta)=0$，即$f(\eta)=\eta$。
-历次反馈：
+历次反馈：2026-06-08:对
 预留空间：11cm
 ----------------------------------------
 
@@ -5420,7 +5420,7 @@ $\sin(\sin x), \cos(\cos x)$ 均在 $\left[0, \frac{\pi}{2}\right]$ 上连续，
 \]
 ，即 $N > 1$，
 因此选 (A).
-历次反馈：2026-05-28:错、复合函数积分放缩未考虑外层函数的单调性
+历次反馈：2026-05-28:错、复合函数积分放缩未考虑外层函数的单调性,2026-06-07:错
 预留空间：11cm
 ----------------------------------------
 
@@ -6137,7 +6137,7 @@ A - B + C = -1
 \lim_{n \to \infty}\sqrt[n]{a_{n}} = 1
 \]
 即级数$\sum_{n = 1}^{\infty}a_{n}x^{n}$的收敛半径为1.
-历次反馈：
+历次反馈：2026-06-09:错、根值判别法
 预留空间：7cm
 ----------------------------------------
 
@@ -6169,7 +6169,7 @@ g(x)=\int_{0}^{x}\sum_{n = 0}^{\infty}t^{n}dt = \sum_{n = 0}^{\infty}\int_{0}^{x
 \]
 所以收敛半径$\tilde{R} = 1$. 当$x = 1$时，级数$\sum_{n = 0}^{\infty}\frac{1}{n + 1}$发散；当$x = - 1$时，级数$\sum_{n = 0}^{\infty}\frac{1}{n + 1}(-1)^{n + 1}$收敛，故收敛域为$[-1,1)$.
 综上，选(B).
-历次反馈：
+历次反馈：2026-06-08:对
 预留空间：10cm
 ----------------------------------------
 
@@ -6384,7 +6384,7 @@ f(-1)=\lim_{x\to -1^{+}}f(x)=\lim_{x\to -1^{+}}\left[\frac{\pi}{4}+\sum_{n = 0}^
 \[
 \arctan\frac{1 + x}{1 - x}=\frac{\pi}{4}+\sum_{n = 0}^{\infty}\frac{(-1)^n}{2n + 1}x^{2n + 1}, -1\leqslant x < 1
 \]
-历次反馈：
+历次反馈：2026-06-07:对
 预留空间：11cm
 ----------------------------------------
 
@@ -6763,7 +6763,7 @@ P & Q & R
 xy & -yz & zx
 \end{vmatrix}_{(1,1,0)}=(y\boldsymbol{i}-z\boldsymbol{j}-x\boldsymbol{k})\big|_{(1,1,0)}=\boldsymbol{i}-\boldsymbol{k}
 \]
-历次反馈：
+历次反馈：2026-06-09:对
 预留空间：6cm
 首次做题时间：2026-05-06
 ----------------------------------------
@@ -6880,7 +6880,7 @@ x - 3y - 2z + 1 = 0.
 \[
 \mathrm{grad}\ u|_{P}=(1,1,0),|\mathrm{grad}\ u|_{P}|=\sqrt{2}.
 \]
-历次反馈：2026-05-23:对
+历次反馈：2026-05-23:对,2026-06-07:对
 预留空间：9cm
 首次做题时间：2026-05-06
 ----------------------------------------
@@ -6957,7 +6957,7 @@ I&=\iint_{D_{xy}}d\sigma\int_{0}^{\frac{x^{2}+y^{2}}{8}}\sqrt{x^{2} + y^{2}}dz\\
 &=\frac{1}{40}\cdot2^{5}\int_{0}^{\pi}\sin^{5}\theta d\theta=\frac{64}{75}
 \end{align*}
 \]
-历次反馈：
+历次反馈：2026-06-08:半对、粗心
 预留空间：13cm
 首次做题时间：2026-05-07
 ----------------------------------------
@@ -7712,7 +7712,7 @@ D_{4}&=(b - a)(c - a)(x - a)(c - b)(x - b)(x - c)\\
 -D=(b - a)(c - a)(c - b)[-c-(a + b)]
 \]
 因此$D=(b - a)(c - a)(c - b)(a + b + c)$。
-历次反馈：
+历次反馈：2026-06-09:对
 预留空间：15cm
 首次做题时间：2026-05-17
 ----------------------------------------
@@ -8346,23 +8346,10 @@ AB&=(E - \alpha\alpha^{\mathrm{T}})(E + 2\alpha\alpha^{\mathrm{T}})\\
 是否有图片：n
 图片路径：李永乐线代零基础-例2-17
 掌握程度：*
-标签：错题
-答案：【证明】（1）由$AA^{*} = A^{*}A = |A|E$，如果$|A| = 0$，则
-\[
-AA^{*} = O
-\]
-用反证法，假设$|A^{*}| \neq 0$，则$A^{*}$可逆，用$(A^{*})^{-1}$右乘①，得$A = O$。
-$\Rightarrow A_{ij} = 0, \forall i,j \Rightarrow A^{*} = O$。这与$A^{*}$可逆相矛盾。
-故当$|A| = 0$时必有$|A^{*}| = 0$。
-（2）分类讨论
-若$|A| = 0$，则$|A^{*}| = 0$，得证。
-若$|A| \neq 0$，由$AA^{*} = A^{*}A = |A|E$，
-\[
-|A||A^{*}| = |AA^{*}| = ||A|E| = |A|^{n}
-\]
-故$|A^{*}| = |A|^{n - 1}$。
+标签：错题、想得久
+答案：【证明】（1）由$AA^{*} = A^{*}A = |A|E$，如果$|A| = 0$，则$AA^{*} = O$ \[ \text{用反证法，假设 }|A^{*}| \neq 0\text{，则}A^{*}\text{ 可逆，用}(A^{*})^{-1}\text{ 右乘①，得 }A = O.\Rightarrow A_{ij} = 0,\forall i,j\Rightarrow A^{*} = O.\text{ 这与}A^{*}\text{ 可逆相矛盾.} \] 故当$|A| = 0$时必有$|A^{*}| = 0$. （2）分类讨论 若$|A| = 0$，则$|A^{*}| = 0$，得证. 若$|A| \neq 0$，由$AA^{*} = A^{*}A = |A|E$，$|A||A^{*}| = |AA^{*}| = ||A|E| = |A|^{n}$，故$|A^{*}| = |A|^{n - 1}$.
 历次反馈：
-预留空间：想得久
+预留空间：12cm
 首次做题时间：2026-05-21
 ----------------------------------------
 
@@ -9151,7 +9138,7 @@ f(1)+f(2)+f(3)+f(4)+f(\frac{1}{2})+f(\frac{1}{3})+f(\frac{1}{4})=\frac{7}{2}
 y = x + \frac{4}{x^2} = \frac{1}{2}x + \frac{1}{2}x + \frac{4}{x^2} \geq 3\sqrt[3]{\frac{1}{2}x \cdot \frac{1}{2}x \cdot \frac{4}{x^2}} = 3
 \]
 ，当且仅当$\frac{1}{2}x = \frac{4}{x^2}$，即$x = 2$时，等号成立，故$y_{\min} = 3$。
-历次反馈：
+历次反馈：2026-06-09:其他方法
 预留空间：7cm
 首次做题时间：2026-05-25
 ----------------------------------------
@@ -9394,7 +9381,7 @@ x - 2\pi, & x\in[2\pi,3\pi)
 \frac{\frac{n(n + 1)}{2}}{n^2 + M} = \sum_{k = 1}^{n}\frac{k}{n^2 + M} \leq \sum_{k = 1}^{n}\frac{k}{n^2 + a_n} \leq \sum_{k = 1}^{n}\frac{k}{n^2 + m} = \frac{\frac{n(n + 1)}{2}}{n^2 + m},
 \]
 又$\lim_{n \to \infty}\frac{\frac{n(n + 1)}{2}}{n^2 + M} = \lim_{n \to \infty}\frac{\frac{n(n + 1)}{2}}{n^2 + m} = \frac{1}{2}$，故$\lim_{n \to \infty}b_n = \frac{1}{2}$，于是$\lim_{n \to \infty}\frac{1}{b_n} = 2$.
-历次反馈：
+历次反馈：2026-06-08:对
 预留空间：6cm
 首次做题时间：2026-05-26
 ----------------------------------------
@@ -9456,7 +9443,7 @@ f_{+}'(1) = \lim_{x \to 1^{+}} \frac{f(x) - f(1)}{x - 1} = \lim_{x \to 1^{+}} \f
 \]
 故仅当$\frac{a}{5} = 2$，即$a = 10$时，$f_{-}'(1) = f_{+}'(1)$，即$f(x)$在$x = 1$处可导。
 综上所述，当$a = 10$，$b = -5$时，$f(x)$在$(-\infty, +\infty)$上可导。
-历次反馈：
+历次反馈：2026-06-09:对
 预留空间：20cm
 首次做题时间：2026-05-28
 ----------------------------------------
@@ -9644,7 +9631,7 @@ BA^{*} = \begin{bmatrix}0&1&0\\1&0&0\\0&0&1\end{bmatrix}AA^{*} = |A|\begin{bmatr
 学科：数学
 书本：李永乐线代零基础
 标题：李永乐线代零基础-习2-4
-题干：已知$\alpha_1,\alpha_2,\alpha_3$线性无关，判断向量组的线性相关性：
+题干：已知$\alpha_1,\alpha_2,\alpha_3$线性无关，判断向量组的线性相关性
 (1)$\alpha_1 - \alpha_2,\alpha_2 - \alpha_3,\alpha_3 - \alpha_1$；
 (2)$\alpha_1 + \alpha_2,\alpha_2 + \alpha_3,\alpha_3 - \alpha_1$；
 (3)$\alpha_1 + \alpha_2,\alpha_2 + \alpha_3,\alpha_3 + \alpha_1$；
@@ -9652,19 +9639,19 @@ BA^{*} = \begin{bmatrix}0&1&0\\1&0&0\\0&0&1\end{bmatrix}AA^{*} = |A|\begin{bmatr
 是否有图片：n
 图片路径：李永乐线代零基础-习2-4
 掌握程度：***
-标签：其他方法
-答案：(1) 由$(\alpha_1 - \alpha_2)+(\alpha_2 - \alpha_3)+(\alpha_3 - \alpha_1)= \boldsymbol{0}$，这里系数为$1,1,1$不全为$0$，所以$\alpha_1 - \alpha_2,\alpha_2 - \alpha_3,\alpha_3 - \alpha_1$线性相关。
-(2) 由$(\alpha_1 + \alpha_2)-(\alpha_2 + \alpha_3)+(\alpha_3 - \alpha_1)= \boldsymbol{0}$，这里系数为$1,-1,1$不全为$0$，所以$\alpha_1 + \alpha_2,\alpha_2 + \alpha_3,\alpha_3 - \alpha_1$线性相关。
-(3) 由$(\alpha_1 + \alpha_2,\alpha_2 + \alpha_3,\alpha_3 + \alpha_1)= (\alpha_1,\alpha_2,\alpha_3)\begin{bmatrix}1&0&1\\1&1&0\\0&1&1\end{bmatrix}$，又因为$\begin{vmatrix}1&0&1\\1&1&0\\0&1&1\end{vmatrix}= 2\neq 0$。
+标签：其他方法、线性无关矩阵法
+答案：(1) 由$(\alpha_1 - \alpha_2)+(\alpha_2 - \alpha_3)+(\alpha_3 - \alpha_1)=0$，这里系数为$1,1,1$不全为$0$，所以$\alpha_1 - \alpha_2,\alpha_2 - \alpha_3,\alpha_3 - \alpha_1$线性相关。
+(2) 由$(\alpha_1 + \alpha_2)-(\alpha_2 + \alpha_3)+(\alpha_3 - \alpha_1)=0$，这里系数为$1,-1,1$不全为$0$，所以$\alpha_1 + \alpha_2,\alpha_2 + \alpha_3,\alpha_3 - \alpha_1$线性相关。
+(3) 由$(\alpha_1 + \alpha_2,\alpha_2 + \alpha_3,\alpha_3 + \alpha_1)=(\alpha_1,\alpha_2,\alpha_3)\begin{bmatrix}1&0&1\\1&1&0\\0&1&1\end{bmatrix}$，又因为$\begin{vmatrix}1&0&1\\1&1&0\\0&1&1\end{vmatrix}=2\neq0$。
 于是
 \[
-r(\alpha_1 + \alpha_2,\alpha_2 + \alpha_3,\alpha_3 + \alpha_1)= r(\alpha_1,\alpha_2,\alpha_3)= 3
+r(\alpha_1 + \alpha_2,\alpha_2 + \alpha_3,\alpha_3 + \alpha_1)=r(\alpha_1,\alpha_2,\alpha_3)=3
 \]
 所以$\alpha_1 + \alpha_2,\alpha_2 + \alpha_3,\alpha_3 + \alpha_1$线性无关。
-(4) 由$(\alpha_1 - \alpha_2,2\alpha_2 + 3\alpha_3,\alpha_1 + 3\alpha_2 + 5\alpha_3)= (\alpha_1,\alpha_2,\alpha_3)\begin{bmatrix}1&0&1\\-1&2&3\\0&3&5\end{bmatrix}$，因$\begin{vmatrix}1&0&1\\-1&2&3\\0&3&5\end{vmatrix}\neq 0$，所以$\begin{bmatrix}1&0&1\\-1&2&3\\0&3&5\end{bmatrix}$可逆。
-于是$r(\alpha_1 + \alpha_2,\alpha_2 + \alpha_3,\alpha_3 + \alpha_1)= r(\alpha_1,\alpha_2,\alpha_3)= 3$，故$\alpha_1 - \alpha_2,2\alpha_2 + 3\alpha_3,\alpha_1 + 3\alpha_2 + 5\alpha_3$线性无关。
-历次反馈：
-预留空间：线性无关矩阵法
+(4) 由$(\alpha_1 - \alpha_2,2\alpha_2 + 3\alpha_3,\alpha_1 + 3\alpha_2 + 5\alpha_3)=(\alpha_1,\alpha_2,\alpha_3)\begin{bmatrix}1&0&1\\-1&2&3\\0&3&5\end{bmatrix}$，因$\begin{vmatrix}1&0&1\\-1&2&3\\0&3&5\end{vmatrix}\neq0$，所以$\begin{bmatrix}1&0&1\\-1&2&3\\0&3&5\end{bmatrix}$可逆。
+于是$r(\alpha_1 - \alpha_2,2\alpha_2 + 3\alpha_3,\alpha_1 + 3\alpha_2 + 5\alpha_3)=r(\alpha_1,\alpha_2,\alpha_3)=3$，故$\alpha_1 - \alpha_2,2\alpha_2 + 3\alpha_3,\alpha_1 + 3\alpha_2 + 5\alpha_3$线性无关。
+历次反馈：2026-06-07:对
+预留空间：20cm
 首次做题时间：2026-05-27
 ----------------------------------------
 
@@ -9812,46 +9799,67 @@ AB\alpha = \lambda\alpha,\alpha\neq 0
 学科：数学
 书本：李永乐线代零基础
 标题：李永乐线代零基础-习3-4
-题干：已知\(\boldsymbol{A}=\begin{bmatrix}0&2&1\\0&1&0\\1&a&0\end{bmatrix}\)相似于对角矩阵. (1) 求\(a\). (2) 求可逆矩阵\(\boldsymbol{P}\)和\(\boldsymbol{\Lambda}\)，使得\(\boldsymbol{P}^{-1}\boldsymbol{AP}=\boldsymbol{\Lambda}\).
+题干：已知\(\boldsymbol{A}=\begin{bmatrix}0&2&1\\0&1&0\\1&a&0\end{bmatrix}\)相似于对角矩阵。(1) 求\(a\)。(2) 求可逆矩阵\(\boldsymbol{P}\)和\(\boldsymbol{\Lambda}\)，使得\(\boldsymbol{P}^{-1}\boldsymbol{AP}=\boldsymbol{\Lambda}\)。
 是否有图片：n
 图片路径：李永乐线代零基础-习3-4
 掌握程度：*
-标签：错题、粗心
+标签：错题、粗心、知识点不熟悉
 答案：(1) \(\boldsymbol{A}\)的特征多项式为
 \[
-\begin{align*}
-|\lambda\boldsymbol{E}-\boldsymbol{A}|&=\begin{vmatrix}\lambda& -2& -1\\0&\lambda - 1&0\\-1&-a&\lambda\end{vmatrix}\\
-&=(\lambda - 1)\begin{vmatrix}\lambda& -1\\-1&\lambda\end{vmatrix}\\
-&=(\lambda - 1)(\lambda^2 - 1)\\
-&=(\lambda - 1)^2(\lambda + 1)
-\end{align*}
+|\lambda\boldsymbol{E}-\boldsymbol{A}|=\begin{vmatrix}
+\lambda& -2& -1\\
+0& \lambda - 1& 0\\
+-1& -a& \lambda
+\end{vmatrix}=(\lambda - 1)\begin{vmatrix}
+\lambda& -1\\
+-1& \lambda
+\end{vmatrix}=(\lambda - 1)(\lambda^{2}-1)=(\lambda - 1)^{2}(\lambda + 1)
 \]
-\(\boldsymbol{A}\)的特征值为\(1,1,-1\).
-由\(\boldsymbol{A}\sim\boldsymbol{\Lambda}\)，因为\(\lambda = 1\)是二重特征值，\(\lambda = 1\)应有\(2\)个线性相关的特征向量. 故\((\boldsymbol{E}-\boldsymbol{A})\boldsymbol{x}=\boldsymbol{0}\)应有\(2\)个线性无关的解.
+\(\boldsymbol{A}\)的特征值为\(1,1,-1\)。
+由\(\boldsymbol{A}\sim\boldsymbol{\Lambda}\)，因为\(\lambda = 1\)是二重特征值，\(\lambda = 1\)应有\(2\)个线性无关的特征向量。
+故\((\boldsymbol{E}-\boldsymbol{A})\boldsymbol{x}=\boldsymbol{0}\)应有\(2\)个线性无关的解。
 \[
-\boldsymbol{E}-\boldsymbol{A}=\begin{bmatrix}1& -2& -1\\0&0&0\\-1&-a&1\end{bmatrix}\to\begin{bmatrix}1& -2& -1\\0&a + 2&0\\0&0&0\end{bmatrix}
+\boldsymbol{E}-\boldsymbol{A}=\begin{bmatrix}
+1& -2& -1\\
+0& 0& 0\\
+-1& -a& 1
+\end{bmatrix}\to\begin{bmatrix}
+1& -2& -1\\
+0& a + 2& 0\\
+0& 0& 0
+\end{bmatrix}
 \]
-因为\(n - r(\boldsymbol{E}-\boldsymbol{A}) = 2\)，故\(a=-2\).
-(2) 把\(a = - 2\)代入矩阵\(\boldsymbol{A}\)中.
+因为\(n - r(\boldsymbol{E}-\boldsymbol{A}) = 2\)，故\(a=-2\)。
+(2) 把\(a = - 2\)代入矩阵\(\boldsymbol{A}\)中。
 对于\(\lambda = 1\)，由\((\boldsymbol{E}-\boldsymbol{A})\boldsymbol{x}=\boldsymbol{0}\)，
 \[
-\boldsymbol{E}-\boldsymbol{A}=\begin{bmatrix}1& -2& -1\\0&0&0\\-1&2&1\end{bmatrix}\to\begin{bmatrix}1& -2& -1\\0&0&0\\0&0&0\end{bmatrix}
+\boldsymbol{E}-\boldsymbol{A}=\begin{bmatrix}
+1& -2& -1\\
+0& 0& 0\\
+-1& 2& 1
+\end{bmatrix}\to\begin{bmatrix}
+1& -2& -1\\
+0& 0& 0\\
+0& 0& 0
+\end{bmatrix}
 \]
-得特征向量为\(\boldsymbol{\alpha}_1=(2,1,0)^{\mathrm{T}},\boldsymbol{\alpha}_2=(1,0,1)^{\mathrm{T}}\).
+得特征向量为\(\boldsymbol{\alpha}_{1}=(2,1,0)^{\mathrm{T}},\boldsymbol{\alpha}_{2}=(1,0,1)^{\mathrm{T}}\)。
 对于\(\lambda=-1\)，由\((-\boldsymbol{E}-\boldsymbol{A})\boldsymbol{x}=\boldsymbol{0}\)，
 \[
--\boldsymbol{E}-\boldsymbol{A}=\begin{bmatrix}-1& -2& -1\\0&-2&0\\-1&2&-1\end{bmatrix}\to\begin{bmatrix}1&0&1\\0&1&0\\0&0&0\end{bmatrix}
+-\boldsymbol{E}-\boldsymbol{A}=\begin{bmatrix}
+-1& -2& -1\\
+0& -2& 0\\
+-1& 2& -1
+\end{bmatrix}\to\begin{bmatrix}
+1& 0& 1\\
+0& 1& 0\\
+0& 0& 0
+\end{bmatrix}
 \]
-得特征向量是\(\boldsymbol{\alpha}_3=(-1,0,1)^{\mathrm{T}}\). 令
-\[
-\boldsymbol{P}=(\boldsymbol{\alpha}_1,\boldsymbol{\alpha}_2,\boldsymbol{\alpha}_3)=\begin{bmatrix}2&1& -1\\1&0&0\\0&1&1\end{bmatrix}
-\]
-有
-\[
-\boldsymbol{P}^{-1}\boldsymbol{AP}=\boldsymbol{\Lambda}=\begin{bmatrix}1&0&0\\0&1&0\\0&0&-1\end{bmatrix}
-\]
+得特征向量是\(\boldsymbol{\alpha}_{3}=(-1,0,1)^{\mathrm{T}}\)。令\(\boldsymbol{P}=(\boldsymbol{\alpha}_{1},\boldsymbol{\alpha}_{2},\boldsymbol{\alpha}_{3})=\begin{bmatrix}2&1& - 1\\1&0&0\\0&1&1\end{bmatrix}\)。
+有\(\boldsymbol{P}^{-1}\boldsymbol{AP}=\boldsymbol{\Lambda}=\begin{bmatrix}1&0&0\\0&1&0\\0&0& - 1\end{bmatrix}\)。
 历次反馈：
-预留空间：知识点不熟悉
+预留空间：20cm
 首次做题时间：2026-06-01
 ----------------------------------------
 
@@ -10727,7 +10735,7 @@ A(A\alpha) = A(\lambda\alpha)=\lambda A\alpha=\lambda^{2}\alpha.
 \]
 又因$A^{2}=A$有$A^{2}\alpha = A\alpha$. 因此$\lambda^{2}\alpha=\lambda\alpha\Rightarrow (\lambda^{2}-\lambda)\alpha = 0$.
 由于$\alpha\neq 0$，故必有$\lambda^{2}-\lambda = 0$. 因此，特征值$\lambda$只能是$0$或$1$.
-历次反馈：
+历次反馈：2026-06-07:提示、想得久
 预留空间：9cm
 首次做题时间：2026-05-30
 ----------------------------------------
@@ -11868,7 +11876,7 @@ E + P_2P_1 &= \begin{bmatrix}1&0&0\\0&1&0\\0&0&1\end{bmatrix} + \begin{bmatrix}1
 是否有图片：n
 图片路径：660题-371
 掌握程度：*
-标签：错题、粗心
+标签：错题、粗心、其他方法
 答案：\[
 \begin{align*}
 &\text{由 }CA - AB = C - B\text{ 得 }CA - C = AB - B\text{ 即有 }C(A - E) = (A - E)B.\\
@@ -11880,7 +11888,7 @@ E + P_2P_1 &= \begin{bmatrix}1&0&0\\0&1&0\\0&0&1\end{bmatrix} + \begin{bmatrix}1
 \end{align*}
 \]
 历次反馈：
-预留空间：其他方法
+预留空间：9cm
 首次做题时间：2026-06-02
 ----------------------------------------
 
@@ -12135,4 +12143,876 @@ D(\widehat{s})&=(\widehat{s}-1)^3 + 40(\widehat{s}-1)^2 + 100(\widehat{s}-1) + 1
 历次反馈：
 预留空间：14cm
 首次做题时间：2026-06-04
+----------------------------------------
+
+================================
+【开始新一轮任务】：2026-06-07 00:16:32
+================================
+
+--- 第 1 张图：卢京潮讲义-例11-3 ---
+【豆包 AI】:
+学科：专业课
+书本：卢京潮讲义
+标题：卢京潮讲义-例11-3
+题干：已知系统结构图如图所示，输入$r(t)=2t + 4t^2$，求系统的稳态误差。其中$G(s)=\frac{K_1(Ts + 1)}{s^2(s + a)}$，$\begin{cases}K = K_1/a\\v = 2\end{cases}$，$\Phi(s)=\frac{K_1}{s^2(s + a)+K_1(Ts + 1)}$，$D(s)=s^3 + as^2 + K_1Ts + K_1 = 0$。
+是否有图片：y
+图片路径：卢京潮讲义-例11-3
+掌握程度：*
+标签：错题、求稳先判稳
+答案：首先列出劳斯表：
+\[
+\begin{array}{c|ccc}
+s^3 & 1 & K_1T & \\
+s^2 & a & K_1 & \\
+s^1 & \frac{(aT - 1)K_1}{a} & 0 & \\
+s^0 & K_1 & &
+\end{array}
+\]
+由劳斯判据可得：$a>0$，$aT>1$，$K_1>0$。
+对于$r_1(t)=2t$，$e_{ss1}=0$；对于$r_2(t)=4t^2 = 8\cdot\frac{1}{2}t^2$，$e_{ss2}=\frac{A}{K}=\frac{8a}{K_1}$。
+所以$e_{ss}=e_{ss1}+e_{ss2}=\frac{8a}{K_1}$。
+历次反馈：
+预留空间：10cm
+首次做题时间：2026-06-06
+----------------------------------------
+
+--- 第 2 张图：卢京潮讲义-例11-4 ---
+【豆包 AI】:
+学科：专业课
+书本：卢京潮讲义
+标题：卢京潮讲义-例11-4
+题干：已知系统结构图，输入$r(t)=At$，求$G_c(s)$，使稳态误差为零。系统中$G(s)=\frac{K}{s(Ts + 1)}$，$D(s)=Ts^2 + s + K = 0$。
+是否有图片：y
+图片路径：卢京潮讲义-例11-4
+掌握程度：*
+标签：错题
+答案：\[
+\begin{align*}
+\Phi_e(s)&=\frac{E(s)}{R(s)}=\frac{1 - \frac{KG_c(s)}{s(Ts + 1)}}{1 + \frac{K}{s(Ts + 1)}}=\frac{s(Ts + 1) - KG_c(s)}{s(Ts + 1) + K}\\
+e_{ss}&=\lim_{s \to 0} s\Phi_e(s)\frac{A}{s^2}=\lim_{s \to 0}\frac{A\left[sT + 1 - \frac{K}{s}G_c(s)\right]}{s(Ts + 1) + K}=\frac{A\left[1 - \frac{K}{s}G_c(s)\right]}{K}=0
+\end{align*}
+\]
+解得$G_c(s)=\frac{s}{K}$。
+历次反馈：
+预留空间：9cm
+首次做题时间：2026-06-06
+----------------------------------------
+
+--- 第 3 张图：卢京潮讲义-例11-6 ---
+【豆包 AI】:
+学科：专业课
+书本：卢京潮讲义
+标题：卢京潮讲义-例11-6
+题干：已知系统结构图，当$r(t)=t$时，要求$e_{ss}<0.1$，求$K$的范围。其中$G(s)=\frac{K(0.6s + 1)}{s(s + 1)(2s + 1)}$。
+是否有图片：y
+图片路径：卢京潮讲义-例11-6
+掌握程度：*
+标签：错题、计算
+答案：首先，由$r(t)=t$，对于该系统$v = 1$，$e_{ss}=\frac{1}{K}<0.1$，解得$K>10$。
+然后，求系统特征方程$D(s)=s(s + 1)(2s + 1)+K(0.6s + 1)=2s^{3}+3s^{2}+(1 + 0.6K)s + K = 0$。
+列出劳斯表：
+\begin{align*}
+s^{3}&:2\quad 1 + 0.6K\\
+s^{2}&:3\quad K\\
+s^{1}&:\frac{3(1 + 0.6K)-2K}{3}\quad 0\\
+s^{0}&:K
+\end{align*}
+由$3 - 0.2K>0$，解得$K<15$，由$K>0$，综合可得$10<K<15$。
+历次反馈：
+预留空间：10cm
+首次做题时间：2026-06-06
+----------------------------------------
+
+--- 第 4 张图：卢京潮讲义-例12-2 ---
+【豆包 AI】:
+学科：专业课
+书本：卢京潮讲义
+标题：卢京潮讲义-例12-2
+题干：系统结构图如图所示。
+(1) $K_t=0$时系统的性能？
+(2) $K_t$变大时，$\sigma \%$，$t_s$变化趋势？$\xi = 0.707$时，$\sigma \%$，$t_s=$？
+(3) $K_t$变大时，$r(t)=t$，$e_{ss}$变化趋势？$\xi = 0.707$时，$e_{ss}=$？
+是否有图片：y
+图片路径：卢京潮讲义-例12-2
+掌握程度：*
+标签：错题
+答案：(1) $K_t = 0$时，
+\[
+\begin{align*}
+G(s)&=\frac{100}{s^2}\\
+\Phi(s)&=\frac{100}{s^2 + 100}\\
+D(s)&=s^2 + 100 = 0
+\end{align*}
+\]
+系统结构不稳定！
+(2) $K_t > 0$，
+\[
+\begin{align*}
+G(s)&=\frac{100}{s(s + 10K_t)}\\
+\Phi(s)&=\frac{100}{s^2 + 10K_ts + 100}\\
+K_t&<2,\ \xi<1\\
+K&=\frac{10}{K_t}\\
+v&=1\\
+\omega_n&=\sqrt{100}=10\\
+\xi&=\frac{10K_t}{2\omega_n}=\frac{K_t}{2}\\
+K_t&\uparrow\Rightarrow\xi=\frac{K_t}{2}\uparrow\Rightarrow\begin{cases}\sigma\% \downarrow\\t_s = 3.5/\xi\omega_n\downarrow\end{cases}\\
+K_t&\geq2,\ \xi\geq1,\ K_t\uparrow\Rightarrow\begin{cases}\sigma\% = 0\\t_s\uparrow\end{cases}\\
+\xi&=\frac{K_t}{2}=0.707\Rightarrow\begin{cases}K_t = 1.414\\\sigma\% = 5\%,\ t_s=\frac{3.5}{5K_t}=0.495\end{cases}
+\end{align*}
+\]
+(3) $G(s)=\frac{100}{s(s + 10K_t)}$，
+\[
+\begin{align*}
+K&=\frac{10}{K_t}\\
+v&=1\\
+K&=10/K_t\\
+K_t&\uparrow\Rightarrow e_{ss}=\frac{1}{K}=\frac{K_t}{10}\uparrow
+\end{align*}
+\]
+历次反馈：
+预留空间：15cm
+首次做题时间：2026-06-06
+----------------------------------------
+
+--- 第 5 张图：卢京潮讲义-例12-4 ---
+【豆包 AI】:
+学科：专业课
+书本：卢京潮讲义
+标题：卢京潮讲义-例12-4
+题干：系统结构图如图所示，(1)确定$K_1$，$K_2$，配置极点于$\lambda_{1,2}=-5\pm j5$；(2)设计$G_1(s)$，使$r(t)=t$作用下$e_{ssr}=0$；(3)设计$G_2(s)$，使$n(t)$作用下$e_n(t)=0$。
+是否有图片：y
+图片路径：卢京潮讲义-例12-4
+掌握程度：*
+标签：错题
+答案：(1) \[
+\begin{align*}
+G(s)&=\frac{K_1(K_2s + 1)}{s(s + 1)}\quad\left\{
+\begin{array}{l}
+K = K_1\\
+\nu = 1
+\end{array}
+\right.\\
+D(s)&=s^2+(1 + K_1K_2)s + K_1 = 0\quad K_1>0, K_2>0\\
+D(s)&=s^2+(1 + K_1K_2)s + K_1=(s + 5 - j5)(s + 5 + j5)=s^2 + 10s + 50\\
+\left\{
+\begin{array}{l}
+K_1 = 50\\
+1 + K_1K_2 = 10
+\end{array}
+\right.&\Rightarrow\left\{
+\begin{array}{l}
+K_1 = 50\\
+K_2 = 0.18
+\end{array}
+\right.
+\end{align*}
+\]
+(2) \[
+\begin{align*}
+\Phi_e(s)&=\frac{E(s)}{R(s)}=\frac{1-\frac{K_2s + 1}{s}G_1(s)}{1+\frac{K_1(K_2s + 1)}{s(s + 1)}}=\frac{(s + 1)[s-(K_2s + 1)G_1(s)]}{s(s + 1)+K_1(K_2s + 1)}\\
+e_{ss}&=\lim_{s\rightarrow0}s\frac{1}{s^2}\Phi_e(s)=\lim_{s\rightarrow0}\frac{(s + 1)[1-\frac{K_2s + 1}{s}G_1(s)]}{s^2+(1 + K_1K_2)s + K_1}\equiv0\quad G_1(s)=\frac{s}{K_2s + 1}
+\end{align*}
+\]
+(3) \[
+\begin{align*}
+\Phi_{en}(s)&=\frac{E(s)}{N(s)}=\frac{-(K_2s + 1)+\frac{K_2s + 1}{s}G_2(s)}{1+\frac{K_1(K_2s + 1)}{s(s + 1)}}=\frac{-(K_2s + 1)(s + 1)[s - G_2(s)]}{s(s + 1)+K_1(K_2s + 1)}\equiv0\quad G_2(s)=s
+\end{align*}
+\]
+历次反馈：
+预留空间：17cm
+首次做题时间：2026-06-06
+----------------------------------------
+
+--- 第 6 张图：卢京潮课本-习3-10 ---
+【豆包 AI】:
+学科：专业课
+书本：卢京潮课本
+标题：卢京潮课本-习3-10
+题干：机器人位置控制系统结构图如图3-51所示。试确定参数$K_1$，$K_2$值，使系统阶跃响应的峰值时间$t_p = 0.5\text{s}$，超调量$\sigma \% = 2\%$。
+是否有图片：y
+图片路径：卢京潮课本-习3-10
+掌握程度：*
+标签：错题、计算
+答案：依题，系统传递函数为
+\[
+\begin{align*}
+\varPhi(s) &= \frac{\frac{K_1}{s(s + 1)}}{1 + \frac{K_1(K_2s + 1)}{s(s + 1)}}\\
+&= \frac{K_1}{s^2 + (1 + K_1K_2)s + K_1} = \frac{K_{\varPhi}\omega_{\text{n}}^2}{s^2 + 2\zeta\omega_{\text{n}}s + \omega_{\text{n}}^2}
+\end{align*}
+\]
+由$\begin{cases} \sigma\% = \text{e}^{-\pi\zeta / \sqrt{1 - \zeta^2}} = 0.02 \\ t_p = \frac{\pi}{\sqrt{1 - \zeta^2}\omega_{\text{n}}} = 0.5 \end{cases}$联立求解得$\begin{cases} \zeta = 0.78 \\ \omega_{\text{n}} = 10 \end{cases}$
+比较$\varPhi(s)$分母系数得
+\[
+\begin{cases}
+K_1 = \omega_{\text{n}}^2 = 100 \\
+K_2 = \frac{2\zeta\omega_{\text{n}} - 1}{K_1} = 0.146
+\end{cases}
+\]
+历次反馈：
+预留空间：13cm
+首次做题时间：2026-06-05
+----------------------------------------
+
+--- 第 7 张图：卢京潮课本-习3-15b ---
+【豆包 AI】:
+学科：专业课
+书本：卢京潮课本
+标题：卢京潮课本-习3-15b
+题干：已知系统的特征方程$D(s)=s^{5}+3s^{4}+12s^{3}+24s^{2}+32s + 48 = 0$，试判别系统的稳定性，并确定在右半$s$平面根的个数及纯虚根。
+是否有图片：n
+图片路径：卢京潮课本-习3-15b
+掌握程度：*
+标签：错题
+答案：Routh 表：
+\[
+\begin{array}{cccc}
+s^{5} & 1 & 12 & 32 \\
+s^{4} & 3 & 24 & 48 \\
+s^{3} & \frac{3\times12 - 24}{3}=4 & \frac{32\times3 - 48}{3}=16 & 0 \\
+s^{2} & \frac{4\times24 - 3\times16}{4}=12 & 48 &  \\
+s^{1} & \frac{12\times16 - 4\times48}{12}=0 & 0 & \text{辅助方程 }12s^{2}+48 = 0 \\
+s^{0} & 24 &  & \text{辅助方程求导 }24s = 0 \\
+& 48 &  &
+\end{array}
+\]
+系统没有正根。对辅助方程求解，得到系统一对虚根$s_{1,2}=\pm j2$。
+历次反馈：
+预留空间：8cm
+首次做题时间：2026-06-05
+----------------------------------------
+
+--- 第 8 张图：卢京潮课本-习3-15c ---
+【豆包 AI】:
+学科：专业课
+书本：卢京潮课本
+标题：卢京潮课本-习3-15c
+题干：已知系统的特征方程为$D(s)=s^{5}+2s^{4}-s - 2 = 0$，试判别系统的稳定性，并确定在右半$s$平面根的个数及纯虚根。
+是否有图片：n
+图片路径：卢京潮课本-习3-15c
+掌握程度：*
+标签：错题、粗心
+答案：\[
+\begin{align*}
+D(s)&=s^5 + 2s^4 - s - 2 = 0\\
+\end{align*}
+\]
+Routh 阵列：
+\[
+\begin{array}{cccc}
+s^5&1&0&-1\\
+s^4&2&0&-2&\text{辅助方程 }2s^4 - 2 = 0\\
+s^3&8&0&\text{辅助方程求导 }8s^3 = 0\\
+s^2&\epsilon&-2\\
+s&\frac{16}{\epsilon}\\
+s^0&-2
+\end{array}
+\]
+第一列元素变号一次，有 1 个正根；由辅助方程 $2s^4 - 2 = 0$ 可解出
+\[
+\begin{align*}
+2s^4 - 2&=2(s + 1)(s - 1)(s + j)(s - j)\\
+D(s)&=s^5 + 2s^4 - s - 2=(s + 2)(s + 1)(s - 1)(s + j)(s - j)
+\end{align*}
+\]
+历次反馈：
+预留空间：6cm
+首次做题时间：2026-06-05
+----------------------------------------
+
+--- 第 9 张图：卢京潮课本-习3-15d ---
+【豆包 AI】:
+学科：专业课
+书本：卢京潮课本
+标题：卢京潮课本-习3-15d
+题干：已知系统的特征方程为$D(s)=s^{5}+2s^{4}+24s^{3}+48s^{2}-25s - 50 = 0$，试判别系统的稳定性，并确定在右半$s$平面根的个数及纯虚根。
+是否有图片：n
+图片路径：卢京潮课本-习3-15d
+掌握程度：*
+标签：错题、粗心
+答案：首先列出劳斯表：
+\[
+\begin{array}{c|ccc}
+s^{5}&1&24&-25\\
+s^{4}&2&48&-50\\
+s^{3}&8&96&\\
+s^{2}&24&-50&\\
+s^{1}&338/3&\\
+s^{0}&-50&
+\end{array}
+\]
+辅助方程为$2s^{4}+48s^{2}-50 = 0$，对辅助方程求导得$8s^{3}+96s = 0$。
+第一列元素变号一次，有$1$个正根；由辅助方程$2s^{4}+48s^{2}-50 = 0$可解出$2s^{4}+48s^{2}-50 = 2(s + 1)(s - 1)(s + j5)(s - j5)$，$D(s)=s^{5}+2s^{4}+24s^{3}+48s^{2}-25s - 50=(s + 2)(s + 1)(s - 1)(s + j5)(s - j5)$。
+历次反馈：
+预留空间：8cm
+首次做题时间：2026-06-05
+----------------------------------------
+
+--- 第 10 张图：卢京潮课本-习3-16 ---
+【豆包 AI】:
+学科：专业课
+书本：卢京潮课本
+标题：卢京潮课本-习3-16
+题干：图3-55是某垂直起降飞机的高度控制系统结构图，试确定使系统稳定的$K$值范围。
+是否有图片：y
+图片路径：卢京潮课本-习3-16
+掌握程度：*
+标签：错题、计算
+答案：由结构图，系统开环传递函数为
+\[
+G(s)=\frac{K(4s^{2}+2s + 1)}{s^{3}(s^{2}+s + 4)}\left\{
+\begin{array}{l}
+\text{开环增益 }K_{\mathrm{k}} = K/4\\
+\text{系统型别 }v = 3
+\end{array}
+\right.
+\]
+\[
+D(s)=s^{5}+s^{4}+4s^{3}+4Ks^{2}+2Ks + K = 0
+\]
+Routh
+\[
+\begin{array}{cccc}
+s^{5}&1&4&2K\\
+s^{4}&1&4K&K\\
+s^{3}&4(1 - K)&K&\Rightarrow K < 1\\
+s^{2}&\frac{(15 - 16K)K}{4(1 - K)}&K&\Rightarrow K < \frac{15}{16}=0.9375\\
+s&\frac{-32K^{2}+47K - 16}{15 - 16K}&\Rightarrow 0.536 < K < 0.933\\
+s^{0}&K&\Rightarrow K > 0
+\end{array}
+\]
+所以使系统稳定的$K$值范围是$0.536 < K < 0.933$。
+历次反馈：
+预留空间：20cm
+首次做题时间：2026-06-05
+----------------------------------------
+
+--- 第 11 张图：卢京潮课本-习3-17 ---
+【豆包 AI】:
+学科：专业课
+书本：卢京潮课本
+标题：卢京潮课本-习3-17
+题干：单位反馈系统的开环传递函数为$G(s)=\frac{K}{s(s + 3)(s + 5)}$，要求系统特征根的实部不大于$-1$，试确定开环增益的取值范围。
+是否有图片：n
+图片路径：卢京潮课本-习3-17
+掌握程度：*
+标签：错题
+答案：系统开环增益$K_{\mathrm{k}} = K/15$。特征方程为$D(s)=s^{3}+8s^{2}+15s + K = 0$。
+做代换$s = s' - 1$有：
+\[
+\begin{align*}
+D(s')&=(s' - 1)^{3}+8(s' - 1)^{2}+15(s' - 1)+K\\
+&=s'^{3}+5s'^{2}+2s'+(K - 8)=0
+\end{align*}
+\]
+Routh 表：
+\[
+\begin{array}{c|cc}
+s^{3}&1&2\\
+s^{2}&5&K - 8\\
+s^{1}&\frac{18 - K}{5}&\Rightarrow K<18\\
+s^{0}&K - 8&\Rightarrow K>8
+\end{array}
+\]
+使系统稳定的开环增益范围为$\frac{8}{15}<K_{\mathrm{k}}=\frac{K}{15}<\frac{18}{15}$。
+历次反馈：
+预留空间：13cm
+首次做题时间：2026-06-06
+----------------------------------------
+
+--- 第 12 张图：卢京潮课本-习3-18 ---
+【豆包 AI】:
+学科：专业课
+书本：卢京潮课本
+标题：卢京潮课本-习3-18
+题干：单位反馈系统的开环传递函数为$G(s)=\frac{K(s + 1)}{s(Ts + 1)(2s + 1)}$，试在满足$T>0,K>1$的条件下，确定使系统稳定的$T$和$K$的取值范围，并以$T$和$K$为坐标画出使系统稳定的参数区域图。
+是否有图片：y
+图片路径：卢京潮课本-习3-18
+掌握程度：*
+标签：错题
+答案：特征方程为\[D(s)=2Ts^3+(2 + T)s^2+(1 + K)s + K = 0\]
+Routh表：
+\[
+\begin{array}{cccc}
+s^3&2T&1 + K&\Rightarrow T>0\\
+s^2&2 + T&K&\Rightarrow T>-2\\
+s&1 + K-\frac{2TK}{2 + T}& &\Rightarrow T<2+\frac{4}{K - 1}\\
+s^0&K& &\Rightarrow K>0
+\end{array}
+\]
+综合所得条件，当$K>1$时，使系统稳定的参数取值范围如图解3 - 18中阴影部分所示。
+历次反馈：
+预留空间：15cm
+首次做题时间：2026-06-06
+----------------------------------------
+
+--- 第 13 张图：卢京潮课本-习3-25 ---
+【豆包 AI】:
+学科：专业课
+书本：卢京潮课本
+标题：卢京潮课本-习3-25
+题干：系统结构图如图 3 - 60 所示，要使系统对$r(t)$而言是Ⅱ型的，试确定参数$K_0$和$\tau$的值。
+是否有图片：y
+图片路径：卢京潮课本-习3-25
+掌握程度：*
+标签：错题、判稳
+答案：\[
+\begin{align*}
+G(s)&=\frac{\frac{K(\tau s + 1)}{(T_1s + 1)(T_2s + 1)}}{1 - \frac{K_0K(\tau s + 1)}{(T_1s + 1)(T_2s + 1)}}=\frac{K(\tau s + 1)}{(T_1s + 1)(T_2s + 1) - K_0K(\tau s + 1)}\\
+&=\frac{K(\tau s + 1)}{T_1T_2s^2+(T_1 + T_2 - K_0K\tau)s+(1 - K_0K)}
+\end{align*}
+\]
+依题意应有\(\begin{cases}1 - K_0K = 0\\T_1 + T_2 - K_0K\tau = 0\end{cases}\)，联立求解得\(\begin{cases}K_0 = 1/K\\\tau = T_1 + T_2\end{cases}\)
+此时系统开环传递函数为
+\[G(s)=\frac{K(T_1 + T_2)s + K}{T_1T_2s^2}\]
+考虑系统的稳定性，系统特征方程为
+\[D(s)=T_1T_2s^2 + K(T_1 + T_2)s + K = 0\]
+当\(T_1,T_2,K>0\)时，系统稳定。
+历次反馈：
+预留空间：10cm
+首次做题时间：2026-06-06
+----------------------------------------
+
+--- 第 14 张图：卢京潮课本-习3-8 ---
+【豆包 AI】:
+学科：专业课
+书本：卢京潮课本
+标题：卢京潮课本-习3-8
+题干：给定典型二阶系统的设计指标：超调量$\sigma \% \leq 5\%$，调节时间$t_s < 3\text{s}$，峰值时间$t_p < 1\text{s}$，试确定系统极点配置的区域，以获得预期的响应特性。
+是否有图片：y
+图片路径：卢京潮课本-习3-8
+掌握程度：*
+标签：错题
+答案：依题
+\[
+\begin{align*}
+\sigma \% &\leq 5\%, \quad \Rightarrow \zeta \geq 0.707(\beta \leq 45^{\circ})\\
+t_s &= \frac{3.5}{\zeta \omega_n} < 3, \quad \Rightarrow \zeta \omega_n > 1.17\\
+t_p &= \frac{\pi}{\sqrt{1 - \zeta^2} \omega_n} < 1, \quad \Rightarrow \sqrt{1 - \zeta^2} \omega_n > 3.14
+\end{align*}
+\]
+综合以上条件，可画出满足要求的特征根区域如图解 3 - 8 所示。
+历次反馈：
+预留空间：7cm
+首次做题时间：2026-06-05
+----------------------------------------
+
+--- 第 15 张图：660题-389 ---
+【豆包 AI】:
+学科：数学
+书本：660题
+标题：660题-389
+题干：向量组$\boldsymbol{\alpha}_1=(2,1,3)^{\mathrm{T}},\boldsymbol{\alpha}_2=(1,2,1)^{\mathrm{T}},\boldsymbol{\alpha}_3=(3,3,4)^{\mathrm{T}},\boldsymbol{\alpha}_4=(5,1,8)^{\mathrm{T}},\boldsymbol{\alpha}_5=(0,0,2)^{\mathrm{T}}$的一个极大线性无关组是\underline{\quad\quad\quad}（答案不唯一）.
+是否有图片：n
+图片路径：660题-389
+掌握程度：***
+标签：不正规
+答案：\[\boldsymbol{\alpha}_1,\boldsymbol{\alpha}_2,\boldsymbol{\alpha}_5\]
+对\([\boldsymbol{\alpha}_1,\boldsymbol{\alpha}_2,\boldsymbol{\alpha}_3,\boldsymbol{\alpha}_4,\boldsymbol{\alpha}_5]\)作初等行变换，有
+\[\begin{bmatrix}
+2 & 1 & 3 & 5 & 0\\
+1 & 2 & 3 & 1 & 0\\
+3 & 1 & 4 & 8 & 2
+\end{bmatrix}\to
+\begin{bmatrix}
+1 & 2 & 3 & 1 & 0\\
+2 & 1 & 3 & 5 & 0\\
+3 & 1 & 4 & 8 & 2
+\end{bmatrix}\to
+\begin{bmatrix}
+1 & 2 & 3 & 1 & 0\\
+0 & 1 & 1 & -1 & 0\\
+0 & 0 & 0 & 0 & 1
+\end{bmatrix},\]
+第一，二，五列组成的三阶子式不为\(0\)，故极大无关组可以是\(\boldsymbol{\alpha}_1,\boldsymbol{\alpha}_2,\boldsymbol{\alpha}_5\).
+历次反馈：
+预留空间：6cm
+首次做题时间：2026-06-06
+----------------------------------------
+
+--- 第 16 张图：660题-390 ---
+【豆包 AI】:
+学科：数学
+书本：660题
+标题：660题-390
+题干：设$n$维向量$\boldsymbol{\alpha}_1,\boldsymbol{\alpha}_2,\boldsymbol{\alpha}_3$满足$2\boldsymbol{\alpha}_1 - \boldsymbol{\alpha}_2 + 3\boldsymbol{\alpha}_3 = \boldsymbol{0}$，$\boldsymbol{\beta}$是任意$n$维向量，若$\boldsymbol{\beta} + \boldsymbol{\alpha}_1,\boldsymbol{\beta} + \boldsymbol{\alpha}_2,a\boldsymbol{\beta} + \boldsymbol{\alpha}_3$线性相关，则$a = \underline{\quad\quad\quad}$.
+是否有图片：n
+图片路径：660题-390
+掌握程度：***
+标签：不严谨
+答案：【分析】$\boldsymbol{\beta} + \boldsymbol{\alpha}_1,\boldsymbol{\beta} + \boldsymbol{\alpha}_2,a\boldsymbol{\beta} + \boldsymbol{\alpha}_3$线性相关，则存在不全为零的数$k_1,k_2,k_3$，使得
+\[
+k_1(\boldsymbol{\beta} + \boldsymbol{\alpha}_1) + k_2(\boldsymbol{\beta} + \boldsymbol{\alpha}_2) + k_3(a\boldsymbol{\beta} + \boldsymbol{\alpha}_3) = \boldsymbol{0},
+\]
+整理有
+\[
+(k_1 + k_2 + k_3a)\boldsymbol{\beta} + (k_1\boldsymbol{\alpha}_1 + k_2\boldsymbol{\alpha}_2 + k_3\boldsymbol{\alpha}_3) = \boldsymbol{0}.
+\]
+因已知$2\boldsymbol{\alpha}_1 - \boldsymbol{\alpha}_2 + 3\boldsymbol{\alpha}_3 = \boldsymbol{0}$，且$\boldsymbol{\beta}$是任意向量，使得上式成立，只需取$k_1 = 2,k_2 = -1,k_3 = 3$，且令$\boldsymbol{\beta}$的系数为$0$，即$k_1 + k_2 + ak_3 = 2 - 1 + 3a = 0$，即$a = -\frac{1}{3}$.
+故答案为$-\frac{1}{3}$.
+历次反馈：
+预留空间：6cm
+首次做题时间：2026-06-06
+----------------------------------------
+
+================================
+【开始新一轮任务】：2026-06-08 00:25:49
+================================
+
+--- 第 1 张图：卢京潮讲义-习12-1-12 ---
+【豆包 AI】:
+学科：专业课
+书本：卢京潮讲义
+标题：卢京潮讲义-习12-1-12
+题干：稳态速度误差的正确含义为（$A$为常值）：（  ）
+(A) $r(t)=A*1(t)$时，输出速度与输入速度之间的稳态误差
+(B) $r(t)=A*1(t)$时，输出位置与输入位置之间的稳态误差
+(C) $r(t)=A*t$时，输出位置与输入位置之间的稳态误差
+(D) $r(t)=A*t$时，输出速度与输入速度之间的稳态误差
+是否有图片：y
+图片路径：卢京潮讲义-习12-1-12
+掌握程度：*
+标签：错题
+答案：C
+历次反馈：
+预留空间：1cm
+首次做题时间：2026-06-07
+----------------------------------------
+
+--- 第 2 张图：卢京潮讲义-习12-1-9 ---
+【豆包 AI】:
+学科：专业课
+书本：卢京潮讲义
+标题：卢京潮讲义-习12-1-9
+题干：二阶系统的闭环增益加大（  ）
+(A) 快速性越好
+(B) 超调量越大
+(C) 峰值时间提前
+(D) 对动态性能无影响
+是否有图片：n
+图片路径：卢京潮讲义-习12-1-9
+掌握程度：*
+标签：错题
+答案：D
+历次反馈：
+预留空间：1cm
+首次做题时间：2026-06-07
+----------------------------------------
+
+--- 第 3 张图：卢京潮讲义-习12-2-2 ---
+【豆包 AI】:
+学科：专业课
+书本：卢京潮讲义
+标题：卢京潮讲义-习12-2-2
+题干：某系统的开环传递函数为$G(s)=\frac{K}{s(T_1s + 1)(T_2s + 1)}$，则称该系统是（  ）
+(A) I型系统
+(B) II型系统
+(C) 二阶系统
+(D) 三阶系统
+(E) 一阶无差系统
+是否有图片：n
+图片路径：卢京潮讲义-习12-2-2
+掌握程度：*
+标签：错题
+答案：无
+历次反馈：
+预留空间：1cm
+首次做题时间：2026-06-07
+----------------------------------------
+
+--- 第 4 张图：卢京潮讲义-习12-2-3 ---
+【豆包 AI】:
+学科：专业课
+书本：卢京潮讲义
+标题：卢京潮讲义-习12-2-3
+题干：提高输入作用下控制系统精度的主要措施有（  ）
+(A) 增大开环增益
+(B) 加比例-微分控制
+(C) 增大系统的型别
+(D) 加测速反馈
+(E) 对干扰进行补偿
+是否有图片：n
+图片路径：卢京潮讲义-习12-2-3
+掌握程度：*
+标签：错题
+答案：AC
+历次反馈：
+预留空间：1cm
+首次做题时间：2026-06-07
+----------------------------------------
+
+--- 第 5 张图：卢京潮讲义-例13-3 ---
+【豆包 AI】:
+学科：专业课
+书本：卢京潮讲义
+标题：卢京潮讲义-例13-3
+题干：某单位反馈系统的开环传递函数为$G(s)=\frac{K^*(s + 2)}{s(s + 1)}$，$K^*=0\to\infty$，证明复平面的根轨迹为圆弧。
+是否有图片：y
+图片路径：卢京潮讲义-例13-3
+掌握程度：*
+标签：错题
+答案：\[
+\begin{align*}
+G(s)&=\frac{K^*(s + 2)}{s(s + 1)}\\
+D(s)&=s(s + 1)+K^*(s + 2)=s^2+(1 + K^*)s + 2K^*\\
+s_{1,2}&=\frac{-(1 + K^*)\pm\sqrt{(1 + K^*)^2 - 8K^*}}{2}\\
+&=\frac{-(1 + K^*)\pm j\sqrt{8K^*-(1 + K^*)^2}}{2}=\sigma\pm j\omega\\
+\sigma&=\frac{-(1 + K^*)}{2}\Rightarrow K^*=-2\sigma - 1\\
+\omega^2&=\frac{8K^*-(1 + K^*)^2}{4}=\frac{-8(2\sigma + 1)-4\sigma^2}{4}=-\sigma^2 - 4\sigma - 2\\
+\sigma^2 + 4\sigma + 4+\omega^2&=2\\
+(\sigma + 2)^2+\omega^2&=\sqrt{2}^2\\
+\Delta&=(1 + K^*)^2 - 8K^*=K^{*2}-6K^* + 1 = 0\\
+\begin{cases}
+d_1=-0.5858\\
+d_2=-3.4142
+\end{cases}
+\begin{cases}
+K_{d_1}^*=0.1716\\
+K_{d_2}^*=5.828
+\end{cases}
+\end{align*}
+\]
+历次反馈：
+预留空间：13cm
+首次做题时间：2026-06-07
+----------------------------------------
+
+--- 第 6 张图：卢京潮讲义-例14-2 ---
+【豆包 AI】:
+学科：专业课
+书本：卢京潮讲义
+标题：卢京潮讲义-例14-2
+题干：系统结构图如图所示。
+（1）绘制当$K^{*}=0\rightarrow\infty$时系统的根轨迹；
+（2）当$\mathrm{Re}[\lambda_{1}]= -1$时，$\lambda_{3}=$?
+是否有图片：y
+图片路径：卢京潮讲义-例14-2
+掌握程度：*
+标签：错题、根之和判断分离点与趋近趋势
+答案：(1) \(G(s)=\frac{K^{*}(s + 2)}{s(s + 1)(s + 4)}\)，\(\begin{cases}K = K^{*}/2\\v = 1\end{cases}\)
+① 实轴上的根轨迹：\([-4, -2]\)，\([-1, 0]\)
+② 渐近线：\(\begin{cases}\sigma_{a}=\frac{0 - 1 - 4 + 2}{3 - 1}=-\frac{3}{2}\\\varphi_{a}=\frac{(2k + 1)\pi}{3 - 1}=\pm90^{\circ}\end{cases}\)
+用根之和法则分析绘制根轨迹：
+(2) \(a_{n - 1}=0 - 1 - 4=-5=\lambda_{1}+\lambda_{2}+\lambda_{3}=2(-1)+\lambda_{3}\)
+\(\lambda_{3}=-5 + 2=-3\)
+历次反馈：
+预留空间：8cm
+首次做题时间：2026-06-07
+----------------------------------------
+
+--- 第 7 张图：卢京潮讲义-例14-3 ---
+【豆包 AI】:
+学科：专业课
+书本：卢京潮讲义
+标题：卢京潮讲义-例14-3
+题干：单位反馈系统的开环传递函数为$G(s)=\frac{K^{*}}{s(s + 1)(s + 2)}$，绘制根轨迹。
+是否有图片：y
+图片路径：卢京潮讲义-例14-3
+掌握程度：*
+标签：错题、分离点
+答案：\[
+G(s)=\frac{K^{*}}{s(s + 1)(s + 2)}
+\begin{cases}
+K = K^{*}/2\\
+v = 1
+\end{cases}
+\]
+\textbf{\textcolor{red}{① 实轴上的根轨迹：}} $(-\infty, -2], [-1, 0]$
+\textbf{\textcolor{red}{② 渐近线：}}
+\[
+\begin{cases}
+\sigma_{a}=\frac{0 - 1 - 2}{3}=-1\\
+\varphi_{a}=\frac{(2k + 1)\pi}{3}=\pm60^{\circ}, 180^{\circ}
+\end{cases}
+\]
+\textbf{\textcolor{red}{③ 分离点：}}
+\[
+\begin{align*}
+\frac{1}{d}+\frac{1}{d + 1}+\frac{1}{d + 2}&=0\\
+3d^{2}+6d + 2&=0
+\end{align*}
+\]
+解根：$\begin{cases}d_{1}=-0.423 \ \checkmark\\d_{2}=-1.577 \ \times\end{cases}$，$K_{d}=|d||d + 1||d + 2|\big|_{d=-0.423}=0.385$
+\textbf{\textcolor{red}{④ 与虚轴交点：}}
+\[
+\begin{align*}
+D(s)&=s(s + 1)(s + 2)+K^{*}=s^{3}+3s^{2}+2s + K^{*}=0
+\end{align*}
+\]
+\textbf{\textcolor{red}{解法I：Routh}}：
+\[
+\begin{array}{c|cc}
+s^{3}&1&2\\
+s^{2}&3&K^{*}\\
+s^{1}&\frac{6 - K^{*}}{3}\\
+s^{0}&K^{*}
+\end{array}
+\]
+令$K^{*}=6$，$\begin{cases}3s^{2}+6 = 0\\s=\pm j\sqrt{2}\end{cases}$，$K^{*}<6$，$K^{*}>0$
+\textbf{\textcolor{red}{解法II}}：
+\[
+\begin{align*}
+D(j\omega)&=-j\omega^{3}-3\omega^{2}+j2\omega + K^{*}=0\\
+\begin{cases}
+\mathrm{Re}[D(j\omega)]=-3\omega^{2}+K^{*}=0\\
+\mathrm{Im}[D(j\omega)]=-\omega^{3}+2\omega = 0
+\end{cases}
+&\Rightarrow
+\begin{cases}
+\omega=\pm\sqrt{2}\\
+K^{*}=6
+\end{cases}
+\end{align*}
+\]
+稳定范围：$0<K<3$
+历次反馈：
+预留空间：20cm
+首次做题时间：2026-06-07
+----------------------------------------
+
+--- 第 8 张图：卢京潮讲义-例7-7 ---
+【豆包 AI】:
+学科：专业课
+书本：卢京潮讲义
+标题：卢京潮讲义-例7-7
+题干：系统结构图如图所示：
+（1）求当输入$r(t)=1(t)$时系统的响应$c_r(t)$；
+（2）求当干扰$n(t)=\delta(t)$时系统的响应$c_n(t)$；
+（3）求当初条件$\begin{cases} c(0)=-1 \\ c'(0)=0 \end{cases}$时系统的自由响应$c_0(t)$；
+（4）求在上述三个因素同时作用下系统的总输出$c(t)$；
+（5）求在上述三个因素同时作用下系统的总偏差$e(t)$。
+是否有图片：y
+图片路径：卢京潮讲义-例7-7
+掌握程度：*
+标签：错题、概念
+答案：（1）系统开环传递函数
+\[
+G(s) = \frac{2}{s(s+3)}, \quad K = \frac{2}{3}
+\]
+系统闭环传递函数为
+\[
+\Phi(s) = \frac{C(s)}{R(s)} = \frac{\frac{2}{s(s+3)}}{1 + \frac{2}{s(s+3)}} = \frac{2}{s(s+3)+2} = \frac{2}{s^2 + 3s + 2} = \frac{2}{(s+1)(s+2)}
+\]
+\[
+C_r(s) = \Phi(s)R(s) = \frac{2}{(s+1)(s+2)} \cdot \frac{1}{s} = \frac{2}{s(s+1)(s+2)} = \frac{C_0}{s} + \frac{C_1}{s+1} + \frac{C_2}{s+2}
+\]
+\[
+C_0 = \lim_{s \to 0} s \cdot C_r(s) = \lim_{s \to 0} \frac{2}{(s+1)(s+2)} = \frac{2}{2} = 1
+\]
+\[
+C_1 = \lim_{s \to -1} (s+1) \cdot C_r(s) = \lim_{s \to -1} \frac{2}{s(s+2)} = \frac{2}{-1} = -2
+\]
+\[
+C_2 = \lim_{s \to -2} (s+2) \cdot C_r(s) = \lim_{s \to -2} \frac{2}{s(s+1)} = \frac{2}{2} = 1
+\]
+\[
+C_r(s) = \frac{1}{s} - \frac{2}{s+1} + \frac{1}{s+2}
+\]
+\[
+c_r(t) = 1 - 2e^{-t} + e^{-2t}
+\]
+
+（2）干扰作用下系统的传递函数为
+\[
+\Phi_n(s) = \frac{C(s)}{N(s)} = \frac{\frac{1}{s+3}}{1 + \frac{2}{s(s+3)}} = \frac{s}{(s+1)(s+2)}
+\]
+\[
+C_n(s) = \Phi_n(s)N(s) = \frac{s}{(s+1)(s+2)} \cdot 1 = \frac{s}{(s+1)(s+2)} = \frac{C_{n1}}{s+1} + \frac{C_{n2}}{s+2}
+\]
+\[
+C_{n1} = \lim_{s \to -1} (s+1) \cdot C_n(s) = \lim_{s \to -1} \frac{s}{s+2} = \frac{-1}{1} = -1
+\]
+\[
+C_{n2} = \lim_{s \to -2} (s+2) \cdot C_n(s) = \lim_{s \to -2} \frac{s}{s+1} = \frac{-2}{-1} = 2
+\]
+\[
+C_n(s) = \frac{-1}{s+1} + \frac{2}{s+2}
+\]
+\[
+c_n(t) = -e^{-t} + 2e^{-2t}
+\]
+
+（3）
+\[
+\Phi(s) = \frac{C(s)}{R(s)} = \frac{2}{s^2 + 3s + 2}
+\]
+\[
+(s^2 + 3s + 2)C(s) = 2R(s)
+\]
+\[
+c'' + 3c' + 2c = 2r
+\]
+系统的齐次微分方程为：
+\[
+c'' + 3c' + 2c = 0
+\]
+\[
+\left[s^2 C(s) - s c(0) - c'(0)\right] + 3\left[s C(s) - c(0)\right] + 2C(s) = 0
+\]
+\[
+\left[s^2 + 3s + 2\right]C(s) + (s + 3) = 0
+\]
+\[
+C_0(s) = \frac{-(s + 3)}{s^2 + 3s + 2} = \frac{-(s + 3)}{(s+1)(s+2)} = \frac{C_{01}}{s+1} + \frac{C_{02}}{s+2}
+\]
+\[
+C_{01} = \lim_{s \to -1} (s+1) \cdot C_0(s) = \lim_{s \to -1} \frac{-(s + 3)}{s + 2} = -2
+\]
+\[
+C_{02} = \lim_{s \to -2} (s+2) \cdot C_0(s) = \lim_{s \to -2} \frac{-(s + 3)}{s + 1} = 1
+\]
+\[
+C_0(s) = \frac{-2}{s+1} + \frac{1}{s+2}
+\]
+\[
+c_0(t) = -2e^{-t} + e^{-2t}
+\]
+
+（4）
+\[
+c_r(t) = 1 - 2e^{-t} + e^{-2t}
+\]
+\[
+c_n(t) = -e^{-t} + 2e^{-2t}
+\]
+\[
+c_0(t) = -2e^{-t} + e^{-2t}
+\]
+\[
+c(t) = c_r(t) + c_n(t) + c_0(t) = 1 - 5e^{-t} + 4e^{-2t}
+\]
+\[
+C_r(s) = \Phi(s)R(s) = \frac{2}{s^2 + 3s + 2} \cdot \frac{1}{s} = \frac{2}{s(s+1)(s+2)}
+\]
+\[
+C_n(s) = \Phi_n(s)N(s) = \frac{s}{(s+1)(s+2)} \cdot 1 = \frac{s}{(s+1)(s+2)}
+\]
+\[
+C_0(s) = \frac{-(s + 3)}{s^2 + 3s + 2} = \frac{-(s + 3)}{(s+1)(s+2)}
+\]
+\[
+C_{r+n+0}(s) = C_r(s) + C_n(s) + C_0(s) = \frac{2 - s(s + 3) + s^2}{s(s+1)(s+2)} = \frac{-3s + 2}{s(s+1)(s+2)} = \frac{C_0}{s} + \frac{C_1}{s+1} + \frac{C_2}{s+2}
+\]
+\[
+C_0 = \lim_{s \to 0} \frac{-3s + 2}{(s+1)(s+2)} = 1
+\]
+\[
+C_1 = \lim_{s \to -1} \frac{-3s + 2}{s(s+2)} = -5
+\]
+\[
+C_2 = \lim_{s \to -2} \frac{-3s + 2}{s(s+1)} = 4
+\]
+\[
+C_{r+n+0}(s) = \frac{1}{s} - \frac{5}{s+1} + \frac{4}{s+2}
+\]
+\[
+c(t) = 1 - 5e^{-t} + 4e^{-2t}
+\]
+
+（5）
+\[
+e(t) = r(t) - c(t) = 5e^{-t} - 4e^{-2t}
+\]
+历次反馈：
+预留空间：20cm
+首次做题时间：2026-05-25
 ----------------------------------------

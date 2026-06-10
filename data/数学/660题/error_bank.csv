@@ -105,14 +105,14 @@ E + P_2P_1 &= \begin{bmatrix}1&0&0\\0&1&0\\0&0&1\end{bmatrix} + \begin{bmatrix}1
 &\left[\begin{array}{cc}1&-1\\-1&1\end{array}\right]^5 = \left(\left[\begin{array}{c}1\\-1\end{array}\right](1,-1)\right)^5 = 2^4\left[\begin{array}{cc}1&-1\\-1&1\end{array}\right] = \left[\begin{array}{cc}2^4&-2^4\\-2^4&2^4\end{array}\right].\\
 &\text{故而}，\boldsymbol{A}^5 = \left[\begin{array}{cccc}0&1&0&0\\1&0&0&0\\0&0&2^4&-2^4\\0&0&-2^4&2^4\end{array}\right].
 \end{align*}",,10cm,2026-06-02
-数学,660题,660题-371,已知$CA - AB = C - B$，其中$A = \begin{bmatrix}1&1&0\\1&1&0\\0&0&2\end{bmatrix}$，$B = \begin{bmatrix}2&3&1\\0&0&0\\0&0&0\end{bmatrix}$，则$C^5 = \underline{\quad\quad\quad}$.,n,660题-371,*,错题、粗心,"\begin{align*}
+数学,660题,660题-371,已知$CA - AB = C - B$，其中$A = \begin{bmatrix}1&1&0\\1&1&0\\0&0&2\end{bmatrix}$，$B = \begin{bmatrix}2&3&1\\0&0&0\\0&0&0\end{bmatrix}$，则$C^5 = \underline{\quad\quad\quad}$.,n,660题-371,*,错题、粗心、其他方法,"\begin{align*}
 &\text{由 }CA - AB = C - B\text{ 得 }CA - C = AB - B\text{ 即有 }C(A - E) = (A - E)B.\\
 &\text{又 }A - E = \begin{bmatrix}0&1&0\\1&0&0\\0&0&1\end{bmatrix}\text{ 可逆. 有 }C = (A - E)B(A - E)^{-1}\text{，故}\\
 &C^5 = (A - E)B^5(A - E)^{-1}\\
 &= \begin{bmatrix}0&1&0\\1&0&0\\0&0&1\end{bmatrix}\begin{bmatrix}2&3&1\\0&0&0\\0&0&0\end{bmatrix}^5\begin{bmatrix}0&1&0\\1&0&0\\0&0&1\end{bmatrix}^{-1}\\
 &= \begin{bmatrix}0&1&0\\1&0&0\\0&0&1\end{bmatrix}2^4\begin{bmatrix}2&3&1\\0&0&0\\0&0&0\end{bmatrix}\begin{bmatrix}0&1&0\\1&0&0\\0&0&1\end{bmatrix}\\
 &= \begin{bmatrix}0&0&0\\48&32&16\\0&0&0\end{bmatrix}.
-\end{align*}",,其他方法,2026-06-02
+\end{align*}",,9cm,2026-06-02
 数学,660题,660题-372,"设$A,B$都是$n$阶矩阵，且$A^{2}-AB = E$，则$r(AB - BA + 2A) = \underline{\quad\quad\quad}$.",n,660题-372,***,不简洁,"由于$A(A - B) = E$，且$A,A - B$均为$n$阶矩阵，故知$A$可逆且其逆是$A - B$，那么
 \[
 A(A - B) = (A - B)A = E.
@@ -164,3 +164,31 @@ B + 2E = \begin{bmatrix}2&1&-1&2\\0&1&2&3\\0&0&3&4\\0&0&0&4\end{bmatrix}
 A = \begin{bmatrix}1&2&3&4\\2&3&4&5\\3&4&5&6\\4&5&6&7\end{bmatrix} \to \begin{bmatrix}1&2&3&4\\1&1&1&1\\1&1&1&1\\1&1&1&1\end{bmatrix} \to \begin{bmatrix}1&2&3&4\\0&-1&-2&-3\\0&0&0&0\\0&0&0&0\end{bmatrix}
 \]
 所以$r(AB + 2A) = 2$.",,9cm,2026-06-03
+数学,660题,660题-389,"向量组$\boldsymbol{\alpha}_1=(2,1,3)^{\mathrm{T}},\boldsymbol{\alpha}_2=(1,2,1)^{\mathrm{T}},\boldsymbol{\alpha}_3=(3,3,4)^{\mathrm{T}},\boldsymbol{\alpha}_4=(5,1,8)^{\mathrm{T}},\boldsymbol{\alpha}_5=(0,0,2)^{\mathrm{T}}$的一个极大线性无关组是\underline{\quad\quad\quad}（答案不唯一）.",n,660题-389,***,不正规,"\[\boldsymbol{\alpha}_1,\boldsymbol{\alpha}_2,\boldsymbol{\alpha}_5\]
+对\([\boldsymbol{\alpha}_1,\boldsymbol{\alpha}_2,\boldsymbol{\alpha}_3,\boldsymbol{\alpha}_4,\boldsymbol{\alpha}_5]\)作初等行变换，有
+\[\begin{bmatrix}
+2 & 1 & 3 & 5 & 0\\
+1 & 2 & 3 & 1 & 0\\
+3 & 1 & 4 & 8 & 2
+\end{bmatrix}\to
+\begin{bmatrix}
+1 & 2 & 3 & 1 & 0\\
+2 & 1 & 3 & 5 & 0\\
+3 & 1 & 4 & 8 & 2
+\end{bmatrix}\to
+\begin{bmatrix}
+1 & 2 & 3 & 1 & 0\\
+0 & 1 & 1 & -1 & 0\\
+0 & 0 & 0 & 0 & 1
+\end{bmatrix},\]
+第一，二，五列组成的三阶子式不为\(0\)，故极大无关组可以是\(\boldsymbol{\alpha}_1,\boldsymbol{\alpha}_2,\boldsymbol{\alpha}_5\).",,6cm,2026-06-06
+数学,660题,660题-390,"设$n$维向量$\boldsymbol{\alpha}_1,\boldsymbol{\alpha}_2,\boldsymbol{\alpha}_3$满足$2\boldsymbol{\alpha}_1 - \boldsymbol{\alpha}_2 + 3\boldsymbol{\alpha}_3 = \boldsymbol{0}$，$\boldsymbol{\beta}$是任意$n$维向量，若$\boldsymbol{\beta} + \boldsymbol{\alpha}_1,\boldsymbol{\beta} + \boldsymbol{\alpha}_2,a\boldsymbol{\beta} + \boldsymbol{\alpha}_3$线性相关，则$a = \underline{\quad\quad\quad}$.",n,660题-390,***,不严谨,"【分析】$\boldsymbol{\beta} + \boldsymbol{\alpha}_1,\boldsymbol{\beta} + \boldsymbol{\alpha}_2,a\boldsymbol{\beta} + \boldsymbol{\alpha}_3$线性相关，则存在不全为零的数$k_1,k_2,k_3$，使得
+\[
+k_1(\boldsymbol{\beta} + \boldsymbol{\alpha}_1) + k_2(\boldsymbol{\beta} + \boldsymbol{\alpha}_2) + k_3(a\boldsymbol{\beta} + \boldsymbol{\alpha}_3) = \boldsymbol{0},
+\]
+整理有
+\[
+(k_1 + k_2 + k_3a)\boldsymbol{\beta} + (k_1\boldsymbol{\alpha}_1 + k_2\boldsymbol{\alpha}_2 + k_3\boldsymbol{\alpha}_3) = \boldsymbol{0}.
+\]
+因已知$2\boldsymbol{\alpha}_1 - \boldsymbol{\alpha}_2 + 3\boldsymbol{\alpha}_3 = \boldsymbol{0}$，且$\boldsymbol{\beta}$是任意向量，使得上式成立，只需取$k_1 = 2,k_2 = -1,k_3 = 3$，且令$\boldsymbol{\beta}$的系数为$0$，即$k_1 + k_2 + ak_3 = 2 - 1 + 3a = 0$，即$a = -\frac{1}{3}$.
+故答案为$-\frac{1}{3}$.",,6cm,2026-06-06

@@ -117,6 +117,139 @@ P_5&=-G_3G_4G_6,\quad \Delta_5 = 1\\
 P_6&=-G_6H_2G_2G_4,\quad \Delta_6 = 1\\
 \Phi(s)&=\frac{G_1G_2G_3G_4 + G_1G_2G_4 + G_2G_3G_4G_5 + G_2G_4G_5 - G_3G_4G_6 - G_2G_4G_6H_2}{1 - G_2H_2 + G_1G_2G_3G_4H_1 + G_1G_2G_4H_1}
 \end{align*}",,9cm,2026-05-20
+专业课,卢京潮讲义,卢京潮讲义-例7-7,"系统结构图如图所示：
+（1）求当输入$r(t)=1(t)$时系统的响应$c_r(t)$；
+（2）求当干扰$n(t)=\delta(t)$时系统的响应$c_n(t)$；
+（3）求当初条件$\begin{cases} c(0)=-1 \\ c'(0)=0 \end{cases}$时系统的自由响应$c_0(t)$；
+（4）求在上述三个因素同时作用下系统的总输出$c(t)$；
+（5）求在上述三个因素同时作用下系统的总偏差$e(t)$。",y,卢京潮讲义-例7-7,*,错题、概念,"（1）系统开环传递函数
+\[
+G(s) = \frac{2}{s(s+3)}, \quad K = \frac{2}{3}
+\]
+系统闭环传递函数为
+\[
+\Phi(s) = \frac{C(s)}{R(s)} = \frac{\frac{2}{s(s+3)}}{1 + \frac{2}{s(s+3)}} = \frac{2}{s(s+3)+2} = \frac{2}{s^2 + 3s + 2} = \frac{2}{(s+1)(s+2)}
+\]
+\[
+C_r(s) = \Phi(s)R(s) = \frac{2}{(s+1)(s+2)} \cdot \frac{1}{s} = \frac{2}{s(s+1)(s+2)} = \frac{C_0}{s} + \frac{C_1}{s+1} + \frac{C_2}{s+2}
+\]
+\[
+C_0 = \lim_{s \to 0} s \cdot C_r(s) = \lim_{s \to 0} \frac{2}{(s+1)(s+2)} = \frac{2}{2} = 1
+\]
+\[
+C_1 = \lim_{s \to -1} (s+1) \cdot C_r(s) = \lim_{s \to -1} \frac{2}{s(s+2)} = \frac{2}{-1} = -2
+\]
+\[
+C_2 = \lim_{s \to -2} (s+2) \cdot C_r(s) = \lim_{s \to -2} \frac{2}{s(s+1)} = \frac{2}{2} = 1
+\]
+\[
+C_r(s) = \frac{1}{s} - \frac{2}{s+1} + \frac{1}{s+2}
+\]
+\[
+c_r(t) = 1 - 2e^{-t} + e^{-2t}
+\]
+
+（2）干扰作用下系统的传递函数为
+\[
+\Phi_n(s) = \frac{C(s)}{N(s)} = \frac{\frac{1}{s+3}}{1 + \frac{2}{s(s+3)}} = \frac{s}{(s+1)(s+2)}
+\]
+\[
+C_n(s) = \Phi_n(s)N(s) = \frac{s}{(s+1)(s+2)} \cdot 1 = \frac{s}{(s+1)(s+2)} = \frac{C_{n1}}{s+1} + \frac{C_{n2}}{s+2}
+\]
+\[
+C_{n1} = \lim_{s \to -1} (s+1) \cdot C_n(s) = \lim_{s \to -1} \frac{s}{s+2} = \frac{-1}{1} = -1
+\]
+\[
+C_{n2} = \lim_{s \to -2} (s+2) \cdot C_n(s) = \lim_{s \to -2} \frac{s}{s+1} = \frac{-2}{-1} = 2
+\]
+\[
+C_n(s) = \frac{-1}{s+1} + \frac{2}{s+2}
+\]
+\[
+c_n(t) = -e^{-t} + 2e^{-2t}
+\]
+
+（3）
+\[
+\Phi(s) = \frac{C(s)}{R(s)} = \frac{2}{s^2 + 3s + 2}
+\]
+\[
+(s^2 + 3s + 2)C(s) = 2R(s)
+\]
+\[
+c'' + 3c' + 2c = 2r
+\]
+系统的齐次微分方程为：
+\[
+c'' + 3c' + 2c = 0
+\]
+\[
+\left[s^2 C(s) - s c(0) - c'(0)\right] + 3\left[s C(s) - c(0)\right] + 2C(s) = 0
+\]
+\[
+\left[s^2 + 3s + 2\right]C(s) + (s + 3) = 0
+\]
+\[
+C_0(s) = \frac{-(s + 3)}{s^2 + 3s + 2} = \frac{-(s + 3)}{(s+1)(s+2)} = \frac{C_{01}}{s+1} + \frac{C_{02}}{s+2}
+\]
+\[
+C_{01} = \lim_{s \to -1} (s+1) \cdot C_0(s) = \lim_{s \to -1} \frac{-(s + 3)}{s + 2} = -2
+\]
+\[
+C_{02} = \lim_{s \to -2} (s+2) \cdot C_0(s) = \lim_{s \to -2} \frac{-(s + 3)}{s + 1} = 1
+\]
+\[
+C_0(s) = \frac{-2}{s+1} + \frac{1}{s+2}
+\]
+\[
+c_0(t) = -2e^{-t} + e^{-2t}
+\]
+
+（4）
+\[
+c_r(t) = 1 - 2e^{-t} + e^{-2t}
+\]
+\[
+c_n(t) = -e^{-t} + 2e^{-2t}
+\]
+\[
+c_0(t) = -2e^{-t} + e^{-2t}
+\]
+\[
+c(t) = c_r(t) + c_n(t) + c_0(t) = 1 - 5e^{-t} + 4e^{-2t}
+\]
+\[
+C_r(s) = \Phi(s)R(s) = \frac{2}{s^2 + 3s + 2} \cdot \frac{1}{s} = \frac{2}{s(s+1)(s+2)}
+\]
+\[
+C_n(s) = \Phi_n(s)N(s) = \frac{s}{(s+1)(s+2)} \cdot 1 = \frac{s}{(s+1)(s+2)}
+\]
+\[
+C_0(s) = \frac{-(s + 3)}{s^2 + 3s + 2} = \frac{-(s + 3)}{(s+1)(s+2)}
+\]
+\[
+C_{r+n+0}(s) = C_r(s) + C_n(s) + C_0(s) = \frac{2 - s(s + 3) + s^2}{s(s+1)(s+2)} = \frac{-3s + 2}{s(s+1)(s+2)} = \frac{C_0}{s} + \frac{C_1}{s+1} + \frac{C_2}{s+2}
+\]
+\[
+C_0 = \lim_{s \to 0} \frac{-3s + 2}{(s+1)(s+2)} = 1
+\]
+\[
+C_1 = \lim_{s \to -1} \frac{-3s + 2}{s(s+2)} = -5
+\]
+\[
+C_2 = \lim_{s \to -2} \frac{-3s + 2}{s(s+1)} = 4
+\]
+\[
+C_{r+n+0}(s) = \frac{1}{s} - \frac{5}{s+1} + \frac{4}{s+2}
+\]
+\[
+c(t) = 1 - 5e^{-t} + 4e^{-2t}
+\]
+
+（5）
+\[
+e(t) = r(t) - c(t) = 5e^{-t} - 4e^{-2t}
+\]",,20cm,2026-05-25
 专业课,卢京潮讲义,卢京潮讲义-例8-1,系统如图所示，现采用负反馈方式，欲将系统调节时间减小到原来的$0.1$倍，且保证原放大倍数不变，试确定参数$K_{0}$和$K_{H}$的取值。已知$G(s)=\frac{10}{0.2s + 1}$，原系统中$T = 0.2$，$K = 10$，闭环系统应满足$T^{*}=0.1T = 0.02$，$K^{*}=K = 10$。,y,卢京潮讲义-例8-1,*,错题、概念,"依题意，$G(s)=\frac{10}{0.2s + 1}$，$\begin{cases}T = 0.2\\K = 10\end{cases}$，闭环系统应满足$\begin{cases}T^{*}=0.1T = 0.02\\K^{*}=K = 10\end{cases}$。
 \begin{align*}
 \Phi(s)&=\frac{K_{O}G(s)}{1 + K_{H}G(s)}\\
@@ -205,3 +338,186 @@ D(\widehat{s})&=(\widehat{s}-1)^3 + 40(\widehat{s}-1)^2 + 100(\widehat{s}-1) + 1
 \end{array}
 \]
 由\(\frac{912 - 100K}{37}>0\)得\(K < 9.12\)；由\(100K - 61>0\)得\(K > 0.61\)。",,14cm,2026-06-04
+专业课,卢京潮讲义,卢京潮讲义-例11-3,已知系统结构图如图所示，输入$r(t)=2t + 4t^2$，求系统的稳态误差。其中$G(s)=\frac{K_1(Ts + 1)}{s^2(s + a)}$，$\begin{cases}K = K_1/a\\v = 2\end{cases}$，$\Phi(s)=\frac{K_1}{s^2(s + a)+K_1(Ts + 1)}$，$D(s)=s^3 + as^2 + K_1Ts + K_1 = 0$。,y,卢京潮讲义-例11-3,*,错题、求稳先判稳,"首先列出劳斯表：
+\[
+\begin{array}{c|ccc}
+s^3 & 1 & K_1T & \\
+s^2 & a & K_1 & \\
+s^1 & \frac{(aT - 1)K_1}{a} & 0 & \\
+s^0 & K_1 & &
+\end{array}
+\]
+由劳斯判据可得：$a>0$，$aT>1$，$K_1>0$。
+对于$r_1(t)=2t$，$e_{ss1}=0$；对于$r_2(t)=4t^2 = 8\cdot\frac{1}{2}t^2$，$e_{ss2}=\frac{A}{K}=\frac{8a}{K_1}$。
+所以$e_{ss}=e_{ss1}+e_{ss2}=\frac{8a}{K_1}$。",,10cm,2026-06-06
+专业课,卢京潮讲义,卢京潮讲义-例11-4,已知系统结构图，输入$r(t)=At$，求$G_c(s)$，使稳态误差为零。系统中$G(s)=\frac{K}{s(Ts + 1)}$，$D(s)=Ts^2 + s + K = 0$。,y,卢京潮讲义-例11-4,*,错题,"\begin{align*}
+\Phi_e(s)&=\frac{E(s)}{R(s)}=\frac{1 - \frac{KG_c(s)}{s(Ts + 1)}}{1 + \frac{K}{s(Ts + 1)}}=\frac{s(Ts + 1) - KG_c(s)}{s(Ts + 1) + K}\\
+e_{ss}&=\lim_{s \to 0} s\Phi_e(s)\frac{A}{s^2}=\lim_{s \to 0}\frac{A\left[sT + 1 - \frac{K}{s}G_c(s)\right]}{s(Ts + 1) + K}=\frac{A\left[1 - \frac{K}{s}G_c(s)\right]}{K}=0
+\end{align*}
+解得$G_c(s)=\frac{s}{K}$。",,9cm,2026-06-06
+专业课,卢京潮讲义,卢京潮讲义-例11-6,已知系统结构图，当$r(t)=t$时，要求$e_{ss}<0.1$，求$K$的范围。其中$G(s)=\frac{K(0.6s + 1)}{s(s + 1)(2s + 1)}$。,y,卢京潮讲义-例11-6,*,错题、计算,"首先，由$r(t)=t$，对于该系统$v = 1$，$e_{ss}=\frac{1}{K}<0.1$，解得$K>10$。
+然后，求系统特征方程$D(s)=s(s + 1)(2s + 1)+K(0.6s + 1)=2s^{3}+3s^{2}+(1 + 0.6K)s + K = 0$。
+列出劳斯表：
+\begin{align*}
+s^{3}&:2\quad 1 + 0.6K\\
+s^{2}&:3\quad K\\
+s^{1}&:\frac{3(1 + 0.6K)-2K}{3}\quad 0\\
+s^{0}&:K
+\end{align*}
+由$3 - 0.2K>0$，解得$K<15$，由$K>0$，综合可得$10<K<15$。",,10cm,2026-06-06
+专业课,卢京潮讲义,卢京潮讲义-习12-1-12,"稳态速度误差的正确含义为（$A$为常值）：（  ）
+(A) $r(t)=A*1(t)$时，输出速度与输入速度之间的稳态误差
+(B) $r(t)=A*1(t)$时，输出位置与输入位置之间的稳态误差
+(C) $r(t)=A*t$时，输出位置与输入位置之间的稳态误差
+(D) $r(t)=A*t$时，输出速度与输入速度之间的稳态误差",y,卢京潮讲义-习12-1-12,*,错题,C,,1cm,2026-06-07
+专业课,卢京潮讲义,卢京潮讲义-习12-1-9,"二阶系统的闭环增益加大（  ）
+(A) 快速性越好
+(B) 超调量越大
+(C) 峰值时间提前
+(D) 对动态性能无影响",n,卢京潮讲义-习12-1-9,*,错题,D,,1cm,2026-06-07
+专业课,卢京潮讲义,卢京潮讲义-习12-2-2,"某系统的开环传递函数为$G(s)=\frac{K}{s(T_1s + 1)(T_2s + 1)}$，则称该系统是（  ）
+(A) I型系统
+(B) II型系统
+(C) 二阶系统
+(D) 三阶系统
+(E) 一阶无差系统",n,卢京潮讲义-习12-2-2,*,错题,无,,1cm,2026-06-07
+专业课,卢京潮讲义,卢京潮讲义-习12-2-3,"提高输入作用下控制系统精度的主要措施有（  ）
+(A) 增大开环增益
+(B) 加比例-微分控制
+(C) 增大系统的型别
+(D) 加测速反馈
+(E) 对干扰进行补偿",n,卢京潮讲义-习12-2-3,*,错题,AC,,1cm,2026-06-07
+专业课,卢京潮讲义,卢京潮讲义-例12-2,"系统结构图如图所示。
+(1) $K_t=0$时系统的性能？
+(2) $K_t$变大时，$\sigma \%$，$t_s$变化趋势？$\xi = 0.707$时，$\sigma \%$，$t_s=$？
+(3) $K_t$变大时，$r(t)=t$，$e_{ss}$变化趋势？$\xi = 0.707$时，$e_{ss}=$？",y,卢京潮讲义-例12-2,*,错题,"(1) $K_t = 0$时，
+\begin{align*}
+G(s)&=\frac{100}{s^2}\\
+\Phi(s)&=\frac{100}{s^2 + 100}\\
+D(s)&=s^2 + 100 = 0
+\end{align*}
+系统结构不稳定！
+(2) $K_t > 0$，
+\begin{align*}
+G(s)&=\frac{100}{s(s + 10K_t)}\\
+\Phi(s)&=\frac{100}{s^2 + 10K_ts + 100}\\
+K_t&<2,\ \xi<1\\
+K&=\frac{10}{K_t}\\
+v&=1\\
+\omega_n&=\sqrt{100}=10\\
+\xi&=\frac{10K_t}{2\omega_n}=\frac{K_t}{2}\\
+K_t&\uparrow\Rightarrow\xi=\frac{K_t}{2}\uparrow\Rightarrow\begin{cases}\sigma\% \downarrow\\t_s = 3.5/\xi\omega_n\downarrow\end{cases}\\
+K_t&\geq2,\ \xi\geq1,\ K_t\uparrow\Rightarrow\begin{cases}\sigma\% = 0\\t_s\uparrow\end{cases}\\
+\xi&=\frac{K_t}{2}=0.707\Rightarrow\begin{cases}K_t = 1.414\\\sigma\% = 5\%,\ t_s=\frac{3.5}{5K_t}=0.495\end{cases}
+\end{align*}
+(3) $G(s)=\frac{100}{s(s + 10K_t)}$，
+\begin{align*}
+K&=\frac{10}{K_t}\\
+v&=1\\
+K&=10/K_t\\
+K_t&\uparrow\Rightarrow e_{ss}=\frac{1}{K}=\frac{K_t}{10}\uparrow
+\end{align*}",,15cm,2026-06-06
+专业课,卢京潮讲义,卢京潮讲义-例12-4,"系统结构图如图所示，(1)确定$K_1$，$K_2$，配置极点于$\lambda_{1,2}=-5\pm j5$；(2)设计$G_1(s)$，使$r(t)=t$作用下$e_{ssr}=0$；(3)设计$G_2(s)$，使$n(t)$作用下$e_n(t)=0$。",y,卢京潮讲义-例12-4,*,错题,"(1) \begin{align*}
+G(s)&=\frac{K_1(K_2s + 1)}{s(s + 1)}\quad\left\{
+\begin{array}{l}
+K = K_1\\
+\nu = 1
+\end{array}
+\right.\\
+D(s)&=s^2+(1 + K_1K_2)s + K_1 = 0\quad K_1>0, K_2>0\\
+D(s)&=s^2+(1 + K_1K_2)s + K_1=(s + 5 - j5)(s + 5 + j5)=s^2 + 10s + 50\\
+\left\{
+\begin{array}{l}
+K_1 = 50\\
+1 + K_1K_2 = 10
+\end{array}
+\right.&\Rightarrow\left\{
+\begin{array}{l}
+K_1 = 50\\
+K_2 = 0.18
+\end{array}
+\right.
+\end{align*}
+(2) \begin{align*}
+\Phi_e(s)&=\frac{E(s)}{R(s)}=\frac{1-\frac{K_2s + 1}{s}G_1(s)}{1+\frac{K_1(K_2s + 1)}{s(s + 1)}}=\frac{(s + 1)[s-(K_2s + 1)G_1(s)]}{s(s + 1)+K_1(K_2s + 1)}\\
+e_{ss}&=\lim_{s\rightarrow0}s\frac{1}{s^2}\Phi_e(s)=\lim_{s\rightarrow0}\frac{(s + 1)[1-\frac{K_2s + 1}{s}G_1(s)]}{s^2+(1 + K_1K_2)s + K_1}\equiv0\quad G_1(s)=\frac{s}{K_2s + 1}
+\end{align*}
+(3) \begin{align*}
+\Phi_{en}(s)&=\frac{E(s)}{N(s)}=\frac{-(K_2s + 1)+\frac{K_2s + 1}{s}G_2(s)}{1+\frac{K_1(K_2s + 1)}{s(s + 1)}}=\frac{-(K_2s + 1)(s + 1)[s - G_2(s)]}{s(s + 1)+K_1(K_2s + 1)}\equiv0\quad G_2(s)=s
+\end{align*}",,17cm,2026-06-06
+专业课,卢京潮讲义,卢京潮讲义-例13-3,某单位反馈系统的开环传递函数为$G(s)=\frac{K^*(s + 2)}{s(s + 1)}$，$K^*=0\to\infty$，证明复平面的根轨迹为圆弧。,y,卢京潮讲义-例13-3,*,错题,"\begin{align*}
+G(s)&=\frac{K^*(s + 2)}{s(s + 1)}\\
+D(s)&=s(s + 1)+K^*(s + 2)=s^2+(1 + K^*)s + 2K^*\\
+s_{1,2}&=\frac{-(1 + K^*)\pm\sqrt{(1 + K^*)^2 - 8K^*}}{2}\\
+&=\frac{-(1 + K^*)\pm j\sqrt{8K^*-(1 + K^*)^2}}{2}=\sigma\pm j\omega\\
+\sigma&=\frac{-(1 + K^*)}{2}\Rightarrow K^*=-2\sigma - 1\\
+\omega^2&=\frac{8K^*-(1 + K^*)^2}{4}=\frac{-8(2\sigma + 1)-4\sigma^2}{4}=-\sigma^2 - 4\sigma - 2\\
+\sigma^2 + 4\sigma + 4+\omega^2&=2\\
+(\sigma + 2)^2+\omega^2&=\sqrt{2}^2\\
+\Delta&=(1 + K^*)^2 - 8K^*=K^{*2}-6K^* + 1 = 0\\
+\begin{cases}
+d_1=-0.5858\\
+d_2=-3.4142
+\end{cases}
+\begin{cases}
+K_{d_1}^*=0.1716\\
+K_{d_2}^*=5.828
+\end{cases}
+\end{align*}",,13cm,2026-06-07
+专业课,卢京潮讲义,卢京潮讲义-例14-2,"系统结构图如图所示。
+（1）绘制当$K^{*}=0\rightarrow\infty$时系统的根轨迹；
+（2）当$\mathrm{Re}[\lambda_{1}]= -1$时，$\lambda_{3}=$?",y,卢京潮讲义-例14-2,*,错题、根之和判断分离点与趋近趋势,"(1) \(G(s)=\frac{K^{*}(s + 2)}{s(s + 1)(s + 4)}\)，\(\begin{cases}K = K^{*}/2\\v = 1\end{cases}\)
+① 实轴上的根轨迹：\([-4, -2]\)，\([-1, 0]\)
+② 渐近线：\(\begin{cases}\sigma_{a}=\frac{0 - 1 - 4 + 2}{3 - 1}=-\frac{3}{2}\\\varphi_{a}=\frac{(2k + 1)\pi}{3 - 1}=\pm90^{\circ}\end{cases}\)
+用根之和法则分析绘制根轨迹：
+(2) \(a_{n - 1}=0 - 1 - 4=-5=\lambda_{1}+\lambda_{2}+\lambda_{3}=2(-1)+\lambda_{3}\)
+\(\lambda_{3}=-5 + 2=-3\)",,8cm,2026-06-07
+专业课,卢京潮讲义,卢京潮讲义-例14-3,单位反馈系统的开环传递函数为$G(s)=\frac{K^{*}}{s(s + 1)(s + 2)}$，绘制根轨迹。,y,卢京潮讲义-例14-3,*,错题、分离点,"\[
+G(s)=\frac{K^{*}}{s(s + 1)(s + 2)}
+\begin{cases}
+K = K^{*}/2\\
+v = 1
+\end{cases}
+\]
+\textbf{\textcolor{red}{① 实轴上的根轨迹：}} $(-\infty, -2], [-1, 0]$
+\textbf{\textcolor{red}{② 渐近线：}}
+\[
+\begin{cases}
+\sigma_{a}=\frac{0 - 1 - 2}{3}=-1\\
+\varphi_{a}=\frac{(2k + 1)\pi}{3}=\pm60^{\circ}, 180^{\circ}
+\end{cases}
+\]
+\textbf{\textcolor{red}{③ 分离点：}}
+\begin{align*}
+\frac{1}{d}+\frac{1}{d + 1}+\frac{1}{d + 2}&=0\\
+3d^{2}+6d + 2&=0
+\end{align*}
+解根：$\begin{cases}d_{1}=-0.423 \ \checkmark\\d_{2}=-1.577 \ \times\end{cases}$，$K_{d}=|d||d + 1||d + 2|\big|_{d=-0.423}=0.385$
+\textbf{\textcolor{red}{④ 与虚轴交点：}}
+\begin{align*}
+D(s)&=s(s + 1)(s + 2)+K^{*}=s^{3}+3s^{2}+2s + K^{*}=0
+\end{align*}
+\textbf{\textcolor{red}{解法I：Routh}}：
+\[
+\begin{array}{c|cc}
+s^{3}&1&2\\
+s^{2}&3&K^{*}\\
+s^{1}&\frac{6 - K^{*}}{3}\\
+s^{0}&K^{*}
+\end{array}
+\]
+令$K^{*}=6$，$\begin{cases}3s^{2}+6 = 0\\s=\pm j\sqrt{2}\end{cases}$，$K^{*}<6$，$K^{*}>0$
+\textbf{\textcolor{red}{解法II}}：
+\begin{align*}
+D(j\omega)&=-j\omega^{3}-3\omega^{2}+j2\omega + K^{*}=0\\
+\begin{cases}
+\mathrm{Re}[D(j\omega)]=-3\omega^{2}+K^{*}=0\\
+\mathrm{Im}[D(j\omega)]=-\omega^{3}+2\omega = 0
+\end{cases}
+&\Rightarrow
+\begin{cases}
+\omega=\pm\sqrt{2}\\
+K^{*}=6
+\end{cases}
+\end{align*}
+稳定范围：$0<K<3$",,20cm,2026-06-07
