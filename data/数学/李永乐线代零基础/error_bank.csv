@@ -79,7 +79,7 @@ AB&=(E - \alpha\alpha^{\mathrm{T}})(E + 2\alpha\alpha^{\mathrm{T}})\\
 (\boldsymbol{A}-2\boldsymbol{E})(\boldsymbol{A}+3\boldsymbol{E})=\boldsymbol{A}^{2}+\boldsymbol{A}-6\boldsymbol{E}=-4\boldsymbol{E}
 \]
 故$(\boldsymbol{A}-2\boldsymbol{E})^{-1}=-\frac{\boldsymbol{A}+3\boldsymbol{E}}{4}$.",,7cm,2026-05-21
-数学,李永乐线代零基础,李永乐线代零基础-例2-17,设$A$是$n$阶矩阵，证明（1）若$|A| = 0$，则$|A^{*}| = 0$；（2）$|A^{*}| = |A|^{n - 1}$。,n,李永乐线代零基础-例2-17,*,错题、想得久,"【证明】（1）由$AA^{*} = A^{*}A = |A|E$，如果$|A| = 0$，则$AA^{*} = O$ \[ \text{用反证法，假设 }|A^{*}| \neq 0\text{，则}A^{*}\text{ 可逆，用}(A^{*})^{-1}\text{ 右乘①，得 }A = O.\Rightarrow A_{ij} = 0,\forall i,j\Rightarrow A^{*} = O.\text{ 这与}A^{*}\text{ 可逆相矛盾.} \] 故当$|A| = 0$时必有$|A^{*}| = 0$. （2）分类讨论 若$|A| = 0$，则$|A^{*}| = 0$，得证. 若$|A| \neq 0$，由$AA^{*} = A^{*}A = |A|E$，$|A||A^{*}| = |AA^{*}| = ||A|E| = |A|^{n}$，故$|A^{*}| = |A|^{n - 1}$.",,12cm,2026-05-21
+数学,李永乐线代零基础,李永乐线代零基础-例2-17,设$A$是$n$阶矩阵，证明（1）若$|A| = 0$，则$|A^{*}| = 0$；（2）$|A^{*}| = |A|^{n - 1}$。,n,李永乐线代零基础-例2-17,*,错题、想得久,"【证明】（1）由$AA^{*} = A^{*}A = |A|E$，如果$|A| = 0$，则$AA^{*} = O$ \[ \text{用反证法，假设 }|A^{*}| \neq 0\text{，则}A^{*}\text{ 可逆，用}(A^{*})^{-1}\text{ 右乘①，得 }A = O.\Rightarrow A_{ij} = 0,\forall i,j\Rightarrow A^{*} = O.\text{ 这与}A^{*}\text{ 可逆相矛盾.} \] 故当$|A| = 0$时必有$|A^{*}| = 0$. （2）分类讨论 若$|A| = 0$，则$|A^{*}| = 0$，得证. 若$|A| \neq 0$，由$AA^{*} = A^{*}A = |A|E$，$|A||A^{*}| = |AA^{*}| = ||A|E| = |A|^{n}$，故$|A^{*}| = |A|^{n - 1}$.",2026-06-11:对,12cm,2026-05-21
 数学,李永乐线代零基础,李永乐线代零基础-例2-18,已知$\boldsymbol{A}$可逆，证明$\boldsymbol{A}^*$可逆，且$(\boldsymbol{A}^*)^{-1} = (\boldsymbol{A}^{-1})^*$。,n,李永乐线代零基础-例2-18,*,错题,"\textbf{\textcolor{red}{方法一：}}
 因为$\boldsymbol{A}$可逆，有$|\boldsymbol{A}| \neq 0$。
 由$\boldsymbol{A}\boldsymbol{A}^* = \boldsymbol{A}^*\boldsymbol{A} = |\boldsymbol{A}|\boldsymbol{E}$，有
@@ -99,7 +99,7 @@ AB&=(E - \alpha\alpha^{\mathrm{T}})(E + 2\alpha\alpha^{\mathrm{T}})\\
 所以
 \[
 (\boldsymbol{A}^*)^{-1} = (\boldsymbol{A}^{-1})^* = \frac{1}{|\boldsymbol{A}|}\boldsymbol{A}
-\]",,6cm,2026-05-21
+\]",2026-06-11:对,6cm,2026-05-21
 数学,李永乐线代零基础,李永乐线代零基础-例2-19,已知$\boldsymbol{A}$是$3$阶矩阵，$|\boldsymbol{A}| = \frac{1}{2}$，求$|(2\boldsymbol{A})^{-1} - 5\boldsymbol{A}^*|$.,n,李永乐线代零基础-例2-19,***,想得久、公式不熟,"\textbf{\textcolor{red}{方法一}}：因为$|\boldsymbol{A}| \neq 0$，所以$\boldsymbol{A}$可逆. 由$(k\boldsymbol{A})^{-1} = \frac{1}{k}\boldsymbol{A}^{-1}$，有
 \[
 (2\boldsymbol{A})^{-1} = \frac{1}{2}\boldsymbol{A}^{-1}
@@ -221,7 +221,7 @@ $\Rightarrow A\boldsymbol{\beta}_1 = \boldsymbol{0},A\boldsymbol{\beta}_2 = \bol
 \boldsymbol{A}&=\begin{bmatrix}1& -1& -1& 3\\2& -1& -3& 1\\3& 2& -5& 2\end{bmatrix}\to\begin{bmatrix}1& -1& -1& 3\\0& 1& -1& -5\\0& 5& -2& -7\end{bmatrix}\\
 &\to\begin{bmatrix}1& 0& -2& -2\\0& 1& -1& -5\\0& 0& 3& 18\end{bmatrix}\to\begin{bmatrix}1& 0& -2& -2\\0& 1& -1& -5\\0& 0& 1& 6\end{bmatrix}\\
 &\to\begin{bmatrix}1& 0& 0& 10\\0& 1& 0& 1\\0& 0& 1& 6\end{bmatrix}
-\end{align*}",,5cm,2026-05-22
+\end{align*}",2026-06-13:对,5cm,2026-05-22
 数学,李永乐线代零基础,李永乐线代零基础-例3-11,设$AB = A + 2B$，且$A=\begin{bmatrix}3&0&1\\1&1&0\\0&1&4\end{bmatrix}$，求$B$。,n,李永乐线代零基础-例3-11,*,错题、粗心,"由$AB = A + 2B$，有$AB - 2B = A$，有$(A - 2E)B = A$。
 又$A - 2E=\begin{bmatrix}1&0&1\\1&-1&0\\0&1&2\end{bmatrix}$可逆，故$B = (A - 2E)^{-1}A$。
 用初等行变换的方法求$B$：
@@ -459,7 +459,7 @@ BA^{*} = \begin{bmatrix}0&1&0\\1&0&0\\0&0&1\end{bmatrix}AA^{*} = |A|\begin{bmatr
 -1&1&-1\\
 1&0&0\\
 1&0&1
-\end{bmatrix}$.",,9cm,2026-05-24
+\end{bmatrix}$.",2026-06-11:半对、求矩阵方程先判断A可逆,9cm,2026-05-24
 数学,李永乐线代零基础,李永乐线代零基础-例4-11,"设$A,B$均为3阶矩阵，且$AB = C$. 证明：$C$的列向量可由$A$的列向量线性表出. 若$B$可逆，则$C$和$A$的列向量组等价.",n,李永乐线代零基础-例4-11,***,不简洁,"设$A = [\alpha_1,\alpha_2,\alpha_3],C = [\gamma_1,\gamma_2,\gamma_3],B = [b_{ij}]$.
 由$AB = C$有
 \[
@@ -713,7 +713,7 @@ $\begin{pmatrix}x_1\\x_5\end{pmatrix}$分别为$\begin{pmatrix}-3\\0\end{pmatrix
 1\\
 7
 \end{pmatrix}
-\]",,15cm,2026-05-26
+\]",2026-06-13:错、粗心、其他方法,15cm,2026-05-26
 数学,李永乐线代零基础,李永乐线代零基础-例4-29,"已知齐次方程组$\begin{cases}ax_1 + x_2 + x_3 = 0,\\x_1 + ax_2 + x_3 = 0,\\x_1 + x_2 + ax_3 = 0\end{cases}$有非零解，求$a$的值并求方程组的通解。",n,李永乐线代零基础-例4-29,*,错题、疏忽,"$\boldsymbol{Ax} = \boldsymbol{0}$有非零解$\Leftrightarrow r(\boldsymbol{A}) < n\Leftrightarrow |\boldsymbol{A}| = 0$.
 \[
 |\boldsymbol{A}| =
@@ -1022,7 +1022,7 @@ A(A\alpha) = A(\lambda\alpha)=\lambda A\alpha=\lambda^{2}\alpha.
 \[
 \lambda_1 - \lambda = 0,\lambda_2 - \lambda = 0.
 \]
-于是$\lambda_1 = \lambda = \lambda_2$，与题设矛盾. 故$\boldsymbol{\alpha}_1 + \boldsymbol{\alpha}_2$不是$\boldsymbol{A}$的特征向量.",,10cm,2026-05-30
+于是$\lambda_1 = \lambda = \lambda_2$，与题设矛盾. 故$\boldsymbol{\alpha}_1 + \boldsymbol{\alpha}_2$不是$\boldsymbol{A}$的特征向量.",2026-06-12:对,10cm,2026-05-30
 数学,李永乐线代零基础,李永乐线代零基础-例5-18,已知矩阵$\boldsymbol{A}=\begin{bmatrix}1&-2&-4\\-2&x&-2\\-4&-2&1\end{bmatrix}$和$\boldsymbol{B}=\begin{bmatrix}5&0&0\\0&y&0\\0&0&-4\end{bmatrix}$相似，求$x$和$y$。,n,李永乐线代零基础-例5-18,*,错题、粗心、其他方法,"\textbf{\textcolor{red}{方法一}}：由$\boldsymbol{A}\sim\boldsymbol{B}$有$\sum a_{ii}=\sum b_{ii}$，$|\boldsymbol{A}| = |\boldsymbol{B}|$，即
 \[
 \begin{cases}
