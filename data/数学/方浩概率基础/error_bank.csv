@@ -1,0 +1,210 @@
+学科,书本,标题,题干,是否有图片,图片路径,掌握程度,标签,答案,历次反馈,预留空间,首次做题时间
+数学,方浩概率基础,方浩概率基础-习1-10,"某人忘记了银行卡密码的最后一位数字，于是他随机地输入，假设输入过的数字将不再重复，求下列事件的概率：
+(1) 输入不超过3次就输入正确；
+(2) 输入3次才输入正确.",n,方浩概率基础-习1-10,*,错题、概念搞混,"设$A_{i}=\left\{第i次输入时输入正确\right\},i = 1,2,3$.
+(1) 输入不超过3次就输入正确可表示为$A_{1}+\overline{A_{1}}A_{2}+\overline{A_{1}}\overline{A_{2}}A_{3}$，
+故
+\begin{align*}
+P(A_{1}+\overline{A_{1}}A_{2}+\overline{A_{1}}\overline{A_{2}}A_{3})&=P(A_{1})+P(\overline{A_{1}}A_{2})+P(\overline{A_{1}}\overline{A_{2}}A_{3})\\
+&=\frac{1}{10}+P(\overline{A_{1}})P(A_{2}|\overline{A_{1}})+P(\overline{A_{1}})P(\overline{A_{2}}|\overline{A_{1}})P(A_{3}|\overline{A_{1}}\overline{A_{2}})\\
+&=\frac{1}{10}+\frac{9}{10}\times\frac{1}{9}+\frac{9}{10}\times\frac{8}{9}\times\frac{1}{8}=\frac{3}{10}.
+\end{align*}
+(2) 第3次输入才输入正确可表示为积事件$\overline{A_{1}}\overline{A_{2}}A_{3}$，于是所求为
+\[
+P(\overline{A_{1}}\overline{A_{2}}A_{3})=P(\overline{A_{1}})P(\overline{A_{2}}|\overline{A_{1}})P(A_{3}|\overline{A_{1}}\overline{A_{2}})=\frac{9}{10}\times\frac{8}{9}\times\frac{1}{8}=\frac{1}{10}.
+\]",,7cm,2026-06-18
+数学,方浩概率基础,方浩概率基础-习1-11,"已知每天登录某网站的人数服从参数为$\lambda$的泊松分布，即$P\{X = k\} = \frac{\lambda^k}{k!}e^{-\lambda}, k = 0, 1, 2, \cdots$，而登录该网站的人相互独立地以概率$p$打开某网页，求恰有$k$个人打开网页的概率。",n,方浩概率基础-习1-11,*,错题,"设$X = \{登录某网站的人数\}$，$Y = \{打开某网页的人数\}$，显然，随机试验由两阶段组成，第一阶段的两两互不相容的结果$A_i = \{X = i\}(i = 0, 1, 2, \cdots)$组成完备事件组，第二阶段关注的结果是$B = \{Y = k\}, k = 0, 1, 2, \cdots, X$，则
+\begin{align*}
+P(A_n) &= P\{X = n\} = \frac{\lambda^n}{n!}e^{-\lambda},\\
+P(B\mid A_n) &= P\{Y = k\mid X = n\} = C_n^k p^k(1 - p)^{n - k}, k = 0, 1, 2, \cdots, n,\\
+P(B) &= P\{Y = k\} = \sum_{n = 0}^{\infty}P(A_n)P(B\mid A_n) = \sum_{n = 0}^{\infty}P(A_n)C_n^k p^k(1 - p)^{n - k}.
+\end{align*}
+注意到$n < k$时，$P(B\mid A_n) = P\{Y = k\mid X = n\} = 0$，则
+\begin{align*}
+P(B) &= \sum_{n = k}^{\infty}\frac{\lambda^n}{n!}e^{-\lambda}C_n^k p^k(1 - p)^{n - k} = \frac{p^k e^{-\lambda}}{k!}\sum_{n = k}^{\infty}\frac{\lambda^n(1 - p)^{n - k}}{(n - k)!}\\
+&= \frac{(p\lambda)^k e^{-\lambda}}{k!}\sum_{n = k}^{\infty}\frac{[\lambda(1 - p)]^{n - k}}{(n - k)!} = \frac{(\lambda p)^k e^{-\lambda}}{k!}e^{\lambda(1 - p)}\\
+&= \frac{(\lambda p)^k}{k!}e^{-\lambda p}, k = 0, 1, 2, \cdots.
+\end{align*}",,14cm,2026-06-18
+数学,方浩概率基础,方浩概率基础-习1-12,在射击训练中，命中靶心的概率为$p$，记事件$A = \{第3次命中之前未命中4次\}$，$B = \{第10次命中之前至多未命中2次\}$。(1)求$P(A)$，$P(B)$；(2)先进行$n$次射击，求在没有全部“未命中”的条件下，“命中”不止一次的概率$\alpha$。,n,方浩概率基础-习1-12,*,错题、术语分不清,"(1) 该问题是独立重复试验问题，属于伯努利概型.
+事件$A$为“第3次命中之前未命中4次”，即“共射击了7次，最后一次命中，而前6次命中2次”；$B$为“第10次命中之前至多未命中2次”，设$B_{i}$为“第10次命中之前未命中$i$次”，则
+\begin{align*}
+P(A) &= C_{6}^{2}p^{2} \cdot (1 - p)^{4} \cdot p,\\
+P(B_{0}) &= C_{10}^{10}p^{10} = p^{10},\\
+P(B_{1}) &= C_{10}^{9}p^{9} \cdot (1 - p) \cdot p = 10p^{10}(1 - p),\\
+P(B_{2}) &= C_{11}^{9}p^{9} \cdot (1 - p)^{2} \cdot p = 55p^{10}(1 - p)^{2},
+\end{align*}
+故
+\begin{align*}
+P(B) &= P(B_{0}) + P(B_{1}) + P(B_{2})\\
+&= p^{10} + 10p^{10}(1 - p) + 55p^{10}(1 - p)^{2}\\
+&= (66 - 120p + 55p^{2})p^{10}.
+\end{align*}
+(2) 设$X$表示“$n$次射击中命中的次数”，则
+\begin{align*}
+\alpha &= P\{X > 1 \mid X \geqslant 1\} = \frac{P\{X > 1, X \geqslant 1\}}{P\{X \geqslant 1\}} = \frac{P\{X > 1\}}{P\{X \geqslant 1\}}\\
+&= \frac{1 - P\{X \leqslant 1\}}{1 - P\{X < 1\}} = \frac{1 - P\{X = 1\} - P\{X = 0\}}{1 - P\{X = 0\}}\\
+&= 1 - \frac{np(1 - p)^{n - 1}}{1 - (1 - p)^{n}}.
+\end{align*}",,16cm,2026-06-18
+数学,方浩概率基础,方浩概率基础-习1-5,"设$A,B$为随机事件，且$P(B)>0,P(A|B)=1$，则必有（  ）.
+(A) $P(A\cup B)>P(A)$
+(B) $P(A\cup B)>P(B)$
+(C) $P(A\cup B)=P(A)$
+(D) $P(A\cup B)=P(B)$",n,方浩概率基础-习1-5,*,错题,"因为$P(A|B)=\frac{P(AB)}{P(B)}=1(P(B)>0)$，则$P(AB)=P(B)$，由加法公式得
+\[
+P(A\cup B)=P(A)+P(B)-P(AB)=P(A)
+\]",,3cm,2026-06-18
+数学,方浩概率基础,方浩概率基础-习1-6,"设$A,B,C$三个事件两两独立，则下列选项不属于$A,B,C$相互独立的充分必要条件的是（  ）.
+(A)$A$与$\overline{B}C$独立
+(B)$AB$与$\overline{C}$独立
+(C)$\overline{A}C$与$B$独立
+(D)$AB$与$AC$独立",n,方浩概率基础-习1-6,*,错题,"选项(A)是$A,B,C$相互独立的充分必要条件.
+因为$A$与$\overline{B}C$独立，并且$B$与$C$独立，故
+\begin{align*}
+P(A\overline{B}C)&=P(A)P(\overline{B}C)=P(A)[1 - P(BC)]=P(A)-P(A)P(B)P(C),
+\end{align*}
+又根据减法公式可得$P(A\overline{B}C)=P(A)-P(ABC)$，故$P(A)P(B)P(C)=P(ABC)$.
+根据独立性理论中关于逆事件独立性的推论，可知选项(B)和选项(C)同样正确. 由$AB$与$AC$独立可知
+\begin{align*}
+P(ABAC)&=P(AB)P(AC)=P(A)P(B)P(A)P(C),
+\end{align*}
+又$ABAC = ABC$，所以$P(ABAC)=P(ABC)$，则$P(ABC)=P(A)P(B)P(A)P(C)$，无法确定$A,B,C$相互独立，故选项(D)不正确.",,8cm,2026-06-18
+数学,方浩概率基础,方浩概率基础-例1-15,"设$A,B$为随机事件，则$P(A)+P(B)=1$的充分必要条件是（  ）.
+(A) $P(A\cup B)=P(A)+P(B)$
+(B) $P(AB)=P(A)P(B)$
+(C) $P(A\cap \overline{B})=P(B\cap \overline{A})$
+(D) $P(AB)=P(\overline{A}\cap \overline{B})$",n,方浩概率基础-例1-15,***,不熟练,"选项(A)，根据$P(A\cup B)=P(A)+P(B)-P(A\cap B)$，可知$P(A\cap B)=0$，不满足.
+选项(B)无法从题目中判断.
+选项(C)，若$P(A\overline{B})=P(B\overline{A})$，则
+\[
+P(A)-P(A\cap B)=P(B)-P(A\cap B)
+\]
+化简得
+\[
+P(A)=P(B)
+\]
+选项(D)，$P(\overline{A}\cap \overline{B})=1 - P(\overline{\overline{A}\cap \overline{B}})=1 - P(A\cup B)$，又
+\[
+1 - P(A\cup B)=1 - [P(A)+P(B)-P(AB)]=P(AB)
+\]
+故$P(A)+P(B)=1$，选项(D)正确.",,11cm,2026-06-15
+数学,方浩概率基础,方浩概率基础-例1-18,"从$(0,1)$中任意取两个数，试求这两个数之和小于$1$且其积小于$\frac{3}{16}$的概率.",y,方浩概率基础-例1-18,***,不熟练,"设$x,y$分别表示所取的两个数，由于样本空间为
+\[
+\Omega =\{(x,y)\mid 0<x<1,0<y<1\}
+\]
+$A$表示事件“两数之和小于$1$且其积小于$\frac{3}{16}$”，于是
+\[
+A =\{(x,y)\mid (x,y)\in\Omega,x + y<1,xy<\frac{3}{16}\}
+\]
+由$\begin{cases}x + y = 1\\xy = \frac{3}{16}\end{cases}$可得交点为$(\frac{1}{4},\frac{3}{4}),(\frac{3}{4},\frac{1}{4})$.
+从而可得出事件$A$所表示的区域为如图所示的阴影部分，则
+\[
+S_A=\int_{\frac{1}{4}}^{\frac{3}{4}}\frac{3}{16}\cdot\frac{1}{x}dx+\int_{0}^{\frac{1}{4}}(1 - x)dx+\int_{\frac{3}{4}}^{1}(1 - x)dx=\frac{1}{4}+\frac{3}{16}\ln 3
+\]
+\[
+S_{\Omega}=1
+\]
+故
+\[
+P(A)=\frac{S_A}{S_{\Omega}}=\frac{1}{4}+\frac{3}{16}\ln 3
+\]",,15cm,2026-06-15
+数学,方浩概率基础,方浩概率基础-例1-20,"设随机事件$A,B,C$满足：
+①$P(A)=0.4$，$P(B)=0.6$，$P(C)=0.7$；
+②$P(A\cap B)=0.24$，$P(B\cap C)=0.42$，$P(A\cap C)=0.28$；
+③$P(A\cap B\cap C)=0.2$.
+计算：
+(1)$P(\overline{A}\mid B\cap C)$；
+(2)$P(A\cup B\mid C)$.",n,方浩概率基础-例1-20,*,错题、改变了运算顺序,"(1) 根据条件概率公式，有
+\[
+P(\overline{A}\mid B\cap C)=1 - P(A\mid B\cap C)=1 - \frac{P(ABC)}{P(BC)}=1 - \frac{0.2}{0.42}=\frac{11}{21}
+\]
+(2) 根据条件概率公式：
+\[P(A\cup B\mid C)=\frac{P((A\cup B)\cap C)}{P(C)}\]
+由于$(A\cup B)\cap C=(A\cap C)\cup (B\cap C)$，则
+\[P((A\cup B)\cap C)=P(A\cap C)+P(B\cap C)-P(A\cap B\cap C)\]
+故
+\[P((A\cup B)\cap C)=0.28 + 0.42 - 0.2 = 0.5\]
+\[P(A\cup B\mid C)=\frac{0.5}{0.7}=\frac{5}{7}\]",,8cm,2026-06-15
+数学,方浩概率基础,方浩概率基础-例1-24,"设$A,B,C$为三个随机事件，且$P(A)=P(B)=P(C)=\frac{1}{4}$，且$P(AC)=P(BC)=\frac{1}{12},P(AB)=0$。(1)求$A,B,C$中至少有两个事件发生的概率；(2)求$A,B,C$中至少有一个事件发生的前提下，恰好有两个事件发生的概率。",n,方浩概率基础-例1-24,*,错题,"(1) \(A,B,C\)中至少有两个事件发生的概率为
+\begin{align*}
+&P(AB \cup BC \cup AC) - P(AB \cap BC) - P(AB \cap AC) - P(BC \cap AC) + P(ABC)\\
+=&P(AB)+P(BC)+P(AC)-P(AB \cap BC)-P(AB \cap AC)-P(BC \cap AC)+P(ABC)\\
+=&P(AB) + P(BC) + P(AC) - 3P(ABC) + P(ABC)\\
+=&P(AB) + P(BC) + P(AC) - 2P(ABC)
+\end{align*}
+又由\(P(AB)=0\)，可知\(P(ABC)=0\)，故
+\[
+P(AB \cup BC \cup AC)=\frac{1}{12} \times 2=\frac{1}{6}
+\]
+(2)由条件概率定义知
+\begin{align*}
+&P\{A,B,C\text{ 中恰好发生两个 }|A,B,C\text{ 中至少发生一个}\}\\
+=&\frac{P\{A,B,C\text{ 中恰好发生两个 }\cap A,B,C\text{ 中至少发生一个}\}}{P\{A,B,C\text{ 中至少发生一个}\}}
+\end{align*}
+由于事件\(\{A,B,C\)中恰好发生两个\(\}\subseteq\{A,B,C\)中至少发生一个\(\}\)，故
+\begin{align*}
+&\text{原式}=\frac{P(AB \cup BC \cup AC) - P(ABC)}{P(A \cup B \cup C)}\\
+=&\frac{\frac{1}{6} - 0}{P(A) + P(B) + P(C) - P(AB) - P(AC) - P(BC) + P(ABC)}\\
+=&\frac{\frac{1}{6}}{\frac{3}{4} - \frac{2}{12}}\\
+=&\frac{2}{7}
+\end{align*}",,12cm,2026-06-15
+数学,方浩概率基础,方浩概率基础-例1-28,"已知$0 < P(A) < 1,0 < P(B) < 1$，且$P(A|B) + P(\overline{A}|\overline{B}) = 1$，则（  ）.
+(A) $A,B$ 互不相容
+(B) $A,B$ 互相对立
+(C) $A,B$ 互不对立
+(D) $A,B$ 相互独立",n,方浩概率基础-例1-28,***,想得久、不简洁,"题中所给条件为概率，无法推出互不相容(互斥)，对立等结论，因此选项(A)，选项(B) 和选项(C) 均错误.
+由题中条件$P(A|B) = 1 - P(\overline{A}|\overline{B}) = P(A|\overline{B})$，故选项(D) 为正确答案.",,6cm,2026-06-17
+数学,方浩概率基础,方浩概率基础-例1-29,设两个相互独立的事件$A$和$B$都不发生的概率为$\frac{1}{16}$，$A$发生$B$不发生的概率与$B$发生$A$不发生的概率相等，则$P(A)=\underline{\quad\quad\quad}$.,n,方浩概率基础-例1-29,***,不规范,"因为$A,B$为独立事件，所以$\overline{A},\overline{B}$也为独立事件，于是得到
+\[
+P(\overline{A} \cap \overline{B}) = P(\overline{A})P(\overline{B}) = \frac{1}{16}
+\]
+又
+\[
+P(A\overline{B}) = P(\overline{A}B)
+\]
+由减法公式可得
+\[
+P(A) - P(AB) = P(B) - P(AB)
+\]
+则
+\[
+P(A) = P(B)
+\]
+因此
+\[
+P(\overline{A})P(\overline{B}) = [1 - P(A)][1 - P(B)] = [1 - P(A)]^2 = \frac{1}{16}
+\]
+解得$1 - P(A) = \frac{1}{4}$，$P(A) = \frac{3}{4}$.",,6cm,2026-06-17
+数学,方浩概率基础,方浩概率基础-例1-34,"某射手的命中率为$p(0 < p < 1)$，该射手连续射击$n$次才命中$k$次$(k \leq n)$概率为（  ）.
+(A) $p^{k}(1 - p)^{n - k}$
+(B) $\mathrm{C}_{n}^{k}p^{k}(1 - p)^{n - k}$
+(C) $\mathrm{C}_{n - 1}^{k - 1}p^{k}(1 - p)^{n - k}$
+(D) $\mathrm{C}_{n - 1}^{k - 1}p^{k - 1}(1 - p)^{n - k}$",n,方浩概率基础-例1-34,*,错题、易错,"本题的含义是指第$n$次一定命中，且前面$n - 1$次试验命中了$k - 1$次.
+由于各次试验结果之间具有独立性. 故所求概率为
+\[ [\mathrm{C}_{n - 1}^{k - 1}p^{k - 1}(1 - p)^{n - 1 - (k - 1)}]p = \mathrm{C}_{n - 1}^{k - 1}p^{k}(1 - p)^{n - k} \]
+故选(C).",,4cm,2026-06-17
+数学,方浩概率基础,方浩概率基础-例2-15,某人打电话，每次拨通的概率为$p = 0.2$. 假设每次拨打电话独立，直到拨通为止，则在拨打了$8$次电话后，至少需要再拨打$4$次才能拨通的概率是\underline{\quad\quad\quad}.,n,方浩概率基础-例2-15,*,错题、语句没读懂,"设随机变量$X$表示拨通所需的次数. 则$X \sim G(p)$，已知$X > 8$，我们需要计算$P\{X > 12 \mid X > 8\}$. 根据无记忆性：
+\[
+P\{X > 12 \mid X > 8\}=P\{X > 12 - 8\}=P\{X > 4\}.
+\]
+由上题知，几何分布的尾概率公式为：
+\[
+P\{X > k\}=(1 - p)^{k},
+\]
+因此
+\[
+P\{X > 4\}=(1 - 0.2)^{4}=0.8^{4}=0.4096.
+\]",,8cm,2026-06-19
+数学,方浩概率基础,方浩概率基础-例2-3,"假设随机变量$X$的绝对值不大于$1$；$P\{X=-1\}=\frac{1}{5}$，$P\{X = 1\}=\frac{2}{5}$；在事件$\{-1 < X < 1\}$出现的条件下，$X$在$(-1,1)$内的任一子区间上取值的条件概率与该子区间长度成正比. 试求$X$的分布函数$F(x)$.",n,方浩概率基础-例2-3,***,不规范,"根据题中条件可知，分布函数的关键点是$-1,1$.
+此时分布函数的区间可以分为$(-\infty,-1)$，$[-1,1)$，$[1,+\infty)$三个部分.
+依据分布函数的定义：
+① 当$x < -1$时，$F(x)=P\{X\leq x\}=P\{\varnothing\}=0$；
+② 当$-1\leq x < 1$时，
+$F(x)=P\{X\leq x\}=P\{X < -1\}+P\{X = -1\}+P\{-1 < X\leq x\}$，
+其中
+$P\{-1 < X\leq x\mid -1 < X < 1\}=\frac{x - (-1)}{1 - (-1)}=\frac{x + 1}{2}$，
+又由题中条件可知
+$P\{-1 < X < 1\}=1 - P\{X = -1\}-P\{X = 1\}=\frac{2}{5}$，
+$P\{-1 < X\leq x\}=P\{-1 < X < 1\}P\{-1 < X\leq x\mid -1 < X < 1\}=\frac{2}{5}\cdot\frac{x + 1}{2}=\frac{x + 1}{5}$，
+故$F(x)=0+\frac{1}{5}+\frac{x + 1}{5}=\frac{x + 2}{5}$；
+③ 当$x\geq 1$时，$F(x)=P\{X\leq x\}=P\{\Omega\}=1$.
+综上，$X$的分布函数可以表示为$F(x)=\begin{cases}0, & x < -1,\\\frac{x + 2}{5}, & -1\leq x < 1,\\1, & x\geq 1.\end{cases}$",,10cm,2026-06-17

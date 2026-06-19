@@ -521,3 +521,204 @@ K^{*}=6
 \end{cases}
 \end{align*}
 稳定范围：$0<K<3$",,20cm,2026-06-07
+专业课,卢京潮讲义,卢京潮讲义-例14-6,单位反馈系统的开环传递函数为$G(s)=\frac{K^{*}}{s(s + 20)(s^{2} + 4s + 20)}$，绘制根轨迹。,y,卢京潮讲义-例14-6,*,错题,"$G(s)=\frac{K^{*}}{s(s + 20)(s + 2\pm j4)}$，$\begin{cases}K = K^{*}/400\\v = 1\end{cases}$
+① 实轴上的根轨迹：$[-20,0]$
+② 渐近线：$\sigma_{a}=\frac{0 - 20 - 2 - 2}{4}=-6$，$\varphi_{a}=\frac{(2k + 1)\pi}{4}=\pm45^{\circ},\pm135^{\circ}$
+③ 出射角：$-[\theta_{1}+90^{\circ}+116.5^{\circ}+12.5^{\circ}]=-180^{\circ}\Rightarrow\theta_{1}=-39^{\circ}$
+③ 分离点：$\frac{1}{d}+\frac{1}{d + 20}+\frac{1}{d + 2 + j4}+\frac{1}{d + 2 - j4}=0$，$\frac{1}{d}+\frac{1}{d + 20}+\frac{2(d + 2)}{(d + 2)^{2}+4^{2}}=0$，试根得：$d=-15.1$，$K_{d}^{*}=\vert d\vert\vert d + 20\vert\vert(d + 2)^{2}+4^{2}\vert\big|_{d=-15.1}=13881$
+④ 虚轴交点：$D(s)=s^{4}+24s^{3}+100s^{2}+400s + K^{*}=0$，$\begin{cases}\text{Re}[D(j\omega)]=\omega^{4}-100\omega^{2}+K^{*}=0\\\text{Im}[D(j\omega)]=-24\omega^{3}+400\omega=0\end{cases}$，$\begin{cases}\omega=\sqrt{400/24}=4.1\\K^{*}=1389\end{cases}$
+① 实轴上的根轨迹：$[-20,0]$
+② 渐近线：$\begin{cases}\sigma_{a}=-6\\\varphi_{a}=\pm45^{\circ},\pm135^{\circ}\end{cases}$
+③ 出射角：$\theta=-39^{\circ}$
+③ 分离点：$d=-15.1$，$K_{d}^{*}=13881$
+④ 虚轴交点：$\begin{cases}\omega=4.1\\K^{*}=1389\end{cases}$
+稳定的开环增益范围：$0<K<3.4725$",,20cm,2026-06-17
+专业课,卢京潮讲义,卢京潮讲义-例14-7,已知$G(s)=\frac{K^{*}(s + 1)}{s(s - 1)(s^2 + 4s + 16)}$，绘根轨迹；求稳定的$K$范围。,y,卢京潮讲义-例14-7,*,错题,"\begin{align*}
+&G(s)=\frac{K^{*}(s + 1)}{s(s - 1)(s + 2\pm j2\sqrt{3})}\quad
+\begin{cases}
+K = K^{*}/16\\
+v = 1
+\end{cases}\\
+&①\text{ 实轴上的根轨迹：}(-\infty,-1],[0,1]\\
+&②\text{ 渐近线：}
+\begin{cases}
+\sigma_a=(1 - 4 + 1)/3=-2/3\\
+\varphi_a=(2k + 1)\pi/3=\pm60^{\circ},180^{\circ}
+\end{cases}\\
+&③\text{ 出射角：}106.1^{\circ}-[\theta_1 + 90^{\circ}+120^{\circ}+130.9^{\circ}]=-180^{\circ}\Rightarrow\theta_1=-54.9^{\circ}\\
+&④\text{ 分离点：}\frac{1}{d}+\frac{1}{d - 1}+\frac{2(d + 2)}{d^2 + 4d + 16}=\frac{1}{d + 1}\quad
+\begin{cases}
+d_1 = 0.49\\
+d_2=-2.26
+\end{cases}\\
+&K_{d_{1,2}}^{*}=\frac{|d||d - 1||d^2 + 4d + 16|}{|d + 1|}\quad
+\begin{cases}
+d = 0.49\Rightarrow3.05\\
+d=-2.26\Rightarrow70.6
+\end{cases}\\
+&⑤\text{ 虚轴交点：}\\
+&D(s)=s^4 + 3s^3 + 12s^2+(K^{*}-16)s + K^{*}=0\\
+&\begin{cases}
+\mathrm{Re}[D(j\omega)]=\omega^4 - 12\omega^2+K^{*}=0\\
+\mathrm{Im}[D(j\omega)]=-3\omega^3+(K^{*}-16)\omega=0
+\end{cases}\\
+&K^{*}=3\omega^2 + 16\\
+&\omega^4 - 9\omega^2 + 16 = 0\\
+&\begin{cases}
+\omega_1 = 1.56\Rightarrow K_1^{*}=19.7\\
+\omega_2 = 2.56\Rightarrow K_2^{*}=35.7
+\end{cases}\\
+&\text{稳定的 }K^{*}\text{ 范围：}19.7<K^{*}<35.7\\
+&\text{稳定的 }K\text{ 范围：}1.234<K=\frac{K^{*}}{16}<2.23
+\end{align*}",,20cm,2026-06-17
+专业课,卢京潮讲义,卢京潮讲义-例15-1,系统结构图如图所示，(1) 绘制当$K^{*}=0 \to \infty$时系统的根轨迹；(2) 分析系统稳定性随$K$变化的规律。$G(s)=\frac{3.5K(s+\frac{1}{2})}{(s + 1)^2(s - \frac{1}{4})}$,y,卢京潮讲义-例15-1,*,错题,"\begin{align*}
+&(1)G(s)=\frac{3.5K(s+\frac{1}{2})}{(s + 1)^2(s - \frac{1}{4})}\\
+& \text{① 实轴上的根轨迹：}[-0.5,1.75]\\
+& \text{② 渐近线：}\\
+&\sigma_{a}=\frac{-2 + \frac{7}{4} + \frac{1}{2}}{3 - 1}=\frac{1}{8}\\
+&\varphi_{a}=\frac{(2k + 1)\pi}{3 - 1}=\pm90^{\circ}\\
+& \text{③ 出射角：}\\
+&D(s)=4s^{3}+s^{2}+(14K - 10)s + 7(K - 1)\\
+&\text{令}s = -1 + j\omega\\
+&\text{代入}D(s)\text{并分别令实部和虚部为}0\\
+&\text{实部}\mathrm{Re}[D(j\omega)]=-\omega^{2}+7(K - 1)=0\\
+&\text{虚部}\mathrm{Im}[D(j\omega)]=-4\omega^{3}+(14\omega - 10)\omega = 0\\
+&\text{由虚部方程}-4\omega^{3}+(14\omega - 10)\omega = 0\\
+&\text{即}-4\omega^{3}+14\omega^{2}-10\omega = 0\\
+&\omega(-4\omega^{2}+14\omega - 10)=0\\
+&\text{解得}\omega = 0\text{或}\omega = 1\text{或}\omega=\frac{5}{2}\\
+&\text{当}\omega = 0\text{时，代入实部方程得}K = 1\\
+&\text{当}\omega = 1\text{时，代入实部方程得}K = \frac{8}{7}\\
+&\text{出射角}\theta = 90^{\circ}\\
+& \text{④ 与虚轴交点：}\\
+&D(s)=4s^{3}+s^{2}+(14K - 10)s + 7(K - 1)\\
+&\text{令}s = j\omega\\
+&\text{则}D(j\omega)=-4j\omega^{3}-\omega^{2}+j(14K - 10)\omega + 7(K - 1)\\
+&\text{实部}\mathrm{Re}[D(j\omega)]=-\omega^{2}+7(K - 1)=0\\
+&\text{虚部}\mathrm{Im}[D(j\omega)]=-4\omega^{3}+(14\omega - 10)\omega = 0\\
+&\text{由虚部方程}-4\omega^{3}+(14\omega - 10)\omega = 0\\
+&\text{解得}\omega = 0\text{或}\omega=\sqrt{2}\text{或}\omega = \frac{5}{2}\\
+&\text{当}\omega = 0\text{时，}K = 1\\
+&\text{当}\omega=\sqrt{2}\text{时，}K=\frac{9}{7}\\
+&(2)\text{分析：}\\
+&\text{当}K = 0\text{时，系统不稳定（单调发散）}\\
+&\text{当}K = 1\text{时，系统稳定（收敛）}\\
+&\text{当}K=\frac{9}{7}\text{时，系统不稳定（振荡发散）}\\
+\end{align*}",,20cm,2026-06-17
+专业课,卢京潮讲义,卢京潮讲义-例15-2,单位反馈系统：$G(s)=\frac{(s + a)/4}{s^2(s + 1)}$，$a = 0 \to \infty$变化，绘制根轨迹；$\xi = 1$时，$\Phi(s) = ?$,y,卢京潮讲义-例15-2,*,错题、广义根轨迹,"解. (1)
+\[
+D(s)=s^3 + s^2 + \frac{1}{4}s + \frac{1}{4}a = 0
+\]
+构造“等效开环传递函数”
+\[
+G^*(s)=\frac{a/4}{s^3 + s^2 + s/4}=\frac{a/4}{s(s + 0.5)^2}
+\]
+① 实轴根轨迹：$(-\infty, 0]$
+② 渐近线：$\sigma_a = -1/3$，$\varphi_a = \pm 60^{\circ}, 180^{\circ}$
+③ 分离点：
+\[
+\frac{1}{d}+\frac{2}{d + 0.5}=0
+\]
+整理得：
+\[
+3d + 0.5 = 0 \Rightarrow d = -1/6
+\]
+\[
+a_d = 4|d||d + 0.5|^2 = 2/27
+\]
+④ 与虚轴交点：$D(s)=s^3 + s^2 + s/4 + a/4 = 0$
+\[
+\begin{cases}
+\mathrm{Re}[D(j\omega)] = -\omega^2 + a/4 = 0 \\
+\mathrm{Im}[D(j\omega)] = -\omega^3 + \omega/4 = 0
+\end{cases}
+\Rightarrow
+\begin{cases}
+\omega = 1/2 \\
+a = 1
+\end{cases}
+\]
+解. (2) $\xi = 1$时，对应于分离点$d$，$a_d = 2/27$
+\[
+G^*(s)=\frac{a/4}{s(s + 0.5)^2}
+\]
+\[
+G(s)=\frac{\frac{1}{4}(s + a)}{s^2(s + 1)}\big|_{a = 2/27}=\frac{\frac{1}{4}(s + \frac{2}{27})}{s^2(s + 1)}
+\]
+\[
+\Phi(s)=\frac{\frac{1}{4}(s + \frac{2}{27})}{s^2(s + 1)+\frac{1}{4}(s + \frac{2}{27})}=\frac{\frac{1}{4}(s + \frac{2}{27})}{(s + \frac{1}{6})^2(s + \frac{2}{3})}
+\]
+\[
+a = 0 \xrightarrow{\text{单调收敛}} a_d = \frac{2}{27} \xrightarrow{\text{振荡收敛}} a_{\omega} = 1 \xrightarrow{\text{振荡发散}} \infty
+\]
+\[
+\begin{array}{c|c|c|c}
+& \sigma\% & t_s & \text{稳定性} \\
+\hline
+a = 0 & \sigma\% = 0 & \downarrow & \text{稳定} \\
+a_d = \frac{2}{27} & \uparrow & \uparrow & \text{稳定} \\
+a_{\omega} = 1 & - & - & \text{不稳定}
+\end{array}
+\]
+\[
+r(t)=\frac{At^2}{2}, K = \frac{a}{4} \uparrow, e_{ss}=\frac{4A}{a} \downarrow, e_{ss_{\min}} = 4A
+\]",,20cm,2026-06-17
+专业课,卢京潮讲义,卢京潮讲义-例15-3,单位反馈系统的开环传递函数为$G(s)=\frac{615(s + 26)}{s^2(Ts + 1)}$，$T = 0 \to \infty$，绘制根轨迹。,y,卢京潮讲义-例15-3,*,错题、广义根轨迹、开环传函分子次数大于分母,"\textbf{\textcolor{red}{解I.}}
+\[
+D(s)=Ts^3 + s^2 + 615s + 15990 = 0
+\]
+\[
+G^*(s)=\frac{\frac{1}{T}(s^2 + 615s + 15990)}{s^3}=\frac{\frac{1}{T}(s + 27.7)(s + 587.7)}{s^3}
+\]
+① 实轴上的根轨迹：$(-\infty,-587.7]$，$[-27.7,0]$
+② 出射角：
+\begin{align*}
+2\times0 - 3\theta&=(2k + 1)\pi\\
+\theta&=\pm60^{\circ},180^{\circ}
+\end{align*}
+③ 虚轴交点：
+\[
+\begin{cases}
+\mathrm{Re}[D(j\omega)]=-\omega^2 + 15990 = 0\\
+\mathrm{Im}[D(j\omega)]=-T\omega^3 + 615\omega = 0
+\end{cases}
+\]
+\[
+\begin{cases}
+\omega=\sqrt{15990}=126.45\\
+T = 615/15990 = 0.0385
+\end{cases}
+\]
+④ 分离点：
+\begin{align*}
+\frac{3}{d}&=\frac{1}{d + 27.7}+\frac{1}{d + 587.7}\\
+\end{align*}
+整理得：$d^2 + 1231d + 47970 = 0$
+解根：
+\[
+\begin{cases}
+d_1=-40.5, \ d_2=-1190\\
+T_d=\frac{|d + 27.7||d + 587.7|}{|d|^3}=0.00055
+\end{cases}
+\]
+\textbf{\textcolor{red}{解II.}}
+\[
+D(s)=Ts^3 + s^2 + 615s + 15990 = 0
+\]
+\[
+G_2^*(s)=\frac{Ts^3}{(s + 27.7)(s + 587.7)(\frac{s}{\infty}+ 1)}
+\]
+① 实轴根轨迹：$(-\infty,-587.7]$，$[-27.7,0]$
+② 分离点：
+\begin{align*}
+d&=-1190\\
+T_d&=0.00055
+\end{align*}
+③ 虚轴交点：
+\[
+\begin{cases}
+\omega = 126.45\\
+T = 0.0358
+\end{cases}
+\]
+④ 入射角：$\theta=\pm60^{\circ},180^{\circ}$",,20cm,2026-06-17

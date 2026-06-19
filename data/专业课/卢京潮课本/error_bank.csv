@@ -299,3 +299,76 @@ G(s)&=\frac{\frac{K(\tau s + 1)}{(T_1s + 1)(T_2s + 1)}}{1 - \frac{K_0K(\tau s + 
 考虑系统的稳定性，系统特征方程为
 \[D(s)=T_1T_2s^2 + K(T_1 + T_2)s + K = 0\]
 当\(T_1,T_2,K>0\)时，系统稳定。",,10cm,2026-06-06
+专业课,卢京潮课本,卢京潮课本-习3-33,设复合校正控制系统结构图如图3-66所示，其中$N(s)$为可量测扰动。若要求系统输出$C(s)$完全不受$N(s)$的影响，且跟踪阶跃指令的稳态误差为零，试确定前馈补偿装置$G_{c1}(s)$和串联校正装置$G_{c2}(s)$。,y,卢京潮课本-习3-33,*,错题、误差传函,"(1) 求$G_{c1}(s)$。令
+\begin{align*}
+\Phi_{n}(s)&=\frac{C(s)}{N(s)}=\frac{\frac{K_{2}}{Ts + 1}(1 + \frac{K_{1}}{s})-\frac{K_{1}K_{2}}{s(Ts + 1)}G_{c1}(s)}{1 + \frac{K_{1}}{s}+\frac{K_{1}K_{2}G_{c2}(s)}{s(Ts + 1)}}\\
+&=\frac{K_{2}[s + K_{1}-K_{1}G_{c1}(s)]}{s(Ts + 1)+K_{1}(Ts + 1)+K_{1}K_{2}G_{c2}(s)} = 0
+\end{align*}
+得$G_{c1}(s)=\frac{s + K_{1}}{K_{1}}$。
+(2) 求$G_{c2}(s)$。令
+\begin{align*}
+\Phi_{e}(s)&=\frac{E(s)}{R(s)}=\frac{1+\frac{K_{1}}{s}}{1+\frac{K_{1}}{s}+\frac{K_{1}K_{2}G_{c2}(s)}{s(Ts + 1)}}=\frac{(s + K_{1})(Ts + 1)}{s(Ts + 1)+K_{1}(Ts + 1)+K_{1}K_{2}G_{c2}(s)}
+\end{align*}
+当$r(t)=1(t)$作用时，令$e_{ss}=\lim_{s \to 0}s\Phi_{e}(s)\cdot\frac{1}{s}=\lim_{s \to 0}\frac{K_{1}}{K_{1}+K_{1}K_{2}G_{c2}(s)} = 0$
+明显地，取$G_{c2}(s)=\frac{1}{s}$可以达到目的。",,15cm,2026-06-08
+专业课,卢京潮课本,卢京潮课本-习3-37,已知系统结构图如图3-70所示。（1）求引起闭环系统临界稳定的$K$值和对应的振荡频率$\omega$；（2）当$r(t)=t^{2}$时，要使系统稳态误差$e_{ss}\leq0.5$，试确定满足要求的$K$值范围。,y,卢京潮课本-习3-37,*,错题、粗心,"（1）由系统结构图
+\begin{align*}
+\varPhi_e(s) = \frac{E(s)}{R(s)} &= \frac{1 - \frac{2s}{s(s + 2)}}{1 + \frac{2K}{s(s + 1)(s + 2)}}\\
+&= \frac{s^2(s + 1)}{s(s + 1)(s + 2) + 2K}
+\end{align*}
+\[D(s) = s^3 + 3s^2 + 2s + 2K\]
+系统临界稳定时有$D(\mathrm{j}\omega)=0$，令
+\[
+\begin{cases}
+\mathrm{Re}[D(\mathrm{j}\omega)] = - 3\omega^2 + 2K = 0\\
+\mathrm{Im}[D(\mathrm{j}\omega)] = - \omega^3 + 2\omega = 0
+\end{cases}
+\]
+联立解出
+\[
+\begin{cases}
+K = 3\\
+\omega = \sqrt{2}
+\end{cases}
+\]
+（2）当$r(t)=t^{2}$时，$R(s)=\frac{2}{s^3}$
+\begin{align*}
+e_{ss} &= \lim_{s \to 0} s\cdot R(s)\cdot\varPhi_e(s)\\
+&= \lim_{s \to 0} s\cdot \frac{2}{s^3}\cdot \frac{s^2(s + 1)}{s(s + 1)(s + 2) + 2K}\\
+&= \frac{1}{K}
+\end{align*}
+令$e_{ss}=\frac{1}{K}\leq0.5$，有$K\geq2$，综合系统稳定性要求，得$2\leq K\leq3$。",,20cm,2026-06-08
+专业课,卢京潮课本,卢京潮课本-习3-39,"系统结构图如图3 - 72所示。试问：
+（1）为确保系统稳定，如何取$K$值？
+（2）为使系统特征根全部位于$s$平面$s = -1$的左侧，$K$应取何值？
+（3）若$r(t)=2t + 2$时，要求系统稳态误差$e_{ss}\leq0.25$，$K$应取何值？",y,卢京潮课本-习3-39,*,错题、计算,"首先求$G(s)=\frac{50K}{s(s + 10)(s + 5)}\begin{cases}K\\v = 1\end{cases}$
+（1）$D(s)=s^3 + 15s^2 + 50s + 50K$
+Routh 表：
+\[
+\begin{array}{ccc}
+s^3 & 1 & 50 \\
+s^2 & 15 & 50K \\
+s^1 & \frac{50(15 - K)}{15} & \to K < 15\\
+s^0 & 50K & \to K > 0
+\end{array}
+\]
+系统稳定范围为$0 < K < 15$。
+（2）在$D(s)$中做平移变换：$s = s' - 1$
+\begin{align*}
+D(s')&=(s' - 1)^3 + 15(s' - 1)^2 + 50(s' - 1) + 50K\\
+&=s'^3 + 12s'^2 + 23s' + (50K - 36)
+\end{align*}
+Routh 表：
+\[
+\begin{array}{ccc}
+s'^3 & 1 & 23 \\
+s'^2 & 12 & 50K - 36 \\
+s'^1 & \frac{312 - 50K}{12} & \to K < \frac{312}{50}=6.24\\
+s'^0 & 50K - 36 & \to K > \frac{36}{50}=0.72
+\end{array}
+\]
+满足要求的范围是$0.72 < K < 6.24$。
+（3）由静态误差系数法
+当$r(t)=2t + 2$时，令$e_{ss}=\frac{2}{K}\leq0.25$
+得$K\geq8$。
+综合考虑稳定性与稳态误差要求可得$8\leq K < 15$。",,20cm,2026-06-08
