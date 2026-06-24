@@ -5,7 +5,7 @@
 f(1)&=\begin{vmatrix}1&-m&-1&0\\0&-1&m&1\\-1&0&1&-m\\m&1&0&-1\end{vmatrix}=\begin{vmatrix}1&-m&-1&0\\0&-1&m&1\\0&-m&0&-m\\0&1 + m^2&m&-1\end{vmatrix}\\
 &=\begin{vmatrix}-1&m&1\\-m&0&-m\\1 + m^2&m&-1\end{vmatrix}=m^2\begin{vmatrix}-1&1&1\\-1&0&-1\\1 + m^2&1&-1\end{vmatrix}\\
 &=m^2\begin{vmatrix}-1&1&1\\-1&0&-1\\m^2 + 2&0&-2\end{vmatrix}=-m^4 - 4m^2
-\end{align*}",,10cm,2026-05-16
+\end{align*}",2026-06-24:错,10cm,2026-05-16
 数学,李永乐线代基础,李永乐线代基础-例1-14,"已知$A(1,2),B(4,0)$是平面上的两个点，则经过$A,B$两点的直线方程是\underline{\quad\quad\quad}.",n,李永乐线代基础-例1-14,*,错题,"设所求直线方程为$ax + by + c = 0$，$P(x,y)$是该直线上任意一点，则$(x,y),(1,2),(4,0)$应满足直线方程，即有
 \[
 \begin{cases}

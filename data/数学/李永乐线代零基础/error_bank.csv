@@ -124,7 +124,7 @@ AB&=(E - \alpha\alpha^{\mathrm{T}})(E + 2\alpha\alpha^{\mathrm{T}})\\
 **唯一性**：若$\alpha$是方程$Ax = b$的解，则$A\alpha = b$，那么
 \[ A^{-1}(A\alpha) = A^{-1}b, \]
 得$\alpha = A^{-1}b$.
-因为逆矩阵是唯一的，所以方程组$Ax = b$的解唯一.",,6cm,2026-05-21
+因为逆矩阵是唯一的，所以方程组$Ax = b$的解唯一.",2026-06-24:对,6cm,2026-05-21
 数学,李永乐线代零基础,李永乐线代零基础-例2-24,已知$X = ABA$，其中$A = \begin{bmatrix}1&0&0&1\\0&1&1&0\\0&1&-1&0\\1&0&0&-1\end{bmatrix}$，$B = \begin{bmatrix}0&0&0&1\\0&0&1&0\\0&1&0&0\\1&0&0&0\end{bmatrix}$，则$X = \underline{\quad\quad\quad}$.,n,李永乐线代零基础-例2-24,*,错题、粗心、其他方法、分块矩阵,"\begin{align*}
 A&=\begin{bmatrix}1&0&0&1\\0&1&1&0\\0&1&-1&0\\1&0&0&-1\end{bmatrix}\stackrel{\text{记}}{=}\begin{bmatrix}E&C\\C&-E\end{bmatrix},B = \begin{bmatrix}0&0&0&1\\0&0&1&0\\0&1&0&0\\1&0&0&0\end{bmatrix}\stackrel{\text{记}}{=}\begin{bmatrix}O&C\\C&O\end{bmatrix}\\
 X&=\begin{bmatrix}E&C\\C&-E\end{bmatrix}\begin{bmatrix}O&C\\C&O\end{bmatrix}\begin{bmatrix}E&C\\C&-E\end{bmatrix}\\
@@ -263,7 +263,7 @@ $\Rightarrow A\boldsymbol{\beta}_1 = \boldsymbol{0},A\boldsymbol{\beta}_2 = \bol
 \end{align*}
 转化为求同解方程组
 \[\begin{cases}x_1 - x_3 - 2x_4 = 0,\\x_2 - x_3 - 2x_4 = 0.\end{cases}\]
-自由变量：$x_3,x_4$，有$\begin{cases}x_1 = t + 2u,\\x_2 = t + 2u,\\x_3 = t,\\x_4 = u,\end{cases}$或$\boldsymbol{x}=t\begin{bmatrix}1\\1\\1\\0\end{bmatrix}+u\begin{bmatrix}2\\2\\0\\1\end{bmatrix}$，$t,u$是任意常数.",2026-06-05:错、粗心,10cm,2026-05-24
+自由变量：$x_3,x_4$，有$\begin{cases}x_1 = t + 2u,\\x_2 = t + 2u,\\x_3 = t,\\x_4 = u,\end{cases}$或$\boldsymbol{x}=t\begin{bmatrix}1\\1\\1\\0\end{bmatrix}+u\begin{bmatrix}2\\2\\0\\1\end{bmatrix}$，$t,u$是任意常数.","2026-06-05:错、粗心,2026-06-24:错、粗心",10cm,2026-05-24
 数学,李永乐线代零基础,李永乐线代零基础-例3-18,解方程组$\begin{cases}x_1 + x_2 + x_3 = 5 \\ 3x_1 + 2x_2 + x_3 = 13 \\ x_2 + 2x_3 = 2\end{cases}$,n,李永乐线代零基础-例3-18,*,错题、粗心,"对增广矩阵作初等行变换
 \[
 \overline{\mathbf{A}} =
@@ -530,7 +530,7 @@ k_2 \\
 k_n
 \end{pmatrix}= 0,
 \]
-故$B$的列向量$\beta_1,\beta_2,\cdots,\beta_n$线性无关.",,10cm,2026-05-25
+故$B$的列向量$\beta_1,\beta_2,\cdots,\beta_n$线性无关.",2026-06-24:其他方法,10cm,2026-05-25
 数学,李永乐线代零基础,李永乐线代零基础-例4-25,证明：$r(\boldsymbol{A} + \boldsymbol{B}) \leq r(\boldsymbol{A}) + r(\boldsymbol{B})$。,n,李永乐线代零基础-例4-25,***,其他方法,"\textbf{\textcolor{red}{方法一：(初等变换)}}
 \begin{align*}
 \begin{bmatrix}
@@ -611,7 +611,7 @@ x_4 = -2x_5
 \[
 \boldsymbol{\eta}_1=\begin{pmatrix}-3\\2\\1\\0\\0\end{pmatrix},\boldsymbol{\eta}_2=\begin{pmatrix}3\\1\\0\\-2\\1\end{pmatrix}
 \]
-得到通解：$k_1\boldsymbol{\eta}_1 + k_2\boldsymbol{\eta}_2$，$k_1,k_2$为任意常数。",,14cm,2026-05-26
+得到通解：$k_1\boldsymbol{\eta}_1 + k_2\boldsymbol{\eta}_2$，$k_1,k_2$为任意常数。",2026-06-21:对,14cm,2026-05-26
 数学,李永乐线代零基础,李永乐线代零基础-例4-28,解齐次方程组$\begin{cases}x_1 + 3x_2 - 5x_3 - x_4 + 2x_5 = 0\\2x_1 + 6x_2 - 8x_3 + 5x_4 + 3x_5 = 0\\x_1 + 3x_2 - 3x_3 + 6x_4 + x_5 = 0\end{cases}$,n,李永乐线代零基础-例4-28,*,错题、粗心,"\textbf{\textcolor{red}{方法一}}：对系数矩阵作初等行变换化为行最简，有
 \[
 A =
@@ -842,7 +842,7 @@ $A^{*} = O \Rightarrow r(A^{*}) = 0$.",,9cm,2026-05-27
 再单位化：
 \[
 \boldsymbol{\gamma}_1=\frac{1}{\sqrt{6}}\begin{pmatrix}1\\2\\-1\end{pmatrix},\boldsymbol{\gamma}_2=\frac{1}{\sqrt{3}}\begin{pmatrix}-1\\1\\1\end{pmatrix},\boldsymbol{\gamma}_3=\frac{1}{\sqrt{2}}\begin{pmatrix}1\\0\\1\end{pmatrix}
-\]",,13cm,2026-05-28
+\]",2026-06-22:对,13cm,2026-05-28
 数学,李永乐线代零基础,李永乐线代零基础-例5-4,"设$\boldsymbol{A}=[a_{ij}]_{3\times3}$为正交矩阵，且$a_{11}=1,\boldsymbol{b}=\begin{pmatrix}1\\0\\0\end{pmatrix}$，求线性方程组$\boldsymbol{A}\boldsymbol{x}=\boldsymbol{b}$的解是\underline{\quad\quad\quad}。",n,李永乐线代零基础-例5-4,*,错题,"已知$\boldsymbol{A}$为正交矩阵且$a_{11}=1$，可知$\boldsymbol{A}$的第一列为$\begin{pmatrix}1\\0\\0\end{pmatrix}$，第一行为$(1,0,0)$。因此
 \[
 \boldsymbol{A}=\begin{bmatrix}

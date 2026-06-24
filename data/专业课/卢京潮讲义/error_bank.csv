@@ -20,7 +20,7 @@ C_3&=\lim_{s\rightarrow 0}s\cdot\frac{s + 2}{s(s + 1)^2(s + 3)}=\frac{2}{3}\\
 C_4&=\lim_{s\rightarrow -3}(s + 3)\frac{s + 2}{s(s + 1)^2(s + 3)}=\frac{1}{12}\\
 F(s)&=-\frac{1}{2}\cdot\frac{1}{(s + 1)^2}-\frac{3}{4}\cdot\frac{1}{s + 1}+\frac{2}{3}\cdot\frac{1}{s}+\frac{1}{12}\cdot\frac{1}{s + 3}\\
 f(t)&=-\frac{1}{2}te^{-t}-\frac{3}{4}e^{-t}+\frac{2}{3}+\frac{1}{12}e^{-3t}
-\end{align*}",,10cm,2026-05-19
+\end{align*}",2026-06-21:对,10cm,2026-05-19
 专业课,卢京潮讲义,卢京潮讲义-例4-6,在R - C电路中，已知$u_r = Ri + u_c$，$i = C\dot{u}_c$，$u_r(t) = E_0\cdot1(t)$，求$u_c(t)$。,y,卢京潮讲义-例4-6,*,错题,"\begin{align*}
 &由u_r = Ri + u_c，i = C\dot{u}_c可得RC\dot{u}_c + u_c = u_r\\
 &进行拉普拉斯变换：RC[sU_c(s) - u_c(0)] + U_c(s) = U_r(s)\\
@@ -85,7 +85,7 @@ C_1&=\lim_{s\rightarrow -1}\frac{-(s + 5)}{s + 4}=-\frac{4}{3}\\
 C_2&=\lim_{s\rightarrow -4}\frac{-(s + 5)}{s + 1}=\frac{1}{3}\\
 c_0(t)&=\frac{-4}{3}e^{-t}+\frac{1}{3}e^{-4t}\\
 c(t)&=c_r(t)+c_0(t)=\left(1-\frac{2}{3}e^{-t}-\frac{1}{3}e^{-4t}\right)-\left(\frac{4}{3}e^{-t}-\frac{1}{3}e^{-4t}\right)=1 - 2e^{-t}
-\end{align*}",,20cm,2026-05-19
+\end{align*}",2026-06-21:对,20cm,2026-05-19
 专业课,卢京潮讲义,卢京潮讲义-例5-1,系统如图，被控对象微分方程为$T_0\dot{u}_c + u_c = K_0u_a$，求系统传递函数$\Phi(s)=\frac{U_c(s)}{U_r(s)}$。,y,卢京潮讲义-例5-1,*,错题,"(1) 求$G_0(s)$
 由$(T_0s + 1)\cdot U_c(s) = K_0\cdot U_a(s)$可得$G_0(s)=\frac{U_c(s)}{U_a(s)}=\frac{K_0}{T_0s + 1}$ (1)
 (2) 由运放$I_{a(s)}=\frac{U_r(s)+U_c(s)}{R_0}=\frac{-U_a(s)}{\frac{1}{1/R + Cs}}=\frac{-U_a(s)}{\frac{R}{1 + RCs}}$
@@ -116,7 +116,7 @@ P_4&=G_2G_4G_5,\quad \Delta_4 = 1\\
 P_5&=-G_3G_4G_6,\quad \Delta_5 = 1\\
 P_6&=-G_6H_2G_2G_4,\quad \Delta_6 = 1\\
 \Phi(s)&=\frac{G_1G_2G_3G_4 + G_1G_2G_4 + G_2G_3G_4G_5 + G_2G_4G_5 - G_3G_4G_6 - G_2G_4G_6H_2}{1 - G_2H_2 + G_1G_2G_3G_4H_1 + G_1G_2G_4H_1}
-\end{align*}",,9cm,2026-05-20
+\end{align*}",2026-06-21:错、前向通路漏了一个,9cm,2026-05-20
 专业课,卢京潮讲义,卢京潮讲义-例7-7,"系统结构图如图所示：
 （1）求当输入$r(t)=1(t)$时系统的响应$c_r(t)$；
 （2）求当干扰$n(t)=\delta(t)$时系统的响应$c_n(t)$；
@@ -283,7 +283,7 @@ K_2 = \omega_n^2 = 5.278^2 = 27.85\\
 a = 2\xi\omega_n = 2\times0.608\times5.278 = 6.42
 \end{cases}
 \]
-因此有$K_1 = 2$，$K_2 = 27.85$，$a = 6.42$。",,11cm,2026-05-30
+因此有$K_1 = 2$，$K_2 = 27.85$，$a = 6.42$。",2026-06-21:对,11cm,2026-05-30
 专业课,卢京潮讲义,卢京潮讲义-例9-3,对于典型欠阻尼二阶系统，已知$5\% \leq \sigma\% < 16.3\%$，$2 < \omega_n \leq 5$，试确定满足要求的系统极点分布范围。,y,卢京潮讲义-例9-3,*,错题、公式,"依题意有
 \[
 \begin{cases}
@@ -354,7 +354,7 @@ s^0 & K_1 & &
 \Phi_e(s)&=\frac{E(s)}{R(s)}=\frac{1 - \frac{KG_c(s)}{s(Ts + 1)}}{1 + \frac{K}{s(Ts + 1)}}=\frac{s(Ts + 1) - KG_c(s)}{s(Ts + 1) + K}\\
 e_{ss}&=\lim_{s \to 0} s\Phi_e(s)\frac{A}{s^2}=\lim_{s \to 0}\frac{A\left[sT + 1 - \frac{K}{s}G_c(s)\right]}{s(Ts + 1) + K}=\frac{A\left[1 - \frac{K}{s}G_c(s)\right]}{K}=0
 \end{align*}
-解得$G_c(s)=\frac{s}{K}$。",,9cm,2026-06-06
+解得$G_c(s)=\frac{s}{K}$。",2026-06-22:错、误差传递函数写错了,9cm,2026-06-06
 专业课,卢京潮讲义,卢京潮讲义-例11-6,已知系统结构图，当$r(t)=t$时，要求$e_{ss}<0.1$，求$K$的范围。其中$G(s)=\frac{K(0.6s + 1)}{s(s + 1)(2s + 1)}$。,y,卢京潮讲义-例11-6,*,错题、计算,"首先，由$r(t)=t$，对于该系统$v = 1$，$e_{ss}=\frac{1}{K}<0.1$，解得$K>10$。
 然后，求系统特征方程$D(s)=s(s + 1)(2s + 1)+K(0.6s + 1)=2s^{3}+3s^{2}+(1 + 0.6K)s + K = 0$。
 列出劳斯表：
@@ -444,7 +444,7 @@ e_{ss}&=\lim_{s\rightarrow0}s\frac{1}{s^2}\Phi_e(s)=\lim_{s\rightarrow0}\frac{(s
 \end{align*}
 (3) \begin{align*}
 \Phi_{en}(s)&=\frac{E(s)}{N(s)}=\frac{-(K_2s + 1)+\frac{K_2s + 1}{s}G_2(s)}{1+\frac{K_1(K_2s + 1)}{s(s + 1)}}=\frac{-(K_2s + 1)(s + 1)[s - G_2(s)]}{s(s + 1)+K_1(K_2s + 1)}\equiv0\quad G_2(s)=s
-\end{align*}",,17cm,2026-06-06
+\end{align*}",2026-06-24:对,17cm,2026-06-06
 专业课,卢京潮讲义,卢京潮讲义-例13-3,某单位反馈系统的开环传递函数为$G(s)=\frac{K^*(s + 2)}{s(s + 1)}$，$K^*=0\to\infty$，证明复平面的根轨迹为圆弧。,y,卢京潮讲义-例13-3,*,错题,"\begin{align*}
 G(s)&=\frac{K^*(s + 2)}{s(s + 1)}\\
 D(s)&=s(s + 1)+K^*(s + 2)=s^2+(1 + K^*)s + 2K^*\\
@@ -463,7 +463,7 @@ d_2=-3.4142
 K_{d_1}^*=0.1716\\
 K_{d_2}^*=5.828
 \end{cases}
-\end{align*}",,13cm,2026-06-07
+\end{align*}",2026-06-24:错,13cm,2026-06-07
 专业课,卢京潮讲义,卢京潮讲义-例14-2,"系统结构图如图所示。
 （1）绘制当$K^{*}=0\rightarrow\infty$时系统的根轨迹；
 （2）当$\mathrm{Re}[\lambda_{1}]= -1$时，$\lambda_{3}=$?",y,卢京潮讲义-例14-2,*,错题、根之和判断分离点与趋近趋势,"(1) \(G(s)=\frac{K^{*}(s + 2)}{s(s + 1)(s + 4)}\)，\(\begin{cases}K = K^{*}/2\\v = 1\end{cases}\)
@@ -471,7 +471,7 @@ K_{d_2}^*=5.828
 ② 渐近线：\(\begin{cases}\sigma_{a}=\frac{0 - 1 - 4 + 2}{3 - 1}=-\frac{3}{2}\\\varphi_{a}=\frac{(2k + 1)\pi}{3 - 1}=\pm90^{\circ}\end{cases}\)
 用根之和法则分析绘制根轨迹：
 (2) \(a_{n - 1}=0 - 1 - 4=-5=\lambda_{1}+\lambda_{2}+\lambda_{3}=2(-1)+\lambda_{3}\)
-\(\lambda_{3}=-5 + 2=-3\)",,8cm,2026-06-07
+\(\lambda_{3}=-5 + 2=-3\)",2026-06-24:对,8cm,2026-06-07
 专业课,卢京潮讲义,卢京潮讲义-例14-3,单位反馈系统的开环传递函数为$G(s)=\frac{K^{*}}{s(s + 1)(s + 2)}$，绘制根轨迹。,y,卢京潮讲义-例14-3,*,错题、分离点,"\[
 G(s)=\frac{K^{*}}{s(s + 1)(s + 2)}
 \begin{cases}
@@ -722,3 +722,44 @@ T = 0.0358
 \end{cases}
 \]
 ④ 入射角：$\theta=\pm60^{\circ},180^{\circ}$",,20cm,2026-06-17
+专业课,卢京潮讲义,卢京潮讲义-例15-6,系统开环传递函数$G(s)=\frac{K^*(s + 1)}{(s + 3)^3}$，分别绘制$0^{\circ}$、$180^{\circ}$根轨迹。,y,卢京潮讲义-例15-6,*,错题、出射角,"\begin{align*}
+&\text{(1) 绘制}180^{\circ}\text{根轨迹}\\
+&\text{① 实轴上的根轨迹：}[-3, -1]\\
+&\text{② 出射角：}180^{\circ}-3\theta=(2k + 1)\pi\\
+&\Rightarrow\theta_1=\frac{2k\pi}{3}=0^{\circ},\pm120^{\circ}\\
+&\text{③ 渐近线：}\begin{cases}
+\sigma_a=\frac{-3\times3 + 1}{2}=-4\\
+\varphi_a=\frac{(2k + 1)\pi}{2}=\pm90^{\circ}
+\end{cases}\\
+&\text{(2) 绘制}0^{\circ}\text{根轨迹}\\
+&\text{① 实轴轨迹：}(-\infty, -3],[-1, \infty)\\
+&\text{② 出射角：}180^{\circ}-3\theta=2k\pi\\
+&\theta=\frac{(2k + 1)\pi}{3}=\pm60^{\circ},180^{\circ}\\
+&\text{③ 分离点：}\frac{3}{d + 3}=\frac{1}{d + 1}\\
+&\text{整理得：}3d + 3=d + 3\Rightarrow d = 0\\
+&K_d^*=\frac{|d + 3|^3}{|d + 1|}\big|_{d = 0}=27\\
+&\text{④ 渐近线：}\begin{cases}
+\sigma_a=\frac{(-3\times3 + 1)}{2}=-4\\
+\varphi_a=\frac{2k\pi}{2}=0^{\circ},180^{\circ}
+\end{cases}\\
+&G(s)=\frac{K^*(s + 1)}{(s + 3)^3},\begin{cases}
+K = K^*/27\\
+\nu = 0
+\end{cases}\\
+&0^{\circ}\text{根轨迹}\begin{cases}
+\text{出射角：}\theta=\pm60^{\circ},180^{\circ}\\
+\text{分离点：}d = 0,K_d^* = 27\\
+\text{渐近线：}\begin{cases}
+\sigma_a=-4\\
+\varphi_a=0^{\circ},180^{\circ}
+\end{cases}
+\end{cases}\\
+&D(s)=(s + 3)^3+K^*(s + 1)=0\\
+&\begin{cases}
+K^{**}=K^* + 27\\
+K^*=K^{**}-27
+\end{cases}\\
+&=(s + 3)^3+(K^{**}-27)(s + 1)\\
+&D(s)=s^3 + 9s^2+K^{**}(s + 1)=0\\
+&G^*(s)=\frac{K^{**}(s + 1)}{s^2(s + 9)},G^*(s)=\frac{K^{**}(s + 1)}{s^2(s + 9)}=\pm1
+\end{align*}",,20cm,2026-06-21
